@@ -1,17 +1,19 @@
 import styles from '../styles/footer.module.css'
 
 export default function Footer() {
-  const github = 'mwesterby';
-  const linkedin = 'michael-westerby';
-  const medium = '@michael.westerby';
+  const vk = 'realgreysoul';
+  const instagram = 'realgreysoul';
+  const twitch = 'realgreysoul';
+  const tgc = 'mislisolya';
   
   const spacer = " • "
 
   return (
       <footer className={styles.footer}>
-        <a href={`https://github.com/${github}`} target="_blank">GitHub</a>{spacer}
-        <a href={`https://www.linkedin.com/in/${linkedin}`} target="_blank">LinkedIn</a>{spacer}
-        <a href={`https://medium.com/${medium}`} target="_blank">Medium</a>
+        <a href={`https://vk.com/${vk}`} target="_blank">ВКонтакте</a>{spacer}
+        <a href={`https://www.instagram.com/${instagram}/`} target="_blank">Instagram</a>{spacer}
+        <a href={`https://www.twitch.tv/${twitch}`} target="_blank">Twitch</a>{spacer}
+        <a href={`https://t.me/${tgc}`} target="_blank">Telegram-канал</a>
       </footer>
   )
 }
