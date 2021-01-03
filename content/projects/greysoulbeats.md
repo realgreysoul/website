@@ -1,6 +1,6 @@
 ---
 title: 'Greysoul Beats'
-startDate: '2019-29-06'
+startDate: '2019-06-29'
 endDate: 'Present'
 link: 'https://beats.greysoul.ru/'
 ---
