@@ -14,7 +14,6 @@ export default function Layout({ children, home }) {
       <div className={styles.container}>
         <Head>
           <link rel="icon" href="/favicon.ico" />
-          <!-- Yandex.Metrika counter -->
           <script type="text/javascript" >
           (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
           m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
@@ -26,7 +25,6 @@ export default function Layout({ children, home }) {
           });
           </script>
           <noscript><div><img src="https://mc.yandex.ru/watch/70946869" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-          <!-- /Yandex.Metrika counter -->
           <meta name="description" content="I'm a regular person who does beatmaking and sound engineering. I used to be into indie game development and was on many development teams." />
           <meta name="og:title" content={siteTitle} />
           <meta name="og:image" content="https://greysoul.ru/images/seo.jpg" />
