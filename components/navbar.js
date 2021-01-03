@@ -16,7 +16,7 @@ export default function Navbar({home}) {
   return (
     <div className={styles.navbar}>
       <NavLink label='Projects' address='/projects'/>
-      <Link href={`https://blog.greysoul.ru/`}><a>Blog</a></Link>
+      <Link href={`https://blog.greysoul.ru/`} target="_blank"><a>Blog</a></Link>
       {home ? "" : <NavLink label='Home' address='/'/>}
     </div>
   )
