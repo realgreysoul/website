@@ -17,7 +17,7 @@ export default function Layout({ children, home }) {
           <meta name="description" content="I'm a regular person who does beatmaking and sound engineering. I used to be into indie game development and was on many development teams." />
           <meta name="og:title" content={siteTitle} />
           <meta name="og:image" content="https://greysoul.ru/images/seo.jpg" />
-          export default withYM("70946869", Router)(MyApp);
+          <noscript><div><img src="https://mc.yandex.ru/watch/70946869" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
         </Head>
         <header className={styles.header}>
           <Banner home={home} name={name}/>
