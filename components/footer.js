@@ -4,7 +4,7 @@ export default function Footer() {
   const vk = 'realgreysoul';
   const instagram = 'realgreysoul';
   const twitch = 'realgreysoul';
-  const tgc = 'mislisolya';
+  const blog = 'mislisolya';
   
   const spacer = " • "
 
@@ -13,7 +13,7 @@ export default function Footer() {
         <a href={`https://vk.com/${vk}`} target="_blank">VK</a>{spacer}
         <a href={`https://www.instagram.com/${instagram}/`} target="_blank">Instagram</a>{spacer}
         <a href={`https://www.twitch.tv/${twitch}`} target="_blank">Twitch</a>{spacer}
-        <a href={`https://t.me/${tgc}`} target="_blank">Telegram Channel</a>
+        <a href={`https://t.me/${blog}`} target="_blank">Blog</a>
       </footer>
   )
 }
