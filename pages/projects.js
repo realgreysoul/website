@@ -25,7 +25,6 @@ function Project (project) {
         <ul className={utilStyles.list}>
           <li className={utilStyles.listItem} dangerouslySetInnerHTML={{ __html: contentHtml }} />
         </ul>
-        <a href={link} target="_blank">Code</a>
       </small>
     </li>
   )
@@ -35,7 +34,7 @@ export default function Projects({ allProjectsData }) {
   return (
     <Layout>
       <Head>
-        <title>{siteTitle} | Projects</title>
+        <title>Projects — {siteTitle}</title>
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h1 className={utilStyles.headingXL}>Projects</h1>
