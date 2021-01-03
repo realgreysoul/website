@@ -35,7 +35,7 @@ export default function Projects({ allProjectsData }) {
     <Layout>
       <Head>
         <title>Projects — {siteTitle}</title>
-          <meta name="og:title" content="Projects — {siteTitle}" />
+          <meta name="og:title" content="Projects — Greysoul" />
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h1 className={utilStyles.headingXL}>Projects</h1>
