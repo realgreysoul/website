@@ -16,7 +16,7 @@ export default function Layout({ children, home }) {
           <link rel="icon" href="/favicon.ico" />
           <meta name="description" content="I'm a regular person who does beatmaking and sound engineering. I used to be into indie game development and was on many development teams." />
           <meta name="og:title" content={siteTitle} />
-          <meta name="og:image" content="https://greysoul.vercel.app/images/seo.jpg" />
+          <meta name="og:image" content="https://greysoul.ru/images/seo.jpg" />
         </Head>
         <header className={styles.header}>
           <Banner home={home} name={name}/>
