@@ -3,6 +3,8 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
+export default withYM("XXXXXXXX", Router)(MyApp);
+
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
