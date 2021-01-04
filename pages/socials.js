@@ -18,9 +18,9 @@ export default function Projects({ allProjectsData }) {
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h1 className={utilStyles.headingXL}>Socials</h1>
-        <a href={`https://vk.com/${vk}`} target="_blank">VK</a>{spacer}
-        <a href={`https://www.instagram.com/${instagram}/`} target="_blank">Instagram</a>{spacer2}
-        <a href={`https://t.me/${blog}`} target="_blank">Blog</a>
+        <a href={`https://vk.com/${vk}`} target="_blank"><strong>VK</strong></a>{spacer}
+        <a href={`https://www.instagram.com/${instagram}/`} target="_blank"><strong>Instagram</strong></a>{spacer2}
+        <a href={`https://t.me/${blog}`} target="_blank"><strong>Blog</strong></a>
       </section>
     </Layout>
   )
