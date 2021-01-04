@@ -6,7 +6,7 @@ export default function Footer() {
   const twitch = 'realgreysoul';
   const blog = 'mislisolya';
   
-  const spacer = " • "
+  const spacer = " - "
 
   return (
       <footer className={styles.footer}>
