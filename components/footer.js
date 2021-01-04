@@ -5,8 +5,8 @@ export default function Footer() {
   return (
       <footer className={styles.footer}>
         <small class="utils_lightText__12Ckm">
-        <p>© 2021 Greysoul</p>
-        <p>Based on the Michael Westerby <a href={`https://github.com/mwesterby/michaelwesterby.com`} target="_blank">repository</a></p>
+        <p>© 2021 <strong>Greysoul</strong></p>
+        <p>Based on the Michael Westerby <a href={`https://github.com/mwesterby/michaelwesterby.com`} target="_blank"><strong>repository</strong></a></p>
         </small>
       </footer>
   )
