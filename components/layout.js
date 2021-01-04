@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/layout.module.css'
 import Navbar from './navbar'
 import Banner from './banner'
+import Footer from './footer'
 
 const name = 'Greysoul'
 export const siteTitle = name
@@ -21,6 +22,7 @@ export default function Layout({ children, home }) {
           <Banner home={home} name={name}/>
         </header>
         <main>{children}</main>
+        <Footer />
       </div>
     </>
   )
