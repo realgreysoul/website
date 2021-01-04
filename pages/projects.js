@@ -1,36 +1,9 @@
 import Layout, {siteTitle} from '../components/layout'
 import Head from 'next/head'
 import utilStyles from '../styles/utils.module.css'
-import { getSortedProjectsData } from '../lib/projects'
-import Date from '../components/date'
-
-
-function Project (project) {
-  const { 
-    id,
-    startDate,
-    endDate,
-    title,
-    contentHtml,
-    link
-  } = project
-
-  return (
-    <li className={utilStyles.listItem} key={id}>
-      <div className={utilStyles.listItemHeading}><a className={utilStyles.colorInherit} href={link} target="_blank">{title}</a></div>
-      <small className={utilStyles.lightText}>
-        <Date dateString={startDate} dateFormat={'LLLL yyyy'} /> - {(endDate == 'Present') ? endDate : <Date dateString={endDate} dateFormat={'LLLL yyyy'} /> }
-      </small>
-      <small>
-        <ul className={utilStyles.list}>
-          <li className={utilStyles.listItem} dangerouslySetInnerHTML={{ __html: contentHtml }} />
-        </ul>
-      </small>
-    </li>
-  )
-}
 
 export default function Projects({ allProjectsData }) {
+
   return (
     <Layout>
       <Head>
@@ -39,21 +12,23 @@ export default function Projects({ allProjectsData }) {
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h1 className={utilStyles.headingXL}>Projects</h1>
-        <ul className={utilStyles.list}>
-        {allProjectsData.map((project) => (
-            Project(project)
-          ))}
-          </ul>
+        <a href={`https://beats.greysoul.ru/`} target="_blank"><strong>Greysoul Beats</strong></a>
+        <br>
+        </br>
+        <a href={`https://www.youtube.com/channel/UCfBYBmvY2JgKNA6prrfFqhw`} target="_blank"><strong>грейсоль</strong></a>
+        <br>
+        </br>
+        <a href={`https://vk.com/x1xbuch`} target="_blank"><strong>Music Distribution and Management of the artist X1xBuch</strong></a>
+        <br>
+        </br>
+        <a href={`https://vk.com/angie_is_so_sexy`} target="_blank"><strong>Music Distribution and Management of the artist Angie</strong></a>
+        <br>
+        </br>
+        <a href={`https://gamejolt.com/@greysoulgames`} target="_blank"><strong>Greysoul Games</strong></a> (2015-2020)
+        <br>
+        </br>
+        <strong>Greysoul Publishing</strong> (2019-2020)
       </section>
     </Layout>
   )
-}
-
-export async function getStaticProps() {
-  const allProjectsData = await getSortedProjectsData()
-  return {
-    props: {
-      allProjectsData
-    }
-  }
 }
