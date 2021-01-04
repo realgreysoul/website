@@ -11,6 +11,7 @@ export default function Projects({ allProjectsData }) {
           <meta name="og:title" content="Socials — Greysoul" />
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+          <h1 className={utilStyles.headingXL}>Socials</h1>
         <Footer />
       </section>
     </Layout>
