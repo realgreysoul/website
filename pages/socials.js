@@ -3,13 +3,7 @@ import Head from 'next/head'
 import utilStyles from '../styles/utils.module.css'
 
 export default function Projects({ allProjectsData }) {
-  const vk = 'realgreysoul';
-  const instagram = 'realgreysoul';
-  const blog = 'mislisolya';
-  
-  const spacer = ", "
-  const spacer2 = " & "
-  
+
   return (
     <Layout>
       <Head>
@@ -18,9 +12,17 @@ export default function Projects({ allProjectsData }) {
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h1 className={utilStyles.headingXL}>Socials</h1>
-        <a href={`https://vk.com/${vk}`} target="_blank"><strong>VK</strong></a>{spacer}
-        <a href={`https://www.instagram.com/${instagram}/`} target="_blank"><strong>Instagram</strong></a>{spacer2}
-        <a href={`https://t.me/${blog}`} target="_blank"><strong>Blog</strong></a>
+        <a href={`https://vk.com/realgreysoul`} target="_blank"><strong>VK</strong></a>
+        <br>
+        <a href={`https://www.instagram.com/realgreysoul/`} target="_blank"><strong>Instagram</strong></a>
+        <br>
+        <a href={`https://t.me/greysoul`} target="_blank"><strong>Telegram</strong></a>
+        <br>
+        <a href={`https://t.me/mislisolya`} target="_blank"><strong>Blog</strong></a>
+        <br>
+        <a href={`https://steamcommunity.com/id/realgreysoul/`} target="_blank"><strong>Steam</strong></a>
+        <br>
+        <a href={`https://socialclub.rockstargames.com/member/RealGreysoul/`} target="_blank"><strong>Social Club</strong></a>
       </section>
     </Layout>
   )
