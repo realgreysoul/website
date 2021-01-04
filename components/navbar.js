@@ -16,7 +16,7 @@ export default function Navbar({home}) {
   return (
     <div className={styles.navbar}>
       <NavLink label='Projects' address='/projects'/>
-      {home ? "" : <NavLink label='Home' address='/'/>}
+      <NavLink label='Home' address='/'/>
     </div>
   )
 }
