@@ -10,7 +10,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <h2>Hello!</h2>
+        <p>Hello!</p>
         <p>I'm a regular person who does beatmaking and sound engineering.</p>
         <p>I used to be into indie game development and was on many development teams.</p>
       </section>
