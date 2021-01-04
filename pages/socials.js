@@ -14,7 +14,6 @@ export default function Footer() {
   const spacer = ", "
   const spacer2 = " & "
 
-export default function Projects({ allProjectsData }) {
   return (
     <Layout>
       <Head>
