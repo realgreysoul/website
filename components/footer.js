@@ -6,7 +6,7 @@ export default function Footer() {
       <footer className={styles.footer}>
         <small class="utils_lightText__12Ckm">
         <p>© 2020-2021 <strong>Greysoul</strong></p>
-        <p>Based on the open-source <a href={`https://github.com/mwesterby/michaelwesterby.com`} target="_blank"><strong>repository</strong></a> from <a href={`https://michaelwesterby.com/`} target="_blank"><strong>Michael Westerby</strong></a></p>
+        <p>This website based on the open-source <a href={`https://github.com/mwesterby/michaelwesterby.com`} target="_blank"><strong>repository</strong></a> from <a href={`https://michaelwesterby.com/`} target="_blank"><strong>Michael Westerby</strong></a></p>
         </small>
       </footer>
   )
