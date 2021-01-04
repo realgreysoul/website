@@ -12,7 +12,6 @@ export default function Footer() {
 
   return (
       <footer className={styles.footer}>
-        <h1 className={utilStyles.headingXL}>Socials</h1>
         <a href={`https://vk.com/${vk}`} target="_blank">VK</a>{spacer}
         <a href={`https://www.instagram.com/${instagram}/`} target="_blank">Instagram</a>{spacer}
         <a href={`https://www.twitch.tv/${twitch}`} target="_blank">Twitch</a>{spacer2}
