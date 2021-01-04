@@ -1,5 +1,6 @@
 import Layout, {siteTitle} from '../components/layout'
 import Head from 'next/head'
+import utilStyles from '../styles/utils.module.css'
 import Footer from '../components/footer'
 
 export default function Projects({ allProjectsData }) {
