@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import styles from '../styles/layout.module.css'
-import Footer from './footer'
 import Navbar from './navbar'
 import Banner from './banner'
 
@@ -22,7 +21,6 @@ export default function Layout({ children, home }) {
           <Banner home={home} name={name}/>
         </header>
         <main>{children}</main>
-        <Footer />
       </div>
     </>
   )
