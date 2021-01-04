@@ -16,6 +16,7 @@ export default function Navbar({home}) {
   return (
     <div className={styles.navbar}>
       <NavLink label='Projects' address='/projects'/>
+      <NavLink label='Socials' address='/socials'/>
       <NavLink label='Home' address='/'/>
     </div>
   )
