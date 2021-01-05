@@ -17,7 +17,7 @@ function Project (project) {
 
   return (
     <li className={utilStyles.listItem} key={id}>
-      <div className={utilStyles.listItemHeading}><a className={utilStyles.colorInherit} href={link} target="_blank">{title}</a></div>
+      <div className={utilStyles.listItemHeading}><a href={link} target="_blank">{title}</a></div>
       <small className={utilStyles.lightText}>
         <Date dateString={startDate} dateFormat={'LLLL yyyy'} /> - {(endDate == 'Present') ? endDate : <Date dateString={endDate} dateFormat={'LLLL yyyy'} /> }
       </small>
