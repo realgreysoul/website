@@ -2,7 +2,7 @@ import styles from '../styles/navbar.module.css'
 import Link from 'next/link'
 
 function NavLink({label, address}) {
-  const home = label === 'Home'
+  const home = label === 'Главная'
   return (
     <div className={home ? "" : styles.navbarItem}>
       <Link href={address}>
@@ -15,9 +15,9 @@ function NavLink({label, address}) {
 export default function Navbar({home}) {
   return (
     <div className={styles.navbar}>
-      <NavLink label='Projects' address='/projects'/>
-      <NavLink label='Socials' address='/socials'/>
-      <NavLink label='Home' address='/'/>
+      <NavLink label='Проекты' address='/projects'/>
+      <NavLink label='Соц-сети' address='/socials'/>
+      <NavLink label='Главная' address='/'/>
     </div>
   )
 }
