@@ -116,12 +116,3 @@ export default function Projects({ allProjectsData }) {
     </Layout>
   )
 }
-
-export async function getStaticProps() {
-  const allProjectsData = await getSortedProjectsData()
-  return {
-    props: {
-      allProjectsData
-    }
-  }
-}
