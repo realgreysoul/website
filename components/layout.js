@@ -14,7 +14,7 @@ export default function Layout({ children, home }) {
       <div className={styles.container}>
         <Head>
           <link rel="icon" href="/favicon.ico" />
-          <meta name="description" content="Привет, меня зовут Александр Казаков! Раньше я увлекался разработкой инди-игр и был во многих командах по их разработке, но с 2018-ого года я увлекаюсь битмейкингом и звукорежиссурой." />
+          <meta name="description" content="Раньше я увлекался разработкой инди-игр и был во многих командах по их разработке, но с 2018-ого года я увлекаюсь битмейкингом и звукорежиссурой." />
           <meta name="og:title" content={siteTitle} />
           <meta name="og:image" content="https://greysoul.ru/images/seo.jpg" />
         </Head>
