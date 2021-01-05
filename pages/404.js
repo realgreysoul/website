@@ -12,7 +12,7 @@ export default function Custom404() {
       </Head>
         <section className={utilStyles.headingMd}>
       <h1>404: Page Not Found</h1>
-      <p>If you reached this page by mistake, go to the <Link href={`/`}><a>home page</a></Link></p>
+      <p>If you reached this page by mistake, go to the <Link href={`/`}><a><strong>home page</strong></a></Link></p>
         </section>
     </Layout>
   )
