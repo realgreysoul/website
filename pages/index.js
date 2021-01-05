@@ -10,7 +10,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingHd}>
-        <p>Привет, меня зовут Александр Казаков!</p>
+        <p>Привет!</p>
         <p>Раньше я увлекался разработкой инди-игр и был во многих командах по их разработке, но с 2018-ого года я увлекаюсь битмейкингом и звукорежиссурой.</p>
       </section>
     </Layout>
