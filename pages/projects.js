@@ -40,9 +40,17 @@ export default function Projects({ allProjectsData }) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h1 className={utilStyles.headingXL}>Projects</h1>
         <ul className={utilStyles.list}>
-        {allProjectsData.map((project) => (
-            Project(project)
-          ))}
+<li class="utils_listItem__2eJpJ">
+<div class="utils_listItemHeading__iji17">
+<a href="https://vk.com/angie_is_so_sexy" target="_blank">Distribution and management of the artist Angie</a>
+</div>
+<small class="utils_lightText__12Ckm"><p>2019-2020</p></small><small>
+<ul class="utils_list__S7_pe">
+<li class="utils_listItem__2eJpJ">
+</li>
+</ul>
+</small>
+</li>
           </ul>
       </section>
     </Layout>
