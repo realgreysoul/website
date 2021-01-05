@@ -40,18 +40,75 @@ export default function Projects({ allProjectsData }) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h1 className={utilStyles.headingXL}>Projects</h1>
         <ul className={utilStyles.list}>
-<li class="utils_listItem__2eJpJ">
-<div class="utils_listItemHeading__iji17">
-<a href="https://vk.com/angie_is_so_sexy" target="_blank">Distribution and management of the artist Angie</a>
-</div>
-<small class="utils_lightText__12Ckm"><p>2019-2020</p></small><small>
-<ul class="utils_list__S7_pe">
-<li class="utils_listItem__2eJpJ">
-</li>
-</ul>
-</small>
-</li>
-          </ul>
+        <li class="utils_listItem__2eJpJ">
+        <div class="utils_listItemHeading__iji17">
+        <a href="https://beats.greysoul.ru/" target="_blank">Greysoul Beats</a>
+        </div>
+        <small>
+        <ul class="utils_list__S7_pe">
+        <li class="utils_listItem__2eJpJ">
+        </li>
+        </ul>
+        </small>
+        </li>
+        <li class="utils_listItem__2eJpJ">
+        <div class="utils_listItemHeading__iji17">
+        <a href="https://vk.com/x1xbuch" target="_blank">X1xBuch (Music Distribution and Artist Management)</a>
+        </div>
+        <small>
+        <ul class="utils_list__S7_pe">
+        <li class="utils_listItem__2eJpJ">
+        </li>
+        </ul>
+        </small>
+        </li>
+        <li class="utils_listItem__2eJpJ">
+        <div class="utils_listItemHeading__iji17">
+        <a href="https://vk.com/angie_is_so_sexy" target="_blank">Angie (Music Distribution and Artist Management)</a>
+        </div>
+        <small>
+        <ul class="utils_list__S7_pe">
+        <li class="utils_listItem__2eJpJ">
+        </li>
+        </ul>
+        </small>
+        </li>
+        <li class="utils_listItem__2eJpJ">
+        <div class="utils_listItemHeading__iji17">
+        <a href="https://www.youtube.com/channel/UCfBYBmvY2JgKNA6prrfFqhw" target="_blank">грейсоль</a>
+        </div>
+        <small>
+        <ul class="utils_list__S7_pe">
+        <li class="utils_listItem__2eJpJ">
+        </li>
+        </ul>
+        </small>
+        </li>
+        <li class="utils_listItem__2eJpJ">
+        <div class="utils_listItemHeading__iji17">
+        <s><a href="https://gamejolt.com/@greysoulgames" target="_blank">Greysoul Games</a></s>
+        </div>
+        <small class="utils_lightText__12Ckm"><p>The project is closed</p></small>
+        <small>
+        <ul class="utils_list__S7_pe">
+        <li class="utils_listItem__2eJpJ">
+        </li>
+        </ul>
+        </small>
+        </li>
+        <li class="utils_listItem__2eJpJ">
+        <div class="utils_listItemHeading__iji17">
+        <s>Greysoul Publishing</s>
+        </div>
+        <small class="utils_lightText__12Ckm"><p>The project is closed</p></small>
+        <small>
+        <ul class="utils_list__S7_pe">
+        <li class="utils_listItem__2eJpJ">
+        </li>
+        </ul>
+        </small>
+        </li>
+        </ul>
       </section>
     </Layout>
   )
