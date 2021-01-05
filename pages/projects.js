@@ -1,33 +1,6 @@
 import Layout, {siteTitle} from '../components/layout'
 import Head from 'next/head'
 import utilStyles from '../styles/utils.module.css'
-import Date from '../components/date'
-
-
-function Project (project) {
-  const { 
-    id,
-    startDate,
-    endDate,
-    title,
-    contentHtml,
-    link
-  } = project
-
-  return (
-    <li className={utilStyles.listItem} key={id}>
-      <div className={utilStyles.listItemHeading}><a href={link} target="_blank">{title}</a></div>
-      <small className={utilStyles.lightText}>
-        <Date dateString={startDate} dateFormat={'LLLL yyyy'} /> - {(endDate == 'Present') ? endDate : <Date dateString={endDate} dateFormat={'LLLL yyyy'} /> }
-      </small>
-      <small>
-        <ul className={utilStyles.list}>
-          <li className={utilStyles.listItem} dangerouslySetInnerHTML={{ __html: contentHtml }} />
-        </ul>
-      </small>
-    </li>
-  )
-}
 
 export default function Projects({ allProjectsData }) {
   return (
