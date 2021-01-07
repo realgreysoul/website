@@ -24,9 +24,6 @@ export default function Projects({ allProjectsData }) {
         <a href={`https://t.me/mislisolya`} target="_blank"><strong>Блог</strong></a>
         <br>
         </br>
-        <a href={`https://www.twitch.tv/realgreysoul`} target="_blank"><strong>Twitch</strong></a>
-        <br>
-        </br>
         <a href={`https://steamcommunity.com/id/realgreysoul/`} target="_blank"><strong>Steam</strong></a>
         <br>
         </br>
