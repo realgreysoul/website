@@ -7,12 +7,12 @@ export default function Custom404() {
   return (
     <Layout>
       <Head>
-        <title>404: Page Not Found — {siteTitle}</title>
-          <meta name="og:title" content="404: Page Not Found — Greysoul" />
+        <title>404: Страница не найдена — {siteTitle}</title>
+          <meta name="og:title" content="404: Страница не найдена — Greysoul" />
       </Head>
         <section className={utilStyles.headingMd}>
-      <h1>404: Page Not Found</h1>
-      <p>If you reached this page by mistake, go to the <Link href={`/`}><a><strong>home page</strong></a></Link></p>
+      <h1>404: Страница не найдена</h1>
+      <p>Если вы попали на эту страницу по ошибке, то перейдите на <Link href={`/`}><a><strong>главную страницу</strong></a></Link>.</p>
         </section>
     </Layout>
   )
