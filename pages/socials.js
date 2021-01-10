@@ -21,6 +21,9 @@ export default function Projects({ allProjectsData }) {
         <a href={`https://t.me/greysoul`} target="_blank"><strong>Telegram</strong></a>
         <br>
         </br>
+        <a href={`https://t.me/greysoul2`} target="_blank"><strong>Telegram (второй аккаунт)</strong></a>
+        <br>
+        </br>
         <a href={`https://t.me/mislisolya`} target="_blank"><strong>Блог</strong></a>
         <br>
         </br>
