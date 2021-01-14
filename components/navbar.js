@@ -15,6 +15,7 @@ function NavLink({label, address}) {
 export default function Navbar({home}) {
   return (
     <div className={styles.navbar}>
+      <NavLink label='Донат' address='/donate'/>
       <NavLink label='Проекты' address='/projects'/>
       <NavLink label='Соц-сети' address='/socials'/>
       <NavLink label='Главная' address='/'/>
