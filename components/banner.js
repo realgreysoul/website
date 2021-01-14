@@ -7,6 +7,8 @@ export default function Banner({home, name}) {
   const homeBanner = (<>
     <Image
       src="/images/profile.jpg"
+      width={162}
+      height={162}
       className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
       alt="Greysoul"
     />
@@ -18,6 +20,8 @@ export default function Banner({home, name}) {
       <a>
         <Image
           src="/images/profile.jpg"
+          width={108}
+          height={108}
           className={`${styles.headerImage} ${utilStyles.borderCircle}`}
           alt="Greysoul"
         />
