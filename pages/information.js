@@ -11,6 +11,7 @@ export default function Projects({ allProjectsData }) {
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h1 className={utilStyles.headingXL}>Информация обо мне</h1>
+        <h3 className={utilStyles.headingXL}>Проекты</h3>
         <ul className={utilStyles.list}>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
@@ -85,7 +86,7 @@ export default function Projects({ allProjectsData }) {
         </small>
         </li>
         </ul>
-        <h1 className={utilStyles.headingXL}>Соц-сети</h1>
+        <h3 className={utilStyles.headingXL}>Соц-сети</h3>
         <a href={`https://vk.com/realgreysoul`} target="_blank"><strong>ВКонтакте</strong></a>
         <br>
         </br>
@@ -105,7 +106,7 @@ export default function Projects({ allProjectsData }) {
         <br>
         </br>
         <a href={`https://socialclub.rockstargames.com/member/RealGreysoul/`} target="_blank"><strong>Social Club</strong></a>
-        <h1 className={utilStyles.headingXL}>Донат</h1>
+        <h3 className={utilStyles.headingXL}>Донат</h3>
         <a href={`https://donate.stream/greysoul`} target="_blank"><strong>Donate.Stream</strong></a>
         <br>
         </br>
