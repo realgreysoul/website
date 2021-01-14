@@ -1,13 +1,14 @@
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import styles from '../styles/banner.module.css'
+import Image from 'next/image'
 
 export default function Banner({home, name}) {
   const homeBanner = (<>
-    <img
+    <Image
       src="/images/profile.jpg"
       className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-      alt={name}
+      alt="Greysoul"
     />
     <h1 className={utilStyles.heading2Xl}>{name}</h1>
   </>)
@@ -15,10 +16,10 @@ export default function Banner({home, name}) {
   const secondaryBanner = (<>
     <Link href="/">
       <a>
-        <img
+        <Image
           src="/images/profile.jpg"
           className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-          alt={name}
+          alt="Greysoul"
         />
       </a>
     </Link>
