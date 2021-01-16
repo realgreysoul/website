@@ -117,6 +117,8 @@ export default function Projects({ allProjectsData }) {
         <br>
         </br>
         <strong>WebMoney - P535282857177</strong>
+        <strong>WebMoney - R464312826829</strong>
+        Кошельки <strong>WebMoney</strong>: <strong>P535282857177</strong>, <strong>R464312826829</strong> и <strong>Z020618529666</strong>
       </section>
     </Layout>
   )
