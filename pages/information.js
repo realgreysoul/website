@@ -116,7 +116,7 @@ export default function Projects({ allProjectsData }) {
         <a href={`https://yoomoney.ru/to/410018468894777`} target="_blank"><strong>ЮMoney (Яндекс.Деньги)</strong></a>
         <br>
         </br>
-        Кошельки <strong>WebMoney</strong>: <strong>P535282857177</strong>, <strong>R464312826829</strong> и <strong>Z020618529666</strong>
+        Кошельки <strong>WebMoney</strong>: <strong>P535282857177</strong> и <strong>Z020618529666</strong>
       </section>
     </Layout>
   )
