@@ -27,13 +27,12 @@ export default function Layout({ children, home }) {
           <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
           <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
           <link rel="manifest" href="/manifest.json">
-          <meta name="msapplication-TileColor" content="#ffffff">
-          <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-          <meta name="theme-color" content="#ffffff">
-          <meta name="description" content="Сайт битмейкера и звукорежиссёра, а также бывшего разработчика инди-игр и бывшего участника многих команд по их разработке" />
-          <meta name="og:title" content={siteTitle} />
-          <meta name="og:image" content="https://greysoul.ru/images/seo.jpg" />
-          </meta>
+          <meta name="msapplication-TileColor" content="#ffffff"></meta>
+          <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"></meta></meta>
+          <meta name="theme-color" content="#ffffff"></meta>
+          <meta name="description" content="Сайт битмейкера и звукорежиссёра, а также бывшего разработчика инди-игр и бывшего участника многих команд по их разработке" /></meta>
+          <meta name="og:title" content={siteTitle} /></meta>
+          <meta name="og:image" content="https://greysoul.ru/images/seo.jpg" /></meta>
         </Head>
         <header className={styles.header}>
           <Banner home={home} name={name}/>
