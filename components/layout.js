@@ -33,6 +33,7 @@ export default function Layout({ children, home }) {
           <meta name="description" content="Сайт битмейкера и звукорежиссёра, а также бывшего разработчика инди-игр и бывшего участника многих команд по их разработке" />
           <meta name="og:title" content={siteTitle} />
           <meta name="og:image" content="https://greysoul.ru/images/seo.jpg" />
+          </meta>
         </Head>
         <header className={styles.header}>
           <Banner home={home} name={name}/>
