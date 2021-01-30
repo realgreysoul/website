@@ -28,7 +28,7 @@ export default function Layout({ children, home }) {
           <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"></link>
           <link rel="manifest" href="/manifest.json"></link>
           <meta name="msapplication-TileColor" content="#ffffff"></meta>
-          <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"></meta></meta>
+          <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"></meta>
           <meta name="theme-color" content="#ffffff"></meta>
           <meta name="description" content="Сайт битмейкера и звукорежиссёра, а также бывшего разработчика инди-игр и бывшего участника многих команд по их разработке" /></meta>
           <meta name="og:title" content={siteTitle} /></meta>
