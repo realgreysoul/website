@@ -86,7 +86,7 @@ export default function Projects({ allProjectsData }) {
         </small>
         </li>
         </ul>
-        <h3 className={utilStyles.headingXL}>Соц-сети</h3>
+        <h3 className={utilStyles.headingXL}>Соц-сети и другие платформы</h3>
         <a href={`https://vk.com/realgreysoul`} target="_blank"><strong>ВКонтакте</strong></a>
         <br>
         </br>
@@ -100,6 +100,9 @@ export default function Projects({ allProjectsData }) {
         <br>
         </br>
         <a href={`https://t.me/mislisolya`} target="_blank"><strong>Блог</strong></a>
+        <br>
+        </br>
+        <a href={`https://www.twitch.tv/realgreysoul`} target="_blank"><strong>Twitch</strong></a>
         <br>
         </br>
         <a href={`https://steamcommunity.com/id/realgreysoul/`} target="_blank"><strong>Steam</strong></a>
