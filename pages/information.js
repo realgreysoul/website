@@ -110,7 +110,7 @@ export default function Projects({ allProjectsData }) {
         </br>
         <a href={`https://socialclub.rockstargames.com/member/RealGreysoul/`} target="_blank"><strong>Social Club</strong></a>
         <h3 className={utilStyles.headingXL}>Донат</h3>
-        <a href={`https://donate.stream/greysoul`} target="_blank"><strong>Donate.Stream</strong></a>
+        <a href={`https://www.donationalerts.com/r/realgreysoul`} target="_blank"><strong>DonationAlerts</strong></a>
         <br>
         </br>
         <a href={`https://qiwi.com/n/GREYSOUL`} target="_blank"><strong>QIWI Кошелёк</strong></a>
