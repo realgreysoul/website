@@ -16,6 +16,7 @@ export default function Layout({ children, home }) {
           <link rel="icon" href="/favicon.ico" />
           <meta name="description" content="Сайт битмейкера и звукорежиссёра, а также бывшего разработчика инди-игр и бывшего участника многих команд по их разработке" />
           <meta name="author" content={siteTitle} />
+          <meta property="og:site_name" content={siteTitle} />
           <meta name="og:title" content={siteTitle} />
           <meta name="og:image" content="https://greysoul.ru/images/seo.jpg" />
         </Head>
