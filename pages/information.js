@@ -7,7 +7,7 @@ export default function Projects({ allProjectsData }) {
     <Layout>
       <Head>
         <title>Информация обо мне — {siteTitle}</title>
-          <meta name="og:title" content="Информация обо мне — Greysoul" />
+          <meta name="og:title" content="Информация обо мне" />
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h1 className={utilStyles.headingXL}>Информация обо мне</h1>
