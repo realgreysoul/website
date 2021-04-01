@@ -7,8 +7,8 @@ export default function Custom500() {
   return (
     <Layout>
       <Head>
-        <title>505: Ошибка на стороне сервера — {siteTitle}</title>
-          <meta name="og:title" content="505: Ошибка на стороне сервера" />
+        <title>500: Ошибка на стороне сервера — {siteTitle}</title>
+          <meta name="og:title" content="500: Ошибка на стороне сервера" />
       </Head>
         <section className={utilStyles.headingMd}>
       <h1>505: Ошибка на стороне сервера</h1>
