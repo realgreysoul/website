@@ -113,7 +113,7 @@ export default function Projects({ allProjectsData }) {
         <a href={`https://qiwi.com/n/GREYSOUL`} target="_blank"><strong>QIWI Кошелёк</strong></a>
         <br>
         </br>
-        <a href={`https://yoomoney.ru/to/410018468894777`} target="_blank"><strong>ЮMoney (Яндекс.Деньги)</strong></a>
+        <a href={`https://yoomoney.ru/to/410018468894777`} target="_blank"><strong>ЮMoney <i>(Яндекс.Деньги)</i></strong></a>
         <br>
         </br>
         <a href={`https://vk.me/moneysend/realgreysoul`} target="_blank"><strong>VK Pay</strong></a>
