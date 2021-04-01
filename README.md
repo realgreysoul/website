@@ -1,3 +1,3 @@
 <h1 align="left">Greysoul</h1>
-<img src="https://greysoul.ru/images/seo.jpg" width="400" height="209" alt="Greysoul">
-Мой личный сайт, который основан на **[репозитории](https://github.com/mwesterby/michaelwesterby.com)** от Майкла Вестерби, написан на фреймворке **[Next.js](https://nextjs.org/)** и хостится на платформе **[Vercel](https://vercel.com/)**
+<img src="https://greysoul.ru/images/seo.jpg" width="400" height="209" alt="Greysoul"></img>
+Мой личный сайт, который основан на <a href="https://github.com/mwesterby/michaelwesterby.com"><strong>репозитории</strong></a> от Майкла Вестерби, написан на фреймворке <a href="https://nextjs.org/"><strong>Next.js</strong></a> и хостится на платформе <a href="https://vercel.com/"><strong>Vercel</strong></a>
