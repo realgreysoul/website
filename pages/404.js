@@ -8,7 +8,7 @@ export default function Custom404() {
     <Layout>
       <Head>
         <title>404: Страница не найдена — {siteTitle}</title>
-          <meta name="og:title" content="404: Страница не найдена — Greysoul" />
+          <meta name="og:title" content="404: Страница не найдена" />
       </Head>
         <section className={utilStyles.headingMd}>
       <h1>404: Страница не найдена</h1>
