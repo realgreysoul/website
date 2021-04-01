@@ -6,7 +6,7 @@ export default function Footer() {
       <footer className={styles.footer}>
         <small class="utils_lightText__12Ckm">
         <p>© 2021 <strong>Greysoul</strong></p>
-        <p>Этот сайт основан на <a href={`https://github.com/mwesterby/michaelwesterby.com`} target="_blank"><strong>репозитории</strong></a> с открытым исходным кодом, который в свою очередь основан на фреймворке <a href={`https://nextjs.org/`} target="_blank"><strong>Next.js</strong></a></p>
+        <p>Основано на <a href={`https://github.com/mwesterby/michaelwesterby.com`} target="_blank"><strong>репозитории</strong></a> с открытым исходным кодом, работает на фреймворке <a href={`https://nextjs.org/`} target="_blank"><strong>Next.js</strong></a> и хостится на платформе <a href={`https://vercel.com/`} target="_blank"><strong>Vercel</strong></a></p>
         </small>
       </footer>
   )
