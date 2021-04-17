@@ -120,6 +120,11 @@ export default function Projects({ allProjectsData }) {
         <br>
         </br>
         Кошельки <strong>WebMoney</strong>: <strong>P535282857177</strong> и <strong>Z020618529666</strong>
+        <h3 className={utilStyles.headingXL}>Мои плейлисты в ВКонтакте</h3>
+        <a href={`https://vk.com/music?z=audio_playlist205955149_91119843/94d1a94ae3924f9203`} target="_blank"><strong>Любимые треки</strong></a>
+        <br>
+        </br>
+        <a href={`https://vk.com/music?z=audio_playlist205955149_91119845/69f1fbe6fd0f254eb6`} target="_blank"><strong>Любимые Lo-Fi треки</strong></a>
       </section>
     </Layout>
   )
