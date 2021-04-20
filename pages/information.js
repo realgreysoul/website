@@ -86,11 +86,6 @@ export default function Projects({ allProjectsData }) {
         </small>
         </li>
         </ul>
-        <h3 className={utilStyles.headingXL}>Мои плейлисты в ВКонтакте</h3>
-        <a href={`https://vk.com/music?z=audio_playlist205955149_91119843/94d1a94ae3924f9203`} target="_blank"><strong>Любимые треки</strong></a>
-        <br>
-        </br>
-        <a href={`https://vk.com/music?z=audio_playlist205955149_91119845/69f1fbe6fd0f254eb6`} target="_blank"><strong>Любимые Lo-Fi треки</strong></a>
         <h3 className={utilStyles.headingXL}>Соц-сети и другие платформы</h3>
         <a href={`https://vk.com/realgreysoul`} target="_blank"><strong>ВКонтакте</strong></a>
         <br>
@@ -111,6 +106,11 @@ export default function Projects({ allProjectsData }) {
         <br>
         </br>
         <a href={`https://socialclub.rockstargames.com/member/RealGreysoul/`} target="_blank"><strong>Social Club</strong></a>
+        <h3 className={utilStyles.headingXL}>Мои плейлисты в ВКонтакте</h3>
+        <a href={`https://vk.com/music?z=audio_playlist205955149_91119843/94d1a94ae3924f9203`} target="_blank"><strong>Любимые треки</strong></a>
+        <br>
+        </br>
+        <a href={`https://vk.com/music?z=audio_playlist205955149_91119845/69f1fbe6fd0f254eb6`} target="_blank"><strong>Любимые Lo-Fi треки</strong></a>
         <h3 className={utilStyles.headingXL}>Донат</h3>
         <a href={`https://www.donationalerts.com/r/realgreysoul`} target="_blank"><strong>DonationAlerts</strong></a>
         <br>
