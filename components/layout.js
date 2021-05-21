@@ -19,9 +19,7 @@ export default function Layout({ children, home }) {
           <meta property="og:site_name" content={siteTitle} />
           <meta name="og:title" content={siteTitle} />
           <meta name="og:image" content="https://greysoul.ru/images/seo.jpg" />
-          <!-- Cloudflare Web Analytics -->
           <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9c5cbe7a5e4c40f1954c457b3e93c93a"}'></script>
-          <!-- End Cloudflare Web Analytics -->
         </Head>
         <header className={styles.header}>
           <Banner home={home} name={name}/>
