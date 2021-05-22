@@ -20,6 +20,7 @@ export default function Layout({ children, home }) {
           <meta name="og:title" content={siteTitle} />
           <meta name="og:image" content="https://greysoul.ru/images/seo.jpg" />
           <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9c5cbe7a5e4c40f1954c457b3e93c93a"}'></script>
+          <script type="text/javascript" src="/static/date.js"></script>
         </Head>
         <header className={styles.header}>
           <Banner home={home} name={name}/>
