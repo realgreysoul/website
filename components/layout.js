@@ -6,7 +6,6 @@ import Footer from './footer'
 
 const name = 'Greysoul'
 export const siteTitle = name
-const today = new Date();
 
 export default function Layout({ children, home }) {
   return (
