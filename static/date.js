@@ -1,1 +1,3 @@
-document.write(new Date().getFullYear())
+getYear() {
+    return new Date().getFullYear();
+}
