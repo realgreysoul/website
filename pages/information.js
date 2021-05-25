@@ -27,7 +27,7 @@ export default function Projects({ allProjectsData }) {
         </li>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
-        <a href="https://r.greysoul.ru/gs_vk-x" target="_blank">X1xBuch</a>
+        <a href="https://r.greysoul.ru/gs_vk-xb" target="_blank">X1xBuch</a>
         </div>
         <small class="utils_lightText__12Ckm"><p>Дистрибуция музыки и менеджмент артиста</p></small>
         <small>
