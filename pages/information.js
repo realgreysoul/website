@@ -107,10 +107,10 @@ export default function Projects({ allProjectsData }) {
         </br>
         <a href={`https://r.greysoul.ru/pw-sc`} target="_blank"><strong>Social Club</strong></a>
         <h3 className={utilStyles.headingXL}>Мои плейлисты в ВКонтакте</h3>
-        <a href={`https://r.greysoul.ru/pw-vk-ltp`} target="_blank"><strong>Любимые треки</strong></a>
+        <a href={`https://r.greysoul.ru/pw-vk-poft`} target="_blank"><strong>Любимые треки</strong></a>
         <br>
         </br>
-        <a href={`https://r.greysoul.ru/pw-vk-llft`} target="_blank"><strong>Любимые Lo-Fi треки</strong></a>
+        <a href={`https://r.greysoul.ru/pw-vk-poflft`} target="_blank"><strong>Любимые Lo-Fi треки</strong></a>
         <h3 className={utilStyles.headingXL}>Донат</h3>
         <a href={`https://r.greysoul.ru/pw-da`} target="_blank"><strong>DonationAlerts</strong></a>
         <br>
