@@ -99,10 +99,10 @@ export default function Projects({ allProjectsData }) {
         <a href={`https://r.greysoul.ru/gs_tg-ms`} target="_blank"><strong>Блог</strong></a>
         <br>
         </br>
-        <a href={`https://r.greysoul.ru/gs_t`} target="_blank"><strong>Twitch</strong></a>
+        <a href={`https://r.greysoul.ru/gs_twitch`} target="_blank"><strong>Twitch</strong></a>
         <br>
         </br>
-        <a href={`https://r.greysoul.ru/gs_s`} target="_blank"><strong>Steam</strong></a>
+        <a href={`https://r.greysoul.ru/gs_steam`} target="_blank"><strong>Steam</strong></a>
         <br>
         </br>
         <a href={`https://r.greysoul.ru/gs_sc`} target="_blank"><strong>Social Club</strong></a>
@@ -115,7 +115,7 @@ export default function Projects({ allProjectsData }) {
         <a href={`https://r.greysoul.ru/gs_da`} target="_blank"><strong>DonationAlerts</strong></a>
         <br>
         </br>
-        <a href={`https://r.greysoul.ru/gs_q`} target="_blank"><strong>QIWI Кошелёк</strong></a>
+        <a href={`https://r.greysoul.ru/gs_qiwi`} target="_blank"><strong>QIWI Кошелёк</strong></a>
         <br>
         </br>
         <a href={`https://r.greysoul.ru/gs_ym`} target="_blank"><strong>ЮMoney <i>(Яндекс.Деньги)</i></strong></a>
