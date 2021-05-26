@@ -11,7 +11,8 @@ export default function Projects({ allProjectsData }) {
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h1 className={utilStyles.headingXL}>Информация обо мне</h1>
-        <h3 className={utilStyles.headingXL}>Проекты</h3>
+        <h2 className={utilStyles.headingXL}>Проекты</h2>
+        <h3 className={utilStyles.headingXL}>Действующие</h3>
         <ul className={utilStyles.list}>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
@@ -61,11 +62,12 @@ export default function Projects({ allProjectsData }) {
         </ul>
         </small>
         </li>
+        <h3 className={utilStyles.headingXL}>Закрытые</h3>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
         <s><a href="https://r.greysoul.ru/xqes5" target="_blank">Greysoul Games</a></s>
         </div>
-        <small class="utils_lightText__12Ckm"><p>Проект закрыт</p></small>
+        <small class="utils_lightText__12Ckm"><p>Игры, которые сейчас вызывают у меня чувство стыда</p></small>
         <small>
         <ul class="utils_list__S7_pe">
         <li class="utils_listItem__2eJpJ">
@@ -77,7 +79,7 @@ export default function Projects({ allProjectsData }) {
         <div class="utils_listItemHeading__iji17">
         <s>Greysoul Publishing</s>
         </div>
-        <small class="utils_lightText__12Ckm"><p>Проект закрыт</p></small>
+        <small class="utils_lightText__12Ckm"><p>Платная публикация музыки различных артистов во все известные музыкальные сервисы</p></small>
         <small>
         <ul class="utils_list__S7_pe">
         <li class="utils_listItem__2eJpJ">
@@ -86,7 +88,7 @@ export default function Projects({ allProjectsData }) {
         </small>
         </li>
         </ul>
-        <h3 className={utilStyles.headingXL}>Соц-сети и другие платформы</h3>
+        <h2 className={utilStyles.headingXL}>Соц-сети и другие платформы</h2>
         <a href={`https://r.greysoul.ru/ei24g`} target="_blank"><strong>ВКонтакте</strong></a>
         <br>
         </br>
@@ -106,12 +108,12 @@ export default function Projects({ allProjectsData }) {
         <br>
         </br>
         <a href={`https://r.greysoul.ru/skx54`} target="_blank"><strong>Social Club</strong></a>
-        <h3 className={utilStyles.headingXL}>Мои плейлисты в ВКонтакте</h3>
+        <h2 className={utilStyles.headingXL}>Мои плейлисты в ВКонтакте</h2>
         <a href={`https://r.greysoul.ru/xm34y`} target="_blank"><strong>Любимые треки</strong></a>
         <br>
         </br>
         <a href={`https://r.greysoul.ru/5iazo`} target="_blank"><strong>Любимые Lo-Fi треки</strong></a>
-        <h3 className={utilStyles.headingXL}>Донат</h3>
+        <h2 className={utilStyles.headingXL}>Донат</h2>
         <a href={`https://r.greysoul.ru/e7r9v`} target="_blank"><strong>DonationAlerts</strong></a>
         <br>
         </br>
