@@ -16,7 +16,7 @@ export default function Projects({ allProjectsData }) {
         <ul className={utilStyles.list}>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
-        <a href="https://r.greysoul.ru/074la" target="_blank">Greysoul Beats</a>
+        <a href="https://clc.to/LamWQw" target="_blank">Greysoul Beats</a>
         </div>
         <small class="utils_lightText__12Ckm"><p>Биты на любой вкус и цвет</p></small>
         <small>
@@ -28,7 +28,7 @@ export default function Projects({ allProjectsData }) {
         </li>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
-        <a href="https://r.greysoul.ru/clyxl" target="_blank">X1xBuch</a>
+        <a href="https://clc.to/Y7regQ" target="_blank">X1xBuch</a>
         </div>
         <small class="utils_lightText__12Ckm"><p>Дистрибуция музыки и менеджмент артиста</p></small>
         <small>
@@ -40,7 +40,7 @@ export default function Projects({ allProjectsData }) {
         </li>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
-        <a href="https://r.greysoul.ru/56bq8" target="_blank">грейсоль</a>
+        <a href="https://clc.to/UFpXkw" target="_blank">грейсоль</a>
         </div>
         <small class="utils_lightText__12Ckm"><p>YouTube-канал, на котором я выкладываю всё подряд</p></small>
         <small>
@@ -52,7 +52,7 @@ export default function Projects({ allProjectsData }) {
         </li>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
-        <a href="https://r.greysoul.ru/1jqhd" target="_blank">Angie</a>
+        <a href="https://clc.to/iCzI1Q" target="_blank">Angie</a>
         </div>
         <small class="utils_lightText__12Ckm"><p>Дистрибуция музыки и менеджмент артиста</p></small>
         <small>
@@ -65,7 +65,7 @@ export default function Projects({ allProjectsData }) {
         <h3 className={utilStyles.headingXL}>Закрытые</h3>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
-        <s><a href="https://r.greysoul.ru/xqes5" target="_blank">Greysoul Games</a></s>
+        <s><a href="https://gamejolt.com/@greysoulgames" target="_blank">Greysoul Games</a></s>
         </div>
         <small class="utils_lightText__12Ckm"><p>Игры, которые сейчас вызывают у меня чувство стыда</p></small>
         <small>
@@ -89,41 +89,41 @@ export default function Projects({ allProjectsData }) {
         </li>
         </ul>
         <h2 className={utilStyles.headingXL}>Соц-сети и другие платформы</h2>
-        <a href={`https://r.greysoul.ru/ei24g`} target="_blank"><strong>ВКонтакте</strong></a>
+        <a href={`https://vk.com/realgreysoul`} target="_blank"><strong>ВКонтакте</strong></a>
         <br>
         </br>
-        <a href={`https://r.greysoul.ru/wtn2x`} target="_blank"><strong>Instagram</strong></a>
+        <a href={`https://www.instagram.com/realgreysoul/`} target="_blank"><strong>Instagram</strong></a>
         <br>
         </br>
-        <a href={`https://r.greysoul.ru/ngcv9`} target="_blank"><strong>Telegram</strong></a>
+        <a href={`https://t.me/greysoul`} target="_blank"><strong>Telegram</strong></a>
         <br>
         </br>
-        <a href={`https://r.greysoul.ru/9baxg`} target="_blank"><strong>Блог</strong></a>
+        <a href={`https://t.me/mislisolya`} target="_blank"><strong>Блог</strong></a>
         <br>
         </br>
-        <a href={`https://r.greysoul.ru/pqckb`} target="_blank"><strong>Twitch</strong></a>
+        <a href={`https://www.twitch.tv/realgreysoul`} target="_blank"><strong>Twitch</strong></a>
         <br>
         </br>
-        <a href={`https://r.greysoul.ru/3vlkn`} target="_blank"><strong>Steam</strong></a>
+        <a href={`https://steamcommunity.com/id/realgreysoul/`} target="_blank"><strong>Steam</strong></a>
         <br>
         </br>
-        <a href={`https://r.greysoul.ru/skx54`} target="_blank"><strong>Social Club</strong></a>
+        <a href={`https://socialclub.rockstargames.com/member/RealGreysoul/`} target="_blank"><strong>Social Club</strong></a>
         <h2 className={utilStyles.headingXL}>Мои плейлисты в ВКонтакте</h2>
-        <a href={`https://r.greysoul.ru/xm34y`} target="_blank"><strong>Любимые треки</strong></a>
+        <a href={`https://clc.to/a4O5GQ`} target="_blank"><strong>Любимые треки</strong></a>
         <br>
         </br>
-        <a href={`https://r.greysoul.ru/5iazo`} target="_blank"><strong>Любимые Lo-Fi треки</strong></a>
+        <a href={`https://clc.to/7jcqhg`} target="_blank"><strong>Любимые Lo-Fi треки</strong></a>
         <h2 className={utilStyles.headingXL}>Донат</h2>
-        <a href={`https://r.greysoul.ru/e7r9v`} target="_blank"><strong>DonationAlerts</strong></a>
+        <a href={`https://www.donationalerts.com/r/realgreysoul`} target="_blank"><strong>DonationAlerts</strong></a>
         <br>
         </br>
-        <a href={`https://r.greysoul.ru/fiw0w`} target="_blank"><strong>QIWI Кошелёк</strong></a>
+        <a href={`https://qiwi.com/n/GREYSOUL`} target="_blank"><strong>QIWI Кошелёк</strong></a>
         <br>
         </br>
-        <a href={`https://r.greysoul.ru/h1s13`} target="_blank"><strong>ЮMoney <i>(Яндекс.Деньги)</i></strong></a>
+        <a href={`https://yoomoney.ru/to/410018468894777`} target="_blank"><strong>ЮMoney <i>(Яндекс.Деньги)</i></strong></a>
         <br>
         </br>
-        <a href={`https://r.greysoul.ru/tkouu`} target="_blank"><strong>VK Pay</strong></a>
+        <a href={`https://vk.me/moneysend/realgreysoul`} target="_blank"><strong>VK Pay</strong></a>
         <br>
         </br>
         Кошельки <strong>WebMoney</strong>:
