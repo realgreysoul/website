@@ -108,10 +108,7 @@ export default function Projects({ allProjectsData }) {
         <br>
         </br>
         <a href={`https://socialclub.rockstargames.com/member/RealGreysoul/`} target="_blank"><strong>Social Club</strong></a>
-        <h2 className={utilStyles.headingXL}>Мои плейлисты в ВКонтакте</h2>
-        <a href={`https://clc.to/a4O5GQ`} target="_blank"><strong>Любимые треки</strong></a>
-        <br>
-        </br>
+        <h2 className={utilStyles.headingXL}>Мои плейлисты в Spotify</h2>
         <a href={`https://clc.to/7jcqhg`} target="_blank"><strong>Любимые Lo-Fi треки</strong></a>
         <h2 className={utilStyles.headingXL}>Донат</h2>
         <a href={`https://www.donationalerts.com/r/realgreysoul`} target="_blank"><strong>DonationAlerts</strong></a>
