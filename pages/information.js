@@ -16,7 +16,7 @@ export default function Projects({ allProjectsData }) {
         <ul className={utilStyles.list}>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
-        <a href="https://clc.to/LamWQw" target="_blank">Greysoul Beats</a>
+        <a href="https://r.greysoul.ru/fwDx" target="_blank">Greysoul Beats</a>
         </div>
         <small class="utils_lightText__12Ckm"><p>Биты на любой вкус и цвет</p></small>
         <small>
@@ -28,7 +28,7 @@ export default function Projects({ allProjectsData }) {
         </li>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
-        <a href="https://clc.to/OINY8g" target="_blank">X1xBuch</a>
+        <a href="https://r.greysoul.ru/fwDE" target="_blank">X1xBuch</a>
         </div>
         <small class="utils_lightText__12Ckm"><p>Дистрибуция музыки и менеджмент артиста</p></small>
         <small>
@@ -40,7 +40,7 @@ export default function Projects({ allProjectsData }) {
         </li>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
-        <a href="https://clc.to/T9V2UQ" target="_blank">грейсоль</a>
+        <a href="https://r.greysoul.ru/fwDM" target="_blank">грейсоль</a>
         </div>
         <small class="utils_lightText__12Ckm"><p>YouTube-канал, на котором я выкладываю всё подряд</p></small>
         <small>
@@ -52,7 +52,7 @@ export default function Projects({ allProjectsData }) {
         </li>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
-        <a href="https://clc.to/jeHS7w" target="_blank">Angie</a>
+        <a href="https://r.greysoul.ru/fwDP" target="_blank">Angie</a>
         </div>
         <small class="utils_lightText__12Ckm"><p>Дистрибуция музыки и менеджмент артиста</p></small>
         <small>
@@ -109,7 +109,7 @@ export default function Projects({ allProjectsData }) {
         </br>
         <a href={`https://socialclub.rockstargames.com/member/RealGreysoul/`} target="_blank"><strong>Social Club</strong></a>
         <h2 className={utilStyles.headingXL}>Мои плейлисты в Spotify</h2>
-        <a href={`https://clc.to/XFIg1w`} target="_blank"><strong>Любимые Lo-Fi треки</strong></a>
+        <a href={`https://open.spotify.com/playlist/4cZ3JghnIH32KSMYYBibM1`} target="_blank"><strong>Любимые Lo-Fi треки</strong></a>
         <h2 className={utilStyles.headingXL}>Донат</h2>
         <a href={`https://www.donationalerts.com/r/realgreysoul`} target="_blank"><strong>DonationAlerts</strong></a>
         <br>
