@@ -16,7 +16,7 @@ export default function Projects({ allProjectsData }) {
         <ul className={utilStyles.list}>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
-        <a href="https://r.greysoul.ru/fwDx" target="_blank">Greysoul Beats</a>
+        <a href="https://vk.com/realgreysoulbeats" target="_blank">Greysoul Beats</a>
         </div>
         <small class="utils_lightText__12Ckm"><p>Биты на любой вкус и цвет</p></small>
         <small>
@@ -28,7 +28,7 @@ export default function Projects({ allProjectsData }) {
         </li>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
-        <a href="https://r.greysoul.ru/fwDE" target="_blank">X1xBuch</a>
+        <a href="https://vk.com/x1xbuch" target="_blank">X1xBuch</a>
         </div>
         <small class="utils_lightText__12Ckm"><p>Дистрибуция музыки и менеджмент артиста</p></small>
         <small>
@@ -40,7 +40,7 @@ export default function Projects({ allProjectsData }) {
         </li>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
-        <a href="https://r.greysoul.ru/fwDM" target="_blank">грейсоль</a>
+        <a href="http://www.youtube.com/channel/UCfBYBmvY2JgKNA6prrfFqhw" target="_blank">грейсоль</a>
         </div>
         <small class="utils_lightText__12Ckm"><p>YouTube-канал, на котором я выкладываю всё подряд</p></small>
         <small>
@@ -52,7 +52,7 @@ export default function Projects({ allProjectsData }) {
         </li>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
-        <a href="https://r.greysoul.ru/fwDP" target="_blank">Angie</a>
+        <a href="https://vk.com/angie_is_so_sexy" target="_blank">Angie</a>
         </div>
         <small class="utils_lightText__12Ckm"><p>Дистрибуция музыки и менеджмент артиста</p></small>
         <small>
