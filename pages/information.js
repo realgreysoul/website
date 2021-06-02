@@ -16,7 +16,7 @@ export default function Projects({ allProjectsData }) {
         <ul className={utilStyles.list}>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
-        <a href="https://r.greysoul.ru/fxcG" target="_blank">Greysoul Beats</a>
+        <a href="https://r.greysoul.ru/hFHG" target="_blank">Greysoul Beats</a>
         </div>
         <small class="utils_lightText__12Ckm"><p>Биты на любой вкус и цвет</p></small>
         <small>
@@ -28,7 +28,7 @@ export default function Projects({ allProjectsData }) {
         </li>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
-        <a href="https://r.greysoul.ru/fxcN" target="_blank">X1xBuch</a>
+        <a href="https://r.greysoul.ru/kzTb" target="_blank">X1xBuch</a>
         </div>
         <small class="utils_lightText__12Ckm"><p>Дистрибуция музыки и менеджмент артиста</p></small>
         <small>
@@ -52,7 +52,7 @@ export default function Projects({ allProjectsData }) {
         </li>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
-        <a href="https://r.greysoul.ru/fxcQ" target="_blank">Angie</a>
+        <a href="https://r.greysoul.ru/69zg" target="_blank">Angie</a>
         </div>
         <small class="utils_lightText__12Ckm"><p>Дистрибуция музыки и менеджмент артиста</p></small>
         <small>
