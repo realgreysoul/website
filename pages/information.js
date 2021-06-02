@@ -28,7 +28,7 @@ export default function Projects({ allProjectsData }) {
         </li>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
-        <a href="https://r.greysoul.ru/kzTb" target="_blank">X1xBuch</a>
+        <a href="https://vk.com/x1xbuch" target="_blank">X1xBuch</a>
         </div>
         <small class="utils_lightText__12Ckm"><p>Дистрибуция музыки и менеджмент артиста</p></small>
         <small>
@@ -52,7 +52,7 @@ export default function Projects({ allProjectsData }) {
         </li>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
-        <a href="https://r.greysoul.ru/69zg" target="_blank">Angie</a>
+        <a href="https://vk.com/angie_is_so_sexy" target="_blank">Angie</a>
         </div>
         <small class="utils_lightText__12Ckm"><p>Дистрибуция музыки и менеджмент артиста</p></small>
         <small>
