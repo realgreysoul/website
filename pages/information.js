@@ -54,7 +54,7 @@ export default function Projects({ allProjectsData }) {
         <div class="utils_listItemHeading__iji17">
         <a href="https://vk.com/angie_is_so_sexy" target="_blank">Angie</a>
         </div>
-        <small class="utils_lightText__12Ckm"><p>Дистрибуция музыки и менеджмент артиста</p></small>
+        <small class="utils_lightText__12Ckm"><p>Дистрибуция музыки</p></small>
         <small>
         <ul class="utils_list__S7_pe">
         <li class="utils_listItem__2eJpJ">
