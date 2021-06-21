@@ -8,7 +8,7 @@ export default function Footer() {
       <footer className={styles.footer}>
         <small class="utils_lightText__12Ckm">
         <p>© {today.getFullYear()} <strong>Greysoul</strong>. Все права защищены.</p>
-        <p>Сайт основан на <a href={`https://github.com/mwesterby/michaelwesterby.com`} target="_blank"><strong>репозитории</strong></a> с открытым исходным кодом, работает на фреймворке <a href={`https://nextjs.org/`} target="_blank"><strong>Next.js</strong></a> и хостится на платформе <a href={`https://vercel.com/`} target="_blank"><strong>Vercel</strong></a>.</p>
+        <p>Основано на <a href={`https://github.com/mwesterby/michaelwesterby.com`} target="_blank"><strong>репозитории</strong></a> с открытым исходным кодом, работает на фреймворке <a href={`https://nextjs.org/`} target="_blank"><strong>Next.js</strong></a> и хостится на платформе <a href={`https://vercel.com/`} target="_blank"><strong>Vercel</strong></a>.</p>
         </small>
       </footer>
   )
