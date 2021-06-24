@@ -16,7 +16,7 @@ export default function Projects({ allProjectsData }) {
         <ul className={utilStyles.list}>
         <li class="utils_listItem__2eJpJ">
         <div class="utils_listItemHeading__iji17">
-        <a href="https://vk.greysoul.ru/beats" target="_blank">Greysoul Beats</a>
+        <a href="https://go.greysoul.ru/vkbg" target="_blank">Greysoul Beats</a>
         </div>
         <small class="utils_lightText__12Ckm"><p>Биты на любой вкус и цвет</p></small>
         <small>
