@@ -101,13 +101,15 @@ export default function Projects({ allProjectsData }) {
         <a href={`https://t.me/mislisolya`} target="_blank"><strong>Блог</strong></a>
         <br>
         </br>
-        <a href={`https://www.twitch.tv/realgreysoul`} target="_blank"><strong>Twitch</strong></a>
-        <br>
-        </br>
         <a href={`https://steamcommunity.com/id/realgreysoul/`} target="_blank"><strong>Steam</strong></a>
         <br>
         </br>
-        <a href={`https://socialclub.rockstargames.com/member/RealGreysoul/`} target="_blank"><strong>Social Club</strong></a>
+        <a href={`https://twitter.com/realgreysoul`} target="_blank"><strong>Twitter</strong></a>
+        <br>
+        </br>
+        <a href={`https://www.twitch.tv/realgreysoul`} target="_blank"><strong>Twitch</strong></a>
+        <br>
+        </br>
         <h2 className={utilStyles.headingXL}>Мой плейлист в ВКонтакте</h2>
         <a href={`https://vk.com/music/playlist/205955149_91119850_f4156271f2b1885256`} target="_blank"><strong>Любимые Lo-Fi треки</strong></a>
         <h2 className={utilStyles.headingXL}>Донат</h2>
