@@ -658,19 +658,11 @@
         margin-bottom: calc(var(--padding-vertical) * -1) !important;
       }
       #error.columns > .wrapper > .inner > div:first-child,
-      #error.columns
-        > .wrapper
-        > .inner
-        > div:first-child
-        > .full:first-child {
+      #error.columns > .wrapper > .inner > div:first-child > .full:first-child {
         border-top-left-radius: inherit;
       }
       #error.columns > .wrapper > .inner > div:last-child,
-      #error.columns
-        > .wrapper
-        > .inner
-        > div:last-child
-        > .full:first-child {
+      #error.columns > .wrapper > .inner > div:last-child > .full:first-child {
         border-top-right-radius: inherit;
       }
       #error.columns > .wrapper > .inner > .full {
@@ -805,11 +797,7 @@
         border-top-left-radius: inherit;
       }
       #footer.columns > .wrapper > .inner > div:last-child,
-      #footer.columns
-        > .wrapper
-        > .inner
-        > div:last-child
-        > .full:first-child {
+      #footer.columns > .wrapper > .inner > div:last-child > .full:first-child {
         border-top-right-radius: inherit;
       }
       #footer.columns > .wrapper > .inner > .full {
@@ -1289,9 +1277,7 @@
                 </p>
                 <ul id="buttons01" class="style1 buttons">
                   <li>
-                    <a href="/" class="button n01"
-                      >Главная страница</a
-                    >
+                    <a href="/" class="button n01">Главная страница</a>
                   </li>
                 </ul>
               </div>
@@ -1301,7 +1287,11 @@
             <div class="wrapper">
               <div class="inner">
                 <p id="text07" class="style3">
-                  © 2022 Greysoul. Всё авторское содержимое данного сайта
+                  ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  Greysoul. Всё авторское содержимое данного сайта
                   <em>(к примеру, проекты, соц-сети, а также его логотип)</em>
                   принадлежит владельцу данного сайта.
                 </p>
