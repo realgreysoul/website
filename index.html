@@ -170,9 +170,6 @@
       section {
         display: block;
       }
-      .ru {
-        display: none;
-      }
       ::selection {
         background-color: #000000;
         color: #ffffff;
@@ -2120,31 +2117,5 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript">
-      var platformLanguage =
-          navigator &&
-          (navigator.language ||
-            navigator.browserLanguage ||
-            navigator.systemLanguage ||
-            navigator.userLanguage ||
-            null),
-        elemsRU,
-        elemsEN;
-      if (platformLanguage.match("ru") && document.getElementsByClassName) {
-        elemsRU = document.getElementsByClassName("ru");
-        elemsEN = document.getElementsByClassName("en");
-        var l = elemsEN.length;
-        while (l--) {
-          elemsEN[l].style.display = "none";
-        }
-        l = elemsEN.length;
-        while (l--) {
-          elemsRU[l].style.display = "inline-block";
-        }
-        document
-          .querySelectorAll("#buttons14")
-          .forEach((a) => (a.style.display = "none"));
-      }
-    </script>
   </body>
 </html>
