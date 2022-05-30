@@ -1316,6 +1316,7 @@
       .gallery ul li .thumbnail {
         border-radius: inherit;
         position: relative;
+        background-color: #000000;
       }
       .gallery ul li .frame {
         -webkit-backface-visibility: hidden;
@@ -1332,6 +1333,10 @@
       }
       .gallery ul li .caption {
         width: 100%;
+        border-left-width: 5px;
+        border-right-width: 5px;
+        border-color: #000000;
+        border-style: solid;
       }
       .gallery ul li .caption p {
         width: 100%;
@@ -1411,7 +1416,6 @@
       }
       .gallery.style1 ul li .thumbnail {
         transition: transform 0.25s ease, z-index 0.25s ease;
-        background-color: #000000;
       }
       .gallery.style1 ul li .thumbnail:hover {
         transform: scale(0.94);
