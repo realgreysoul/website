@@ -1165,6 +1165,145 @@
         position: absolute;
         width: 100%;
       }
+      #cryptocurrencies {
+        --alignment: center;
+        --flex-alignment: center;
+      }
+      #cryptocurrencies:not(:first-child) {
+        margin-top: 2.5rem !important;
+      }
+      #cryptocurrencies > .wrapper {
+        display: inline-block;
+        width: 75rem;
+        background-color: transparent;
+      }
+      #cryptocurrencies > .wrapper > .inner {
+        --gutters: 4rem;
+        --padding-horizontal: 0rem;
+        --padding-vertical: 0rem;
+        --spacing: 1.5rem;
+        padding: var(--padding-vertical) var(--padding-horizontal);
+      }
+      #cryptocurrencies.default > .wrapper > .inner > * {
+        margin-bottom: var(--spacing);
+        margin-top: var(--spacing);
+      }
+      #cryptocurrencies.default > .wrapper > .inner > *:first-child {
+        margin-top: 0 !important;
+      }
+      #cryptocurrencies.default > .wrapper > .inner > *:last-child {
+        margin-bottom: 0 !important;
+      }
+      #cryptocurrencies.columns > .wrapper > .inner {
+        flex-wrap: wrap;
+        display: flex;
+        align-items: flex-start;
+      }
+      #cryptocurrencies.columns > .wrapper > .inner > * {
+        flex-grow: 0;
+        flex-shrink: 0;
+        max-width: 100%;
+        text-align: var(--alignment);
+        padding: 0 0 0 var(--gutters);
+      }
+      #cryptocurrencies.columns > .wrapper > .inner > * > * {
+        margin-bottom: var(--spacing);
+        margin-top: var(--spacing);
+      }
+      #cryptocurrencies.columns > .wrapper > .inner > * > *:first-child {
+        margin-top: 0 !important;
+      }
+      #cryptocurrencies.columns > .wrapper > .inner > * > *:last-child {
+        margin-bottom: 0 !important;
+      }
+      #cryptocurrencies.columns > .wrapper > .inner > *:first-child {
+        margin-left: calc(var(--gutters) * -1);
+      }
+      #cryptocurrencies.default > .wrapper > .inner > .full {
+        margin-left: calc(var(--padding-horizontal) * -1);
+        max-width: none;
+        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+      }
+      #cryptocurrencies.default > .wrapper > .inner > .full:first-child {
+        margin-top: calc(var(--padding-vertical) * -1) !important;
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+      }
+      #cryptocurrencies.default > .wrapper > .inner > .full:last-child {
+        margin-bottom: calc(var(--padding-vertical) * -1) !important;
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+      }
+      #cryptocurrencies.columns > .wrapper > .inner > div > .full {
+        margin-left: calc(var(--gutters) * -0.5);
+        max-width: none;
+        width: calc(100% + var(--gutters) + 0.4725px);
+      }
+      #cryptocurrencies.columns > .wrapper > .inner > div:first-child > .full {
+        margin-left: calc(var(--padding-horizontal) * -1);
+        width: calc(
+          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
+            0.4725px
+        );
+      }
+      #cryptocurrencies.columns > .wrapper > .inner > div:last-child > .full {
+        width: calc(
+          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
+            0.4725px
+        );
+      }
+      #cryptocurrencies.columns > .wrapper > .inner > div > .full:first-child {
+        margin-top: calc(var(--padding-vertical) * -1) !important;
+      }
+      #cryptocurrencies.columns > .wrapper > .inner > div > .full:last-child {
+        margin-bottom: calc(var(--padding-vertical) * -1) !important;
+      }
+      #cryptocurrencies.columns > .wrapper > .inner > div:first-child,
+      #cryptocurrencies.columns
+        > .wrapper
+        > .inner
+        > div:first-child
+        > .full:first-child {
+        border-top-left-radius: inherit;
+      }
+      #cryptocurrencies.columns > .wrapper > .inner > div:last-child,
+      #cryptocurrencies.columns
+        > .wrapper
+        > .inner
+        > div:last-child
+        > .full:first-child {
+        border-top-right-radius: inherit;
+      }
+      #cryptocurrencies.columns > .wrapper > .inner > .full {
+        align-self: stretch;
+      }
+      #cryptocurrencies.columns > .wrapper > .inner > .full:first-child {
+        border-bottom-left-radius: inherit;
+        border-top-left-radius: inherit;
+      }
+      #cryptocurrencies.columns > .wrapper > .inner > .full:last-child {
+        border-bottom-right-radius: inherit;
+        border-top-right-radius: inherit;
+      }
+      #cryptocurrencies.columns
+        > .wrapper
+        > .inner
+        > .full
+        > .full:first-child:last-child {
+        border-radius: inherit;
+        height: calc(100% + (var(--padding-vertical) * 2));
+      }
+      #cryptocurrencies.columns
+        > .wrapper
+        > .inner
+        > .full
+        > .full:first-child:last-child
+        > * {
+        border-radius: inherit;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+      }
       #footer {
         --alignment: center;
         --flex-alignment: center;
@@ -1620,6 +1759,84 @@
         transition: transform 0.25s ease, color 0.25s ease,
           background-color 0.25s ease, border-color 0.25s ease;
       }
+      #buttons05 {
+        gap: 0.75rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      #buttons05:not(:first-child) {
+        margin-top: 2rem !important;
+      }
+      #buttons05:not(:last-child) {
+        margin-bottom: 2rem !important;
+      }
+      #buttons05 li a {
+        display: flex;
+        width: 100vw;
+        height: 4rem;
+        line-height: 4rem;
+        padding: 0 2rem;
+        vertical-align: middle;
+        font-family: "Inter", sans-serif;
+        font-size: 1em;
+        font-weight: 700;
+        border-radius: 2.5rem;
+        direction: var(--site-language-direction);
+        transition: transform 0.25s ease, color 0.25s ease,
+          background-color 0.25s ease, border-color 0.25s ease;
+      }
+      #buttons06 {
+        gap: 0.75rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      #buttons06:not(:first-child) {
+        margin-top: 2rem !important;
+      }
+      #buttons06:not(:last-child) {
+        margin-bottom: 2rem !important;
+      }
+      #buttons06 li a {
+        display: flex;
+        width: 100vw;
+        height: 4rem;
+        line-height: 4rem;
+        padding: 0 2rem;
+        vertical-align: middle;
+        font-family: "Inter", sans-serif;
+        font-size: 1em;
+        font-weight: 700;
+        border-radius: 2.5rem;
+        direction: var(--site-language-direction);
+        transition: transform 0.25s ease, color 0.25s ease,
+          background-color 0.25s ease, border-color 0.25s ease;
+      }
+      #buttons07 {
+        gap: 0.75rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      #buttons07:not(:first-child) {
+        margin-top: 2rem !important;
+      }
+      #buttons07:not(:last-child) {
+        margin-bottom: 2rem !important;
+      }
+      #buttons07 li a {
+        display: flex;
+        width: 100vw;
+        height: 4rem;
+        line-height: 4rem;
+        padding: 0 2rem;
+        vertical-align: middle;
+        font-family: "Inter", sans-serif;
+        font-size: 1em;
+        font-weight: 700;
+        border-radius: 2.5rem;
+        direction: var(--site-language-direction);
+        transition: transform 0.25s ease, color 0.25s ease,
+          background-color 0.25s ease, border-color 0.25s ease;
+      }
       #buttons04 .button {
         background-color: #000000;
         color: #ffffff;
@@ -1629,6 +1846,36 @@
       }
       #buttons04 .n01 {
         background-color: #8b3ffd;
+      }
+      #buttons05 .button {
+        background-color: #000000;
+        color: #ffffff;
+      }
+      #buttons05 li a:hover {
+        transform: scale(0.94);
+      }
+      #buttons05 .n01 {
+        background-color: #f7931a;
+      }
+      #buttons06 .button {
+        background-color: #000000;
+        color: #ffffff;
+      }
+      #buttons06 li a:hover {
+        transform: scale(0.94);
+      }
+      #buttons06 .n01 {
+        background-color: #0ac18e;
+      }
+      #buttons07 .button {
+        background-color: #000000;
+        color: #ffffff;
+      }
+      #buttons07 li a:hover {
+        transform: scale(0.94);
+      }
+      #buttons07 .n01 {
+        background-color: #88cbf5;
       }
       #buttons01 {
         gap: 0.75rem;
@@ -2053,6 +2300,141 @@
           .bg {
           min-height: 35rem;
         }
+        #cryptocurrencies {
+          --alignment: center;
+          --flex-alignment: center;
+        }
+        #cryptocurrencies.columns > .wrapper > .inner {
+          flex-direction: column !important;
+          flex-wrap: nowrap !important;
+        }
+        #cryptocurrencies.columns > .wrapper > .inner > span {
+          height: 0;
+          margin-top: calc(var(--gutters) * -1);
+          pointer-events: none;
+          visibility: hidden;
+        }
+        #cryptocurrencies.columns > .wrapper > .inner > *:first-child {
+          margin-left: 0 !important;
+          padding-top: 0 !important;
+        }
+        #cryptocurrencies.columns > .wrapper > .inner > * {
+          padding: calc(var(--gutters) * 0.5) 0 !important;
+        }
+        #cryptocurrencies.columns > .wrapper > .inner > *:last-child {
+          padding-bottom: 0 !important;
+        }
+        #cryptocurrencies.columns > .wrapper > .inner > div > .full {
+          margin-left: calc(var(--padding-horizontal) * -1);
+          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+        }
+        #cryptocurrencies.columns
+          > .wrapper
+          > .inner
+          > div:first-of-type
+          > .full {
+          margin-left: calc(var(--padding-horizontal) * -1);
+          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+        }
+        #cryptocurrencies.columns
+          > .wrapper
+          > .inner
+          > div:last-of-type
+          > .full {
+          margin-left: calc(var(--padding-horizontal) * -1);
+          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+        }
+        #cryptocurrencies.columns
+          > .wrapper
+          > .inner
+          > div
+          > .full:first-child {
+          margin-top: calc(var(--gutters) * -0.5) !important;
+        }
+        #cryptocurrencies.columns > .wrapper > .inner > div > .full:last-child {
+          margin-bottom: calc(var(--gutters) * -0.5) !important;
+        }
+        #cryptocurrencies.columns
+          > .wrapper
+          > .inner
+          > div:first-of-type
+          > .full:first-child {
+          margin-top: calc(var(--padding-vertical) * -1) !important;
+        }
+        #cryptocurrencies.columns
+          > .wrapper
+          > .inner
+          > div:last-of-type
+          > .full:last-child {
+          margin-bottom: calc(var(--padding-vertical) * -1) !important;
+        }
+        #cryptocurrencies.columns > .wrapper > .inner > div:first-of-type,
+        #cryptocurrencies.columns
+          > .wrapper
+          > .inner
+          > div:first-of-type
+          > .full:first-child {
+          border-top-left-radius: inherit;
+          border-top-right-radius: inherit;
+        }
+        #cryptocurrencies.columns > .wrapper > .inner > div:last-of-type,
+        #cryptocurrencies.columns
+          > .wrapper
+          > .inner
+          > div:last-of-type
+          > .full:last-child {
+          border-bottom-left-radius: inherit;
+          border-bottom-right-radius: inherit;
+        }
+        #cryptocurrencies.columns > .wrapper > .inner > div:first-of-type,
+        #cryptocurrencies.columns
+          > .wrapper
+          > .inner
+          > div:first-of-type
+          > .full:last-child {
+          border-bottom-left-radius: 0 !important;
+        }
+        #cryptocurrencies.columns > .wrapper > .inner > div:last-of-type,
+        #cryptocurrencies.columns
+          > .wrapper
+          > .inner
+          > div:last-of-type
+          > .full:first-child {
+          border-top-right-radius: 0 !important;
+        }
+        #cryptocurrencies.columns
+          > .wrapper
+          > .inner
+          > .full
+          > .full:first-child:last-child {
+          height: auto;
+        }
+        #cryptocurrencies.columns
+          > .wrapper
+          > .inner
+          > .full
+          > .full:first-child:last-child
+          > * {
+          height: auto;
+          position: relative;
+          width: auto;
+        }
+        #cryptocurrencies.columns
+          > .wrapper
+          > .inner
+          > .full
+          > .full:first-child:last-child.image
+          img {
+          max-height: 35rem;
+        }
+        #cryptocurrencies.columns
+          > .wrapper
+          > .inner
+          > .full
+          > .full:first-child:last-child.slideshow
+          .bg {
+          min-height: 35rem;
+        }
         #footer {
           --alignment: center;
           --flex-alignment: center;
@@ -2379,6 +2761,35 @@
           .bg {
           min-height: auto;
         }
+        #cryptocurrencies:not(:first-child) {
+          margin-top: 2.5rem !important;
+        }
+        #cryptocurrencies > .wrapper > .inner {
+          --gutters: 4rem;
+          --padding-horizontal: 0rem;
+          --padding-vertical: 0rem;
+          --spacing: 1.5rem;
+        }
+        #cryptocurrencies.columns > .wrapper > .inner > * {
+          padding: calc(var(--gutters) * 0.5) 0 !important;
+        }
+        #cryptocurrencies.columns
+          > .wrapper
+          > .inner
+          > .full
+          > .full:first-child:last-child.image
+          img {
+          max-height: none;
+        }
+        #cryptocurrencies.columns
+          > .wrapper
+          > .inner
+          > .full
+          > .full:first-child:last-child.slideshow
+          .bg {
+          min-height: auto;
+        }
+
         #footer:not(:first-child) {
           margin-top: 4rem !important;
         }
@@ -2463,6 +2874,36 @@
           letter-spacing: 0rem;
           font-size: 1em;
         }
+        #buttons05:not(:first-child) {
+          margin-top: 1.5rem !important;
+        }
+        #buttons05:not(:last-child) {
+          margin-bottom: 1.5rem !important;
+        }
+        #buttons05 li a {
+          letter-spacing: 0rem;
+          font-size: 1em;
+        }
+        #buttons06:not(:first-child) {
+          margin-top: 1.5rem !important;
+        }
+        #buttons06:not(:last-child) {
+          margin-bottom: 1.5rem !important;
+        }
+        #buttons06 li a {
+          letter-spacing: 0rem;
+          font-size: 1em;
+        }
+        #buttons07:not(:first-child) {
+          margin-top: 1.5rem !important;
+        }
+        #buttons07:not(:last-child) {
+          margin-bottom: 1.5rem !important;
+        }
+        #buttons07 li a {
+          letter-spacing: 0rem;
+          font-size: 1em;
+        }
         #buttons01:not(:first-child) {
           margin-top: 1.5rem !important;
         }
@@ -2485,6 +2926,9 @@
           --spacing: 1.3125rem;
         }
         #donate > .wrapper > .inner {
+          --spacing: 1.3125rem;
+        }
+        #cryptocurrencies > .wrapper > .inner {
           --spacing: 1.3125rem;
         }
         #footer > .wrapper > .inner {
@@ -2513,6 +2957,33 @@
           flex-wrap: nowrap;
         }
         #buttons04 li a {
+          display: inline-flex;
+          max-width: 100%;
+          width: 100%;
+        }
+        #buttons05 {
+          flex-direction: column;
+          flex-wrap: nowrap;
+        }
+        #buttons05 li a {
+          display: inline-flex;
+          max-width: 100%;
+          width: 100%;
+        }
+        #buttons06 {
+          flex-direction: column;
+          flex-wrap: nowrap;
+        }
+        #buttons06 li a {
+          display: inline-flex;
+          max-width: 100%;
+          width: 100%;
+        }
+        #buttons07 {
+          flex-direction: column;
+          flex-wrap: nowrap;
+        }
+        #buttons07 li a {
           display: inline-flex;
           max-width: 100%;
           width: 100%;
@@ -2587,6 +3058,12 @@
           --padding-vertical: 0rem;
           --spacing: 1.125rem;
         }
+        #cryptocurrencies > .wrapper > .inner {
+          --gutters: 3rem;
+          --padding-horizontal: 0rem;
+          --padding-vertical: 0rem;
+          --spacing: 1.125rem;
+        }
         #footer > .wrapper > .inner {
           --gutters: 3rem;
           --padding-horizontal: 0rem;
@@ -2612,6 +3089,15 @@
           gap: 0.5625rem;
         }
         #buttons04 {
+          gap: 0.5625rem;
+        }
+        #buttons05 {
+          gap: 0.5625rem;
+        }
+        #buttons06 {
+          gap: 0.5625rem;
+        }
+        #buttons07 {
           gap: 0.5625rem;
         }
         #buttons01 {
@@ -2970,6 +3456,49 @@
                     >
                   </li>
                 </ul>
+              </div>
+            </div>
+          </div>
+          <div id="cryptocurrencies" class="container default">
+            <div class="wrapper">
+              <div class="inner">
+                <h2 id="text20" class="style4">Донат через криптовалюту</h2>
+                <ul id="buttons05" class="buttons">
+                  <li>
+                    <a
+                      href="bitcoin:1Nj1NNU3NcHeFZG8rBvuS5PW8aBSWxFbYL"
+                      class="button n01"
+                      >Bitcoin</a
+                    >
+                  </li>
+                </ul>
+                <p id="text20" class="style2">
+                  1Nj1NNU3NcHeFZG8rBvuS5PW8aBSWxFbYL
+                </p>
+                <ul id="buttons06" class="buttons">
+                  <li>
+                    <a
+                      href="bitcoincash:1K2qpamdMRBKM9bYEY7HL5nwpubELE7N2z"
+                      class="button n01"
+                      >Bitcoin Cash</a
+                    >
+                  </li>
+                </ul>
+                <p id="text21" class="style2">
+                  1K2qpamdMRBKM9bYEY7HL5nwpubELE7N2z
+                </p>
+                <ul id="buttons07" class="buttons">
+                  <li>
+                    <a
+                      href="litecoin:ltc1qluggcksz6udftck9ts0xn4d4pqcagx2x4kdvh4"
+                      class="button n01"
+                      >Litecoin</a
+                    >
+                  </li>
+                </ul>
+                <p id="text22" class="style2">
+                  ltc1qluggcksz6udftck9ts0xn4d4pqcagx2x4kdvh4
+                </p>
               </div>
             </div>
           </div>
