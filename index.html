@@ -1516,10 +1516,10 @@
       .gallery.style1 ul li .caption p {
         border-bottom-left-radius: inherit;
         border-bottom-right-radius: inherit;
-        padding-bottom: 0.703125rem;
-        padding-left: 1.125rem;
-        padding-right: 1.125rem;
-        padding-top: 0.703125rem;
+        padding-bottom: 0.625rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.625rem;
         text-align: center;
         color: #ffffff;
         background-color: #000000;
@@ -1530,6 +1530,10 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         font-weight: 700;
+        border-left-width: 5px;
+        border-right-width: 5px;
+        border-color: #000000;
+        border-style: solid;
       }
       .gallery.style1 ul li .thumbnail:hover + .caption {
         opacity: 0;
@@ -1553,87 +1557,6 @@
         background-color: #000000;
       }
       .gallery.style1 ul li .thumbnail:hover {
-        transform: scale(0.94);
-        z-index: 1;
-      }
-      .gallery.style2:not(:first-child) {
-        margin-top: 2rem !important;
-      }
-      .gallery.style2:not(:last-child) {
-        margin-bottom: 2rem !important;
-      }
-      .gallery.style2 .inner {
-        max-width: 100%;
-        width: 100%;
-      }
-      .gallery.style2 ul li {
-        border-radius: 3rem;
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        flex-shrink: 1;
-      }
-      .gallery.style2 ul li .frame {
-        border-radius: 3rem;
-        border-color: #000000;
-        border-style: solid;
-        border-width: 5px;
-        display: flex;
-        flex-grow: 1;
-        flex-shrink: 1;
-      }
-      .gallery.style2 ul li .caption {
-        opacity: 1;
-        align-items: flex-end;
-        border-radius: inherit;
-        display: flex;
-        height: 100%;
-        left: 0;
-        pointer-events: none;
-        position: absolute;
-        top: 0;
-        transition: opacity 0.25s ease, transform 0.25s ease, z-index 0.25s ease;
-      }
-      .gallery.style2 ul li .caption p {
-        border-bottom-left-radius: calc(3rem - 5px);
-        border-bottom-right-radius: calc(3rem - 5px);
-        padding-bottom: 0.625rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-top: 0.625rem;
-        margin: 5px;
-        text-align: center;
-        color: #000000;
-        background-color: #ffffff;
-        font-family: "Inter", sans-serif;
-        font-size: 1em;
-        line-height: 1.5;
-        overflow-x: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        font-weight: 700;
-      }
-      .gallery.style2 ul li .thumbnail:hover + .caption {
-        opacity: 0;
-        transform: scale(0.94);
-        z-index: 2;
-      }
-      .gallery.style2 ul {
-        gap: 1.5rem;
-      }
-      .gallery.style2 ul li img {
-        display: block;
-        flex-grow: 1;
-        flex-shrink: 1;
-        height: auto;
-        max-height: 17.5rem;
-        object-fit: cover;
-        object-position: center;
-      }
-      .gallery.style2 ul li .thumbnail {
-        transition: transform 0.25s ease, z-index 0.25s ease;
-      }
-      .gallery.style2 ul li .thumbnail:hover {
         transform: scale(0.94);
         z-index: 1;
       }
@@ -2831,19 +2754,6 @@
         .gallery.style1 ul li img {
           max-height: 13.125rem;
         }
-        .gallery.style2:not(:first-child) {
-          margin-top: 1.5rem !important;
-        }
-        .gallery.style2:not(:last-child) {
-          margin-bottom: 1.5rem !important;
-        }
-        .gallery.style2 ul li .caption p {
-          letter-spacing: 0rem;
-          font-size: 1em;
-        }
-        .gallery.style2 ul li img {
-          max-height: 13.125rem;
-        }
         #buttons02:not(:first-child) {
           margin-top: 1.5rem !important;
         }
@@ -3076,12 +2986,6 @@
         .gallery.style1 ul {
           gap: 1.125rem;
         }
-        .gallery.style2 ul li .caption p {
-          font-size: 1em;
-        }
-        .gallery.style2 ul {
-          gap: 1.125rem;
-        }
         #buttons02 {
           gap: 0.5625rem;
         }
@@ -3302,7 +3206,7 @@
                   </div>
                 </div>
                 <p id="text14" class="style2">Биты на любой вкус и цвет</p>
-                <div id="gallery08" class="style2 gallery">
+                <div id="gallery08" class="style1 gallery">
                   <div class="inner">
                     <ul>
                       <li>
@@ -3323,7 +3227,7 @@
                 <p id="text15" class="style2">
                   Кликер про человека с кодовым именем mrEblan
                 </p>
-                <div id="gallery09" class="style2 gallery">
+                <div id="gallery09" class="style1 gallery">
                   <div class="inner">
                     <ul>
                       <li>
@@ -3344,7 +3248,7 @@
                 <p id="text16" class="style2">
                   YouTube-канал, на котором я выкладываю всё подряд
                 </p>
-                <div id="gallery10" class="style2 gallery">
+                <div id="gallery10" class="style1 gallery">
                   <div class="inner">
                     <ul>
                       <li>
