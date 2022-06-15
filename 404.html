@@ -760,10 +760,14 @@
         html {
           font-size: 9pt;
         }
+        #main {
+          --alignment: center;
+          --flex-alignment: center;
+        }
         #main > .inner {
           --padding-horizontal: 2rem;
-          --padding-vertical: 3.5rem;
-          --spacing: 4rem;
+          --padding-vertical: 0rem;
+          --spacing: 3rem;
         }
         .container.style1 > .wrapper > .inner {
           --gutters: 6rem;
@@ -950,7 +954,7 @@
       }
       @media (max-width: 480px) {
         #main > .inner {
-          --spacing: 3.0625rem;
+          --spacing: 3rem;
         }
         .container.style1 > .wrapper > .inner {
           --spacing: 1.09375rem;
@@ -968,8 +972,8 @@
       @media (max-width: 360px) {
         #main > .inner {
           --padding-horizontal: 1.5rem;
-          --padding-vertical: 2.625rem;
-          --spacing: 2.25rem;
+          --padding-vertical: 0rem;
+          --spacing: 2.625rem;
         }
         .container.style1 > .wrapper > .inner {
           --gutters: 4.5rem;
