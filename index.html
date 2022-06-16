@@ -306,19 +306,20 @@
         align-items: center;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         min-height: var(--viewport-height);
         overflow: hidden;
         position: relative;
         z-index: 2;
+        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
       }
       #main {
         --alignment: center;
         --flex-alignment: center;
-        --border-radius-tl: 0;
-        --border-radius-tr: 0;
-        --border-radius-br: 0;
-        --border-radius-bl: 0;
+        --border-radius-tl: 3rem;
+        --border-radius-tr: 3rem;
+        --border-radius-br: 3rem;
+        --border-radius-bl: 3rem;
         align-items: center;
         display: flex;
         flex-grow: 0;
@@ -328,12 +329,15 @@
         position: relative;
         text-align: var(--alignment);
         z-index: 1;
+        background-color: transparent;
+        border-radius: var(--border-radius-tl) var(--border-radius-tr)
+          var(--border-radius-br) var(--border-radius-bl);
       }
       #main > .inner {
         --padding-horizontal: 3rem;
-        --padding-vertical: 4rem;
-        --spacing: 0.75rem;
-        --width: 30rem;
+        --padding-vertical: 2rem;
+        --spacing: 0rem;
+        --width: 28rem;
         border-radius: var(--border-radius-tl) var(--border-radius-tr)
           var(--border-radius-br) var(--border-radius-bl);
         max-width: 100%;
@@ -460,129 +464,124 @@
       p mark {
         -webkit-text-fill-color: currentcolor;
       }
-      #text02:not(:first-child) {
-        margin-top: 2rem !important;
+      h1.style1:not(:first-child),
+      h2.style1:not(:first-child),
+      h3.style1:not(:first-child),
+      p.style1:not(:first-child) {
+        margin-top: 1.5rem !important;
       }
-      #text02:not(:last-child) {
-        margin-bottom: 2rem !important;
+      h1.style1:not(:last-child),
+      h2.style1:not(:last-child),
+      h3.style1:not(:last-child),
+      p.style1:not(:last-child) {
+        margin-bottom: 1.5rem !important;
       }
-      #text02 {
+      h1.style1,
+      h2.style1,
+      h3.style1,
+      p.style1 {
         color: #000000;
         font-family: "Inter", sans-serif;
-        font-size: 3em;
-        line-height: 1.25;
+        font-size: 3.125em;
+        line-height: 1.5;
         font-weight: 900;
       }
-      #text02 a {
+      h1.style1 a,
+      h2.style1 a,
+      h3.style1 a,
+      p.style1 a {
         text-decoration: underline;
       }
-      #text02 a:hover {
+      h1.style1 a:hover,
+      h2.style1 a:hover,
+      h3.style1 a:hover,
+      p.style1 a:hover {
         text-decoration: none;
       }
-      #text02 span.p:nth-child(n + 2) {
+      h1.style1 span.p:nth-child(n + 2),
+      h2.style1 span.p:nth-child(n + 2),
+      h3.style1 span.p:nth-child(n + 2),
+      p.style1 span.p:nth-child(n + 2) {
         margin-top: 1rem;
       }
-      #text06 {
-        color: #545454;
-        font-family: "Inter", sans-serif;
-        font-size: 1em;
-        line-height: 1.875;
-        font-weight: 400;
+      h1.style3:not(:first-child),
+      h2.style3:not(:first-child),
+      h3.style3:not(:first-child),
+      p.style3:not(:first-child) {
+        margin-top: 3rem !important;
       }
-      #text06 a {
+      h1.style3:not(:last-child),
+      h2.style3:not(:last-child),
+      h3.style3:not(:last-child),
+      p.style3:not(:last-child) {
+        margin-bottom: 3rem !important;
+      }
+      h1.style3,
+      h2.style3,
+      h3.style3,
+      p.style3 {
+        color: #000000;
+        font-family: "Inter", sans-serif;
+        font-size: 3.125em;
+        line-height: 1.5;
+        font-weight: 900;
+      }
+      h1.style3 a,
+      h2.style3 a,
+      h3.style3 a,
+      p.style3 a {
         text-decoration: underline;
       }
-      #text06 a:hover {
+      h1.style3 a:hover,
+      h2.style3 a:hover,
+      h3.style3 a:hover,
+      p.style3 a:hover {
         text-decoration: none;
       }
-      #text06 span.p:nth-child(n + 2) {
-        margin-top: 1rem;
-      }
-      #text04 {
-        color: #545454;
-        font-family: "Inter", sans-serif;
-        font-size: 1em;
-        line-height: 1.875;
-        font-weight: 400;
-      }
-      #text04 a {
-        text-decoration: underline;
-      }
-      #text04 a:hover {
-        text-decoration: none;
-      }
-      #text04 span.p:nth-child(n + 2) {
-        margin-top: 1rem;
-      }
-      #text08 {
-        color: #545454;
-        font-family: "Inter", sans-serif;
-        font-size: 1em;
-        line-height: 1.875;
-        font-weight: 400;
-      }
-      #text08 a {
-        text-decoration: underline;
-      }
-      #text08 a:hover {
-        text-decoration: none;
-      }
-      #text08 span.p:nth-child(n + 2) {
-        margin-top: 1rem;
-      }
-      #text05 {
-        color: #545454;
-        font-family: "Inter", sans-serif;
-        font-size: 1em;
-        line-height: 1.875;
-        font-weight: 400;
-      }
-      #text05 a {
-        text-decoration: none;
-      }
-      #text05 a:hover {
-        text-decoration: underline;
-      }
-      #text05 span.p:nth-child(n + 2) {
+      h1.style3 span.p:nth-child(n + 2),
+      h2.style3 span.p:nth-child(n + 2),
+      h3.style3 span.p:nth-child(n + 2),
+      p.style3 span.p:nth-child(n + 2) {
         margin-top: 1rem;
       }
       h1.style4:not(:first-child),
       h2.style4:not(:first-child),
       h3.style4:not(:first-child),
       p.style4:not(:first-child) {
-        margin-top: 3rem !important;
+        margin-top: 2.5rem !important;
       }
       h1.style4:not(:last-child),
       h2.style4:not(:last-child),
       h3.style4:not(:last-child),
       p.style4:not(:last-child) {
-        margin-bottom: 3rem !important;
+        margin-bottom: 2.5rem !important;
       }
       h1.style4,
       h2.style4,
       h3.style4,
       p.style4 {
-        color: #000000;
+        color: #545454;
         font-family: "Inter", sans-serif;
-        font-size: 2.5em;
+        font-size: 1em;
         line-height: 1.875;
-        font-weight: 900;
+        font-weight: 400;
       }
       h1.style4 a,
       h2.style4 a,
       h3.style4 a,
       p.style4 a {
+        color: #000000;
         text-decoration: none;
       }
       h1.style4 a:hover,
       h2.style4 a:hover,
       h3.style4 a:hover,
       p.style4 a:hover {
-        text-decoration: underline;
+        color: #545454;
       }
-      h1.style4,
-      h2.style4,
-      h3.style4,
+      h1.style4 span.p:nth-child(n + 2),
+      h2.style4 span.p:nth-child(n + 2),
+      h3.style4 span.p:nth-child(n + 2),
       p.style4 span.p:nth-child(n + 2) {
         margin-top: 1rem;
       }
@@ -590,13 +589,13 @@
       h2.style2:not(:first-child),
       h3.style2:not(:first-child),
       p.style2:not(:first-child) {
-        margin-top: 2.5rem !important;
+        margin-top: 1rem !important;
       }
       h1.style2:not(:last-child),
       h2.style2:not(:last-child),
       h3.style2:not(:last-child),
       p.style2:not(:last-child) {
-        margin-bottom: 2.5rem !important;
+        margin-bottom: 1rem !important;
       }
       h1.style2,
       h2.style2,
@@ -612,47 +611,223 @@
       h2.style2 a,
       h3.style2 a,
       p.style2 a {
+        color: #000000;
         text-decoration: none;
       }
       h1.style2 a:hover,
       h2.style2 a:hover,
       h3.style2 a:hover,
       p.style2 a:hover {
-        text-decoration: underline;
+        color: #545454;
       }
-      h1.style2,
-      h2.style2,
-      h3.style2,
+      h1.style2 span.p:nth-child(n + 2),
+      h2.style2 span.p:nth-child(n + 2),
+      h3.style2 span.p:nth-child(n + 2),
       p.style2 span.p:nth-child(n + 2) {
         margin-top: 1rem;
       }
-      h1.style3,
-      h2.style3,
-      h3.style3,
-      p.style3 {
-        color: #727272;
+      h1.style5:not(:first-child),
+      h2.style5:not(:first-child),
+      h3.style5:not(:first-child),
+      p.style5:not(:first-child) {
+        margin-top: 1rem !important;
+      }
+      h1.style5:not(:last-child),
+      h2.style5:not(:last-child),
+      h3.style5:not(:last-child),
+      p.style5:not(:last-child) {
+        margin-bottom: 1rem !important;
+      }
+      h1.style5,
+      h2.style5,
+      h3.style5,
+      p.style5 {
+        color: #808080;
         font-family: "Inter", sans-serif;
         font-size: 0.625em;
         line-height: 1.875;
         font-weight: 400;
       }
-      h1.style3 a,
-      h2.style3 a,
-      h3.style3 a,
-      p.style3 a {
+      h1.style5 a,
+      h2.style5 a,
+      h3.style5 a,
+      p.style5 a {
+        color: #000000;
         text-decoration: none;
       }
-      h1.style3 a:hover,
-      h2.style3 a:hover,
-      h3.style3 a:hover,
-      p.style3 a:hover {
-        text-decoration: underline;
+      h1.style5 a:hover,
+      h2.style5 a:hover,
+      h3.style5 a:hover,
+      p.style5 a:hover {
+        color: #545454;
       }
-      h1.style3,
-      h2.style3,
-      h3.style3,
-      p.style3 span.p:nth-child(n + 2) {
+      h1.style5 span.p:nth-child(n + 2),
+      h2.style5 span.p:nth-child(n + 2),
+      h3.style5 span.p:nth-child(n + 2),
+      p.style5 span.p:nth-child(n + 2) {
         margin-top: 1rem;
+      }
+      .gallery .inner {
+        display: inline-block;
+        max-width: 100%;
+        vertical-align: middle;
+      }
+      .gallery ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: var(--flex-alignment);
+      }
+      .gallery ul li {
+        position: relative;
+      }
+      .gallery ul li .thumbnail {
+        background-color: #000000;
+        border-radius: inherit;
+        position: relative;
+      }
+      .gallery ul li .frame {
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: top;
+      }
+      .gallery ul li img {
+        margin: 0;
+        max-width: 100%;
+        vertical-align: top;
+        width: auto;
+      }
+      .gallery ul li .caption {
+        width: 100%;
+      }
+      .gallery ul li .caption p {
+        width: 100%;
+      }
+      .gallery.style1 .inner {
+        max-width: 100%;
+      }
+      .gallery.style1 ul li {
+        border-radius: 3rem;
+        display: inline-block;
+      }
+      .gallery.style1 ul li .frame {
+        border-radius: 3rem;
+        border-color: #000000;
+        border-style: solid;
+        border-width: 5px;
+      }
+      .gallery.style1 ul li .caption {
+        opacity: 1;
+        align-items: flex-end;
+        border-radius: inherit;
+        display: flex;
+        height: 100%;
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        transition: opacity 0.25s ease, transform 0.25s ease, z-index 0.25s ease;
+      }
+      .gallery.style1 ul li .caption p {
+        border-bottom-left-radius: calc(3rem - 5px);
+        border-bottom-right-radius: calc(3rem - 5px);
+        padding-bottom: 0.625rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.625rem;
+        margin: 5px;
+        color: #000000;
+        background-color: #ffffff;
+        font-family: "Inter", sans-serif;
+        font-size: 1em;
+        line-height: 1.5;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 700;
+      }
+      .gallery.style1 ul li .thumbnail:hover + .caption {
+        opacity: 0;
+        transform: scale(0.94);
+        z-index: 2;
+      }
+      .gallery.style1 ul {
+        gap: 0.5rem;
+      }
+      .gallery.style1 ul li .thumbnail {
+        display: block;
+        transition: transform 0.25s ease, z-index 0.25s ease;
+      }
+      .gallery.style1 ul li img {
+        height: auto;
+        max-height: 30rem;
+      }
+      .gallery.style1 ul li .thumbnail:hover {
+        transform: scale(0.94);
+        z-index: 1;
+      }
+      .gallery.style2 .inner {
+        max-width: 100%;
+      }
+      .gallery.style2 ul li {
+        border-radius: 3rem;
+        display: inline-block;
+      }
+      .gallery.style2 ul li .frame {
+        border-radius: 3rem;
+        border-color: #000000;
+        border-style: solid;
+        border-width: 5px;
+      }
+      .gallery.style2 ul li .caption {
+        opacity: 1;
+        align-items: flex-end;
+        border-radius: inherit;
+        display: flex;
+        height: 100%;
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        transition: opacity 0.25s ease, transform 0.25s ease, z-index 0.25s ease;
+      }
+      .gallery.style2 ul li .caption p {
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+        padding-bottom: 0.625rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.625rem;
+        color: #ffffff;
+        background-color: #000000;
+        font-family: "Inter", sans-serif;
+        font-size: 1em;
+        line-height: 1.5;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 700;
+      }
+      .gallery.style2 ul li .thumbnail:hover + .caption {
+        opacity: 0;
+        transform: scale(0.94);
+        z-index: 2;
+      }
+      .gallery.style2 ul {
+        gap: 0.5rem;
+      }
+      .gallery.style2 ul li .thumbnail {
+        display: block;
+        transition: transform 0.25s ease, z-index 0.25s ease;
+      }
+      .gallery.style2 ul li img {
+        height: auto;
+        max-height: 30rem;
+      }
+      .gallery.style2 ul li .thumbnail:hover {
+        transform: scale(0.94);
+        z-index: 1;
       }
       .icons {
         display: flex;
@@ -687,44 +862,44 @@
       .icons li a .label {
         display: none;
       }
-      #icons02 {
-        font-size: 1.25em;
-        gap: 1.25rem;
+      #icons01 {
+        font-size: 1.375em;
+        gap: 1rem;
       }
-      #icons02:not(:first-child) {
-        margin-top: 3rem !important;
+      #icons01:not(:first-child) {
+        margin-top: 2.5rem !important;
       }
-      #icons02:not(:last-child) {
-        margin-bottom: 3rem !important;
+      #icons01:not(:last-child) {
+        margin-bottom: 2.5rem !important;
       }
-      #icons02 li a {
+      #icons01 li a {
         border-radius: 100%;
         height: 2em;
         width: 2em;
         transition: transform 0.25s ease, color 0.25s ease,
           background-color 0.25s ease, border-color 0.25s ease;
       }
-      #icons02 li a svg {
+      #icons01 li a svg {
         height: 60%;
         width: 60%;
         transition: fill 0.25s ease;
       }
-      #icons02 a {
+      #icons01 a {
         background-color: #000000;
       }
-      #icons02 a svg {
+      #icons01 a svg {
         fill: #ffffff;
       }
-      #icons02 a:hover {
-        background-color: #000000 !important;
+      #icons01 a:hover {
+        background-color: #545454 !important;
       }
-      #icons02 li a + svg {
+      #icons01 li a + svg {
         transition: transform 0.25s ease, fill 0.25s ease, stroke 0.25s ease;
       }
-      #icons02 li a:hover {
+      #icons01 li a:hover {
         transform: scale(0.8875);
       }
-      #icons02 li a:hover + svg {
+      #icons01 li a:hover + svg {
         transform: scale(0.8875);
       }
       .container {
@@ -759,259 +934,124 @@
         border-bottom-left-radius: inherit;
         border-bottom-right-radius: inherit;
       }
-      #header {
-        --alignment: center;
-        --flex-alignment: center;
-      }
-      #header > .wrapper {
-        display: inline-block;
-        width: 75rem;
+      .container.style1 {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
         background-color: transparent;
       }
-      #header > .wrapper > .inner {
-        --gutters: 4rem;
-        --padding-horizontal: 0rem;
-        --padding-vertical: 0rem;
-        --spacing: 1.5rem;
+      .container.style1 > .wrapper > .inner {
+        --gutters: 2rem;
+        --padding-horizontal: 2rem;
         padding: var(--padding-vertical) var(--padding-horizontal);
       }
-      #header.default > .wrapper > .inner > * {
-        margin-bottom: 1em;
-        margin-top: 1em;
-      }
-      #header.default > .wrapper > .inner > *:first-child {
-        margin-top: 0 !important;
-      }
-      #header.default > .wrapper > .inner > *:last-child {
-        margin-bottom: 0 !important;
-      }
-      #header.columns > .wrapper > .inner {
-        flex-wrap: wrap;
-        display: flex;
-        align-items: flex-start;
-      }
-      #header.columns > .wrapper > .inner > * {
-        flex-grow: 0;
-        flex-shrink: 0;
-        max-width: 100%;
-        text-align: var(--alignment);
-        padding: 0 0 0 var(--gutters);
-      }
-      #header.columns > .wrapper > .inner > * > * {
-        margin-bottom: var(--spacing);
-        margin-top: var(--spacing);
-      }
-      #header.columns > .wrapper > .inner > * > *:first-child {
-        margin-top: 0 !important;
-      }
-      #header.columns > .wrapper > .inner > * > *:last-child {
-        margin-bottom: 0 !important;
-      }
-      #header.columns > .wrapper > .inner > *:first-child {
-        margin-left: calc(var(--gutters) * -1);
-      }
-      #header.default > .wrapper > .inner > .full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        max-width: none;
-        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-      }
-      #header.default > .wrapper > .inner > .full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      #header.default > .wrapper > .inner > .full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-        border-bottom-left-radius: inherit;
-        border-bottom-right-radius: inherit;
-      }
-      #header.columns > .wrapper > .inner > div > .full {
-        margin-left: calc(var(--gutters) * -0.5);
-        max-width: none;
-        width: calc(100% + var(--gutters) + 0.4725px);
-      }
-      #header.columns > .wrapper > .inner > div:first-child > .full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        width: calc(
-          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
-            0.4725px
-        );
-      }
-      #header.columns > .wrapper > .inner > div:last-child > .full {
-        width: calc(
-          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
-            0.4725px
-        );
-      }
-      #header.columns > .wrapper > .inner > div > .full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-      }
-      #header.columns > .wrapper > .inner > div > .full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-      }
-      #header.columns > .wrapper > .inner > div:first-child,
-      #header.columns
-        > .wrapper
-        > .inner
-        > div:first-child
-        > .full:first-child {
-        border-top-left-radius: inherit;
-      }
-      #header.columns > .wrapper > .inner > div:last-child,
-      #header.columns > .wrapper > .inner > div:last-child > .full:first-child {
-        border-top-right-radius: inherit;
-      }
-      #header.columns > .wrapper > .inner > .full {
-        align-self: stretch;
-      }
-      #header.columns > .wrapper > .inner > .full:first-child {
-        border-bottom-left-radius: inherit;
-        border-top-left-radius: inherit;
-      }
-      #header.columns > .wrapper > .inner > .full:last-child {
-        border-bottom-right-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      #header.columns
-        > .wrapper
-        > .inner
-        > .full
-        > .full:first-child:last-child {
-        border-radius: inherit;
-        height: calc(100% + (var(--padding-vertical) * 2));
-      }
-      #header.columns
-        > .wrapper
-        > .inner
-        > .full
-        > .full:first-child:last-child
-        > * {
-        border-radius: inherit;
-        height: 100%;
-        position: absolute;
+      .container.style1 > .wrapper {
+        max-width: var(--width);
         width: 100%;
       }
-      #projects {
-        --alignment: center;
-        --flex-alignment: center;
-      }
-      #projects:not(:first-child) {
-        margin-top: 2.5rem !important;
-      }
-      #projects > .wrapper {
-        display: inline-block;
-        width: 75rem;
-        background-color: transparent;
-      }
-      #projects > .wrapper > .inner {
-        --gutters: 4rem;
-        --padding-horizontal: 0rem;
-        --padding-vertical: 0rem;
-        --spacing: 1.5rem;
-        padding: var(--padding-vertical) var(--padding-horizontal);
-      }
-      #projects.default > .wrapper > .inner > * {
+      .container.style1.default > .wrapper > .inner > * {
         margin-bottom: var(--spacing);
         margin-top: var(--spacing);
       }
-      #projects.default > .wrapper > .inner > *:first-child {
+      .container.style1.default > .wrapper > .inner > *:first-child {
         margin-top: 0 !important;
       }
-      #projects.default > .wrapper > .inner > *:last-child {
+      .container.style1.default > .wrapper > .inner > *:last-child {
         margin-bottom: 0 !important;
       }
-      #projects.columns > .wrapper > .inner {
+      .container.style1.columns > .wrapper > .inner {
         flex-wrap: wrap;
         display: flex;
         align-items: flex-start;
       }
-      #projects.columns > .wrapper > .inner > * {
+      .container.style1.columns > .wrapper > .inner > * {
         flex-grow: 0;
         flex-shrink: 0;
         max-width: 100%;
         text-align: var(--alignment);
         padding: 0 0 0 var(--gutters);
       }
-      #projects.columns > .wrapper > .inner > * > * {
+      .container.style1.columns > .wrapper > .inner > * > * {
         margin-bottom: var(--spacing);
         margin-top: var(--spacing);
       }
-      #projects.columns > .wrapper > .inner > * > *:first-child {
+      .container.style1.columns > .wrapper > .inner > * > *:first-child {
         margin-top: 0 !important;
       }
-      #projects.columns > .wrapper > .inner > * > *:last-child {
+      .container.style1.columns > .wrapper > .inner > * > *:last-child {
         margin-bottom: 0 !important;
       }
-      #projects.columns > .wrapper > .inner > *:first-child {
+      .container.style1.columns > .wrapper > .inner > *:first-child {
         margin-left: calc(var(--gutters) * -1);
       }
-      #projects.default > .wrapper > .inner > .full {
+      .container.style1.default > .wrapper > .inner > .full {
         margin-left: calc(var(--padding-horizontal) * -1);
-        max-width: none;
+        max-width: none !important;
         width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
       }
-      #projects.default > .wrapper > .inner > .full:first-child {
+      .container.style1.default > .wrapper > .inner > .full:first-child {
         margin-top: calc(var(--padding-vertical) * -1) !important;
         border-top-left-radius: inherit;
         border-top-right-radius: inherit;
       }
-      #projects.default > .wrapper > .inner > .full:last-child {
+      .container.style1.default > .wrapper > .inner > .full:last-child {
         margin-bottom: calc(var(--padding-vertical) * -1) !important;
         border-bottom-left-radius: inherit;
         border-bottom-right-radius: inherit;
       }
-      #projects.columns > .wrapper > .inner > div > .full {
+      .container.style1.columns > .wrapper > .inner > div > .full {
         margin-left: calc(var(--gutters) * -0.5);
-        max-width: none;
+        max-width: none !important;
         width: calc(100% + var(--gutters) + 0.4725px);
       }
-      #projects.columns > .wrapper > .inner > div:first-child > .full {
+      .container.style1.columns > .wrapper > .inner > div:first-child > .full {
         margin-left: calc(var(--padding-horizontal) * -1);
         width: calc(
           100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
             0.4725px
         );
       }
-      #projects.columns > .wrapper > .inner > div:last-child > .full {
+      .container.style1.columns > .wrapper > .inner > div:last-child > .full {
         width: calc(
           100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
             0.4725px
         );
       }
-      #projects.columns > .wrapper > .inner > div > .full:first-child {
+      .container.style1.columns > .wrapper > .inner > div > .full:first-child {
         margin-top: calc(var(--padding-vertical) * -1) !important;
       }
-      #projects.columns > .wrapper > .inner > div > .full:last-child {
+      .container.style1.columns > .wrapper > .inner > div > .full:last-child {
         margin-bottom: calc(var(--padding-vertical) * -1) !important;
       }
-      #projects.columns > .wrapper > .inner > div:first-child,
-      #projects.columns
+      .container.style1.columns > .wrapper > .inner > div:first-child,
+      .container.style1.columns
         > .wrapper
         > .inner
         > div:first-child
         > .full:first-child {
         border-top-left-radius: inherit;
       }
-      #projects.columns > .wrapper > .inner > div:last-child,
-      #projects.columns
+      .container.style1.columns > .wrapper > .inner > div:last-child,
+      .container.style1.columns
         > .wrapper
         > .inner
         > div:last-child
         > .full:first-child {
         border-top-right-radius: inherit;
       }
-      #projects.columns > .wrapper > .inner > .full {
+      .container.style1.columns > .wrapper > .inner > .full {
         align-self: stretch;
       }
-      #projects.columns > .wrapper > .inner > .full:first-child {
+      .container.style1.columns > .wrapper > .inner > .full:first-child {
         border-bottom-left-radius: inherit;
         border-top-left-radius: inherit;
       }
-      #projects.columns > .wrapper > .inner > .full:last-child {
+      .container.style1.columns > .wrapper > .inner > .full:last-child {
         border-bottom-right-radius: inherit;
         border-top-right-radius: inherit;
       }
-      #projects.columns
+      .container.style1.columns
         > .wrapper
         > .inner
         > .full
@@ -1019,7 +1059,7 @@
         border-radius: inherit;
         height: calc(100% + (var(--padding-vertical) * 2));
       }
-      #projects.columns
+      .container.style1.columns
         > .wrapper
         > .inner
         > .full
@@ -1030,262 +1070,124 @@
         position: absolute;
         width: 100%;
       }
-      #donate {
-        --alignment: center;
-        --flex-alignment: center;
-      }
-      #donate:not(:first-child) {
-        margin-top: 2.5rem !important;
-      }
-      #donate > .wrapper {
-        display: inline-block;
-        width: 75rem;
+      .container.style2 {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
         background-color: transparent;
       }
-      #donate > .wrapper > .inner {
-        --gutters: 4rem;
-        --padding-horizontal: 0rem;
-        --padding-vertical: 0rem;
-        --spacing: 1.5rem;
+      .container.style2 > .wrapper > .inner {
+        --gutters: 2rem;
+        --padding-horizontal: 2rem;
         padding: var(--padding-vertical) var(--padding-horizontal);
       }
-      #donate.default > .wrapper > .inner > * {
-        margin-bottom: var(--spacing);
-        margin-top: var(--spacing);
-      }
-      #donate.default > .wrapper > .inner > *:first-child {
-        margin-top: 0 !important;
-      }
-      #donate.default > .wrapper > .inner > *:last-child {
-        margin-bottom: 0 !important;
-      }
-      #donate.columns > .wrapper > .inner {
-        flex-wrap: wrap;
-        display: flex;
-        align-items: flex-start;
-      }
-      #donate.columns > .wrapper > .inner > * {
-        flex-grow: 0;
-        flex-shrink: 0;
-        max-width: 100%;
-        text-align: var(--alignment);
-        padding: 0 0 0 var(--gutters);
-      }
-      #donate.columns > .wrapper > .inner > * > * {
-        margin-bottom: var(--spacing);
-        margin-top: var(--spacing);
-      }
-      #donate.columns > .wrapper > .inner > * > *:first-child {
-        margin-top: 0 !important;
-      }
-      #donate.columns > .wrapper > .inner > * > *:last-child {
-        margin-bottom: 0 !important;
-      }
-      #donate.columns > .wrapper > .inner > *:first-child {
-        margin-left: calc(var(--gutters) * -1);
-      }
-      #donate.default > .wrapper > .inner > .full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        max-width: none;
-        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-      }
-      #donate.default > .wrapper > .inner > .full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      #donate.default > .wrapper > .inner > .full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-        border-bottom-left-radius: inherit;
-        border-bottom-right-radius: inherit;
-      }
-      #donate.columns > .wrapper > .inner > div > .full {
-        margin-left: calc(var(--gutters) * -0.5);
-        max-width: none;
-        width: calc(100% + var(--gutters) + 0.4725px);
-      }
-      #donate.columns > .wrapper > .inner > div:first-child > .full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        width: calc(
-          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
-            0.4725px
-        );
-      }
-      #donate.columns > .wrapper > .inner > div:last-child > .full {
-        width: calc(
-          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
-            0.4725px
-        );
-      }
-      #donate.columns > .wrapper > .inner > div > .full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-      }
-      #donate.columns > .wrapper > .inner > div > .full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-      }
-      #donate.columns > .wrapper > .inner > div:first-child,
-      #donate.columns
-        > .wrapper
-        > .inner
-        > div:first-child
-        > .full:first-child {
-        border-top-left-radius: inherit;
-      }
-      #donate.columns > .wrapper > .inner > div:last-child,
-      #donate.columns > .wrapper > .inner > div:last-child > .full:first-child {
-        border-top-right-radius: inherit;
-      }
-      #donate.columns > .wrapper > .inner > .full {
-        align-self: stretch;
-      }
-      #donate.columns > .wrapper > .inner > .full:first-child {
-        border-bottom-left-radius: inherit;
-        border-top-left-radius: inherit;
-      }
-      #donate.columns > .wrapper > .inner > .full:last-child {
-        border-bottom-right-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      #donate.columns
-        > .wrapper
-        > .inner
-        > .full
-        > .full:first-child:last-child {
-        border-radius: inherit;
-        height: calc(100% + (var(--padding-vertical) * 2));
-      }
-      #donate.columns
-        > .wrapper
-        > .inner
-        > .full
-        > .full:first-child:last-child
-        > * {
-        border-radius: inherit;
-        height: 100%;
-        position: absolute;
+      .container.style2 > .wrapper {
+        max-width: var(--width);
         width: 100%;
       }
-      #cryptocurrencies {
-        --alignment: center;
-        --flex-alignment: center;
-      }
-      #cryptocurrencies:not(:first-child) {
-        margin-top: 2.5rem !important;
-      }
-      #cryptocurrencies > .wrapper {
-        display: inline-block;
-        width: 75rem;
-        background-color: transparent;
-      }
-      #cryptocurrencies > .wrapper > .inner {
-        --gutters: 4rem;
-        --padding-horizontal: 0rem;
-        --padding-vertical: 0rem;
-        --spacing: 1.5rem;
-        padding: var(--padding-vertical) var(--padding-horizontal);
-      }
-      #cryptocurrencies.default > .wrapper > .inner > * {
+      .container.style2.default > .wrapper > .inner > * {
         margin-bottom: var(--spacing);
         margin-top: var(--spacing);
       }
-      #cryptocurrencies.default > .wrapper > .inner > *:first-child {
+      .container.style2.default > .wrapper > .inner > *:first-child {
         margin-top: 0 !important;
       }
-      #cryptocurrencies.default > .wrapper > .inner > *:last-child {
+      .container.style2.default > .wrapper > .inner > *:last-child {
         margin-bottom: 0 !important;
       }
-      #cryptocurrencies.columns > .wrapper > .inner {
+      .container.style2.columns > .wrapper > .inner {
         flex-wrap: wrap;
         display: flex;
         align-items: flex-start;
       }
-      #cryptocurrencies.columns > .wrapper > .inner > * {
+      .container.style2.columns > .wrapper > .inner > * {
         flex-grow: 0;
         flex-shrink: 0;
         max-width: 100%;
         text-align: var(--alignment);
         padding: 0 0 0 var(--gutters);
       }
-      #cryptocurrencies.columns > .wrapper > .inner > * > * {
+      .container.style2.columns > .wrapper > .inner > * > * {
         margin-bottom: var(--spacing);
         margin-top: var(--spacing);
       }
-      #cryptocurrencies.columns > .wrapper > .inner > * > *:first-child {
+      .container.style2.columns > .wrapper > .inner > * > *:first-child {
         margin-top: 0 !important;
       }
-      #cryptocurrencies.columns > .wrapper > .inner > * > *:last-child {
+      .container.style2.columns > .wrapper > .inner > * > *:last-child {
         margin-bottom: 0 !important;
       }
-      #cryptocurrencies.columns > .wrapper > .inner > *:first-child {
+      .container.style2.columns > .wrapper > .inner > *:first-child {
         margin-left: calc(var(--gutters) * -1);
       }
-      #cryptocurrencies.default > .wrapper > .inner > .full {
+      .container.style2.default > .wrapper > .inner > .full {
         margin-left: calc(var(--padding-horizontal) * -1);
-        max-width: none;
+        max-width: none !important;
         width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
       }
-      #cryptocurrencies.default > .wrapper > .inner > .full:first-child {
+      .container.style2.default > .wrapper > .inner > .full:first-child {
         margin-top: calc(var(--padding-vertical) * -1) !important;
         border-top-left-radius: inherit;
         border-top-right-radius: inherit;
       }
-      #cryptocurrencies.default > .wrapper > .inner > .full:last-child {
+      .container.style2.default > .wrapper > .inner > .full:last-child {
         margin-bottom: calc(var(--padding-vertical) * -1) !important;
         border-bottom-left-radius: inherit;
         border-bottom-right-radius: inherit;
       }
-      #cryptocurrencies.columns > .wrapper > .inner > div > .full {
+      .container.style2.columns > .wrapper > .inner > div > .full {
         margin-left: calc(var(--gutters) * -0.5);
-        max-width: none;
+        max-width: none !important;
         width: calc(100% + var(--gutters) + 0.4725px);
       }
-      #cryptocurrencies.columns > .wrapper > .inner > div:first-child > .full {
+      .container.style2.columns > .wrapper > .inner > div:first-child > .full {
         margin-left: calc(var(--padding-horizontal) * -1);
         width: calc(
           100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
             0.4725px
         );
       }
-      #cryptocurrencies.columns > .wrapper > .inner > div:last-child > .full {
+      .container.style2.columns > .wrapper > .inner > div:last-child > .full {
         width: calc(
           100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
             0.4725px
         );
       }
-      #cryptocurrencies.columns > .wrapper > .inner > div > .full:first-child {
+      .container.style2.columns > .wrapper > .inner > div > .full:first-child {
         margin-top: calc(var(--padding-vertical) * -1) !important;
       }
-      #cryptocurrencies.columns > .wrapper > .inner > div > .full:last-child {
+      .container.style2.columns > .wrapper > .inner > div > .full:last-child {
         margin-bottom: calc(var(--padding-vertical) * -1) !important;
       }
-      #cryptocurrencies.columns > .wrapper > .inner > div:first-child,
-      #cryptocurrencies.columns
+      .container.style2.columns > .wrapper > .inner > div:first-child,
+      .container.style2.columns
         > .wrapper
         > .inner
         > div:first-child
         > .full:first-child {
         border-top-left-radius: inherit;
       }
-      #cryptocurrencies.columns > .wrapper > .inner > div:last-child,
-      #cryptocurrencies.columns
+      .container.style2.columns > .wrapper > .inner > div:last-child,
+      .container.style2.columns
         > .wrapper
         > .inner
         > div:last-child
         > .full:first-child {
         border-top-right-radius: inherit;
       }
-      #cryptocurrencies.columns > .wrapper > .inner > .full {
+      .container.style2.columns > .wrapper > .inner > .full {
         align-self: stretch;
       }
-      #cryptocurrencies.columns > .wrapper > .inner > .full:first-child {
+      .container.style2.columns > .wrapper > .inner > .full:first-child {
         border-bottom-left-radius: inherit;
         border-top-left-radius: inherit;
       }
-      #cryptocurrencies.columns > .wrapper > .inner > .full:last-child {
+      .container.style2.columns > .wrapper > .inner > .full:last-child {
         border-bottom-right-radius: inherit;
         border-top-right-radius: inherit;
       }
-      #cryptocurrencies.columns
+      .container.style2.columns
         > .wrapper
         > .inner
         > .full
@@ -1293,7 +1195,7 @@
         border-radius: inherit;
         height: calc(100% + (var(--padding-vertical) * 2));
       }
-      #cryptocurrencies.columns
+      .container.style2.columns
         > .wrapper
         > .inner
         > .full
@@ -1303,262 +1205,6 @@
         height: 100%;
         position: absolute;
         width: 100%;
-      }
-      #footer {
-        --alignment: center;
-        --flex-alignment: center;
-      }
-      #footer:not(:first-child) {
-        margin-top: 4rem !important;
-      }
-      #footer > .wrapper {
-        display: inline-block;
-        width: 75rem;
-        background-color: transparent;
-      }
-      #footer > .wrapper > .inner {
-        --gutters: 4rem;
-        --padding-horizontal: 0rem;
-        --padding-vertical: 0rem;
-        --spacing: 1.5rem;
-        padding: var(--padding-vertical) var(--padding-horizontal);
-      }
-      #footer.default > .wrapper > .inner > * {
-        margin-bottom: var(--spacing);
-        margin-top: var(--spacing);
-      }
-      #footer.default > .wrapper > .inner > *:first-child {
-        margin-top: 0 !important;
-      }
-      #footer.default > .wrapper > .inner > *:last-child {
-        margin-bottom: 0 !important;
-      }
-      #footer.columns > .wrapper > .inner {
-        flex-wrap: wrap;
-        display: flex;
-        align-items: flex-start;
-      }
-      #footer.columns > .wrapper > .inner > * {
-        flex-grow: 0;
-        flex-shrink: 0;
-        max-width: 100%;
-        text-align: var(--alignment);
-        padding: 0 0 0 var(--gutters);
-      }
-      #footer.columns > .wrapper > .inner > * > * {
-        margin-bottom: var(--spacing);
-        margin-top: var(--spacing);
-      }
-      #footer.columns > .wrapper > .inner > * > *:first-child {
-        margin-top: 0 !important;
-      }
-      #footer.columns > .wrapper > .inner > * > *:last-child {
-        margin-bottom: 0 !important;
-      }
-      #footer.columns > .wrapper > .inner > *:first-child {
-        margin-left: calc(var(--gutters) * -1);
-      }
-      #footer.default > .wrapper > .inner > .full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        max-width: none;
-        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-      }
-      #footer.default > .wrapper > .inner > .full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      #footer.default > .wrapper > .inner > .full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-        border-bottom-left-radius: inherit;
-        border-bottom-right-radius: inherit;
-      }
-      #footer.columns > .wrapper > .inner > div > .full {
-        margin-left: calc(var(--gutters) * -0.5);
-        max-width: none;
-        width: calc(100% + var(--gutters) + 0.4725px);
-      }
-      #footer.columns > .wrapper > .inner > div:first-child > .full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        width: calc(
-          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
-            0.4725px
-        );
-      }
-      #footer.columns > .wrapper > .inner > div:last-child > .full {
-        width: calc(
-          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
-            0.4725px
-        );
-      }
-      #footer.columns > .wrapper > .inner > div > .full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-      }
-      #footer.columns > .wrapper > .inner > div > .full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-      }
-      #footer.columns > .wrapper > .inner > div:first-child,
-      #footer.columns
-        > .wrapper
-        > .inner
-        > div:first-child
-        > .full:first-child {
-        border-top-left-radius: inherit;
-      }
-      #footer.columns > .wrapper > .inner > div:last-child,
-      #footer.columns > .wrapper > .inner > div:last-child > .full:first-child {
-        border-top-right-radius: inherit;
-      }
-      #footer.columns > .wrapper > .inner > .full {
-        align-self: stretch;
-      }
-      #footer.columns > .wrapper > .inner > .full:first-child {
-        border-bottom-left-radius: inherit;
-        border-top-left-radius: inherit;
-      }
-      #footer.columns > .wrapper > .inner > .full:last-child {
-        border-bottom-right-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      #footer.columns
-        > .wrapper
-        > .inner
-        > .full
-        > .full:first-child:last-child {
-        border-radius: inherit;
-        height: calc(100% + (var(--padding-vertical) * 2));
-      }
-      #footer.columns
-        > .wrapper
-        > .inner
-        > .full
-        > .full:first-child:last-child
-        > * {
-        border-radius: inherit;
-        height: 100%;
-        position: absolute;
-        width: 100%;
-      }
-      .gallery .inner {
-        display: inline-block;
-        max-width: 100%;
-        vertical-align: middle;
-      }
-      .gallery ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: var(--flex-alignment);
-      }
-      .gallery ul li {
-        position: relative;
-      }
-      .gallery ul li .thumbnail {
-        border-radius: inherit;
-        position: relative;
-      }
-      .gallery ul li .frame {
-        -webkit-backface-visibility: hidden;
-        -webkit-transform: translate3d(0, 0, 0);
-        display: inline-block;
-        overflow: hidden;
-        vertical-align: top;
-      }
-      .gallery ul li img {
-        margin: 0;
-        max-width: 100%;
-        vertical-align: top;
-        width: auto;
-      }
-      .gallery ul li .caption {
-        width: 100%;
-      }
-      .gallery ul li .caption p {
-        width: 100%;
-      }
-      .gallery.style1:not(:first-child) {
-        margin-top: 2rem !important;
-      }
-      .gallery.style1:not(:last-child) {
-        margin-bottom: 2rem !important;
-      }
-      .gallery.style1 .inner {
-        max-width: 100%;
-        width: 100%;
-      }
-      .gallery.style1 ul li {
-        border-radius: 3rem;
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        flex-shrink: 1;
-      }
-      .gallery.style1 ul li .frame {
-        border-radius: 3rem;
-        border-color: #000000;
-        border-style: solid;
-        border-width: 5px;
-        display: flex;
-        flex-grow: 1;
-        flex-shrink: 1;
-      }
-      .gallery.style1 ul li .caption {
-        opacity: 1;
-        align-items: flex-end;
-        border-radius: inherit;
-        display: flex;
-        height: 100%;
-        left: 0;
-        pointer-events: none;
-        position: absolute;
-        top: 0;
-        transition: opacity 0.25s ease, transform 0.25s ease, z-index 0.25s ease;
-      }
-      .gallery.style1 ul li .caption p {
-        border-bottom-left-radius: inherit;
-        border-bottom-right-radius: inherit;
-        padding-bottom: 0.625rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-top: 0.625rem;
-        text-align: center;
-        color: #ffffff;
-        background-color: #000000;
-        font-family: "Inter", sans-serif;
-        font-size: 1em;
-        line-height: 1.5;
-        overflow-x: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        font-weight: 700;
-        border-left-width: 5px;
-        border-right-width: 5px;
-        border-color: #000000;
-        border-style: solid;
-      }
-      .gallery.style1 ul li .thumbnail:hover + .caption {
-        opacity: 0;
-        transform: scale(0.94);
-        z-index: 2;
-      }
-      .gallery.style1 ul {
-        gap: 1.5rem;
-      }
-      .gallery.style1 ul li img {
-        display: block;
-        flex-grow: 1;
-        flex-shrink: 1;
-        height: auto;
-        max-height: 17.5rem;
-        object-fit: cover;
-        object-position: center;
-      }
-      .gallery.style1 ul li .thumbnail {
-        transition: transform 0.25s ease, z-index 0.25s ease;
-        background-color: #000000;
-      }
-      .gallery.style1 ul li .thumbnail:hover {
-        transform: scale(0.94);
-        z-index: 1;
       }
       .buttons {
         cursor: default;
@@ -1579,18 +1225,18 @@
         vertical-align: middle;
         white-space: nowrap;
       }
-      #buttons02 {
+      .buttons.style1 {
         gap: 0.75rem;
         flex-direction: row;
         flex-wrap: wrap;
       }
-      #buttons02:not(:first-child) {
+      .buttons.style1:not(:first-child) {
         margin-top: 2rem !important;
       }
-      #buttons02:not(:last-child) {
+      .buttons.style1:not(:last-child) {
         margin-bottom: 2rem !important;
       }
-      #buttons02 li a {
+      .buttons.style1 li a {
         display: flex;
         width: 100vw;
         height: 4rem;
@@ -1605,7 +1251,7 @@
         transition: transform 0.25s ease, color 0.25s ease,
           background-color 0.25s ease, border-color 0.25s ease;
       }
-      #buttons02 .button {
+      .buttons.style1 .button {
         background-color: #f59c07;
         color: #ffffff;
         background-image: linear-gradient(
@@ -1617,21 +1263,21 @@
         background-repeat: repeat;
         background-size: cover;
       }
-      #buttons02 li a:hover {
+      .buttons.style1 li a:hover {
         transform: scale(0.94);
       }
-      #buttons03 {
+      .buttons.style2 {
         gap: 0.75rem;
         flex-direction: row;
         flex-wrap: wrap;
       }
-      #buttons03:not(:first-child) {
+      .buttons.style2:not(:first-child) {
         margin-top: 2rem !important;
       }
-      #buttons03:not(:last-child) {
+      .buttons.style2:not(:last-child) {
         margin-bottom: 2rem !important;
       }
-      #buttons03 li a {
+      .buttons.style2 li a {
         display: flex;
         width: 100vw;
         height: 4rem;
@@ -1646,195 +1292,30 @@
         transition: transform 0.25s ease, color 0.25s ease,
           background-color 0.25s ease, border-color 0.25s ease;
       }
-      #buttons03 .button {
+      .buttons.style2 .button {
         background-color: #000000;
         color: #ffffff;
       }
-      #buttons03 li a:hover {
-        transform: scale(0.94);
-      }
-      #buttons03 .n01 {
-        background-color: #ff8c00;
-      }
-      #buttons04 {
-        gap: 0.75rem;
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-      #buttons04:not(:first-child) {
-        margin-top: 2rem !important;
-      }
-      #buttons04:not(:last-child) {
-        margin-bottom: 2rem !important;
-      }
-      #buttons04 li a {
-        display: flex;
-        width: 100vw;
-        height: 4rem;
-        line-height: 4rem;
-        padding: 0 2rem;
-        vertical-align: middle;
-        font-family: "Inter", sans-serif;
-        font-size: 1em;
-        font-weight: 700;
-        border-radius: 2.5rem;
-        direction: var(--site-language-direction);
-        transition: transform 0.25s ease, color 0.25s ease,
-          background-color 0.25s ease, border-color 0.25s ease;
-      }
-      #buttons05 {
-        gap: 0.75rem;
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-      #buttons05:not(:first-child) {
-        margin-top: 2rem !important;
-      }
-      #buttons05:not(:last-child) {
-        margin-bottom: 2rem !important;
-      }
-      #buttons05 li a {
-        display: flex;
-        width: 100vw;
-        height: 4rem;
-        line-height: 4rem;
-        padding: 0 2rem;
-        vertical-align: middle;
-        font-family: "Inter", sans-serif;
-        font-size: 1em;
-        font-weight: 700;
-        border-radius: 2.5rem;
-        direction: var(--site-language-direction);
-        transition: transform 0.25s ease, color 0.25s ease,
-          background-color 0.25s ease, border-color 0.25s ease;
-      }
-      #buttons06 {
-        gap: 0.75rem;
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-      #buttons06:not(:first-child) {
-        margin-top: 2rem !important;
-      }
-      #buttons06:not(:last-child) {
-        margin-bottom: 2rem !important;
-      }
-      #buttons06 li a {
-        display: flex;
-        width: 100vw;
-        height: 4rem;
-        line-height: 4rem;
-        padding: 0 2rem;
-        vertical-align: middle;
-        font-family: "Inter", sans-serif;
-        font-size: 1em;
-        font-weight: 700;
-        border-radius: 2.5rem;
-        direction: var(--site-language-direction);
-        transition: transform 0.25s ease, color 0.25s ease,
-          background-color 0.25s ease, border-color 0.25s ease;
-      }
-      #buttons07 {
-        gap: 0.75rem;
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-      #buttons07:not(:first-child) {
-        margin-top: 2rem !important;
-      }
-      #buttons07:not(:last-child) {
-        margin-bottom: 2rem !important;
-      }
-      #buttons07 li a {
-        display: flex;
-        width: 100vw;
-        height: 4rem;
-        line-height: 4rem;
-        padding: 0 2rem;
-        vertical-align: middle;
-        font-family: "Inter", sans-serif;
-        font-size: 1em;
-        font-weight: 700;
-        border-radius: 2.5rem;
-        direction: var(--site-language-direction);
-        transition: transform 0.25s ease, color 0.25s ease,
-          background-color 0.25s ease, border-color 0.25s ease;
-      }
-      #buttons04 .button {
-        background-color: #000000;
-        color: #ffffff;
-      }
-      #buttons04 li a:hover {
-        transform: scale(0.94);
-      }
-      #buttons04 .n01 {
-        background-color: #8b3ffd;
-      }
-      #buttons05 .button {
-        background-color: #000000;
-        color: #ffffff;
-      }
-      #buttons05 li a:hover {
-        transform: scale(0.94);
-      }
-      #buttons05 .n01 {
-        background-color: #f7931a;
-      }
-      #buttons06 .button {
-        background-color: #000000;
-        color: #ffffff;
-      }
-      #buttons06 li a:hover {
+      .buttons.style2 li a:hover {
         transform: scale(0.94);
       }
       #buttons06 .n01 {
-        background-color: #0ac18e;
-      }
-      #buttons07 .button {
-        background-color: #000000;
-        color: #ffffff;
-      }
-      #buttons07 li a:hover {
-        transform: scale(0.94);
+        background-color: #f59c07;
       }
       #buttons07 .n01 {
-        background-color: #88cbf5;
+        background-color: #8b3ffd;
       }
-      #buttons01 {
-        gap: 0.75rem;
-        flex-direction: row;
-        flex-wrap: wrap;
+      #buttons08 .n01 {
+        background-color: #056ab3;
       }
-      #buttons01:not(:first-child) {
-        margin-top: 2rem !important;
+      #buttons03 .n01 {
+        background-color: #f7931a;
       }
-      #buttons01:not(:last-child) {
-        margin-bottom: 2rem !important;
-      }
-      #buttons01 li a {
-        display: flex;
-        width: 100vw;
-        height: 4rem;
-        line-height: 4rem;
-        padding: 0 2rem;
-        vertical-align: middle;
-        font-family: "Inter", sans-serif;
-        font-size: 1em;
-        font-weight: 700;
-        border-radius: 2.5rem;
-        direction: var(--site-language-direction);
-        transition: transform 0.25s ease, color 0.25s ease,
-          background-color 0.25s ease, border-color 0.25s ease;
-      }
-      #buttons01 .button {
-        background-color: #000000;
-        color: #ffffff;
-      }
-      #buttons01 li a:hover {
-        transform: scale(0.94);
+      #buttons04 .n01 {
+        background-color: #0ac18e;
       }
       #buttons01 .n01 {
-        background-color: #056ab3;
+        background-color: #88cbf5;
       }
       @media (max-width: 1920px) {
       }
@@ -1854,693 +1335,81 @@
         html {
           font-size: 11pt;
         }
-        #header {
-          --alignment: center;
-          --flex-alignment: center;
-        }
-        #header.columns > .wrapper > .inner {
-          flex-direction: column !important;
-          flex-wrap: nowrap !important;
-        }
-        #header.columns > .wrapper > .inner > span {
-          height: 0;
-          margin-top: calc(var(--gutters) * -1);
-          pointer-events: none;
-          visibility: hidden;
-        }
-        #header.columns > .wrapper > .inner > *:first-child {
-          margin-left: 0 !important;
-          padding-top: 0 !important;
-        }
-        #header.columns > .wrapper > .inner > * {
-          padding: calc(var(--gutters) * 0.5) 0 !important;
-        }
-        #header.columns > .wrapper > .inner > *:last-child {
-          padding-bottom: 0 !important;
-        }
-        #header.columns > .wrapper > .inner > div > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #header.columns > .wrapper > .inner > div:first-of-type > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #header.columns > .wrapper > .inner > div:last-of-type > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #header.columns > .wrapper > .inner > div > .full:first-child {
-          margin-top: calc(var(--gutters) * -0.5) !important;
-        }
-        #header.columns > .wrapper > .inner > div > .full:last-child {
-          margin-bottom: calc(var(--gutters) * -0.5) !important;
-        }
-        #header.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          margin-top: calc(var(--padding-vertical) * -1) !important;
-        }
-        #header.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          margin-bottom: calc(var(--padding-vertical) * -1) !important;
-        }
-        #header.columns > .wrapper > .inner > div:first-of-type,
-        #header.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          border-top-left-radius: inherit;
-          border-top-right-radius: inherit;
-        }
-        #header.columns > .wrapper > .inner > div:last-of-type,
-        #header.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          border-bottom-left-radius: inherit;
-          border-bottom-right-radius: inherit;
-        }
-        #header.columns > .wrapper > .inner > div:first-of-type,
-        #header.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:last-child {
-          border-bottom-left-radius: 0 !important;
-        }
-        #header.columns > .wrapper > .inner > div:last-of-type,
-        #header.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:first-child {
-          border-top-right-radius: 0 !important;
-        }
-        #header.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child {
-          height: auto;
-        }
-        #header.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child
-          > * {
-          height: auto;
-          position: relative;
-          width: auto;
-        }
-        #header.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.image
-          img {
-          max-height: 35rem;
-        }
-        #header.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.slideshow
-          .bg {
-          min-height: 35rem;
-        }
-        #projects {
-          --alignment: center;
-          --flex-alignment: center;
-        }
-        #projects.columns > .wrapper > .inner {
-          flex-direction: column !important;
-          flex-wrap: nowrap !important;
-        }
-        #projects.columns > .wrapper > .inner > span {
-          height: 0;
-          margin-top: calc(var(--gutters) * -1);
-          pointer-events: none;
-          visibility: hidden;
-        }
-        #projects.columns > .wrapper > .inner > *:first-child {
-          margin-left: 0 !important;
-          padding-top: 0 !important;
-        }
-        #projects.columns > .wrapper > .inner > * {
-          padding: calc(var(--gutters) * 0.5) 0 !important;
-        }
-        #projects.columns > .wrapper > .inner > *:last-child {
-          padding-bottom: 0 !important;
-        }
-        #projects.columns > .wrapper > .inner > div > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #projects.columns > .wrapper > .inner > div:first-of-type > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #projects.columns > .wrapper > .inner > div:last-of-type > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #projects.columns > .wrapper > .inner > div > .full:first-child {
-          margin-top: calc(var(--gutters) * -0.5) !important;
-        }
-        #projects.columns > .wrapper > .inner > div > .full:last-child {
-          margin-bottom: calc(var(--gutters) * -0.5) !important;
-        }
-        #projects.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          margin-top: calc(var(--padding-vertical) * -1) !important;
-        }
-        #projects.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          margin-bottom: calc(var(--padding-vertical) * -1) !important;
-        }
-        #projects.columns > .wrapper > .inner > div:first-of-type,
-        #projects.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          border-top-left-radius: inherit;
-          border-top-right-radius: inherit;
-        }
-        #projects.columns > .wrapper > .inner > div:last-of-type,
-        #projects.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          border-bottom-left-radius: inherit;
-          border-bottom-right-radius: inherit;
-        }
-        #projects.columns > .wrapper > .inner > div:first-of-type,
-        #projects.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:last-child {
-          border-bottom-left-radius: 0 !important;
-        }
-        #projects.columns > .wrapper > .inner > div:last-of-type,
-        #projects.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:first-child {
-          border-top-right-radius: 0 !important;
-        }
-        #projects.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child {
-          height: auto;
-        }
-        #projects.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child
-          > * {
-          height: auto;
-          position: relative;
-          width: auto;
-        }
-        #projects.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.image
-          img {
-          max-height: 35rem;
-        }
-        #projects.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.slideshow
-          .bg {
-          min-height: 35rem;
-        }
-        #donate {
-          --alignment: center;
-          --flex-alignment: center;
-        }
-        #donate.columns > .wrapper > .inner {
-          flex-direction: column !important;
-          flex-wrap: nowrap !important;
-        }
-        #donate.columns > .wrapper > .inner > span {
-          height: 0;
-          margin-top: calc(var(--gutters) * -1);
-          pointer-events: none;
-          visibility: hidden;
-        }
-        #donate.columns > .wrapper > .inner > *:first-child {
-          margin-left: 0 !important;
-          padding-top: 0 !important;
-        }
-        #donate.columns > .wrapper > .inner > * {
-          padding: calc(var(--gutters) * 0.5) 0 !important;
-        }
-        #donate.columns > .wrapper > .inner > *:last-child {
-          padding-bottom: 0 !important;
-        }
-        #donate.columns > .wrapper > .inner > div > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #donate.columns > .wrapper > .inner > div:first-of-type > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #donate.columns > .wrapper > .inner > div:last-of-type > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #donate.columns > .wrapper > .inner > div > .full:first-child {
-          margin-top: calc(var(--gutters) * -0.5) !important;
-        }
-        #donate.columns > .wrapper > .inner > div > .full:last-child {
-          margin-bottom: calc(var(--gutters) * -0.5) !important;
-        }
-        #donate.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          margin-top: calc(var(--padding-vertical) * -1) !important;
-        }
-        #donate.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          margin-bottom: calc(var(--padding-vertical) * -1) !important;
-        }
-        #donate.columns > .wrapper > .inner > div:first-of-type,
-        #donate.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          border-top-left-radius: inherit;
-          border-top-right-radius: inherit;
-        }
-        #donate.columns > .wrapper > .inner > div:last-of-type,
-        #donate.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          border-bottom-left-radius: inherit;
-          border-bottom-right-radius: inherit;
-        }
-        #donate.columns > .wrapper > .inner > div:first-of-type,
-        #donate.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:last-child {
-          border-bottom-left-radius: 0 !important;
-        }
-        #donate.columns > .wrapper > .inner > div:last-of-type,
-        #donate.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:first-child {
-          border-top-right-radius: 0 !important;
-        }
-        #donate.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child {
-          height: auto;
-        }
-        #donate.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child
-          > * {
-          height: auto;
-          position: relative;
-          width: auto;
-        }
-        #donate.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.image
-          img {
-          max-height: 35rem;
-        }
-        #donate.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.slideshow
-          .bg {
-          min-height: 35rem;
-        }
-        #cryptocurrencies {
-          --alignment: center;
-          --flex-alignment: center;
-        }
-        #cryptocurrencies.columns > .wrapper > .inner {
-          flex-direction: column !important;
-          flex-wrap: nowrap !important;
-        }
-        #cryptocurrencies.columns > .wrapper > .inner > span {
-          height: 0;
-          margin-top: calc(var(--gutters) * -1);
-          pointer-events: none;
-          visibility: hidden;
-        }
-        #cryptocurrencies.columns > .wrapper > .inner > *:first-child {
-          margin-left: 0 !important;
-          padding-top: 0 !important;
-        }
-        #cryptocurrencies.columns > .wrapper > .inner > * {
-          padding: calc(var(--gutters) * 0.5) 0 !important;
-        }
-        #cryptocurrencies.columns > .wrapper > .inner > *:last-child {
-          padding-bottom: 0 !important;
-        }
-        #cryptocurrencies.columns > .wrapper > .inner > div > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #cryptocurrencies.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #cryptocurrencies.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #cryptocurrencies.columns
-          > .wrapper
-          > .inner
-          > div
-          > .full:first-child {
-          margin-top: calc(var(--gutters) * -0.5) !important;
-        }
-        #cryptocurrencies.columns > .wrapper > .inner > div > .full:last-child {
-          margin-bottom: calc(var(--gutters) * -0.5) !important;
-        }
-        #cryptocurrencies.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          margin-top: calc(var(--padding-vertical) * -1) !important;
-        }
-        #cryptocurrencies.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          margin-bottom: calc(var(--padding-vertical) * -1) !important;
-        }
-        #cryptocurrencies.columns > .wrapper > .inner > div:first-of-type,
-        #cryptocurrencies.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          border-top-left-radius: inherit;
-          border-top-right-radius: inherit;
-        }
-        #cryptocurrencies.columns > .wrapper > .inner > div:last-of-type,
-        #cryptocurrencies.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          border-bottom-left-radius: inherit;
-          border-bottom-right-radius: inherit;
-        }
-        #cryptocurrencies.columns > .wrapper > .inner > div:first-of-type,
-        #cryptocurrencies.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:last-child {
-          border-bottom-left-radius: 0 !important;
-        }
-        #cryptocurrencies.columns > .wrapper > .inner > div:last-of-type,
-        #cryptocurrencies.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:first-child {
-          border-top-right-radius: 0 !important;
-        }
-        #cryptocurrencies.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child {
-          height: auto;
-        }
-        #cryptocurrencies.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child
-          > * {
-          height: auto;
-          position: relative;
-          width: auto;
-        }
-        #cryptocurrencies.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.image
-          img {
-          max-height: 35rem;
-        }
-        #cryptocurrencies.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.slideshow
-          .bg {
-          min-height: 35rem;
-        }
-        #footer {
-          --alignment: center;
-          --flex-alignment: center;
-        }
-        #footer.columns > .wrapper > .inner {
-          flex-direction: column !important;
-          flex-wrap: nowrap !important;
-        }
-        #footer.columns > .wrapper > .inner > span {
-          height: 0;
-          margin-top: calc(var(--gutters) * -1);
-          pointer-events: none;
-          visibility: hidden;
-        }
-        #footer.columns > .wrapper > .inner > *:first-child {
-          margin-left: 0 !important;
-          padding-top: 0 !important;
-        }
-        #footer.columns > .wrapper > .inner > * {
-          padding: calc(var(--gutters) * 0.5) 0 !important;
-        }
-        #footer.columns > .wrapper > .inner > *:last-child {
-          padding-bottom: 0 !important;
-        }
-        #footer.columns > .wrapper > .inner > div > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #footer.columns > .wrapper > .inner > div:first-of-type > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #footer.columns > .wrapper > .inner > div:last-of-type > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #footer.columns > .wrapper > .inner > div > .full:first-child {
-          margin-top: calc(var(--gutters) * -0.5) !important;
-        }
-        #footer.columns > .wrapper > .inner > div > .full:last-child {
-          margin-bottom: calc(var(--gutters) * -0.5) !important;
-        }
-        #footer.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          margin-top: calc(var(--padding-vertical) * -1) !important;
-        }
-        #footer.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          margin-bottom: calc(var(--padding-vertical) * -1) !important;
-        }
-        #footer.columns > .wrapper > .inner > div:first-of-type,
-        #footer.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          border-top-left-radius: inherit;
-          border-top-right-radius: inherit;
-        }
-        #footer.columns > .wrapper > .inner > div:last-of-type,
-        #footer.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          border-bottom-left-radius: inherit;
-          border-bottom-right-radius: inherit;
-        }
-        #footer.columns > .wrapper > .inner > div:first-of-type,
-        #footer.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:last-child {
-          border-bottom-left-radius: 0 !important;
-        }
-        #footer.columns > .wrapper > .inner > div:last-of-type,
-        #footer.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:first-child {
-          border-top-right-radius: 0 !important;
-        }
-        #footer.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child {
-          height: auto;
-        }
-        #footer.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child
-          > * {
-          height: auto;
-          position: relative;
-          width: auto;
-        }
-        #footer.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.image
-          img {
-          max-height: 35rem;
-        }
-        #footer.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.slideshow
-          .bg {
-          min-height: 35rem;
-        }
       }
       @media (max-width: 736px) {
         html {
           font-size: 11pt;
         }
+        #main {
+          --border-radius-tl: 0;
+          --border-radius-tr: 0;
+          --border-radius-br: 0;
+          --border-radius-bl: 0;
+        }
+        #wrapper {
+          padding: 0rem 0rem 0rem 0rem;
+        }
         #main > .inner {
-          --padding-horizontal: 2.5rem;
-          --padding-vertical: 4rem;
-          --spacing: 0.75rem;
+          --padding-horizontal: 2rem;
+          --padding-vertical: 3.375rem;
+          --spacing: 0rem;
         }
         #image01 .frame {
           width: 5rem;
         }
-        #text02:not(:first-child) {
-          margin-top: 2rem !important;
+        h1.style1:not(:first-child),
+        h2.style1:not(:first-child),
+        h3.style1:not(:first-child),
+        p.style1:not(:first-child) {
+          margin-top: 1.5rem !important;
         }
-        #text02:not(:last-child) {
-          margin-bottom: 2rem !important;
+        h1.style1:not(:last-child),
+        h2.style1:not(:last-child),
+        h3.style1:not(:last-child),
+        p.style1:not(:last-child) {
+          margin-bottom: 1.5rem !important;
         }
-        #text02 {
+        h1.style1,
+        h2.style1,
+        h3.style1,
+        p.style1 {
           letter-spacing: 0rem;
           width: 100%;
-          font-size: 3em;
-          line-height: 1.25;
+          font-size: 2.75em;
+          line-height: 1.5;
         }
-        #text06 {
+        h1.style3:not(:first-child),
+        h2.style3:not(:first-child),
+        h3.style3:not(:first-child),
+        p.style3:not(:first-child) {
+          margin-top: 2.25rem !important;
+        }
+        h1.style3:not(:last-child),
+        h2.style3:not(:last-child),
+        h3.style3:not(:last-child),
+        p.style3:not(:last-child) {
+          margin-bottom: 2.25rem !important;
+        }
+        h1.style3,
+        h2.style3,
+        h3.style3,
+        p.style3 {
           letter-spacing: 0rem;
           width: 100%;
-          font-size: 1em;
-          line-height: 1.875;
-        }
-        #text04 {
-          letter-spacing: 0rem;
-          width: 100%;
-          font-size: 1em;
-          line-height: 1.875;
-        }
-        #text08 {
-          letter-spacing: 0rem;
-          width: 100%;
-          font-size: 1em;
-          line-height: 1.875;
-        }
-        #text05 {
-          letter-spacing: 0rem;
-          width: 100%;
-          font-size: 1em;
-          line-height: 1.875;
+          font-size: 2.75em;
+          line-height: 1.5;
         }
         h1.style4:not(:first-child),
         h2.style4:not(:first-child),
         h3.style4:not(:first-child),
         p.style4:not(:first-child) {
-          margin-top: 3rem !important;
+          margin-top: 1.875rem !important;
         }
         h1.style4:not(:last-child),
         h2.style4:not(:last-child),
         h3.style4:not(:last-child),
         p.style4:not(:last-child) {
-          margin-bottom: 3rem !important;
+          margin-bottom: 1.875rem !important;
         }
         h1.style4,
         h2.style4,
@@ -2548,20 +1417,20 @@
         p.style4 {
           letter-spacing: 0rem;
           width: 100%;
-          font-size: 2.5em;
+          font-size: 1em;
           line-height: 1.875;
         }
         h1.style2:not(:first-child),
         h2.style2:not(:first-child),
         h3.style2:not(:first-child),
         p.style2:not(:first-child) {
-          margin-top: 2.5rem !important;
+          margin-top: 1rem !important;
         }
         h1.style2:not(:last-child),
         h2.style2:not(:last-child),
         h3.style2:not(:last-child),
         p.style2:not(:last-child) {
-          margin-bottom: 2.5rem !important;
+          margin-bottom: 1rem !important;
         }
         h1.style2,
         h2.style2,
@@ -2570,370 +1439,365 @@
           letter-spacing: 0rem;
           width: 100%;
           font-size: 1em;
-          line-height: 1.875;
+          line-height: 2;
         }
-        h1.style3:not(:first-child),
-        h2.style3:not(:first-child),
-        h3.style3:not(:first-child),
-        p.style3:not(:first-child) {
-          margin-top: 2.5rem !important;
+        h1.style5:not(:first-child),
+        h2.style5:not(:first-child),
+        h3.style5:not(:first-child),
+        p.style5:not(:first-child) {
+          margin-top: 0.75rem !important;
         }
-        h1.style3:not(:last-child),
-        h2.style3:not(:last-child),
-        h3.style3:not(:last-child),
-        p.style3:not(:last-child) {
-          margin-bottom: 2.5rem !important;
+        h1.style5:not(:last-child),
+        h2.style5:not(:last-child),
+        h3.style5:not(:last-child),
+        p.style5:not(:last-child) {
+          margin-bottom: 0.75rem !important;
         }
-        h1.style3,
-        h2.style3,
-        h3.style3,
-        p.style3 {
+        h1.style5,
+        h2.style5,
+        h3.style5,
+        p.style5 {
           letter-spacing: 0rem;
           width: 100%;
           font-size: 0.75em;
           line-height: 1.875;
-        }
-        #icons02 {
-          font-size: 1.25em;
-          gap: 1.25rem;
-        }
-        #icons02:not(:first-child) {
-          margin-top: 3rem !important;
-        }
-        #icons02:not(:last-child) {
-          margin-bottom: 3rem !important;
-        }
-        #header > .wrapper > .inner {
-          --gutters: 4rem;
-          --padding-horizontal: 0rem;
-          --padding-vertical: 0rem;
-          --spacing: 1.5rem;
-        }
-        #header.columns > .wrapper > .inner > * {
-          padding: calc(var(--gutters) * 0.5) 0 !important;
-        }
-        #header.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.image
-          img {
-          max-height: none;
-        }
-        #header.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.slideshow
-          .bg {
-          min-height: auto;
-        }
-        #projects:not(:first-child) {
-          margin-top: 2.5rem !important;
-        }
-        #projects > .wrapper > .inner {
-          --gutters: 4rem;
-          --padding-horizontal: 0rem;
-          --padding-vertical: 0rem;
-          --spacing: 1.5rem;
-        }
-        #projects.columns > .wrapper > .inner > * {
-          padding: calc(var(--gutters) * 0.5) 0 !important;
-        }
-        #projects.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.image
-          img {
-          max-height: none;
-        }
-        #projects.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.slideshow
-          .bg {
-          min-height: auto;
-        }
-        #donate:not(:first-child) {
-          margin-top: 2.5rem !important;
-        }
-        #donate > .wrapper > .inner {
-          --gutters: 4rem;
-          --padding-horizontal: 0rem;
-          --padding-vertical: 0rem;
-          --spacing: 1.5rem;
-        }
-        #donate.columns > .wrapper > .inner > * {
-          padding: calc(var(--gutters) * 0.5) 0 !important;
-        }
-        #donate.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.image
-          img {
-          max-height: none;
-        }
-        #donate.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.slideshow
-          .bg {
-          min-height: auto;
-        }
-        #cryptocurrencies:not(:first-child) {
-          margin-top: 2.5rem !important;
-        }
-        #cryptocurrencies > .wrapper > .inner {
-          --gutters: 4rem;
-          --padding-horizontal: 0rem;
-          --padding-vertical: 0rem;
-          --spacing: 1.5rem;
-        }
-        #cryptocurrencies.columns > .wrapper > .inner > * {
-          padding: calc(var(--gutters) * 0.5) 0 !important;
-        }
-        #cryptocurrencies.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.image
-          img {
-          max-height: none;
-        }
-        #cryptocurrencies.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.slideshow
-          .bg {
-          min-height: auto;
-        }
-
-        #footer:not(:first-child) {
-          margin-top: 4rem !important;
-        }
-        #footer > .wrapper > .inner {
-          --gutters: 4rem;
-          --padding-horizontal: 0rem;
-          --padding-vertical: 0rem;
-          --spacing: 1.5rem;
-        }
-        #footer.columns > .wrapper > .inner > * {
-          padding: calc(var(--gutters) * 0.5) 0 !important;
-        }
-        #footer.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.image
-          img {
-          max-height: none;
-        }
-        #footer.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.slideshow
-          .bg {
-          min-height: auto;
-        }
-        .gallery.style1:not(:first-child) {
-          margin-top: 1.5rem !important;
-        }
-        .gallery.style1:not(:last-child) {
-          margin-bottom: 1.5rem !important;
         }
         .gallery.style1 ul li .caption p {
           letter-spacing: 0rem;
           font-size: 1em;
         }
         .gallery.style1 ul li img {
-          max-height: 13.125rem;
+          max-height: 22.5rem;
         }
-        #buttons02:not(:first-child) {
-          margin-top: 1.5rem !important;
-        }
-        #buttons02:not(:last-child) {
-          margin-bottom: 1.5rem !important;
-        }
-        #buttons02 li a {
+        .gallery.style2 ul li .caption p {
           letter-spacing: 0rem;
           font-size: 1em;
         }
-        #buttons03:not(:first-child) {
+        .gallery.style2 ul li img {
+          max-height: 22.5rem;
+        }
+        #icons01 {
+          font-size: 1.375em;
+          gap: 1rem;
+        }
+        #icons01:not(:first-child) {
+          margin-top: 1.875rem !important;
+        }
+        #icons01:not(:last-child) {
+          margin-bottom: 1.875rem !important;
+        }
+        .container.style1 > .wrapper > .inner {
+          --gutters: 2rem;
+          --padding-horizontal: 2rem;
+        }
+        .container.style1.columns > .wrapper > .inner {
+          flex-direction: column !important;
+          flex-wrap: nowrap !important;
+        }
+        .container.style1.columns > .wrapper > .inner > span {
+          height: 0;
+          margin-top: calc(var(--gutters) * -1);
+          pointer-events: none;
+          visibility: hidden;
+        }
+        .container.style1.columns > .wrapper > .inner > *:first-child {
+          margin-left: 0 !important;
+          padding-top: 0 !important;
+        }
+        .container.style1.columns > .wrapper > .inner > * {
+          padding: calc(var(--gutters) * 0.5) 0 !important;
+        }
+        .container.style1.columns > .wrapper > .inner > *:last-child {
+          padding-bottom: 0 !important;
+        }
+        .container.style1.columns > .wrapper > .inner > div > .full {
+          margin-left: calc(var(--padding-horizontal) * -1);
+          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+        }
+        .container.style1.columns
+          > .wrapper
+          > .inner
+          > div:first-of-type
+          > .full {
+          margin-left: calc(var(--padding-horizontal) * -1);
+          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+        }
+        .container.style1.columns
+          > .wrapper
+          > .inner
+          > div:last-of-type
+          > .full {
+          margin-left: calc(var(--padding-horizontal) * -1);
+          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+        }
+        .container.style1.columns
+          > .wrapper
+          > .inner
+          > div
+          > .full:first-child {
+          margin-top: calc(var(--gutters) * -0.5) !important;
+        }
+        .container.style1.columns > .wrapper > .inner > div > .full:last-child {
+          margin-bottom: calc(var(--gutters) * -0.5) !important;
+        }
+        .container.style1.columns
+          > .wrapper
+          > .inner
+          > div:first-of-type
+          > .full:first-child {
+          margin-top: calc(var(--padding-vertical) * -1) !important;
+        }
+        .container.style1.columns
+          > .wrapper
+          > .inner
+          > div:last-of-type
+          > .full:last-child {
+          margin-bottom: calc(var(--padding-vertical) * -1) !important;
+        }
+        .container.style1.columns > .wrapper > .inner > div:first-of-type,
+        .container.style1.columns
+          > .wrapper
+          > .inner
+          > div:first-of-type
+          > .full:first-child {
+          border-top-left-radius: inherit;
+          border-top-right-radius: inherit;
+        }
+        .container.style1.columns > .wrapper > .inner > div:last-of-type,
+        .container.style1.columns
+          > .wrapper
+          > .inner
+          > div:last-of-type
+          > .full:last-child {
+          border-bottom-left-radius: inherit;
+          border-bottom-right-radius: inherit;
+        }
+        .container.style1.columns > .wrapper > .inner > div:first-of-type,
+        .container.style1.columns
+          > .wrapper
+          > .inner
+          > div:first-of-type
+          > .full:last-child {
+          border-bottom-left-radius: 0 !important;
+        }
+        .container.style1.columns > .wrapper > .inner > div:last-of-type,
+        .container.style1.columns
+          > .wrapper
+          > .inner
+          > div:last-of-type
+          > .full:first-child {
+          border-top-right-radius: 0 !important;
+        }
+        .container.style1.columns
+          > .wrapper
+          > .inner
+          > .full
+          > .full:first-child:last-child {
+          height: auto;
+        }
+        .container.style1.columns
+          > .wrapper
+          > .inner
+          > .full
+          > .full:first-child:last-child
+          > * {
+          height: auto;
+          position: relative;
+          width: auto;
+        }
+        .container.style2 > .wrapper > .inner {
+          --gutters: 2rem;
+          --padding-horizontal: 2rem;
+          --padding-vertical: 2rem;
+        }
+        .container.style2.columns > .wrapper > .inner {
+          flex-direction: column !important;
+          flex-wrap: nowrap !important;
+        }
+        .container.style2.columns > .wrapper > .inner > span {
+          height: 0;
+          margin-top: calc(var(--gutters) * -1);
+          pointer-events: none;
+          visibility: hidden;
+        }
+        .container.style2.columns > .wrapper > .inner > *:first-child {
+          margin-left: 0 !important;
+          padding-top: 0 !important;
+        }
+        .container.style2.columns > .wrapper > .inner > * {
+          padding: calc(var(--gutters) * 0.5) 0 !important;
+        }
+        .container.style2.columns > .wrapper > .inner > *:last-child {
+          padding-bottom: 0 !important;
+        }
+        .container.style2.columns > .wrapper > .inner > div > .full {
+          margin-left: calc(var(--padding-horizontal) * -1);
+          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+        }
+        .container.style2.columns
+          > .wrapper
+          > .inner
+          > div:first-of-type
+          > .full {
+          margin-left: calc(var(--padding-horizontal) * -1);
+          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+        }
+        .container.style2.columns
+          > .wrapper
+          > .inner
+          > div:last-of-type
+          > .full {
+          margin-left: calc(var(--padding-horizontal) * -1);
+          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+        }
+        .container.style2.columns
+          > .wrapper
+          > .inner
+          > div
+          > .full:first-child {
+          margin-top: calc(var(--gutters) * -0.5) !important;
+        }
+        .container.style2.columns > .wrapper > .inner > div > .full:last-child {
+          margin-bottom: calc(var(--gutters) * -0.5) !important;
+        }
+        .container.style2.columns
+          > .wrapper
+          > .inner
+          > div:first-of-type
+          > .full:first-child {
+          margin-top: calc(var(--padding-vertical) * -1) !important;
+        }
+        .container.style2.columns
+          > .wrapper
+          > .inner
+          > div:last-of-type
+          > .full:last-child {
+          margin-bottom: calc(var(--padding-vertical) * -1) !important;
+        }
+        .container.style2.columns > .wrapper > .inner > div:first-of-type,
+        .container.style2.columns
+          > .wrapper
+          > .inner
+          > div:first-of-type
+          > .full:first-child {
+          border-top-left-radius: inherit;
+          border-top-right-radius: inherit;
+        }
+        .container.style2.columns > .wrapper > .inner > div:last-of-type,
+        .container.style2.columns
+          > .wrapper
+          > .inner
+          > div:last-of-type
+          > .full:last-child {
+          border-bottom-left-radius: inherit;
+          border-bottom-right-radius: inherit;
+        }
+        .container.style2.columns > .wrapper > .inner > div:first-of-type,
+        .container.style2.columns
+          > .wrapper
+          > .inner
+          > div:first-of-type
+          > .full:last-child {
+          border-bottom-left-radius: 0 !important;
+        }
+        .container.style2.columns > .wrapper > .inner > div:last-of-type,
+        .container.style2.columns
+          > .wrapper
+          > .inner
+          > div:last-of-type
+          > .full:first-child {
+          border-top-right-radius: 0 !important;
+        }
+        .container.style2.columns
+          > .wrapper
+          > .inner
+          > .full
+          > .full:first-child:last-child {
+          height: auto;
+        }
+        .container.style2.columns
+          > .wrapper
+          > .inner
+          > .full
+          > .full:first-child:last-child
+          > * {
+          height: auto;
+          position: relative;
+          width: auto;
+        }
+        .buttons.style1:not(:first-child) {
           margin-top: 1.5rem !important;
         }
-        #buttons03:not(:last-child) {
+        .buttons.style1:not(:last-child) {
           margin-bottom: 1.5rem !important;
         }
-        #buttons03 li a {
+        .buttons.style1 li a {
           letter-spacing: 0rem;
           font-size: 1em;
         }
-        #buttons04:not(:first-child) {
+        .buttons.style2:not(:first-child) {
           margin-top: 1.5rem !important;
         }
-        #buttons04:not(:last-child) {
+        .buttons.style2:not(:last-child) {
           margin-bottom: 1.5rem !important;
         }
-        #buttons04 li a {
-          letter-spacing: 0rem;
-          font-size: 1em;
-        }
-        #buttons05:not(:first-child) {
-          margin-top: 1.5rem !important;
-        }
-        #buttons05:not(:last-child) {
-          margin-bottom: 1.5rem !important;
-        }
-        #buttons05 li a {
-          letter-spacing: 0rem;
-          font-size: 1em;
-        }
-        #buttons06:not(:first-child) {
-          margin-top: 1.5rem !important;
-        }
-        #buttons06:not(:last-child) {
-          margin-bottom: 1.5rem !important;
-        }
-        #buttons06 li a {
-          letter-spacing: 0rem;
-          font-size: 1em;
-        }
-        #buttons07:not(:first-child) {
-          margin-top: 1.5rem !important;
-        }
-        #buttons07:not(:last-child) {
-          margin-bottom: 1.5rem !important;
-        }
-        #buttons07 li a {
-          letter-spacing: 0rem;
-          font-size: 1em;
-        }
-        #buttons01:not(:first-child) {
-          margin-top: 1.5rem !important;
-        }
-        #buttons01:not(:last-child) {
-          margin-bottom: 1.5rem !important;
-        }
-        #buttons01 li a {
+        .buttons.style2 li a {
           letter-spacing: 0rem;
           font-size: 1em;
         }
       }
       @media (max-width: 480px) {
+        #wrapper {
+          padding: 0rem 0rem 0rem 0rem;
+        }
         #main > .inner {
-          --spacing: 0.65625rem;
+          --spacing: 0rem;
         }
-        #header > .wrapper > .inner {
-          --spacing: 1.3125rem;
-        }
-        #projects > .wrapper > .inner {
-          --spacing: 1.3125rem;
-        }
-        #donate > .wrapper > .inner {
-          --spacing: 1.3125rem;
-        }
-        #cryptocurrencies > .wrapper > .inner {
-          --spacing: 1.3125rem;
-        }
-        #footer > .wrapper > .inner {
-          --spacing: 1.3125rem;
-        }
-        #buttons02 {
+        .buttons.style1 {
           flex-direction: column;
           flex-wrap: nowrap;
         }
-        #buttons02 li a {
+        .buttons.style1 li a {
           display: inline-flex;
           max-width: 100%;
           width: 100%;
         }
-        #buttons03 {
+        .buttons.style2 {
           flex-direction: column;
           flex-wrap: nowrap;
         }
-        #buttons03 li a {
-          display: inline-flex;
-          max-width: 100%;
-          width: 100%;
-        }
-        #buttons04 {
-          flex-direction: column;
-          flex-wrap: nowrap;
-        }
-        #buttons04 li a {
-          display: inline-flex;
-          max-width: 100%;
-          width: 100%;
-        }
-        #buttons05 {
-          flex-direction: column;
-          flex-wrap: nowrap;
-        }
-        #buttons05 li a {
-          display: inline-flex;
-          max-width: 100%;
-          width: 100%;
-        }
-        #buttons06 {
-          flex-direction: column;
-          flex-wrap: nowrap;
-        }
-        #buttons06 li a {
-          display: inline-flex;
-          max-width: 100%;
-          width: 100%;
-        }
-        #buttons07 {
-          flex-direction: column;
-          flex-wrap: nowrap;
-        }
-        #buttons07 li a {
-          display: inline-flex;
-          max-width: 100%;
-          width: 100%;
-        }
-        #buttons01 {
-          flex-direction: column;
-          flex-wrap: nowrap;
-        }
-        #buttons01 li a {
+        .buttons.style2 li a {
           display: inline-flex;
           max-width: 100%;
           width: 100%;
         }
       }
       @media (max-width: 360px) {
+        #wrapper {
+          padding: 0rem 0rem 0rem 0rem;
+        }
         #main > .inner {
-          --padding-horizontal: 1.875rem;
-          --padding-vertical: 3rem;
-          --spacing: 0.5625rem;
+          --padding-horizontal: 1.5rem;
+          --padding-vertical: 2.53125rem;
+          --spacing: 0rem;
         }
-        #text02 {
-          font-size: 3em;
+        h1.style1,
+        h2.style1,
+        h3.style1,
+        p.style1 {
+          font-size: 2.75em;
         }
-        #text06 {
-          font-size: 1em;
-        }
-        #text04 {
-          font-size: 1em;
-        }
-        #text08 {
-          font-size: 1em;
-        }
-        #text05 {
-          font-size: 1em;
+        h1.style3,
+        h2.style3,
+        h3.style3,
+        p.style3 {
+          font-size: 2.75em;
         }
         h1.style4,
         h2.style4,
         h3.style4,
         p.style4 {
-          font-size: 2.5em;
+          font-size: 1em;
         }
         h1.style2,
         h2.style2,
@@ -2941,70 +1805,40 @@
         p.style2 {
           font-size: 1em;
         }
-        h1.style3,
-        h2.style3,
-        h3.style3,
-        p.style3 {
+        h1.style5,
+        h2.style5,
+        h3.style5,
+        p.style5 {
           font-size: 0.75em;
-        }
-        #icons02 {
-          gap: 0.9375rem;
-        }
-        #header > .wrapper > .inner {
-          --gutters: 3rem;
-          --padding-horizontal: 0rem;
-          --padding-vertical: 0rem;
-          --spacing: 1.125rem;
-        }
-        #projects > .wrapper > .inner {
-          --gutters: 3rem;
-          --padding-horizontal: 0rem;
-          --padding-vertical: 0rem;
-          --spacing: 1.125rem;
-        }
-        #donate > .wrapper > .inner {
-          --gutters: 3rem;
-          --padding-horizontal: 0rem;
-          --padding-vertical: 0rem;
-          --spacing: 1.125rem;
-        }
-        #cryptocurrencies > .wrapper > .inner {
-          --gutters: 3rem;
-          --padding-horizontal: 0rem;
-          --padding-vertical: 0rem;
-          --spacing: 1.125rem;
-        }
-        #footer > .wrapper > .inner {
-          --gutters: 3rem;
-          --padding-horizontal: 0rem;
-          --padding-vertical: 0rem;
-          --spacing: 1.125rem;
         }
         .gallery.style1 ul li .caption p {
           font-size: 1em;
         }
         .gallery.style1 ul {
-          gap: 1.125rem;
+          gap: 0.375rem;
         }
-        #buttons02 {
+        .gallery.style2 ul li .caption p {
+          font-size: 1em;
+        }
+        .gallery.style2 ul {
+          gap: 0.375rem;
+        }
+        #icons01 {
+          gap: 0.75rem;
+        }
+        .container.style1 > .wrapper > .inner {
+          --gutters: 1.5rem;
+          --padding-horizontal: 1.5rem;
+        }
+        .container.style2 > .wrapper > .inner {
+          --gutters: 1.5rem;
+          --padding-horizontal: 1.5rem;
+          --padding-vertical: 1.5rem;
+        }
+        .buttons.style1 {
           gap: 0.5625rem;
         }
-        #buttons03 {
-          gap: 0.5625rem;
-        }
-        #buttons04 {
-          gap: 0.5625rem;
-        }
-        #buttons05 {
-          gap: 0.5625rem;
-        }
-        #buttons06 {
-          gap: 0.5625rem;
-        }
-        #buttons07 {
-          gap: 0.5625rem;
-        }
-        #buttons01 {
+        .buttons.style2 {
           gap: 0.5625rem;
         }
       }
@@ -3081,8 +1915,7 @@
         text-decoration: none;
       }
       .glowCookies__banner__1 .read__more:hover {
-        text-decoration: underline;
-        color: #666666;
+        color: #545454 !important;
       }
       .glowCookies__banner__1 .btn__section {
         display: flex;
@@ -3099,6 +1932,7 @@
           background-color 0.25s ease, border-color 0.25s ease;
       }
       .glowCookies__banner__1 .btn__section button:hover {
+        background-color: #545454 !important;
         transform: scale(0.94);
       }
       @media (max-width: 455px) {
@@ -3195,12 +2029,12 @@
     <div id="wrapper">
       <div id="main">
         <div class="inner">
-          <div id="header" class="container default">
+          <div id="header" class="style1 container default full">
             <div class="wrapper">
               <div class="inner">
                 <div id="image01" class="image">
-                  <span class="frame"
-                    ><svg
+                  <span class="frame">
+                    <svg
                       xmlns="http://www.w3.org/2000/svg"
                       version="1.1"
                       viewBox="102 100 297 301"
@@ -3247,33 +2081,34 @@
                           opacity="1.00"
                           d=" M 276.73 338.71 C 285.34 335.82 295.24 334.21 303.75 338.30 C 308.47 340.39 311.97 344.47 314.12 349.09 C 307.11 351.49 300.02 353.67 293.00 356.05 C 289.45 350.48 280.96 351.84 277.16 356.34 C 275.44 358.46 277.63 361.23 280.04 361.18 C 289.68 361.37 299.39 357.06 308.96 359.98 C 319.49 362.97 323.93 377.23 318.11 386.16 C 313.67 393.15 305.77 396.98 298.12 399.44 C 289.82 402.10 280.16 403.20 272.27 398.72 C 268.15 396.48 265.49 392.43 263.75 388.19 C 270.35 386.19 276.83 383.79 283.45 381.88 C 286.82 387.49 295.74 386.20 298.78 380.98 C 299.39 378.72 297.18 376.81 295.07 376.80 C 285.04 377.04 274.87 381.14 264.91 378.11 C 256.02 375.41 252.72 364.09 255.97 356.03 C 259.52 347.25 268.07 341.66 276.73 338.71 Z"
                         />
-                      </g></svg
-                  ></span>
+                      </g>
+                    </svg>
+                  </span>
                 </div>
-                <h1 id="text02">Greysoul</h1>
-                <p id="text06">
+                <h2 id="text06" class="style1">Greysoul</h2>
+                <p id="text03" class="style2">
                   Здравствуйте, добро пожаловать на мой личный сайт!
                 </p>
-                <p id="text04">
+                <p id="text04" class="style2">
                   Здесь вы найдёте всю информацию о моих проектах, соц-сетях и
                   способах доната.
                 </p>
-                <p id="text08">
+                <p id="text05" class="style2">
                   В настоящее время я увлекаюсь созданием битов, а также
                   сведением и мастерингом треков различных артистов. Раньше я
                   являлся разработчиком инди-игр и был участником многих команд
                   по их разработке.
                 </p>
-                <p id="text05">
+                <p id="text01" class="style2">
                   Если вы хотите обратиться ко мне по поводу сотрудничества,
                   пишите, пожалуйста, на почту
                   <strong
                     ><a href="mailto:realgreysoul@mail.ru"
-                      ><span style="color: black">realgreysoul@mail.ru</span></a
+                      >realgreysoul@mail.ru</a
                     ></strong
                   >.
                 </p>
-                <ul id="icons02" class="icons">
+                <ul id="icons01" class="icons">
                   <li>
                     <a
                       class="n01"
@@ -3323,21 +2158,21 @@
               </div>
             </div>
           </div>
-          <div id="projects" class="container default">
+          <div id="projects" class="style2 container default full">
             <div class="wrapper">
               <div class="inner">
-                <h2 id="text13" class="style4">Мои проекты</h2>
-                <div id="gallery07" class="style1 gallery">
+                <h2 id="text02" class="style3">Мои проекты</h2>
+                <div id="gallery05" class="style1 gallery">
                   <div class="inner">
                     <ul>
                       <li>
                         <a
                           href="https://beats.greysoul.ru/"
-                          class="thumbnail"
                           target="_blank"
+                          class="thumbnail"
                           ><span class="frame"
                             ><img
-                              src="https://images.ctfassets.net/1pxughrhgws1/6TMChjbjCY6OcZcZirXwTU/a672cc5455bf7e6aa50b241856674b1b/beats.jpg?w=416&q=70&fm=webp"
+                              src="https://images.ctfassets.net/1pxughrhgws1/6TMChjbjCY6OcZcZirXwTU/a672cc5455bf7e6aa50b241856674b1b/beats.jpg?w=406&q=70&fm=webp"
                               alt="Greysoul Beats" /></span
                         ></a>
                         <div class="caption"><p>Greysoul Beats</p></div>
@@ -3345,18 +2180,18 @@
                     </ul>
                   </div>
                 </div>
-                <p id="text14" class="style2">Биты на любой вкус и цвет</p>
-                <div id="gallery08" class="style1 gallery">
+                <p id="text08" class="style4">Биты на любой вкус и цвет</p>
+                <div id="gallery03" class="style2 gallery">
                   <div class="inner">
                     <ul>
                       <li>
                         <a
                           href="https://mzlffclicker.greysoul.ru/"
-                          class="thumbnail"
                           target="_blank"
+                          class="thumbnail"
                           ><span class="frame"
                             ><img
-                              src="https://images.ctfassets.net/1pxughrhgws1/7eIMpj1ts2kO9AJYf3CcaY/22fbe8b8f0f73f97f3bd088ce9beb746/mzlffclicker.jpg?w=416&q=70&fm=webp"
+                              src="https://images.ctfassets.net/1pxughrhgws1/7eIMpj1ts2kO9AJYf3CcaY/22fbe8b8f0f73f97f3bd088ce9beb746/mzlffclicker.jpg?w=406&q=70&fm=webp"
                               alt="MZLFF Clicker" /></span
                         ></a>
                         <div class="caption"><p>MZLFF Clicker</p></div>
@@ -3364,20 +2199,20 @@
                     </ul>
                   </div>
                 </div>
-                <p id="text15" class="style2">
+                <p id="text09" class="style4">
                   Кликер про человека с кодовым именем mrEblan
                 </p>
-                <div id="gallery09" class="style1 gallery">
+                <div id="gallery04" class="style2 gallery">
                   <div class="inner">
                     <ul>
                       <li>
                         <a
                           href="https://go.greysoul.ru/uyRS"
-                          class="thumbnail"
                           target="_blank"
+                          class="thumbnail"
                           ><span class="frame"
                             ><img
-                              src="https://images.ctfassets.net/1pxughrhgws1/5afAnjAiOxRpc6P4YeyZUr/fc57b4824b9980fba2eeb4024c4684ca/greysalt.jpg?w=416&q=70&fm=webp"
+                              src="https://images.ctfassets.net/1pxughrhgws1/5afAnjAiOxRpc6P4YeyZUr/fc57b4824b9980fba2eeb4024c4684ca/greysalt.jpg?w=406&q=70&fm=webp"
                               alt="грейсоль" /></span
                         ></a>
                         <div class="caption"><p>грейсоль</p></div>
@@ -3385,20 +2220,20 @@
                     </ul>
                   </div>
                 </div>
-                <p id="text16" class="style2">
+                <p id="text10" class="style4">
                   YouTube-канал, на котором я выкладываю всё подряд
                 </p>
-                <div id="gallery10" class="style1 gallery">
+                <div id="gallery01" class="style2 gallery">
                   <div class="inner">
                     <ul>
                       <li>
                         <a
                           href="https://go.greysoul.ru/WsBR"
-                          class="thumbnail"
                           target="_blank"
+                          class="thumbnail"
                           ><span class="frame"
                             ><img
-                              src="https://images.ctfassets.net/1pxughrhgws1/5zJABY1nduf5UNs6ON1vyj/8c0929331d233da164c7501efd38edbc/script.jpg?w=416&q=70&fm=webp"
+                              src="https://images.ctfassets.net/1pxughrhgws1/5zJABY1nduf5UNs6ON1vyj/8c0929331d233da164c7501efd38edbc/script.jpg?w=406&q=70&fm=webp"
                               alt="Readable Transparent Image" /></span
                         ></a>
                         <div class="caption">
@@ -3408,22 +2243,22 @@
                     </ul>
                   </div>
                 </div>
-                <p id="text17" class="style2">
+                <p id="text11" class="style4">
                   Скрипт для Tampermonkey, который увеличивает прозрачность
                   белого фона, который появляется при просмотре прозрачных
                   изображений в браузере
                 </p>
-                <div id="gallery11" class="style1 gallery">
+                <div id="gallery06" class="style1 gallery">
                   <div class="inner">
                     <ul>
                       <li>
                         <a
                           href="https://tap.link/pkm"
-                          class="thumbnail"
                           target="_blank"
+                          class="thumbnail"
                           ><span class="frame"
                             ><img
-                              src="https://images.ctfassets.net/1pxughrhgws1/4TW9gAWfaJVG1xONUj7xpN/880d1f8dcb8060a4a29425bfd31664af/plizkillme.jpg?w=416&q=70&fm=webp"
+                              src="https://images.ctfassets.net/1pxughrhgws1/4TW9gAWfaJVG1xONUj7xpN/880d1f8dcb8060a4a29425bfd31664af/plizkillme.jpg?w=406&q=70&fm=webp"
                               alt="PLIZKILLME" /></span
                         ></a>
                         <div class="caption"><p>PLIZKILLME</p></div>
@@ -3431,20 +2266,20 @@
                     </ul>
                   </div>
                 </div>
-                <p id="text18" class="style2">
+                <p id="text12" class="style4">
                   Дистрибуция музыки и менеджмент артиста
                 </p>
-                <div id="gallery12" class="style1 gallery">
+                <div id="gallery02" class="style1 gallery">
                   <div class="inner">
                     <ul>
                       <li>
                         <a
                           href="https://tap.link/sosexy"
-                          class="thumbnail"
                           target="_blank"
+                          class="thumbnail"
                           ><span class="frame"
                             ><img
-                              src="https://images.ctfassets.net/1pxughrhgws1/1HK9M7IFl9ckOPLSmUlc6s/37f4bff64ca8656f1923432fb9618144/angie.jpg?w=416&q=70&fm=webp"
+                              src="https://images.ctfassets.net/1pxughrhgws1/1HK9M7IFl9ckOPLSmUlc6s/37f4bff64ca8656f1923432fb9618144/angie.jpg?w=406&q=70&fm=webp"
                               alt="Angie" /></span
                         ></a>
                         <div class="caption"><p>Angie</p></div>
@@ -3452,50 +2287,50 @@
                     </ul>
                   </div>
                 </div>
-                <p id="text19" class="style2">Дистрибуция музыки</p>
+                <p id="text15" class="style4">Дистрибуция музыки</p>
               </div>
             </div>
           </div>
-          <div id="donate" class="container default">
+          <div id="donate" class="style2 container default full">
             <div class="wrapper">
               <div class="inner">
-                <h2 id="text03" class="style4">Донат</h2>
-                <ul id="buttons02" class="buttons">
+                <h2 id="text14" class="style3">Донат</h2>
+                <ul id="buttons05" class="style1 buttons">
                   <li>
                     <a
                       href="https://go.greysoul.ru/HsfE"
-                      class="button n01"
                       target="_blank"
+                      class="button n01"
                       >DonationAlerts</a
                     >
                   </li>
                 </ul>
-                <ul id="buttons03" class="buttons">
+                <ul id="buttons06" class="style2 buttons">
                   <li>
                     <a
                       href="https://go.greysoul.ru/MEtK"
-                      class="button n01"
                       target="_blank"
+                      class="button n01"
                       >QIWI Кошелёк</a
                     >
                   </li>
                 </ul>
-                <ul id="buttons04" class="buttons">
+                <ul id="buttons07" class="style2 buttons">
                   <li>
                     <a
                       href="https://go.greysoul.ru/OmNG"
-                      class="button n01"
                       target="_blank"
+                      class="button n01"
                       >ЮMoney</a
                     >
                   </li>
                 </ul>
-                <ul id="buttons01" class="buttons">
+                <ul id="buttons08" class="style2 buttons">
                   <li>
                     <a
                       href="https://go.greysoul.ru/pgwT"
-                      class="button n01"
                       target="_blank"
+                      class="button n01"
                       >WebMoney</a
                     >
                   </li>
@@ -3503,11 +2338,11 @@
               </div>
             </div>
           </div>
-          <div id="cryptocurrencies" class="container default">
+          <div id="cryptocurrencies" class="style2 container default full">
             <div class="wrapper">
               <div class="inner">
-                <h2 id="text20" class="style4">Донат через криптовалюту</h2>
-                <ul id="buttons05" class="buttons">
+                <h2 id="text13" class="style3">Донат через криптовалюту</h2>
+                <ul id="buttons03" class="style2 buttons">
                   <li>
                     <a
                       href="bitcoin:1Nj1NNU3NcHeFZG8rBvuS5PW8aBSWxFbYL"
@@ -3516,10 +2351,10 @@
                     >
                   </li>
                 </ul>
-                <p id="text20" class="style2">
+                <p id="text16" class="style4">
                   1Nj1NNU3NcHeFZG8rBvuS5PW8aBSWxFbYL
                 </p>
-                <ul id="buttons06" class="buttons">
+                <ul id="buttons04" class="style2 buttons">
                   <li>
                     <a
                       href="bitcoincash:1K2qpamdMRBKM9bYEY7HL5nwpubELE7N2z"
@@ -3528,10 +2363,10 @@
                     >
                   </li>
                 </ul>
-                <p id="text21" class="style2">
+                <p id="text17" class="style4">
                   1K2qpamdMRBKM9bYEY7HL5nwpubELE7N2z
                 </p>
-                <ul id="buttons07" class="buttons">
+                <ul id="buttons01" class="style2 buttons">
                   <li>
                     <a
                       href="litecoin:ltc1qluggcksz6udftck9ts0xn4d4pqcagx2x4kdvh4"
@@ -3540,16 +2375,16 @@
                     >
                   </li>
                 </ul>
-                <p id="text22" class="style2">
+                <p id="text07" class="style4">
                   ltc1qluggcksz6udftck9ts0xn4d4pqcagx2x4kdvh4
                 </p>
               </div>
             </div>
           </div>
-          <div id="footer" class="container default">
+          <div id="footer" class="style1 container default full">
             <div class="wrapper">
               <div class="inner">
-                <p id="text07" class="style3">
+                <p id="text18" class="style5">
                   ©
                   <script>
                     document.write(new Date().getFullYear());
