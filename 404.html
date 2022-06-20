@@ -52,41 +52,6 @@
       type="font/woff2"
       crossorigin
     />
-    <script type="text/javascript">
-      (function (m, e, t, r, i, k, a) {
-        m[i] =
-          m[i] ||
-          function () {
-            (m[i].a = m[i].a || []).push(arguments);
-          };
-        m[i].l = 1 * new Date();
-        (k = e.createElement(t)),
-          (a = e.getElementsByTagName(t)[0]),
-          (k.async = 1),
-          (k.src = r),
-          a.parentNode.insertBefore(k, a);
-      })(
-        window,
-        document,
-        "script",
-        "https://mc.yandex.ru/metrika/tag.js",
-        "ym"
-      );
-
-      ym(88869864, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-      });
-    </script>
-    <noscript
-      ><div>
-        <img
-          src="https://mc.yandex.ru/watch/88869864"
-          style="position: absolute; left: -9999px"
-          alt=""
-        /></div
-    ></noscript>
     <style>
       html,
       body,
@@ -331,15 +296,14 @@
         overflow: hidden;
         position: relative;
         z-index: 2;
-        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
       }
       #main {
         --alignment: center;
         --flex-alignment: center;
-        --border-radius-tl: 3rem;
-        --border-radius-tr: 3rem;
-        --border-radius-br: 3rem;
-        --border-radius-bl: 3rem;
+        --border-radius-tl: 0;
+        --border-radius-tr: 0;
+        --border-radius-br: 0;
+        --border-radius-bl: 0;
         align-items: center;
         display: flex;
         flex-grow: 0;
@@ -349,15 +313,12 @@
         position: relative;
         text-align: var(--alignment);
         z-index: 1;
-        background-color: transparent;
-        border-radius: var(--border-radius-tl) var(--border-radius-tr)
-          var(--border-radius-br) var(--border-radius-bl);
       }
       #main > .inner {
         --padding-horizontal: 3rem;
-        --padding-vertical: 2rem;
-        --spacing: 0rem;
-        --width: 28rem;
+        --padding-vertical: 3rem;
+        --spacing: 1rem;
+        --width: 30rem;
         border-radius: var(--border-radius-tl) var(--border-radius-tr)
           var(--border-radius-br) var(--border-radius-bl);
         max-width: 100%;
@@ -409,175 +370,6 @@
         display: none !important;
         transition: none !important;
       }
-      .container {
-        position: relative;
-      }
-      .container > .wrapper {
-        vertical-align: top;
-        position: relative;
-        max-width: 100%;
-        border-radius: inherit;
-      }
-      .container > .wrapper > .inner {
-        vertical-align: top;
-        position: relative;
-        max-width: 100%;
-        border-radius: inherit;
-        text-align: var(--alignment);
-      }
-      #main .container.full:first-child > .wrapper {
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      #main .container.full:last-child > .wrapper {
-        border-bottom-left-radius: inherit;
-        border-bottom-right-radius: inherit;
-      }
-      #main .container.full:first-child > .wrapper > .inner {
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      #main .container.full:last-child > .wrapper > .inner {
-        border-bottom-left-radius: inherit;
-        border-bottom-right-radius: inherit;
-      }
-      .container.style2 {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        background-color: transparent;
-      }
-      .container.style2 > .wrapper > .inner {
-        --gutters: 2rem;
-        --padding-horizontal: 2rem;
-        --padding-vertical: 1.75rem;
-        padding: var(--padding-vertical) var(--padding-horizontal);
-      }
-      .container.style2 > .wrapper {
-        max-width: var(--width);
-        width: 100%;
-      }
-      .container.style2.default > .wrapper > .inner > * {
-        margin-bottom: var(--spacing);
-        margin-top: var(--spacing);
-      }
-      .container.style2.default > .wrapper > .inner > *:first-child {
-        margin-top: 0 !important;
-      }
-      .container.style2.default > .wrapper > .inner > *:last-child {
-        margin-bottom: 0 !important;
-      }
-      .container.style2.columns > .wrapper > .inner {
-        flex-wrap: wrap;
-        display: flex;
-        align-items: flex-start;
-      }
-      .container.style2.columns > .wrapper > .inner > * {
-        flex-grow: 0;
-        flex-shrink: 0;
-        max-width: 100%;
-        text-align: var(--alignment);
-        padding: 0 0 0 var(--gutters);
-      }
-      .container.style2.columns > .wrapper > .inner > * > * {
-        margin-bottom: var(--spacing);
-        margin-top: var(--spacing);
-      }
-      .container.style2.columns > .wrapper > .inner > * > *:first-child {
-        margin-top: 0 !important;
-      }
-      .container.style2.columns > .wrapper > .inner > * > *:last-child {
-        margin-bottom: 0 !important;
-      }
-      .container.style2.columns > .wrapper > .inner > *:first-child {
-        margin-left: calc(var(--gutters) * -1);
-      }
-      .container.style2.default > .wrapper > .inner > .full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        max-width: none !important;
-        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-      }
-      .container.style2.default > .wrapper > .inner > .full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      .container.style2.default > .wrapper > .inner > .full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-        border-bottom-left-radius: inherit;
-        border-bottom-right-radius: inherit;
-      }
-      .container.style2.columns > .wrapper > .inner > div > .full {
-        margin-left: calc(var(--gutters) * -0.5);
-        max-width: none !important;
-        width: calc(100% + var(--gutters) + 0.4725px);
-      }
-      .container.style2.columns > .wrapper > .inner > div:first-child > .full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        width: calc(
-          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
-            0.4725px
-        );
-      }
-      .container.style2.columns > .wrapper > .inner > div:last-child > .full {
-        width: calc(
-          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
-            0.4725px
-        );
-      }
-      .container.style2.columns > .wrapper > .inner > div > .full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-      }
-      .container.style2.columns > .wrapper > .inner > div > .full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-      }
-      .container.style2.columns > .wrapper > .inner > div:first-child,
-      .container.style2.columns
-        > .wrapper
-        > .inner
-        > div:first-child
-        > .full:first-child {
-        border-top-left-radius: inherit;
-      }
-      .container.style2.columns > .wrapper > .inner > div:last-child,
-      .container.style2.columns
-        > .wrapper
-        > .inner
-        > div:last-child
-        > .full:first-child {
-        border-top-right-radius: inherit;
-      }
-      .container.style2.columns > .wrapper > .inner > .full {
-        align-self: stretch;
-      }
-      .container.style2.columns > .wrapper > .inner > .full:first-child {
-        border-bottom-left-radius: inherit;
-        border-top-left-radius: inherit;
-      }
-      .container.style2.columns > .wrapper > .inner > .full:last-child {
-        border-bottom-right-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      .container.style2.columns
-        > .wrapper
-        > .inner
-        > .full
-        > .full:first-child:last-child {
-        border-radius: inherit;
-        height: calc(100% + (var(--padding-vertical) * 2));
-      }
-      .container.style2.columns
-        > .wrapper
-        > .inner
-        > .full
-        > .full:first-child:last-child
-        > * {
-        border-radius: inherit;
-        height: 100%;
-        position: absolute;
-        width: 100%;
-      }
       h1,
       h2,
       h3,
@@ -614,6 +406,87 @@
       p mark {
         -webkit-text-fill-color: currentcolor;
       }
+      h1.style1:not(:first-child),
+      h2.style1:not(:first-child),
+      h3.style1:not(:first-child),
+      p.style1:not(:first-child) {
+        margin-top: 2rem !important;
+      }
+      h1.style1:not(:last-child),
+      h2.style1:not(:last-child),
+      h3.style1:not(:last-child),
+      p.style1:not(:last-child) {
+        margin-bottom: 2rem !important;
+      }
+      h1.style1,
+      h2.style1,
+      h3.style1,
+      p.style1 {
+        color: #000000;
+        font-family: "Inter", sans-serif;
+        font-size: 3em;
+        line-height: 1.25;
+        font-weight: 900;
+      }
+      h1.style1 a,
+      h2.style1 a,
+      h3.style1 a,
+      p.style1 a {
+        text-decoration: underline;
+      }
+      h1.style1 a:hover,
+      h2.style1 a:hover,
+      h3.style1 a:hover,
+      p.style1 a:hover {
+        text-decoration: none;
+      }
+      h1.style1 span.p:nth-child(n + 2),
+      h2.style1 span.p:nth-child(n + 2),
+      h3.style1 span.p:nth-child(n + 2),
+      p.style1 span.p:nth-child(n + 2) {
+        margin-top: 1rem;
+      }
+      h1.style2:not(:first-child),
+      h2.style2:not(:first-child),
+      h3.style2:not(:first-child),
+      p.style2:not(:first-child) {
+        margin-top: 1rem !important;
+      }
+      h1.style2:not(:last-child),
+      h2.style2:not(:last-child),
+      h3.style2:not(:last-child),
+      p.style2:not(:last-child) {
+        margin-bottom: 1rem !important;
+      }
+      h1.style2,
+      h2.style2,
+      h3.style2,
+      p.style2 {
+        color: #545454;
+        font-family: "Inter", sans-serif;
+        font-size: 1em;
+        line-height: 1.875;
+        font-weight: 400;
+      }
+      h1.style2 a,
+      h2.style2 a,
+      h3.style2 a,
+      p.style2 a {
+        color: #000000;
+        text-decoration: none;
+      }
+      h1.style2 a:hover,
+      h2.style2 a:hover,
+      h3.style2 a:hover,
+      p.style2 a:hover {
+        text-decoration: underline;
+      }
+      h1.style2 span.p:nth-child(n + 2),
+      h2.style2 span.p:nth-child(n + 2),
+      h3.style2 span.p:nth-child(n + 2),
+      p.style2 span.p:nth-child(n + 2) {
+        margin-top: 1rem;
+      }
       h1.style5:not(:first-child),
       h2.style5:not(:first-child),
       h3.style5:not(:first-child),
@@ -647,7 +520,7 @@
       h2.style5 a:hover,
       h3.style5 a:hover,
       p.style5 a:hover {
-        color: #545454;
+        text-decoration: underline;
       }
       h1.style5 span.p:nth-child(n + 2),
       h2.style5 span.p:nth-child(n + 2),
@@ -655,86 +528,316 @@
       p.style5 span.p:nth-child(n + 2) {
         margin-top: 1rem;
       }
-      h1.style1:not(:first-child),
-      h2.style1:not(:first-child),
-      h3.style1:not(:first-child),
-      p.style1:not(:first-child) {
-        margin-top: 1.5rem !important;
+      .container {
+        position: relative;
       }
-      h1.style1:not(:last-child),
-      h2.style1:not(:last-child),
-      h3.style1:not(:last-child),
-      p.style1:not(:last-child) {
-        margin-bottom: 1.5rem !important;
+      .container > .wrapper {
+        vertical-align: top;
+        position: relative;
+        max-width: 100%;
+        border-radius: inherit;
       }
-      h1.style1,
-      h2.style1,
-      h3.style1,
-      p.style1 {
-        color: #000000;
-        font-family: "Inter", sans-serif;
-        font-size: 3em;
-        line-height: 1.5;
-        font-weight: 900;
+      .container > .wrapper > .inner {
+        vertical-align: top;
+        position: relative;
+        max-width: 100%;
+        border-radius: inherit;
+        text-align: var(--alignment);
       }
-      h1.style1 a,
-      h2.style1 a,
-      h3.style1 a,
-      p.style1 a {
-        text-decoration: underline;
+      #main .container.full:first-child > .wrapper {
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
       }
-      h1.style1 a:hover,
-      h2.style1 a:hover,
-      h3.style1 a:hover,
-      p.style1 a:hover {
-        text-decoration: none;
+      #main .container.full:last-child > .wrapper {
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
       }
-      h1.style1 span.p:nth-child(n + 2),
-      h2.style1 span.p:nth-child(n + 2),
-      h3.style1 span.p:nth-child(n + 2),
-      p.style1 span.p:nth-child(n + 2) {
-        margin-top: 1rem;
+      #main .container.full:first-child > .wrapper > .inner {
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
       }
-      h1.style4:not(:first-child),
-      h2.style4:not(:first-child),
-      h3.style4:not(:first-child),
-      p.style4:not(:first-child) {
-        margin-top: 2rem !important;
+      #main .container.full:last-child > .wrapper > .inner {
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
       }
-      h1.style4:not(:last-child),
-      h2.style4:not(:last-child),
-      h3.style4:not(:last-child),
-      p.style4:not(:last-child) {
-        margin-bottom: 2rem !important;
+      .container.style1 {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
       }
-      h1.style4,
-      h2.style4,
-      h3.style4,
-      p.style4 {
-        color: #545454;
-        font-family: "Inter", sans-serif;
-        font-size: 1em;
-        line-height: 1.875;
-        font-weight: 400;
+      .container.style1 > .wrapper > .inner {
+        --gutters: 4rem;
+        --padding-horizontal: 0rem;
+        --padding-vertical: 0rem;
+        --spacing: 1.5rem;
+        padding: var(--padding-vertical) var(--padding-horizontal);
       }
-      h1.style4 a,
-      h2.style4 a,
-      h3.style4 a,
-      p.style4 a {
-        color: #000000;
-        text-decoration: none;
+      .container.style1 > .wrapper {
+        max-width: var(--width);
+        width: 100%;
       }
-      h1.style4 a:hover,
-      h2.style4 a:hover,
-      h3.style4 a:hover,
-      p.style4 a:hover {
-        color: #545454;
+      .container.style1.default > .wrapper > .inner > * {
+        margin-bottom: var(--spacing);
+        margin-top: var(--spacing);
       }
-      h1.style4 span.p:nth-child(n + 2),
-      h2.style4 span.p:nth-child(n + 2),
-      h3.style4 span.p:nth-child(n + 2),
-      p.style4 span.p:nth-child(n + 2) {
-        margin-top: 1rem;
+      .container.style1.default > .wrapper > .inner > *:first-child {
+        margin-top: 0 !important;
+      }
+      .container.style1.default > .wrapper > .inner > *:last-child {
+        margin-bottom: 0 !important;
+      }
+      .container.style1.columns > .wrapper > .inner {
+        flex-wrap: wrap;
+        display: flex;
+        align-items: flex-start;
+      }
+      .container.style1.columns > .wrapper > .inner > * {
+        flex-grow: 0;
+        flex-shrink: 0;
+        max-width: 100%;
+        text-align: var(--alignment);
+        padding: 0 0 0 var(--gutters);
+      }
+      .container.style1.columns > .wrapper > .inner > * > * {
+        margin-bottom: var(--spacing);
+        margin-top: var(--spacing);
+      }
+      .container.style1.columns > .wrapper > .inner > * > *:first-child {
+        margin-top: 0 !important;
+      }
+      .container.style1.columns > .wrapper > .inner > * > *:last-child {
+        margin-bottom: 0 !important;
+      }
+      .container.style1.columns > .wrapper > .inner > *:first-child {
+        margin-left: calc(var(--gutters) * -1);
+      }
+      .container.style1.default > .wrapper > .inner > .full {
+        margin-left: calc(var(--padding-horizontal) * -1);
+        max-width: none !important;
+        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+      }
+      .container.style1.default > .wrapper > .inner > .full:first-child {
+        margin-top: calc(var(--padding-vertical) * -1) !important;
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+      }
+      .container.style1.default > .wrapper > .inner > .full:last-child {
+        margin-bottom: calc(var(--padding-vertical) * -1) !important;
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+      }
+      .container.style1.columns > .wrapper > .inner > div > .full {
+        margin-left: calc(var(--gutters) * -0.5);
+        max-width: none !important;
+        width: calc(100% + var(--gutters) + 0.4725px);
+      }
+      .container.style1.columns > .wrapper > .inner > div:first-child > .full {
+        margin-left: calc(var(--padding-horizontal) * -1);
+        width: calc(
+          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
+            0.4725px
+        );
+      }
+      .container.style1.columns > .wrapper > .inner > div:last-child > .full {
+        width: calc(
+          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
+            0.4725px
+        );
+      }
+      .container.style1.columns > .wrapper > .inner > div > .full:first-child {
+        margin-top: calc(var(--padding-vertical) * -1) !important;
+      }
+      .container.style1.columns > .wrapper > .inner > div > .full:last-child {
+        margin-bottom: calc(var(--padding-vertical) * -1) !important;
+      }
+      .container.style1.columns > .wrapper > .inner > div:first-child,
+      .container.style1.columns
+        > .wrapper
+        > .inner
+        > div:first-child
+        > .full:first-child {
+        border-top-left-radius: inherit;
+      }
+      .container.style1.columns > .wrapper > .inner > div:last-child,
+      .container.style1.columns
+        > .wrapper
+        > .inner
+        > div:last-child
+        > .full:first-child {
+        border-top-right-radius: inherit;
+      }
+      .container.style1.columns > .wrapper > .inner > .full {
+        align-self: stretch;
+      }
+      .container.style1.columns > .wrapper > .inner > .full:first-child {
+        border-bottom-left-radius: inherit;
+        border-top-left-radius: inherit;
+      }
+      .container.style1.columns > .wrapper > .inner > .full:last-child {
+        border-bottom-right-radius: inherit;
+        border-top-right-radius: inherit;
+      }
+      .container.style1.columns
+        > .wrapper
+        > .inner
+        > .full
+        > .full:first-child:last-child {
+        border-radius: inherit;
+        height: calc(100% + (var(--padding-vertical) * 2));
+      }
+      .container.style1.columns
+        > .wrapper
+        > .inner
+        > .full
+        > .full:first-child:last-child
+        > * {
+        border-radius: inherit;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+      }
+      .container.style5 {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+      }
+      .container.style5:not(:first-child) {
+        margin-top: 3rem !important;
+      }
+      .container.style5 > .wrapper > .inner {
+        --gutters: 4rem;
+        --padding-horizontal: 0rem;
+        --padding-vertical: 0rem;
+        --spacing: 1.5rem;
+        padding: var(--padding-vertical) var(--padding-horizontal);
+      }
+      .container.style5 > .wrapper {
+        max-width: var(--width);
+        width: 100%;
+      }
+      .container.style5.default > .wrapper > .inner > * {
+        margin-bottom: var(--spacing);
+        margin-top: var(--spacing);
+      }
+      .container.style5.default > .wrapper > .inner > *:first-child {
+        margin-top: 0 !important;
+      }
+      .container.style5.default > .wrapper > .inner > *:last-child {
+        margin-bottom: 0 !important;
+      }
+      .container.style5.columns > .wrapper > .inner {
+        flex-wrap: wrap;
+        display: flex;
+        align-items: flex-start;
+      }
+      .container.style5.columns > .wrapper > .inner > * {
+        flex-grow: 0;
+        flex-shrink: 0;
+        max-width: 100%;
+        text-align: var(--alignment);
+        padding: 0 0 0 var(--gutters);
+      }
+      .container.style5.columns > .wrapper > .inner > * > * {
+        margin-bottom: var(--spacing);
+        margin-top: var(--spacing);
+      }
+      .container.style5.columns > .wrapper > .inner > * > *:first-child {
+        margin-top: 0 !important;
+      }
+      .container.style5.columns > .wrapper > .inner > * > *:last-child {
+        margin-bottom: 0 !important;
+      }
+      .container.style5.columns > .wrapper > .inner > *:first-child {
+        margin-left: calc(var(--gutters) * -1);
+      }
+      .container.style5.default > .wrapper > .inner > .full {
+        margin-left: calc(var(--padding-horizontal) * -1);
+        max-width: none !important;
+        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+      }
+      .container.style5.default > .wrapper > .inner > .full:first-child {
+        margin-top: calc(var(--padding-vertical) * -1) !important;
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+      }
+      .container.style5.default > .wrapper > .inner > .full:last-child {
+        margin-bottom: calc(var(--padding-vertical) * -1) !important;
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+      }
+      .container.style5.columns > .wrapper > .inner > div > .full {
+        margin-left: calc(var(--gutters) * -0.5);
+        max-width: none !important;
+        width: calc(100% + var(--gutters) + 0.4725px);
+      }
+      .container.style5.columns > .wrapper > .inner > div:first-child > .full {
+        margin-left: calc(var(--padding-horizontal) * -1);
+        width: calc(
+          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
+            0.4725px
+        );
+      }
+      .container.style5.columns > .wrapper > .inner > div:last-child > .full {
+        width: calc(
+          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
+            0.4725px
+        );
+      }
+      .container.style5.columns > .wrapper > .inner > div > .full:first-child {
+        margin-top: calc(var(--padding-vertical) * -1) !important;
+      }
+      .container.style5.columns > .wrapper > .inner > div > .full:last-child {
+        margin-bottom: calc(var(--padding-vertical) * -1) !important;
+      }
+      .container.style5.columns > .wrapper > .inner > div:first-child,
+      .container.style5.columns
+        > .wrapper
+        > .inner
+        > div:first-child
+        > .full:first-child {
+        border-top-left-radius: inherit;
+      }
+      .container.style5.columns > .wrapper > .inner > div:last-child,
+      .container.style5.columns
+        > .wrapper
+        > .inner
+        > div:last-child
+        > .full:first-child {
+        border-top-right-radius: inherit;
+      }
+      .container.style5.columns > .wrapper > .inner > .full {
+        align-self: stretch;
+      }
+      .container.style5.columns > .wrapper > .inner > .full:first-child {
+        border-bottom-left-radius: inherit;
+        border-top-left-radius: inherit;
+      }
+      .container.style5.columns > .wrapper > .inner > .full:last-child {
+        border-bottom-right-radius: inherit;
+        border-top-right-radius: inherit;
+      }
+      .container.style5.columns
+        > .wrapper
+        > .inner
+        > .full
+        > .full:first-child:last-child {
+        border-radius: inherit;
+        height: calc(100% + (var(--padding-vertical) * 2));
+      }
+      .container.style5.columns
+        > .wrapper
+        > .inner
+        > .full
+        > .full:first-child:last-child
+        > * {
+        border-radius: inherit;
+        height: 100%;
+        position: absolute;
+        width: 100%;
       }
       .buttons {
         cursor: default;
@@ -755,18 +858,18 @@
         vertical-align: middle;
         white-space: nowrap;
       }
-      .buttons.style2 {
-        gap: 0.75rem;
+      .buttons.style1 {
+        gap: 2rem;
         flex-direction: row;
         flex-wrap: wrap;
       }
-      .buttons.style2:not(:first-child) {
+      .buttons.style1:not(:first-child) {
         margin-top: 2rem !important;
       }
-      .buttons.style2:not(:last-child) {
+      .buttons.style1:not(:last-child) {
         margin-bottom: 2rem !important;
       }
-      .buttons.style2 li a {
+      .buttons.style1 li a {
         display: flex;
         width: 100vw;
         height: 4rem;
@@ -781,15 +884,12 @@
         transition: transform 0.25s ease, color 0.25s ease,
           background-color 0.25s ease, border-color 0.25s ease;
       }
-      .buttons.style2 .button {
+      .buttons.style1 .button {
         background-color: #000000;
         color: #ffffff;
       }
-      .buttons.style2 li a:hover {
+      .buttons.style1 li a:hover {
         transform: scale(0.94);
-      }
-      #buttons03 .n01:hover {
-        background-color: #545454 !important;
       }
       @media (max-width: 1920px) {
       }
@@ -809,55 +909,35 @@
         html {
           font-size: 11pt;
         }
-      }
-      @media (max-width: 736px) {
-        html {
-          font-size: 11pt;
+        .container.style1 {
+          --alignment: center;
+          --flex-alignment: center;
         }
-        #main {
-          --border-radius-tl: 0;
-          --border-radius-tr: 0;
-          --border-radius-br: 0;
-          --border-radius-bl: 0;
-        }
-        #wrapper {
-          padding: 0rem 0rem 0rem 0rem;
-        }
-        #main > .inner {
-          --padding-horizontal: 2rem;
-          --padding-vertical: 3.375rem;
-          --spacing: 0rem;
-        }
-        .container.style2 > .wrapper > .inner {
-          --gutters: 2rem;
-          --padding-horizontal: 2rem;
-          --padding-vertical: 1.375rem;
-        }
-        .container.style2.columns > .wrapper > .inner {
+        .container.style1.columns > .wrapper > .inner {
           flex-direction: column !important;
           flex-wrap: nowrap !important;
         }
-        .container.style2.columns > .wrapper > .inner > span {
+        .container.style1.columns > .wrapper > .inner > span {
           height: 0;
           margin-top: calc(var(--gutters) * -1);
           pointer-events: none;
           visibility: hidden;
         }
-        .container.style2.columns > .wrapper > .inner > *:first-child {
+        .container.style1.columns > .wrapper > .inner > *:first-child {
           margin-left: 0 !important;
           padding-top: 0 !important;
         }
-        .container.style2.columns > .wrapper > .inner > * {
+        .container.style1.columns > .wrapper > .inner > * {
           padding: calc(var(--gutters) * 0.5) 0 !important;
         }
-        .container.style2.columns > .wrapper > .inner > *:last-child {
+        .container.style1.columns > .wrapper > .inner > *:last-child {
           padding-bottom: 0 !important;
         }
-        .container.style2.columns > .wrapper > .inner > div > .full {
+        .container.style1.columns > .wrapper > .inner > div > .full {
           margin-left: calc(var(--padding-horizontal) * -1);
           width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
         }
-        .container.style2.columns
+        .container.style1.columns
           > .wrapper
           > .inner
           > div:first-of-type
@@ -865,7 +945,7 @@
           margin-left: calc(var(--padding-horizontal) * -1);
           width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
         }
-        .container.style2.columns
+        .container.style1.columns
           > .wrapper
           > .inner
           > div:last-of-type
@@ -873,32 +953,32 @@
           margin-left: calc(var(--padding-horizontal) * -1);
           width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
         }
-        .container.style2.columns
+        .container.style1.columns
           > .wrapper
           > .inner
           > div
           > .full:first-child {
           margin-top: calc(var(--gutters) * -0.5) !important;
         }
-        .container.style2.columns > .wrapper > .inner > div > .full:last-child {
+        .container.style1.columns > .wrapper > .inner > div > .full:last-child {
           margin-bottom: calc(var(--gutters) * -0.5) !important;
         }
-        .container.style2.columns
+        .container.style1.columns
           > .wrapper
           > .inner
           > div:first-of-type
           > .full:first-child {
           margin-top: calc(var(--padding-vertical) * -1) !important;
         }
-        .container.style2.columns
+        .container.style1.columns
           > .wrapper
           > .inner
           > div:last-of-type
           > .full:last-child {
           margin-bottom: calc(var(--padding-vertical) * -1) !important;
         }
-        .container.style2.columns > .wrapper > .inner > div:first-of-type,
-        .container.style2.columns
+        .container.style1.columns > .wrapper > .inner > div:first-of-type,
+        .container.style1.columns
           > .wrapper
           > .inner
           > div:first-of-type
@@ -906,8 +986,8 @@
           border-top-left-radius: inherit;
           border-top-right-radius: inherit;
         }
-        .container.style2.columns > .wrapper > .inner > div:last-of-type,
-        .container.style2.columns
+        .container.style1.columns > .wrapper > .inner > div:last-of-type,
+        .container.style1.columns
           > .wrapper
           > .inner
           > div:last-of-type
@@ -915,30 +995,30 @@
           border-bottom-left-radius: inherit;
           border-bottom-right-radius: inherit;
         }
-        .container.style2.columns > .wrapper > .inner > div:first-of-type,
-        .container.style2.columns
+        .container.style1.columns > .wrapper > .inner > div:first-of-type,
+        .container.style1.columns
           > .wrapper
           > .inner
           > div:first-of-type
           > .full:last-child {
           border-bottom-left-radius: 0 !important;
         }
-        .container.style2.columns > .wrapper > .inner > div:last-of-type,
-        .container.style2.columns
+        .container.style1.columns > .wrapper > .inner > div:last-of-type,
+        .container.style1.columns
           > .wrapper
           > .inner
           > div:last-of-type
           > .full:first-child {
           border-top-right-radius: 0 !important;
         }
-        .container.style2.columns
+        .container.style1.columns
           > .wrapper
           > .inner
           > .full
           > .full:first-child:last-child {
           height: auto;
         }
-        .container.style2.columns
+        .container.style1.columns
           > .wrapper
           > .inner
           > .full
@@ -947,6 +1027,209 @@
           height: auto;
           position: relative;
           width: auto;
+        }
+        .container.style1.columns
+          > .wrapper
+          > .inner
+          > .full
+          > .full:first-child:last-child.image
+          img {
+          max-height: 35rem;
+        }
+        .container.style1.columns
+          > .wrapper
+          > .inner
+          > .full
+          > .full:first-child:last-child.slideshow
+          .bg {
+          min-height: 35rem;
+        }
+        .container.style5 {
+          --alignment: center;
+          --flex-alignment: center;
+        }
+        .container.style5.columns > .wrapper > .inner {
+          flex-direction: column !important;
+          flex-wrap: nowrap !important;
+        }
+        .container.style5.columns > .wrapper > .inner > span {
+          height: 0;
+          margin-top: calc(var(--gutters) * -1);
+          pointer-events: none;
+          visibility: hidden;
+        }
+        .container.style5.columns > .wrapper > .inner > *:first-child {
+          margin-left: 0 !important;
+          padding-top: 0 !important;
+        }
+        .container.style5.columns > .wrapper > .inner > * {
+          padding: calc(var(--gutters) * 0.5) 0 !important;
+        }
+        .container.style5.columns > .wrapper > .inner > *:last-child {
+          padding-bottom: 0 !important;
+        }
+        .container.style5.columns > .wrapper > .inner > div > .full {
+          margin-left: calc(var(--padding-horizontal) * -1);
+          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+        }
+        .container.style5.columns
+          > .wrapper
+          > .inner
+          > div:first-of-type
+          > .full {
+          margin-left: calc(var(--padding-horizontal) * -1);
+          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+        }
+        .container.style5.columns
+          > .wrapper
+          > .inner
+          > div:last-of-type
+          > .full {
+          margin-left: calc(var(--padding-horizontal) * -1);
+          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
+        }
+        .container.style5.columns
+          > .wrapper
+          > .inner
+          > div
+          > .full:first-child {
+          margin-top: calc(var(--gutters) * -0.5) !important;
+        }
+        .container.style5.columns > .wrapper > .inner > div > .full:last-child {
+          margin-bottom: calc(var(--gutters) * -0.5) !important;
+        }
+        .container.style5.columns
+          > .wrapper
+          > .inner
+          > div:first-of-type
+          > .full:first-child {
+          margin-top: calc(var(--padding-vertical) * -1) !important;
+        }
+        .container.style5.columns
+          > .wrapper
+          > .inner
+          > div:last-of-type
+          > .full:last-child {
+          margin-bottom: calc(var(--padding-vertical) * -1) !important;
+        }
+        .container.style5.columns > .wrapper > .inner > div:first-of-type,
+        .container.style5.columns
+          > .wrapper
+          > .inner
+          > div:first-of-type
+          > .full:first-child {
+          border-top-left-radius: inherit;
+          border-top-right-radius: inherit;
+        }
+        .container.style5.columns > .wrapper > .inner > div:last-of-type,
+        .container.style5.columns
+          > .wrapper
+          > .inner
+          > div:last-of-type
+          > .full:last-child {
+          border-bottom-left-radius: inherit;
+          border-bottom-right-radius: inherit;
+        }
+        .container.style5.columns > .wrapper > .inner > div:first-of-type,
+        .container.style5.columns
+          > .wrapper
+          > .inner
+          > div:first-of-type
+          > .full:last-child {
+          border-bottom-left-radius: 0 !important;
+        }
+        .container.style5.columns > .wrapper > .inner > div:last-of-type,
+        .container.style5.columns
+          > .wrapper
+          > .inner
+          > div:last-of-type
+          > .full:first-child {
+          border-top-right-radius: 0 !important;
+        }
+        .container.style5.columns
+          > .wrapper
+          > .inner
+          > .full
+          > .full:first-child:last-child {
+          height: auto;
+        }
+        .container.style5.columns
+          > .wrapper
+          > .inner
+          > .full
+          > .full:first-child:last-child
+          > * {
+          height: auto;
+          position: relative;
+          width: auto;
+        }
+        .container.style5.columns
+          > .wrapper
+          > .inner
+          > .full
+          > .full:first-child:last-child.image
+          img {
+          max-height: 35rem;
+        }
+        .container.style5.columns
+          > .wrapper
+          > .inner
+          > .full
+          > .full:first-child:last-child.slideshow
+          .bg {
+          min-height: 35rem;
+        }
+      }
+      @media (max-width: 736px) {
+        html {
+          font-size: 11pt;
+        }
+        #main > .inner {
+          --padding-horizontal: 2.5rem;
+          --padding-vertical: 3.5rem;
+          --spacing: 1rem;
+        }
+        h1.style1:not(:first-child),
+        h2.style1:not(:first-child),
+        h3.style1:not(:first-child),
+        p.style1:not(:first-child) {
+          margin-top: 2rem !important;
+        }
+        h1.style1:not(:last-child),
+        h2.style1:not(:last-child),
+        h3.style1:not(:last-child),
+        p.style1:not(:last-child) {
+          margin-bottom: 2rem !important;
+        }
+        h1.style1,
+        h2.style1,
+        h3.style1,
+        p.style1 {
+          letter-spacing: 0rem;
+          width: 100%;
+          font-size: 2.5em;
+          line-height: 1.25;
+        }
+        h1.style2:not(:first-child),
+        h2.style2:not(:first-child),
+        h3.style2:not(:first-child),
+        p.style2:not(:first-child) {
+          margin-top: 0.75rem !important;
+        }
+        h1.style2:not(:last-child),
+        h2.style2:not(:last-child),
+        h3.style2:not(:last-child),
+        p.style2:not(:last-child) {
+          margin-bottom: 0.75rem !important;
+        }
+        h1.style2,
+        h2.style2,
+        h3.style2,
+        p.style2 {
+          letter-spacing: 0rem;
+          width: 100%;
+          font-size: 1em;
+          line-height: 1.875;
         }
         h1.style5:not(:first-child),
         h2.style5:not(:first-child),
@@ -969,89 +1252,107 @@
           font-size: 0.75em;
           line-height: 1.875;
         }
-        h1.style1:not(:first-child),
-        h2.style1:not(:first-child),
-        h3.style1:not(:first-child),
-        p.style1:not(:first-child) {
-          margin-top: 1.5rem !important;
+        .container.style1 > .wrapper > .inner {
+          --gutters: 4rem;
+          --padding-horizontal: 0rem;
+          --padding-vertical: 0rem;
+          --spacing: 1.5rem;
         }
-        h1.style1:not(:last-child),
-        h2.style1:not(:last-child),
-        h3.style1:not(:last-child),
-        p.style1:not(:last-child) {
-          margin-bottom: 1.5rem !important;
+        .container.style1.columns > .wrapper > .inner > * {
+          padding: calc(var(--gutters) * 0.5) 0 !important;
         }
-        h1.style1,
-        h2.style1,
-        h3.style1,
-        p.style1 {
-          letter-spacing: 0rem;
-          width: 100%;
-          font-size: 2.625em;
-          line-height: 1.5;
+        .container.style1.columns
+          > .wrapper
+          > .inner
+          > .full
+          > .full:first-child:last-child.image
+          img {
+          max-height: none;
         }
-        h1.style4:not(:first-child),
-        h2.style4:not(:first-child),
-        h3.style4:not(:first-child),
-        p.style4:not(:first-child) {
-          margin-top: 1.5rem !important;
+        .container.style1.columns
+          > .wrapper
+          > .inner
+          > .full
+          > .full:first-child:last-child.slideshow
+          .bg {
+          min-height: auto;
         }
-        h1.style4:not(:last-child),
-        h2.style4:not(:last-child),
-        h3.style4:not(:last-child),
-        p.style4:not(:last-child) {
-          margin-bottom: 1.5rem !important;
+        .container.style5:not(:first-child) {
+          margin-top: 2.25rem !important;
         }
-        h1.style4,
-        h2.style4,
-        h3.style4,
-        p.style4 {
-          letter-spacing: 0rem;
-          width: 100%;
-          font-size: 1em;
-          line-height: 1.875;
+        .container.style5 > .wrapper > .inner {
+          --gutters: 4rem;
+          --padding-horizontal: 0rem;
+          --padding-vertical: 1rem;
+          --spacing: 1.5rem;
         }
-        .buttons.style2:not(:first-child) {
-          margin-top: 1.5rem !important;
+        .container.style5.columns > .wrapper > .inner > * {
+          padding: calc(var(--gutters) * 0.5) 0 !important;
         }
-        .buttons.style2:not(:last-child) {
-          margin-bottom: 1.5rem !important;
+        .container.style5.columns
+          > .wrapper
+          > .inner
+          > .full
+          > .full:first-child:last-child.image
+          img {
+          max-height: none;
         }
-        .buttons.style2 li a {
+        .container.style5.columns
+          > .wrapper
+          > .inner
+          > .full
+          > .full:first-child:last-child.slideshow
+          .bg {
+          min-height: auto;
+        }
+        .buttons.style1:not(:first-child) {
+          margin-top: 2rem !important;
+        }
+        .buttons.style1:not(:last-child) {
+          margin-bottom: 2rem !important;
+        }
+        .buttons.style1 li a {
           letter-spacing: 0rem;
           font-size: 1em;
         }
       }
       @media (max-width: 480px) {
-        #wrapper {
-          padding: 0rem 0rem 0rem 0rem;
-        }
         #main > .inner {
-          --spacing: 0rem;
+          --spacing: 0.875rem;
         }
-        .buttons.style2 {
+        .container.style1 > .wrapper > .inner {
+          --spacing: 1.3125rem;
+        }
+        .container.style5 > .wrapper > .inner {
+          --spacing: 1.3125rem;
+        }
+        .buttons.style1 {
           flex-direction: column;
           flex-wrap: nowrap;
         }
-        .buttons.style2 li a {
+        .buttons.style1 li a {
           display: inline-flex;
           max-width: 100%;
           width: 100%;
         }
       }
       @media (max-width: 360px) {
-        #wrapper {
-          padding: 0rem 0rem 0rem 0rem;
-        }
         #main > .inner {
-          --padding-horizontal: 1.5rem;
-          --padding-vertical: 2.53125rem;
-          --spacing: 0rem;
+          --padding-horizontal: 1.875rem;
+          --padding-vertical: 2.625rem;
+          --spacing: 0.75rem;
         }
-        .container.style2 > .wrapper > .inner {
-          --gutters: 1.5rem;
-          --padding-horizontal: 1.5rem;
-          --padding-vertical: 1.03125rem;
+        h1.style1,
+        h2.style1,
+        h3.style1,
+        p.style1 {
+          font-size: 2.5em;
+        }
+        h1.style2,
+        h2.style2,
+        h3.style2,
+        p.style2 {
+          font-size: 1em;
         }
         h1.style5,
         h2.style5,
@@ -1059,20 +1360,20 @@
         p.style5 {
           font-size: 0.75em;
         }
-        h1.style1,
-        h2.style1,
-        h3.style1,
-        p.style1 {
-          font-size: 2.625em;
+        .container.style1 > .wrapper > .inner {
+          --gutters: 3rem;
+          --padding-horizontal: 0rem;
+          --padding-vertical: 0rem;
+          --spacing: 1.125rem;
         }
-        h1.style4,
-        h2.style4,
-        h3.style4,
-        p.style4 {
-          font-size: 1em;
+        .container.style5 > .wrapper > .inner {
+          --gutters: 3rem;
+          --padding-horizontal: 0rem;
+          --padding-vertical: 0.75rem;
+          --spacing: 1.125rem;
         }
-        .buttons.style2 {
-          gap: 0.5625rem;
+        .buttons.style1 {
+          gap: 1.5rem;
         }
       }
     </style>
@@ -1081,26 +1382,26 @@
     <div id="wrapper">
       <div id="main">
         <div class="inner">
-          <div id="error" class="style2 container default full">
+          <div id="container03" class="style1 container default">
             <div class="wrapper">
               <div class="inner">
-                <h1 id="text13" class="style1">404: Страница не найдена</h1>
-                <p id="text16" class="style4">
+                <h1 id="text06" class="style1">404: Страница не найдена</h1>
+                <p id="text07" class="style2">
                   Если вы попали на эту страницу по ошибке, то перейдите,
                   пожалуйста, на главную страницу
                 </p>
-                <ul id="buttons03" class="style2 buttons">
-                  <li>
-                    <a href="/" class="button n01">Главная страница</a>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
-          <div id="footer" class="style2 container default full">
+          <ul id="buttons03" class="style1 buttons">
+            <li>
+              <a href="/" class="button n01">Главная страница</a>
+            </li>
+          </ul>
+          <div id="container06" class="style5 container default">
             <div class="wrapper">
               <div class="inner">
-                <p id="text18" class="style5">
+                <p id="text19" class="style5">
                   ©
                   <script>
                     document.write(new Date().getFullYear());
@@ -1114,5 +1415,40 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(88869864, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/88869864"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
   </body>
 </html>
