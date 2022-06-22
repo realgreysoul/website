@@ -295,7 +295,7 @@
         align-items: center;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         min-height: var(--viewport-height);
         overflow: hidden;
         position: relative;
@@ -320,8 +320,8 @@
       }
       #main > .inner {
         --padding-horizontal: 3rem;
-        --padding-vertical: 3rem;
-        --spacing: 1rem;
+        --padding-vertical: 4rem;
+        --spacing: 4rem;
         --width: 30rem;
         border-radius: var(--border-radius-tl) var(--border-radius-tr)
           var(--border-radius-br) var(--border-radius-bl);
@@ -489,17 +489,98 @@
       p.style1 span.p:nth-child(n + 2) {
         margin-top: 1rem;
       }
+      h1.style4:not(:first-child),
+      h2.style4:not(:first-child),
+      h3.style4:not(:first-child),
+      p.style4:not(:first-child) {
+        margin-top: 4rem !important;
+      }
+      h1.style4:not(:last-child),
+      h2.style4:not(:last-child),
+      h3.style4:not(:last-child),
+      p.style4:not(:last-child) {
+        margin-bottom: 4rem !important;
+      }
+      h1.style4,
+      h2.style4,
+      h3.style4,
+      p.style4 {
+        color: #000000;
+        font-family: "Inter", sans-serif;
+        font-size: 3.125em;
+        line-height: 1.5;
+        font-weight: 900;
+      }
+      h1.style4 a,
+      h2.style4 a,
+      h3.style4 a,
+      p.style4 a {
+        text-decoration: underline;
+      }
+      h1.style4 a:hover,
+      h2.style4 a:hover,
+      h3.style4 a:hover,
+      p.style4 a:hover {
+        text-decoration: none;
+      }
+      h1.style4 span.p:nth-child(n + 2),
+      h2.style4 span.p:nth-child(n + 2),
+      h3.style4 span.p:nth-child(n + 2),
+      p.style4 span.p:nth-child(n + 2) {
+        margin-top: 1rem;
+      }
+      h1.style3:not(:first-child),
+      h2.style3:not(:first-child),
+      h3.style3:not(:first-child),
+      p.style3:not(:first-child) {
+        margin-top: 2.5rem !important;
+      }
+      h1.style3:not(:last-child),
+      h2.style3:not(:last-child),
+      h3.style3:not(:last-child),
+      p.style3:not(:last-child) {
+        margin-bottom: 2.5rem !important;
+      }
+      h1.style3,
+      h2.style3,
+      h3.style3,
+      p.style3 {
+        color: #545454;
+        font-family: "Inter", sans-serif;
+        font-size: 1em;
+        line-height: 1.875;
+        font-weight: 400;
+      }
+      h1.style3 a,
+      h2.style3 a,
+      h3.style3 a,
+      p.style3 a {
+        color: #000000;
+        text-decoration: none;
+      }
+      h1.style3 a:hover,
+      h2.style3 a:hover,
+      h3.style3 a:hover,
+      p.style3 a:hover {
+        text-decoration: underline;
+      }
+      h1.style3 span.p:nth-child(n + 2),
+      h2.style3 span.p:nth-child(n + 2),
+      h3.style3 span.p:nth-child(n + 2),
+      p.style3 span.p:nth-child(n + 2) {
+        margin-top: 1rem;
+      }
       h1.style2:not(:first-child),
       h2.style2:not(:first-child),
       h3.style2:not(:first-child),
       p.style2:not(:first-child) {
-        margin-top: 1rem !important;
+        margin-top: 1.25rem !important;
       }
       h1.style2:not(:last-child),
       h2.style2:not(:last-child),
       h3.style2:not(:last-child),
       p.style2:not(:last-child) {
-        margin-bottom: 1rem !important;
+        margin-bottom: 1.25rem !important;
       }
       h1.style2,
       h2.style2,
@@ -530,98 +611,17 @@
       p.style2 span.p:nth-child(n + 2) {
         margin-top: 1rem;
       }
-      h1.style3:not(:first-child),
-      h2.style3:not(:first-child),
-      h3.style3:not(:first-child),
-      p.style3:not(:first-child) {
-        margin-top: 3rem !important;
-      }
-      h1.style3:not(:last-child),
-      h2.style3:not(:last-child),
-      h3.style3:not(:last-child),
-      p.style3:not(:last-child) {
-        margin-bottom: 3rem !important;
-      }
-      h1.style3,
-      h2.style3,
-      h3.style3,
-      p.style3 {
-        color: #000000;
-        font-family: "Inter", sans-serif;
-        font-size: 3.125em;
-        line-height: 1.5;
-        font-weight: 900;
-      }
-      h1.style3 a,
-      h2.style3 a,
-      h3.style3 a,
-      p.style3 a {
-        text-decoration: underline;
-      }
-      h1.style3 a:hover,
-      h2.style3 a:hover,
-      h3.style3 a:hover,
-      p.style3 a:hover {
-        text-decoration: none;
-      }
-      h1.style3 span.p:nth-child(n + 2),
-      h2.style3 span.p:nth-child(n + 2),
-      h3.style3 span.p:nth-child(n + 2),
-      p.style3 span.p:nth-child(n + 2) {
-        margin-top: 1rem;
-      }
-      h1.style4:not(:first-child),
-      h2.style4:not(:first-child),
-      h3.style4:not(:first-child),
-      p.style4:not(:first-child) {
-        margin-top: 2.5rem !important;
-      }
-      h1.style4:not(:last-child),
-      h2.style4:not(:last-child),
-      h3.style4:not(:last-child),
-      p.style4:not(:last-child) {
-        margin-bottom: 2.5rem !important;
-      }
-      h1.style4,
-      h2.style4,
-      h3.style4,
-      p.style4 {
-        color: #545454;
-        font-family: "Inter", sans-serif;
-        font-size: 1em;
-        line-height: 1.875;
-        font-weight: 400;
-      }
-      h1.style4 a,
-      h2.style4 a,
-      h3.style4 a,
-      p.style4 a {
-        color: #000000;
-        text-decoration: none;
-      }
-      h1.style4 a:hover,
-      h2.style4 a:hover,
-      h3.style4 a:hover,
-      p.style4 a:hover {
-        text-decoration: underline;
-      }
-      h1.style4 span.p:nth-child(n + 2),
-      h2.style4 span.p:nth-child(n + 2),
-      h3.style4 span.p:nth-child(n + 2),
-      p.style4 span.p:nth-child(n + 2) {
-        margin-top: 1rem;
-      }
       h1.style5:not(:first-child),
       h2.style5:not(:first-child),
       h3.style5:not(:first-child),
       p.style5:not(:first-child) {
-        margin-top: 1rem !important;
+        margin-top: 1.25rem !important;
       }
       h1.style5:not(:last-child),
       h2.style5:not(:last-child),
       h3.style5:not(:last-child),
       p.style5:not(:last-child) {
-        margin-bottom: 1rem !important;
+        margin-bottom: 1.25rem !important;
       }
       h1.style5,
       h2.style5,
@@ -651,70 +651,6 @@
       h3.style5 span.p:nth-child(n + 2),
       p.style5 span.p:nth-child(n + 2) {
         margin-top: 1rem;
-      }
-      .icons {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: var(--flex-alignment);
-        letter-spacing: 0;
-        padding: 0;
-      }
-      .icons li {
-        position: relative;
-        z-index: 1;
-      }
-      .icons li a {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-      }
-      .icons li a svg {
-        display: block;
-        position: relative;
-      }
-      .icons li a + svg {
-        display: block;
-        height: 100%;
-        left: 0;
-        pointer-events: none;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: -1;
-      }
-      .icons li a .label {
-        display: none;
-      }
-      #icons01 {
-        font-size: 1.5em;
-        gap: 1.25rem;
-      }
-      #icons01 li a {
-        border-radius: 100%;
-        height: 2em;
-        width: 2em;
-        transition: transform 0.25s ease, color 0.25s ease,
-          background-color 0.25s ease, border-color 0.25s ease;
-      }
-      #icons01 li a svg {
-        height: 60%;
-        width: 60%;
-        transition: fill 0.25s ease;
-      }
-      #icons01 a {
-        background-color: #000000;
-      }
-      #icons01 a svg {
-        fill: #ffffff;
-      }
-      #icons01 li a + svg {
-        transition: transform 0.25s ease, fill 0.25s ease, stroke 0.25s ease;
-      }
-      #icons01 li a:hover {
-        transform: scale(0.8875);
-      }
-      #icons01 li a:hover + svg {
-        transform: scale(0.8875);
       }
       .gallery .inner {
         display: inline-block;
@@ -753,12 +689,6 @@
       .gallery ul li .caption p {
         width: 100%;
       }
-      .gallery.style1:not(:first-child) {
-        margin-top: 2rem !important;
-      }
-      .gallery.style1:not(:last-child) {
-        margin-bottom: 2rem !important;
-      }
       .gallery.style1 .inner {
         max-width: 100%;
       }
@@ -792,7 +722,6 @@
         padding-right: 1rem;
         padding-top: 0.625rem;
         margin: 5px;
-        text-align: center;
         color: #000000;
         background-color: #ffffff;
         font-family: "Inter", sans-serif;
@@ -809,7 +738,7 @@
         z-index: 2;
       }
       .gallery.style1 ul {
-        gap: 1.5rem;
+        gap: 0.5rem;
       }
       .gallery.style1 ul li .thumbnail {
         display: block;
@@ -822,12 +751,6 @@
       .gallery.style1 ul li .thumbnail:hover {
         transform: scale(0.94);
         z-index: 1;
-      }
-      .gallery.style2:not(:first-child) {
-        margin-top: 2rem !important;
-      }
-      .gallery.style2:not(:last-child) {
-        margin-bottom: 2rem !important;
       }
       .gallery.style2 .inner {
         max-width: 100%;
@@ -861,7 +784,6 @@
         padding-left: 1rem;
         padding-right: 1rem;
         padding-top: 0.625rem;
-        text-align: center;
         color: #ffffff;
         background-color: #000000;
         font-family: "Inter", sans-serif;
@@ -878,7 +800,7 @@
         z-index: 2;
       }
       .gallery.style2 ul {
-        gap: 1.5rem;
+        gap: 0.5rem;
       }
       .gallery.style2 ul li .thumbnail {
         display: block;
@@ -924,23 +846,17 @@
         border-bottom-left-radius: inherit;
         border-bottom-right-radius: inherit;
       }
-      .container.style1 {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
+      .container.style1 > .wrapper {
+        display: inline-block;
+        width: 40rem;
         background-color: transparent;
       }
       .container.style1 > .wrapper > .inner {
-        --gutters: 4rem;
+        --gutters: 2rem;
         --padding-horizontal: 0rem;
         --padding-vertical: 0rem;
         --spacing: 1.5rem;
         padding: var(--padding-vertical) var(--padding-horizontal);
-      }
-      .container.style1 > .wrapper {
-        max-width: var(--width);
-        width: 100%;
       }
       .container.style1.default > .wrapper > .inner > * {
         margin-bottom: var(--spacing);
@@ -1062,284 +978,69 @@
         position: absolute;
         width: 100%;
       }
-      .container.style2 {
+      .icons {
         display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        background-color: transparent;
-      }
-      .container.style2 > .wrapper > .inner {
-        --gutters: 4rem;
-        --padding-horizontal: 0rem;
-        --padding-vertical: 2rem;
-        --spacing: 1.5rem;
-        padding: var(--padding-vertical) var(--padding-horizontal);
-      }
-      .container.style2 > .wrapper {
-        max-width: var(--width);
-        width: 100%;
-      }
-      .container.style2.default > .wrapper > .inner > * {
-        margin-bottom: var(--spacing);
-        margin-top: var(--spacing);
-      }
-      .container.style2.default > .wrapper > .inner > *:first-child {
-        margin-top: 0 !important;
-      }
-      .container.style2.default > .wrapper > .inner > *:last-child {
-        margin-bottom: 0 !important;
-      }
-      .container.style2.columns > .wrapper > .inner {
         flex-wrap: wrap;
-        display: flex;
-        align-items: flex-start;
+        justify-content: var(--flex-alignment);
+        letter-spacing: 0;
+        padding: 0;
       }
-      .container.style2.columns > .wrapper > .inner > * {
-        flex-grow: 0;
-        flex-shrink: 0;
-        max-width: 100%;
-        text-align: var(--alignment);
-        padding: 0 0 0 var(--gutters);
+      .icons li {
+        position: relative;
+        z-index: 1;
       }
-      .container.style2.columns > .wrapper > .inner > * > * {
-        margin-bottom: var(--spacing);
-        margin-top: var(--spacing);
-      }
-      .container.style2.columns > .wrapper > .inner > * > *:first-child {
-        margin-top: 0 !important;
-      }
-      .container.style2.columns > .wrapper > .inner > * > *:last-child {
-        margin-bottom: 0 !important;
-      }
-      .container.style2.columns > .wrapper > .inner > *:first-child {
-        margin-left: calc(var(--gutters) * -1);
-      }
-      .container.style2.default > .wrapper > .inner > .full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        max-width: none !important;
-        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-      }
-      .container.style2.default > .wrapper > .inner > .full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      .container.style2.default > .wrapper > .inner > .full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-        border-bottom-left-radius: inherit;
-        border-bottom-right-radius: inherit;
-      }
-      .container.style2.columns > .wrapper > .inner > div > .full {
-        margin-left: calc(var(--gutters) * -0.5);
-        max-width: none !important;
-        width: calc(100% + var(--gutters) + 0.4725px);
-      }
-      .container.style2.columns > .wrapper > .inner > div:first-child > .full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        width: calc(
-          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
-            0.4725px
-        );
-      }
-      .container.style2.columns > .wrapper > .inner > div:last-child > .full {
-        width: calc(
-          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
-            0.4725px
-        );
-      }
-      .container.style2.columns > .wrapper > .inner > div > .full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-      }
-      .container.style2.columns > .wrapper > .inner > div > .full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-      }
-      .container.style2.columns > .wrapper > .inner > div:first-child,
-      .container.style2.columns
-        > .wrapper
-        > .inner
-        > div:first-child
-        > .full:first-child {
-        border-top-left-radius: inherit;
-      }
-      .container.style2.columns > .wrapper > .inner > div:last-child,
-      .container.style2.columns
-        > .wrapper
-        > .inner
-        > div:last-child
-        > .full:first-child {
-        border-top-right-radius: inherit;
-      }
-      .container.style2.columns > .wrapper > .inner > .full {
-        align-self: stretch;
-      }
-      .container.style2.columns > .wrapper > .inner > .full:first-child {
-        border-bottom-left-radius: inherit;
-        border-top-left-radius: inherit;
-      }
-      .container.style2.columns > .wrapper > .inner > .full:last-child {
-        border-bottom-right-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      .container.style2.columns
-        > .wrapper
-        > .inner
-        > .full
-        > .full:first-child:last-child {
-        border-radius: inherit;
-        height: calc(100% + (var(--padding-vertical) * 2));
-      }
-      .container.style2.columns
-        > .wrapper
-        > .inner
-        > .full
-        > .full:first-child:last-child
-        > * {
-        border-radius: inherit;
-        height: 100%;
-        position: absolute;
-        width: 100%;
-      }
-      .container.style5 {
-        display: flex;
-        width: 100%;
+      .icons li a {
         align-items: center;
-        justify-content: center;
-        background-color: transparent;
-      }
-      .container.style5:not(:first-child) {
-        margin-top: 3rem !important;
-      }
-      .container.style5 > .wrapper > .inner {
-        --gutters: 4rem;
-        --padding-horizontal: 0rem;
-        --padding-vertical: 0rem;
-        --spacing: 1.5rem;
-        padding: var(--padding-vertical) var(--padding-horizontal);
-      }
-      .container.style5 > .wrapper {
-        max-width: var(--width);
-        width: 100%;
-      }
-      .container.style5.default > .wrapper > .inner > * {
-        margin-bottom: var(--spacing);
-        margin-top: var(--spacing);
-      }
-      .container.style5.default > .wrapper > .inner > *:first-child {
-        margin-top: 0 !important;
-      }
-      .container.style5.default > .wrapper > .inner > *:last-child {
-        margin-bottom: 0 !important;
-      }
-      .container.style5.columns > .wrapper > .inner {
-        flex-wrap: wrap;
         display: flex;
-        align-items: flex-start;
+        justify-content: center;
       }
-      .container.style5.columns > .wrapper > .inner > * {
-        flex-grow: 0;
-        flex-shrink: 0;
-        max-width: 100%;
-        text-align: var(--alignment);
-        padding: 0 0 0 var(--gutters);
+      .icons li a svg {
+        display: block;
+        position: relative;
       }
-      .container.style5.columns > .wrapper > .inner > * > * {
-        margin-bottom: var(--spacing);
-        margin-top: var(--spacing);
-      }
-      .container.style5.columns > .wrapper > .inner > * > *:first-child {
-        margin-top: 0 !important;
-      }
-      .container.style5.columns > .wrapper > .inner > * > *:last-child {
-        margin-bottom: 0 !important;
-      }
-      .container.style5.columns > .wrapper > .inner > *:first-child {
-        margin-left: calc(var(--gutters) * -1);
-      }
-      .container.style5.default > .wrapper > .inner > .full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        max-width: none !important;
-        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-      }
-      .container.style5.default > .wrapper > .inner > .full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      .container.style5.default > .wrapper > .inner > .full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-        border-bottom-left-radius: inherit;
-        border-bottom-right-radius: inherit;
-      }
-      .container.style5.columns > .wrapper > .inner > div > .full {
-        margin-left: calc(var(--gutters) * -0.5);
-        max-width: none !important;
-        width: calc(100% + var(--gutters) + 0.4725px);
-      }
-      .container.style5.columns > .wrapper > .inner > div:first-child > .full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        width: calc(
-          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
-            0.4725px
-        );
-      }
-      .container.style5.columns > .wrapper > .inner > div:last-child > .full {
-        width: calc(
-          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
-            0.4725px
-        );
-      }
-      .container.style5.columns > .wrapper > .inner > div > .full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-      }
-      .container.style5.columns > .wrapper > .inner > div > .full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-      }
-      .container.style5.columns > .wrapper > .inner > div:first-child,
-      .container.style5.columns
-        > .wrapper
-        > .inner
-        > div:first-child
-        > .full:first-child {
-        border-top-left-radius: inherit;
-      }
-      .container.style5.columns > .wrapper > .inner > div:last-child,
-      .container.style5.columns
-        > .wrapper
-        > .inner
-        > div:last-child
-        > .full:first-child {
-        border-top-right-radius: inherit;
-      }
-      .container.style5.columns > .wrapper > .inner > .full {
-        align-self: stretch;
-      }
-      .container.style5.columns > .wrapper > .inner > .full:first-child {
-        border-bottom-left-radius: inherit;
-        border-top-left-radius: inherit;
-      }
-      .container.style5.columns > .wrapper > .inner > .full:last-child {
-        border-bottom-right-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      .container.style5.columns
-        > .wrapper
-        > .inner
-        > .full
-        > .full:first-child:last-child {
-        border-radius: inherit;
-        height: calc(100% + (var(--padding-vertical) * 2));
-      }
-      .container.style5.columns
-        > .wrapper
-        > .inner
-        > .full
-        > .full:first-child:last-child
-        > * {
-        border-radius: inherit;
+      .icons li a + svg {
+        display: block;
         height: 100%;
+        left: 0;
+        pointer-events: none;
         position: absolute;
+        top: 0;
         width: 100%;
+        z-index: -1;
+      }
+      .icons li a .label {
+        display: none;
+      }
+      .icons.style1 {
+        font-size: 1.5em;
+        gap: 1.125rem;
+      }
+      .icons.style1 li a {
+        border-radius: 100%;
+        height: 2em;
+        width: 2em;
+        transition: transform 0.25s ease, color 0.25s ease,
+          background-color 0.25s ease, border-color 0.25s ease;
+      }
+      .icons.style1 li a svg {
+        height: 60%;
+        width: 60%;
+        transition: fill 0.25s ease;
+      }
+      .icons.style1 a {
+        background-color: #000000;
+      }
+      .icons.style1 a svg {
+        fill: #ffffff;
+      }
+      .icons.style1 li a + svg {
+        transition: transform 0.25s ease, fill 0.25s ease, stroke 0.25s ease;
+      }
+      .icons.style1 li a:hover {
+        transform: scale(0.8875);
+      }
+      .icons.style1 li a:hover + svg {
+        transform: scale(0.8875);
       }
       .buttons {
         cursor: default;
@@ -1368,9 +1069,9 @@
       .buttons.style1 li a {
         display: flex;
         width: 100vw;
-        height: 4rem;
-        line-height: 4rem;
-        padding: 0 2rem;
+        height: 4.125rem;
+        line-height: 4.125rem;
+        padding: 0 2.0625rem;
         vertical-align: middle;
         font-family: "Inter", sans-serif;
         font-size: 1em;
@@ -1388,28 +1089,28 @@
         transform: scale(0.94);
       }
       #buttons02 .n01 {
-        background-color: #f59c07;
+        background: linear-gradient(-113deg, #f59c07, #f57507);
       }
       #buttons02 .n02 {
-        background-color: #f59c07;
+        background-color: #f2a015;
       }
       #buttons02 .n03 {
-        background-color: #8b3ffd;
+        background-color: #8f14fd;
       }
       #buttons02 .n04 {
-        background-color: #056ab3;
+        background-color: #1e64b2;
       }
       #buttons03 .n01 {
-        background-color: #f7931a;
+        background-color: #f49722;
       }
       #buttons04 .n01 {
-        background-color: #627eea;
+        background-color: #6875e9;
       }
       #buttons05 .n01 {
-        background-color: #0ac18e;
+        background-color: #19c28e;
       }
       #buttons01 .n01 {
-        background-color: #88cbf5;
+        background-color: #8cc8f5;
       }
       @media (max-width: 1920px) {
       }
@@ -1429,9 +1130,146 @@
         html {
           font-size: 11pt;
         }
-        .container.style1 {
-          --alignment: center;
-          --flex-alignment: center;
+      }
+      @media (max-width: 736px) {
+        html {
+          font-size: 11pt;
+        }
+        #main > .inner {
+          --padding-horizontal: 3rem;
+          --padding-vertical: 3.5rem;
+          --spacing: 4rem;
+        }
+        .image.style1 .frame {
+          width: 4.875rem;
+        }
+        h1.style1:not(:first-child),
+        h2.style1:not(:first-child),
+        h3.style1:not(:first-child),
+        p.style1:not(:first-child) {
+          margin-top: 2rem !important;
+        }
+        h1.style1:not(:last-child),
+        h2.style1:not(:last-child),
+        h3.style1:not(:last-child),
+        p.style1:not(:last-child) {
+          margin-bottom: 2rem !important;
+        }
+        h1.style1,
+        h2.style1,
+        h3.style1,
+        p.style1 {
+          letter-spacing: 0rem;
+          width: 100%;
+          font-size: 3.125em;
+          line-height: 1.25;
+        }
+        h1.style4:not(:first-child),
+        h2.style4:not(:first-child),
+        h3.style4:not(:first-child),
+        p.style4:not(:first-child) {
+          margin-top: 2.625rem !important;
+        }
+        h1.style4:not(:last-child),
+        h2.style4:not(:last-child),
+        h3.style4:not(:last-child),
+        p.style4:not(:last-child) {
+          margin-bottom: 2.625rem !important;
+        }
+        h1.style4,
+        h2.style4,
+        h3.style4,
+        p.style4 {
+          letter-spacing: 0rem;
+          width: 100%;
+          font-size: 2.5em;
+          line-height: 1.5;
+        }
+        h1.style3:not(:first-child),
+        h2.style3:not(:first-child),
+        h3.style3:not(:first-child),
+        p.style3:not(:first-child) {
+          margin-top: 1.875rem !important;
+        }
+        h1.style3:not(:last-child),
+        h2.style3:not(:last-child),
+        h3.style3:not(:last-child),
+        p.style3:not(:last-child) {
+          margin-bottom: 1.875rem !important;
+        }
+        h1.style3,
+        h2.style3,
+        h3.style3,
+        p.style3 {
+          letter-spacing: 0rem;
+          width: 100%;
+          font-size: 1em;
+          line-height: 1.875;
+        }
+        h1.style2:not(:first-child),
+        h2.style2:not(:first-child),
+        h3.style2:not(:first-child),
+        p.style2:not(:first-child) {
+          margin-top: 0.9375rem !important;
+        }
+        h1.style2:not(:last-child),
+        h2.style2:not(:last-child),
+        h3.style2:not(:last-child),
+        p.style2:not(:last-child) {
+          margin-bottom: 0.9375rem !important;
+        }
+        h1.style2,
+        h2.style2,
+        h3.style2,
+        p.style2 {
+          letter-spacing: 0rem;
+          width: 100%;
+          font-size: 1em;
+          line-height: 1.875;
+        }
+        h1.style5:not(:first-child),
+        h2.style5:not(:first-child),
+        h3.style5:not(:first-child),
+        p.style5:not(:first-child) {
+          margin-top: 0.9375rem !important;
+        }
+        h1.style5:not(:last-child),
+        h2.style5:not(:last-child),
+        h3.style5:not(:last-child),
+        p.style5:not(:last-child) {
+          margin-bottom: 0.9375rem !important;
+        }
+        .container.style1:not(:first-child) {
+          margin-top: 3rem !important;
+        }
+        h1.style5,
+        h2.style5,
+        h3.style5,
+        p.style5 {
+          letter-spacing: 0rem;
+          width: 100%;
+          font-size: 0.625em;
+          line-height: 1.875;
+        }
+        .gallery.style1 ul li .caption p {
+          letter-spacing: 0rem;
+          font-size: 1em;
+        }
+        .gallery.style1 ul li img {
+          max-height: 22.5rem;
+        }
+        .gallery.style2 ul li .caption p {
+          letter-spacing: 0rem;
+          font-size: 1em;
+        }
+        .gallery.style2 ul li img {
+          max-height: 22.5rem;
+        }
+        .container.style1 > .wrapper > .inner {
+          --gutters: 2rem;
+          --padding-horizontal: 0rem;
+          --padding-vertical: 0rem;
+          --spacing: 1.5rem;
         }
         .container.style1.columns > .wrapper > .inner {
           flex-direction: column !important;
@@ -1548,517 +1386,9 @@
           position: relative;
           width: auto;
         }
-        .container.style1.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.image
-          img {
-          max-height: 35rem;
-        }
-        .container.style1.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.slideshow
-          .bg {
-          min-height: 35rem;
-        }
-        .container.style2 {
-          --alignment: center;
-          --flex-alignment: center;
-        }
-        .container.style2.columns > .wrapper > .inner {
-          flex-direction: column !important;
-          flex-wrap: nowrap !important;
-        }
-        .container.style2.columns > .wrapper > .inner > span {
-          height: 0;
-          margin-top: calc(var(--gutters) * -1);
-          pointer-events: none;
-          visibility: hidden;
-        }
-        .container.style2.columns > .wrapper > .inner > *:first-child {
-          margin-left: 0 !important;
-          padding-top: 0 !important;
-        }
-        .container.style2.columns > .wrapper > .inner > * {
-          padding: calc(var(--gutters) * 0.5) 0 !important;
-        }
-        .container.style2.columns > .wrapper > .inner > *:last-child {
-          padding-bottom: 0 !important;
-        }
-        .container.style2.columns > .wrapper > .inner > div > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        .container.style2.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        .container.style2.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        .container.style2.columns
-          > .wrapper
-          > .inner
-          > div
-          > .full:first-child {
-          margin-top: calc(var(--gutters) * -0.5) !important;
-        }
-        .container.style2.columns > .wrapper > .inner > div > .full:last-child {
-          margin-bottom: calc(var(--gutters) * -0.5) !important;
-        }
-        .container.style2.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          margin-top: calc(var(--padding-vertical) * -1) !important;
-        }
-        .container.style2.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          margin-bottom: calc(var(--padding-vertical) * -1) !important;
-        }
-        .container.style2.columns > .wrapper > .inner > div:first-of-type,
-        .container.style2.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          border-top-left-radius: inherit;
-          border-top-right-radius: inherit;
-        }
-        .container.style2.columns > .wrapper > .inner > div:last-of-type,
-        .container.style2.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          border-bottom-left-radius: inherit;
-          border-bottom-right-radius: inherit;
-        }
-        .container.style2.columns > .wrapper > .inner > div:first-of-type,
-        .container.style2.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:last-child {
-          border-bottom-left-radius: 0 !important;
-        }
-        .container.style2.columns > .wrapper > .inner > div:last-of-type,
-        .container.style2.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:first-child {
-          border-top-right-radius: 0 !important;
-        }
-        .container.style2.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child {
-          height: auto;
-        }
-        .container.style2.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child
-          > * {
-          height: auto;
-          position: relative;
-          width: auto;
-        }
-        .container.style2.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.image
-          img {
-          max-height: 35rem;
-        }
-        .container.style2.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.slideshow
-          .bg {
-          min-height: 35rem;
-        }
-        .container.style5 {
-          --alignment: center;
-          --flex-alignment: center;
-        }
-        .container.style5.columns > .wrapper > .inner {
-          flex-direction: column !important;
-          flex-wrap: nowrap !important;
-        }
-        .container.style5.columns > .wrapper > .inner > span {
-          height: 0;
-          margin-top: calc(var(--gutters) * -1);
-          pointer-events: none;
-          visibility: hidden;
-        }
-        .container.style5.columns > .wrapper > .inner > *:first-child {
-          margin-left: 0 !important;
-          padding-top: 0 !important;
-        }
-        .container.style5.columns > .wrapper > .inner > * {
-          padding: calc(var(--gutters) * 0.5) 0 !important;
-        }
-        .container.style5.columns > .wrapper > .inner > *:last-child {
-          padding-bottom: 0 !important;
-        }
-        .container.style5.columns > .wrapper > .inner > div > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        .container.style5.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        .container.style5.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        .container.style5.columns
-          > .wrapper
-          > .inner
-          > div
-          > .full:first-child {
-          margin-top: calc(var(--gutters) * -0.5) !important;
-        }
-        .container.style5.columns > .wrapper > .inner > div > .full:last-child {
-          margin-bottom: calc(var(--gutters) * -0.5) !important;
-        }
-        .container.style5.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          margin-top: calc(var(--padding-vertical) * -1) !important;
-        }
-        .container.style5.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          margin-bottom: calc(var(--padding-vertical) * -1) !important;
-        }
-        .container.style5.columns > .wrapper > .inner > div:first-of-type,
-        .container.style5.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          border-top-left-radius: inherit;
-          border-top-right-radius: inherit;
-        }
-        .container.style5.columns > .wrapper > .inner > div:last-of-type,
-        .container.style5.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          border-bottom-left-radius: inherit;
-          border-bottom-right-radius: inherit;
-        }
-        .container.style5.columns > .wrapper > .inner > div:first-of-type,
-        .container.style5.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:last-child {
-          border-bottom-left-radius: 0 !important;
-        }
-        .container.style5.columns > .wrapper > .inner > div:last-of-type,
-        .container.style5.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:first-child {
-          border-top-right-radius: 0 !important;
-        }
-        .container.style5.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child {
-          height: auto;
-        }
-        .container.style5.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child
-          > * {
-          height: auto;
-          position: relative;
-          width: auto;
-        }
-        .container.style5.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.image
-          img {
-          max-height: 35rem;
-        }
-        .container.style5.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.slideshow
-          .bg {
-          min-height: 35rem;
-        }
-      }
-      @media (max-width: 736px) {
-        html {
-          font-size: 11pt;
-        }
-        #main > .inner {
-          --padding-horizontal: 3rem;
-          --padding-vertical: 3rem;
-          --spacing: 1rem;
-        }
-        .image.style1 .frame {
-          width: 4.875rem;
-        }
-        h1.style1:not(:first-child),
-        h2.style1:not(:first-child),
-        h3.style1:not(:first-child),
-        p.style1:not(:first-child) {
-          margin-top: 2rem !important;
-        }
-        h1.style1:not(:last-child),
-        h2.style1:not(:last-child),
-        h3.style1:not(:last-child),
-        p.style1:not(:last-child) {
-          margin-bottom: 2rem !important;
-        }
-        h1.style1,
-        h2.style1,
-        h3.style1,
-        p.style1 {
-          letter-spacing: 0rem;
-          width: 100%;
-          font-size: 2.625em;
-          line-height: 1.25;
-        }
-        h1.style2:not(:first-child),
-        h2.style2:not(:first-child),
-        h3.style2:not(:first-child),
-        p.style2:not(:first-child) {
-          margin-top: 0.75rem !important;
-        }
-        h1.style2:not(:last-child),
-        h2.style2:not(:last-child),
-        h3.style2:not(:last-child),
-        p.style2:not(:last-child) {
-          margin-bottom: 0.75rem !important;
-        }
-        h1.style2,
-        h2.style2,
-        h3.style2,
-        p.style2 {
-          letter-spacing: 0rem;
-          width: 100%;
-          font-size: 1em;
-          line-height: 1.875;
-        }
-        h1.style3:not(:first-child),
-        h2.style3:not(:first-child),
-        h3.style3:not(:first-child),
-        p.style3:not(:first-child) {
-          margin-top: 2.25rem !important;
-        }
-        h1.style3:not(:last-child),
-        h2.style3:not(:last-child),
-        h3.style3:not(:last-child),
-        p.style3:not(:last-child) {
-          margin-bottom: 2.25rem !important;
-        }
-        h1.style3,
-        h2.style3,
-        h3.style3,
-        p.style3 {
-          letter-spacing: 0rem;
-          width: 100%;
-          font-size: 2.625em;
-          line-height: 1.5;
-        }
-        h1.style4:not(:first-child),
-        h2.style4:not(:first-child),
-        h3.style4:not(:first-child),
-        p.style4:not(:first-child) {
-          margin-top: 2.25rem !important;
-        }
-        h1.style4:not(:last-child),
-        h2.style4:not(:last-child),
-        h3.style4:not(:last-child),
-        p.style4:not(:last-child) {
-          margin-bottom: 2.25rem !important;
-        }
-        h1.style4,
-        h2.style4,
-        h3.style4,
-        p.style4 {
-          letter-spacing: 0rem;
-          width: 100%;
-          font-size: 1em;
-          line-height: 1.875;
-        }
-        h1.style5:not(:first-child),
-        h2.style5:not(:first-child),
-        h3.style5:not(:first-child),
-        p.style5:not(:first-child) {
-          margin-top: 0.75rem !important;
-        }
-        h1.style5:not(:last-child),
-        h2.style5:not(:last-child),
-        h3.style5:not(:last-child),
-        p.style5:not(:last-child) {
-          margin-bottom: 0.75rem !important;
-        }
-        h1.style5,
-        h2.style5,
-        h3.style5,
-        p.style5 {
-          letter-spacing: 0rem;
-          width: 100%;
-          font-size: 0.75em;
-          line-height: 1.875;
-        }
-        #icons01 {
-          font-size: 1.4em;
+        .icons.style1 {
+          font-size: 1.25em;
           gap: 1rem;
-        }
-        .gallery.style1:not(:first-child) {
-          margin-top: 1.5rem !important;
-        }
-        .gallery.style1:not(:last-child) {
-          margin-bottom: 1.5rem !important;
-        }
-        .gallery.style1 ul li .caption p {
-          letter-spacing: 0rem;
-          font-size: 1em;
-        }
-        .gallery.style1 ul {
-          gap: 0.5rem;
-        }
-        .gallery.style2:not(:first-child) {
-          margin-top: 1.5rem !important;
-        }
-        .gallery.style2:not(:last-child) {
-          margin-bottom: 1.5rem !important;
-        }
-        .gallery.style2 ul li .caption p {
-          letter-spacing: 0rem;
-          font-size: 1em;
-        }
-        .gallery.style2 ul {
-          gap: 0.5rem;
-        }
-        .container.style1 > .wrapper > .inner {
-          --gutters: 4rem;
-          --padding-horizontal: 0rem;
-          --padding-vertical: 0rem;
-          --spacing: 1.5rem;
-        }
-        .container.style1.columns > .wrapper > .inner > * {
-          padding: calc(var(--gutters) * 0.5) 0 !important;
-        }
-        .container.style1.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.image
-          img {
-          max-height: none;
-        }
-        .container.style1.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.slideshow
-          .bg {
-          min-height: auto;
-        }
-        .container.style2 > .wrapper > .inner {
-          --gutters: 4rem;
-          --padding-horizontal: 0rem;
-          --padding-vertical: 2rem;
-          --spacing: 1.5rem;
-        }
-        .container.style2.columns > .wrapper > .inner > * {
-          padding: calc(var(--gutters) * 0.5) 0 !important;
-        }
-        .container.style2.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.image
-          img {
-          max-height: none;
-        }
-        .container.style2.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.slideshow
-          .bg {
-          min-height: auto;
-        }
-        .container.style5:not(:first-child) {
-          margin-top: 2.25rem !important;
-        }
-        .container.style5 > .wrapper > .inner {
-          --gutters: 4rem;
-          --padding-horizontal: 0rem;
-          --padding-vertical: 0rem;
-          --spacing: 1.5rem;
-        }
-        .container.style5.columns > .wrapper > .inner > * {
-          padding: calc(var(--gutters) * 0.5) 0 !important;
-        }
-        .container.style5.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.image
-          img {
-          max-height: none;
-        }
-        .container.style5.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child.slideshow
-          .bg {
-          min-height: auto;
         }
         .buttons.style1 li a {
           letter-spacing: 0rem;
@@ -2067,15 +1397,9 @@
       }
       @media (max-width: 480px) {
         #main > .inner {
-          --spacing: 0.875rem;
+          --spacing: 3.0625rem;
         }
         .container.style1 > .wrapper > .inner {
-          --spacing: 1.3125rem;
-        }
-        .container.style2 > .wrapper > .inner {
-          --spacing: 1.3125rem;
-        }
-        .container.style5 > .wrapper > .inner {
           --spacing: 1.3125rem;
         }
         .buttons.style1 {
@@ -2090,15 +1414,27 @@
       }
       @media (max-width: 360px) {
         #main > .inner {
-          --padding-horizontal: 1.875rem;
+          --padding-horizontal: 2.25rem;
           --padding-vertical: 2.625rem;
-          --spacing: 0.75rem;
+          --spacing: 2.25rem;
         }
         h1.style1,
         h2.style1,
         h3.style1,
         p.style1 {
-          font-size: 2.625em;
+          font-size: 3.125em;
+        }
+        h1.style4,
+        h2.style4,
+        h3.style4,
+        p.style4 {
+          font-size: 2.5em;
+        }
+        h1.style3,
+        h2.style3,
+        h3.style3,
+        p.style3 {
+          font-size: 1em;
         }
         h1.style2,
         h2.style2,
@@ -2106,26 +1442,11 @@
         p.style2 {
           font-size: 1em;
         }
-        h1.style3,
-        h2.style3,
-        h3.style3,
-        p.style3 {
-          font-size: 2.625em;
-        }
-        h1.style4,
-        h2.style4,
-        h3.style4,
-        p.style4 {
-          font-size: 1em;
-        }
         h1.style5,
         h2.style5,
         h3.style5,
         p.style5 {
-          font-size: 0.75em;
-        }
-        #icons01 {
-          font-size: 1.4em;
+          font-size: 0.625em;
         }
         .gallery.style1 ul li .caption p {
           font-size: 1em;
@@ -2140,165 +1461,17 @@
           gap: 0.375rem;
         }
         .container.style1 > .wrapper > .inner {
-          --gutters: 3rem;
+          --gutters: 1.5rem;
           --padding-horizontal: 0rem;
           --padding-vertical: 0rem;
           --spacing: 1.125rem;
         }
-        .container.style2 > .wrapper > .inner {
-          --gutters: 3rem;
-          --padding-horizontal: 0rem;
-          --padding-vertical: 1.5rem;
-          --spacing: 1.125rem;
-        }
-        .container.style5 > .wrapper > .inner {
-          --gutters: 3rem;
-          --padding-horizontal: 0rem;
-          --padding-vertical: 0rem;
-          --spacing: 1.125rem;
+        .icons.style1 {
+          gap: 0.75rem;
         }
         .buttons.style1 {
           gap: 1.5rem;
         }
-      }
-      .glowCookies__border {
-        border: 5px solid #000000 !important;
-      }
-      .glowCookies__left {
-        left: 15px;
-      }
-      .glowCookies__right {
-        right: 15px;
-      }
-      .glowCookies__show {
-        opacity: 1 !important;
-        visibility: visible !important;
-        transform: scale(1) !important;
-      }
-      .glowCookies__banner {
-        opacity: 0;
-        visibility: hidden;
-        transform: scale(0.9);
-        font-family: inherit;
-        position: fixed;
-        width: auto;
-        max-width: 375px;
-        z-index: 999;
-        transition: transform 0.2s ease, opacity 0.2s ease !important;
-      }
-      .glowCookies__banner .accept__btn__styles {
-        border: none;
-        padding: 13px 15px;
-        font-size: 15px;
-        font-family: inherit;
-        width: 100%;
-        cursor: pointer;
-        user-select: none;
-      }
-      .glowCookies__banner .btn__section button:focus {
-        outline: none;
-      }
-      @media (max-width: 455px) {
-        .btn__section .btn__accept {
-          width: 100%;
-          margin-bottom: 7px;
-        }
-        .btn__section .btn__settings {
-          width: 100%;
-        }
-      }
-      .glowCookies__banner__1 {
-        bottom: 30px;
-        right: 30px;
-        border-radius: 2.5rem;
-        padding: 30px 25px;
-      }
-      .glowCookies__banner__1 > h3 {
-        font-family: "Inter";
-        font-weight: bolder;
-        font-size: 24px;
-        margin: 0px;
-        padding: 0 0 20px 0;
-        line-height: 40px;
-      }
-      .glowCookies__banner__1 > p {
-        font-family: "Inter";
-        font-size: 15px;
-        margin: 0px;
-        padding: 0 0 0.7rem 0;
-        line-height: 1.875;
-      }
-      .glowCookies__banner__1 .read__more {
-        font-family: "Inter";
-        font-weight: bolder;
-        text-decoration: none;
-      }
-      .glowCookies__banner__1 .read__more:hover {
-        text-decoration: underline;
-      }
-      .glowCookies__banner__1 .btn__section {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        margin-top: 20px;
-      }
-      .glowCookies__banner__1 .btn__section button {
-        font-family: "Inter";
-        font-weight: bolder;
-        border-radius: 2rem;
-        transition: transform 0.25s ease, color 0.25s ease,
-          background-color 0.25s ease, border-color 0.25s ease;
-      }
-      .glowCookies__banner__1 .btn__section button:hover {
-        transform: scale(0.94);
-      }
-      @media (max-width: 455px) {
-        .glowCookies__banner__1 {
-          bottom: 0px;
-          left: 0px;
-          right: 0px;
-          margin: 20px;
-          max-width: 550px;
-          text-align: center;
-        }
-        .glowCookies__banner__1 .btn__section {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          margin-top: 20px;
-        }
-      }
-      .prebanner {
-        position: fixed;
-        bottom: 15px;
-        z-index: 999;
-        min-height: 50px;
-        min-width: 125px;
-        cursor: pointer;
-        font-family: inherit;
-        font-size: 15px;
-        font-weight: bolder;
-        line-height: normal;
-        border: none;
-        padding: 12px 18px;
-        text-decoration: none;
-        user-select: none;
-        -webkit-box-shadow: 0 0.625em 1.875em rgba(0, 0, 0, 0.1);
-        -moz-box-shadow: 0 0.625em 1.875em rgba(0, 0, 0, 0.1);
-        box-shadow: 0 0.625em 1.875em rgba(0, 0, 0, 0.1);
-      }
-      .prebanner__border__1 {
-        border-radius: 15px;
-      }
-      .animation {
-        transition: 0.2s;
-      }
-      .animation:hover {
-        transform: scale(0.97);
-      }
-      .prebanner:hover {
-        text-decoration: none;
       }
     </style>
   </head>
@@ -2404,20 +1577,20 @@
                   </span>
                 </div>
                 <h2 id="text06" class="style1">Greysoul</h2>
-                <p id="text07" class="style2">
+                <p id="text01" class="style2">
                   Здравствуйте, добро пожаловать на мой личный сайт!
                 </p>
-                <p id="text04" class="style2">
+                <p id="text02" class="style2">
                   Здесь вы найдёте всю информацию о моих проектах, соц-сетях и
                   способах доната.
                 </p>
-                <p id="text05" class="style2">
+                <p id="text07" class="style2">
                   В настоящее время я увлекаюсь созданием битов, а также
                   сведением и мастерингом треков различных артистов. Раньше я
                   являлся разработчиком инди-игр и был участником многих команд
                   по их разработке.
                 </p>
-                <p id="text01" class="style2">
+                <p id="text04" class="style2">
                   Если вы хотите обратиться ко мне по поводу сотрудничества,
                   пишите, пожалуйста, на почту
                   <strong
@@ -2429,10 +1602,10 @@
               </div>
             </div>
           </div>
-          <div id="socials" class="style2 container default">
+          <div id="socials" class="style1 container default">
             <div class="wrapper">
               <div class="inner">
-                <ul id="icons01" class="icons">
+                <ul id="icons01" class="style1 icons">
                   <li>
                     <a
                       class="n01"
@@ -2482,11 +1655,11 @@
               </div>
             </div>
           </div>
-          <div id="projects" class="style2 container default">
+          <div id="projects" class="style1 container default">
             <div class="wrapper">
               <div class="inner">
-                <h2 id="text02" class="style3">Мои проекты</h2>
-                <div id="gallery01" class="style1 gallery">
+                <h3 id="text03" class="style4">Мои проекты</h3>
+                <div id="gallery02" class="style1 gallery">
                   <div class="inner">
                     <ul>
                       <li>
@@ -2504,7 +1677,7 @@
                     </ul>
                   </div>
                 </div>
-                <p id="text08" class="style4">Биты на любой вкус и цвет</p>
+                <p id="text08" class="style3">Биты на любой вкус и цвет</p>
                 <div id="gallery03" class="style2 gallery">
                   <div class="inner">
                     <ul>
@@ -2523,7 +1696,7 @@
                     </ul>
                   </div>
                 </div>
-                <p id="text09" class="style4">
+                <p id="text09" class="style3">
                   Кликер про человека с кодовым именем mrEblan
                 </p>
                 <div id="gallery04" class="style2 gallery">
@@ -2544,7 +1717,7 @@
                     </ul>
                   </div>
                 </div>
-                <p id="text10" class="style4">
+                <p id="text10" class="style3">
                   YouTube-канал, на котором я выкладываю всё подряд
                 </p>
                 <div id="gallery05" class="style2 gallery">
@@ -2567,7 +1740,7 @@
                     </ul>
                   </div>
                 </div>
-                <p id="text11" class="style4">
+                <p id="text11" class="style3">
                   Скрипт для Tampermonkey, который увеличивает прозрачность
                   белого фона, который появляется при просмотре прозрачных
                   изображений в браузере
@@ -2590,10 +1763,10 @@
                     </ul>
                   </div>
                 </div>
-                <p id="text12" class="style4">
+                <p id="text12" class="style3">
                   Дистрибуция музыки и менеджмент артиста
                 </p>
-                <div id="gallery02" class="style1 gallery">
+                <div id="gallery01" class="style1 gallery">
                   <div class="inner">
                     <ul>
                       <li>
@@ -2611,14 +1784,14 @@
                     </ul>
                   </div>
                 </div>
-                <p id="text03" class="style4">Дистрибуция музыки</p>
+                <p id="text15" class="style3">Дистрибуция музыки</p>
               </div>
             </div>
           </div>
-          <div id="donate" class="style2 container default">
+          <div id="donate" class="style1 container default">
             <div class="wrapper">
               <div class="inner">
-                <h2 id="text14" class="style3">Донат</h2>
+                <h3 id="text14" class="style4">Донат</h3>
                 <ul id="buttons02" class="style1 buttons">
                   <li>
                     <a
@@ -2656,10 +1829,10 @@
               </div>
             </div>
           </div>
-          <div id="cryptocurrency" class="style2 container default">
+          <div id="cryptocurrencies" class="style1 container default">
             <div class="wrapper">
               <div class="inner">
-                <h2 id="text13" class="style3">Донат через криптовалюту</h2>
+                <h3 id="text13" class="style4">Донат через криптовалюту</h3>
                 <ul id="buttons03" class="style1 buttons">
                   <li>
                     <a
@@ -2669,7 +1842,7 @@
                     >
                   </li>
                 </ul>
-                <p id="text16" class="style4">
+                <p id="text16" class="style3">
                   1Nj1NNU3NcHeFZG8rBvuS5PW8aBSWxFbYL
                 </p>
                 <ul id="buttons04" class="style1 buttons">
@@ -2681,7 +1854,7 @@
                     >
                   </li>
                 </ul>
-                <p id="text17" class="style4">
+                <p id="text17" class="style3">
                   0xcfedbc5fed4133b9021be9bafeed8ebe73b56643
                 </p>
                 <ul id="buttons05" class="style1 buttons">
@@ -2693,7 +1866,7 @@
                     >
                   </li>
                 </ul>
-                <p id="text18" class="style4">
+                <p id="text18" class="style3">
                   1K2qpamdMRBKM9bYEY7HL5nwpubELE7N2z
                 </p>
                 <ul id="buttons01" class="style1 buttons">
@@ -2705,13 +1878,13 @@
                     >
                   </li>
                 </ul>
-                <p id="text15" class="style4">
+                <p id="text05" class="style3">
                   ltc1qluggcksz6udftck9ts0xn4d4pqcagx2x4kdvh4
                 </p>
               </div>
             </div>
           </div>
-          <div id="socials" class="style5 container default">
+          <div id="footer" class="style1 container default">
             <div class="wrapper">
               <div class="inner">
                 <p id="text19" class="style5">
@@ -2728,290 +1901,6 @@
         </div>
       </div>
     </div>
-    <script>
-      class GlowCookies {
-        constructor() {
-          this.banner = undefined;
-          this.config = undefined;
-          this.tracking = undefined;
-          this.PreBanner = undefined;
-          this.Cookies = undefined;
-          this.DOMbanner = undefined;
-        }
-        render() {
-          this.createDOMElements();
-          this.checkStatus();
-        }
-        createDOMElements() {
-          this.PreBanner = document.createElement("div");
-          this.PreBanner.innerHTML = `<button type="button" id="prebannerBtn" class="prebanner prebanner__border__${this.config.bannerStyle} glowCookies__${this.config.position} glowCookies__${this.config.border} animation" style="color: ${this.banner.manageCookies.color}; background-color: ${this.banner.manageCookies.background};">
-                                    <svg fill="currentColor" style="margin-right: 7px; margin-top: 2px; vertical-align: text-top;" height="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M510.52 255.82c-69.97-.85-126.47-57.69-126.47-127.86-70.17 0-127-56.49-127.86-126.45-27.26-4.14-55.13.3-79.72 12.82l-69.13 35.22a132.221 132.221 0 0 0-57.79 57.81l-35.1 68.88a132.645 132.645 0 0 0-12.82 80.95l12.08 76.27a132.521 132.521 0 0 0 37.16 72.96l54.77 54.76a132.036 132.036 0 0 0 72.71 37.06l76.71 12.15c27.51 4.36 55.7-.11 80.53-12.76l69.13-35.21a132.273 132.273 0 0 0 57.79-57.81l35.1-68.88c12.56-24.64 17.01-52.58 12.91-79.91zM176 368c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm32-160c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm160 128c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z"/>
-                                    </svg>${this.banner.manageCookies.text}</button>`;
-          this.PreBanner.style.display = "none";
-          document.body.appendChild(this.PreBanner);
-          this.Cookies = document.createElement("div");
-          this.Cookies.innerHTML = `<div 
-                                    id="glowCookies-banner" 
-                                    class="glowCookies__banner glowCookies__banner__${this.config.bannerStyle} glowCookies__${this.config.border} glowCookies__${this.config.position}"
-                                    style="background-color: ${this.banner.background};"
-                                >
-                                    <h3 style="color: ${this.banner.color};">${this.banner.heading}</h3>
-                                    <p style="color: #545454;">
-                                      ${this.banner.description}
-                                        <a 
-                                            href="${this.banner.link}"
-                                            target="_blank" 
-                                            class="read__more"
-                                            style="color: #000000;"
-                                        >
-                                            ${this.banner.linkText}</a>.
-                                    </p>
-                                    <div class="btn__section">
-                                        <button type="button" id="acceptCookies" class="btn__accept accept__btn__styles" style="color: ${this.banner.acceptBtn.color}; background-color: ${this.banner.acceptBtn.background};">
-                                            ${this.banner.acceptBtn.text}
-                                        </button>
-                                    </div>
-                                </div>
-                            `;
-          document.body.appendChild(this.Cookies);
-          this.DOMbanner = document.getElementById("glowCookies-banner");
-
-          document
-            .getElementById("prebannerBtn")
-            .addEventListener("click", () => this.openSelector());
-          document
-            .getElementById("acceptCookies")
-            .addEventListener("click", () => this.acceptCookies());
-        }
-        checkStatus() {
-          switch (localStorage.getItem("GlowCookies")) {
-            case "1":
-              this.openManageCookies();
-              this.activateTracking();
-              this.addCustomScript();
-              break;
-            case "0":
-              this.openManageCookies();
-              break;
-            default:
-              this.openSelector();
-          }
-        }
-        openManageCookies() {
-          this.PreBanner.style.display = this.config.hideAfterClick
-            ? "none"
-            : "block";
-          this.DOMbanner.classList.remove("glowCookies__show");
-        }
-        openSelector() {
-          this.PreBanner.style.display = "none";
-          this.DOMbanner.classList.add("glowCookies__show");
-        }
-        acceptCookies() {
-          localStorage.setItem("GlowCookies", "1");
-          this.openManageCookies();
-          this.activateTracking();
-          this.addCustomScript();
-        }
-        activateTracking() {
-          if (this.tracking.AnalyticsCode) {
-            let Analytics = document.createElement("script");
-            Analytics.setAttribute(
-              "src",
-              `https://www.googletagmanager.com/gtag/js?id=${this.tracking.AnalyticsCode}`
-            );
-            document.head.appendChild(Analytics);
-            let AnalyticsData = document.createElement("script");
-            AnalyticsData.text = `window.dataLayer = window.dataLayer || [];
-                                function gtag(){dataLayer.push(arguments);}
-                                gtag('js', new Date());
-                                gtag('config', '${this.tracking.AnalyticsCode}');`;
-            document.head.appendChild(AnalyticsData);
-          }
-          if (this.tracking.FacebookPixelCode) {
-            let FacebookPixelData = document.createElement("script");
-            FacebookPixelData.text = `
-                                    !function(f,b,e,v,n,t,s)
-                                    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-                                    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-                                    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-                                    n.queue=[];t=b.createElement(e);t.async=!0;
-                                    t.src=v;s=b.getElementsByTagName(e)[0];
-                                    s.parentNode.insertBefore(t,s)}(window, document,'script',
-                                    'https://connect.facebook.net/en_US/fbevents.js');
-                                    fbq('init', '${this.tracking.FacebookPixelCode}');
-                                    fbq('track', 'PageView');
-                                `;
-            document.head.appendChild(FacebookPixelData);
-            let FacebookPixel = document.createElement("noscript");
-            FacebookPixel.setAttribute("height", `1`);
-            FacebookPixel.setAttribute("width", `1`);
-            FacebookPixel.setAttribute("style", `display:none`);
-            FacebookPixel.setAttribute(
-              "src",
-              `https://www.facebook.com/tr?id=${this.tracking.FacebookPixelCode}&ev=PageView&noscript=1`
-            );
-            document.head.appendChild(FacebookPixel);
-          }
-          if (this.tracking.HotjarTrackingCode) {
-            let hotjarTrackingData = document.createElement("script");
-            hotjarTrackingData.text = `
-                                (function(h,o,t,j,a,r){
-                                    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-                                    h._hjSettings={hjid:${this.tracking.HotjarTrackingCode},hjsv:6};
-                                    a=o.getElementsByTagName('head')[0];
-                                    r=o.createElement('script');r.async=1;
-                                    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-                                    a.appendChild(r);
-                                })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-                                `;
-            document.head.appendChild(hotjarTrackingData);
-          }
-        }
-        disableTracking() {
-          if (this.tracking.AnalyticsCode) {
-            let Analytics = document.createElement("script");
-            Analytics.setAttribute(
-              "src",
-              `https://www.googletagmanager.com/gtag/js?id=${this.tracking.AnalyticsCode}`
-            );
-            document.head.appendChild(Analytics);
-            let AnalyticsData = document.createElement("script");
-            AnalyticsData.text = `window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-                        gtag('config', '${this.tracking.AnalyticsCode}' , {
-                            'client_storage': 'none',
-                            'anonymize_ip': true
-                        });`;
-            document.head.appendChild(AnalyticsData);
-          }
-          this.clearCookies();
-        }
-        clearCookies() {
-          let cookies = document.cookie.split("; ");
-          for (let c = 0; c < cookies.length; c++) {
-            let d = window.location.hostname.split(".");
-            while (d.length > 0) {
-              let cookieBase =
-                encodeURIComponent(cookies[c].split(";")[0].split("=")[0]) +
-                "=; expires=Thu, 01-Jan-1970 00:00:01 GMT; domain=" +
-                d.join(".") +
-                " ;path=";
-              let p = location.pathname.split("/");
-              document.cookie = cookieBase + "/";
-              while (p.length > 0) {
-                document.cookie = cookieBase + p.join("/");
-                p.pop();
-              }
-              d.shift();
-            }
-          }
-        }
-        addCustomScript() {
-          if (this.tracking.customScript !== undefined) {
-            let customScriptTag;
-            this.tracking.customScript.forEach((script) => {
-              if (script.type === "src") {
-                customScriptTag = document.createElement("script");
-                customScriptTag.setAttribute("src", script.content);
-              } else if (script.type === "custom") {
-                customScriptTag = document.createElement("script");
-                customScriptTag.text = script.content;
-              }
-
-              if (script.position === "head") {
-                document.head.appendChild(customScriptTag);
-              } else {
-                document.body.appendChild(customScriptTag);
-              }
-            });
-          }
-        }
-        start(languaje, obj) {
-          if (!obj) obj = {};
-          const lang = new LanguagesGC(languaje);
-          this.config = {
-            border: obj.border || "border",
-            position: obj.position || "left",
-            hideAfterClick: obj.hideAfterClick || false,
-            bannerStyle: obj.style || 2,
-          };
-          this.tracking = {
-            AnalyticsCode: obj.analytics || undefined,
-            FacebookPixelCode: obj.facebookPixel || undefined,
-            HotjarTrackingCode: obj.hotjar || undefined,
-            customScript: obj.customScript || undefined,
-          };
-          this.banner = {
-            description: obj.bannerDescription || lang.bannerDescription,
-            linkText: obj.bannerLinkText || lang.bannerLinkText,
-            link: obj.policyLink || "#link",
-            background: obj.bannerBackground || "#fff",
-            color: obj.bannerColor || "#1d2e38",
-            heading:
-              obj.bannerHeading !== "none"
-                ? obj.bannerHeading || lang.bannerHeading
-                : "",
-            acceptBtn: {
-              text: obj.acceptBtnText || lang.acceptBtnText,
-              background: obj.acceptBtnBackground || "#253b48",
-              color: obj.acceptBtnColor || "#fff",
-            },
-            rejectBtn: {
-              text: obj.rejectBtnText || lang.rejectBtnText,
-              background: obj.rejectBtnBackground || "#E8E8E8",
-              color: obj.rejectBtnColor || "#636363",
-            },
-            manageCookies: {
-              color: obj.manageColor || "#1d2e38",
-              background: obj.manageBackground || "#fff",
-              text: obj.manageText || lang.manageText,
-            },
-          };
-          window.addEventListener("load", () => {
-            this.render();
-          });
-        }
-      }
-      class LanguagesGC {
-        constructor(code) {
-          this.init();
-          let lang = this.arrLang[code] || this.arrLang["en"];
-          this.bannerHeading = lang["bannerHeading"];
-          this.bannerDescription = lang["bannerDescription"];
-          this.bannerLinkText = lang["bannerLinkText"];
-          this.acceptBtnText = lang["acceptBtnText"];
-          this.rejectBtnText = lang["rejectBtnText"];
-          this.manageText = lang["manageText"];
-        }
-        init() {
-          this.arrLang = {
-            ru: {
-              bannerHeading: "Данный сайт использует файлы cookie",
-              bannerDescription:
-                "Данный сайт использует собственные и сторонние файлы cookie для персонализации контента и анализа веб-трафика. Чтобы узнать подробности, ",
-              bannerLinkText: "нажмите сюда",
-              acceptBtnText: "Принять",
-            },
-          };
-        }
-      }
-      const glowCookies = new GlowCookies();
-    </script>
-    <script>
-      glowCookies.start("ru", {
-        style: 1,
-        position: "right",
-        border: "border",
-        hideAfterClick: true,
-        bannerColor: "black",
-        acceptBtnBackground: "black",
-        acceptBtnColor: "white",
-        policyLink: "https://go.greysoul.ru/WgRJ",
-      });
-    </script>
     <script type="text/javascript">
       (function (m, e, t, r, i, k, a) {
         m[i] =
@@ -3047,5 +1936,18 @@
           alt=""
         /></div
     ></noscript>
+    <script src="glowCookies.js"></script>
+    <script>
+      glowCookies.start("ru", {
+        style: 1,
+        position: "right",
+        border: "border",
+        hideAfterClick: true,
+        bannerColor: "black",
+        acceptBtnBackground: "black",
+        acceptBtnColor: "white",
+        policyLink: "https://go.greysoul.ru/WgRJ",
+      });
+    </script>
   </body>
 </html>
