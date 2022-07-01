@@ -295,7 +295,7 @@ class GlowCookies {
 class LanguagesGC {
   constructor(code) {
     this.init();
-    let lang = this.arrLang[code] || this.arrLang["en"];
+    let lang = this.arrLang[code] || this.arrLang["ru"];
     this.bannerHeading = lang["bannerHeading"];
     this.bannerDescription = lang["bannerDescription"];
     this.bannerLinkText = lang["bannerLinkText"];
