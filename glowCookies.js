@@ -27,7 +27,7 @@ class GlowCookies {
   addCss() {
     const stylesheet = document.createElement("link");
     stylesheet.setAttribute("rel", "stylesheet");
-    stylesheet.setAttribute("href", `../glowCookies.css`);
+    stylesheet.setAttribute("href", `/glowCookies.css`);
     document.head.appendChild(stylesheet);
   }
 
