@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <title>404: Страница не найдена — Greysoul</title>
@@ -316,8 +316,8 @@
       }
       #main > .inner {
         --padding-horizontal: 3rem;
-        --padding-vertical: 4rem;
-        --spacing: 4rem;
+        --padding-vertical: 2rem;
+        --spacing: 0rem;
         --width: 30rem;
         border-radius: var(--border-radius-tl) var(--border-radius-tr)
           var(--border-radius-br) var(--border-radius-bl);
@@ -370,6 +370,204 @@
         display: none !important;
         transition: none !important;
       }
+      h1,
+      h2,
+      h3,
+      p {
+        direction: var(--site-language-direction);
+        position: relative;
+      }
+      h1 span.p,
+      h2 span.p,
+      h3 span.p,
+      p span.p {
+        display: block;
+        position: relative;
+      }
+      h1 span[style],
+      h2 span[style],
+      h3 span[style],
+      p span[style],
+      h1 strong,
+      h2 strong,
+      h3 strong,
+      p strong,
+      h1 a,
+      h2 a,
+      h3 a,
+      p a,
+      h1 code,
+      h2 code,
+      h3 code,
+      p code,
+      h1 mark,
+      h2 mark,
+      h3 mark,
+      p mark {
+        -webkit-text-fill-color: currentcolor;
+      }
+      h1.style3:not(:first-child),
+      h2.style3:not(:first-child),
+      h3.style3:not(:first-child),
+      p.style3:not(:first-child) {
+        margin-top: 2.125rem !important;
+      }
+      h1.style3:not(:last-child),
+      h2.style3:not(:last-child),
+      h3.style3:not(:last-child),
+      p.style3:not(:last-child) {
+        margin-bottom: 2.125rem !important;
+      }
+      h1.style3,
+      h2.style3,
+      h3.style3,
+      p.style3 {
+        color: #000000;
+        font-family: "Inter", sans-serif;
+        font-size: 3em;
+        line-height: 1.5;
+        font-weight: 900;
+      }
+      h1.style3 a,
+      h2.style3 a,
+      h3.style3 a,
+      p.style3 a {
+        text-decoration: underline;
+      }
+      h1.style3 a:hover,
+      h2.style3 a:hover,
+      h3.style3 a:hover,
+      p.style3 a:hover {
+        text-decoration: none;
+      }
+      h1.style3 span.p:nth-child(n + 2),
+      h2.style3 span.p:nth-child(n + 2),
+      h3.style3 span.p:nth-child(n + 2),
+      p.style3 span.p:nth-child(n + 2) {
+        margin-top: 1rem;
+      }
+      h1.style4,
+      h2.style4,
+      h3.style4,
+      p.style4 {
+        color: #545454;
+        font-family: "Inter", sans-serif;
+        font-size: 1em;
+        line-height: 2;
+        font-weight: 400;
+      }
+      h1.style4 a,
+      h2.style4 a,
+      h3.style4 a,
+      p.style4 a {
+        text-decoration: underline;
+      }
+      h1.style4 a:hover,
+      h2.style4 a:hover,
+      h3.style4 a:hover,
+      p.style4 a:hover {
+        text-decoration: none;
+      }
+      h1.style4 span.p:nth-child(n + 2),
+      h2.style4 span.p:nth-child(n + 2),
+      h3.style4 span.p:nth-child(n + 2),
+      p.style4 span.p:nth-child(n + 2) {
+        margin-top: 1rem;
+      }
+      h1.style7:not(:first-child),
+      h2.style7:not(:first-child),
+      h3.style7:not(:first-child),
+      p.style7:not(:first-child) {
+        margin-top: 2.5rem !important;
+      }
+      h1.style7:not(:last-child),
+      h2.style7:not(:last-child),
+      h3.style7:not(:last-child),
+      p.style7:not(:last-child) {
+        margin-bottom: 2.5rem !important;
+      }
+      h1.style7,
+      h2.style7,
+      h3.style7,
+      p.style7 {
+        color: #808080;
+        font-family: "Inter", sans-serif;
+        font-size: 0.625em;
+        line-height: 2;
+        font-weight: 400;
+      }
+      h1.style7 a,
+      h2.style7 a,
+      h3.style7 a,
+      p.style7 a {
+        text-decoration: underline;
+      }
+      h1.style7 a:hover,
+      h2.style7 a:hover,
+      h3.style7 a:hover,
+      p.style7 a:hover {
+        text-decoration: none;
+      }
+      h1.style7 span.p:nth-child(n + 2),
+      h2.style7 span.p:nth-child(n + 2),
+      h3.style7 span.p:nth-child(n + 2),
+      p.style7 span.p:nth-child(n + 2) {
+        margin-top: 1rem;
+      }
+      .buttons {
+        cursor: default;
+        display: flex;
+        justify-content: var(--flex-alignment);
+        letter-spacing: 0;
+        padding: 0;
+      }
+      .buttons li {
+        max-width: 100%;
+      }
+      .buttons li a {
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        white-space: nowrap;
+      }
+      .buttons.style3 {
+        gap: 2rem;
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+      .buttons.style3:not(:first-child) {
+        margin-top: 3rem !important;
+      }
+      .buttons.style3:not(:last-child) {
+        margin-bottom: 3rem !important;
+      }
+      .buttons.style3 li a {
+        display: inline-block;
+        width: 100vw;
+        height: 4rem;
+        line-height: 4rem;
+        padding: 0 2rem;
+        vertical-align: middle;
+        font-family: "Inter", sans-serif;
+        font-size: 1em;
+        font-weight: 700;
+        border-radius: 2.5rem;
+        direction: var(--site-language-direction);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: transform 0.25s ease, color 0.25s ease,
+          background-color 0.25s ease, border-color 0.25s ease;
+      }
+      .buttons.style3 .button {
+        background-color: #000000;
+        color: #ffffff;
+      }
+      .buttons.style3 li a:hover {
+        transform: scale(0.9225);
+      }
       .container {
         position: relative;
       }
@@ -404,14 +602,13 @@
       }
       .container.style1 > .wrapper {
         display: inline-block;
-        width: 40rem;
+        width: 75rem;
         background-color: transparent;
       }
       .container.style1 > .wrapper > .inner {
         --gutters: 2rem;
         --padding-horizontal: 0rem;
-        --padding-vertical: 0rem;
-        --spacing: 1.5rem;
+        --padding-vertical: 2rem;
         padding: var(--padding-vertical) var(--padding-horizontal);
       }
       .container.style1.default > .wrapper > .inner > * {
@@ -534,210 +731,6 @@
         position: absolute;
         width: 100%;
       }
-      h1,
-      h2,
-      h3,
-      p {
-        direction: var(--site-language-direction);
-        position: relative;
-      }
-      h1 span.p,
-      h2 span.p,
-      h3 span.p,
-      p span.p {
-        display: block;
-        position: relative;
-      }
-      h1 span[style],
-      h2 span[style],
-      h3 span[style],
-      p span[style],
-      h1 strong,
-      h2 strong,
-      h3 strong,
-      p strong,
-      h1 a,
-      h2 a,
-      h3 a,
-      p a,
-      h1 code,
-      h2 code,
-      h3 code,
-      p code,
-      h1 mark,
-      h2 mark,
-      h3 mark,
-      p mark {
-        -webkit-text-fill-color: currentcolor;
-      }
-      h1.style1:not(:first-child),
-      h2.style1:not(:first-child),
-      h3.style1:not(:first-child),
-      p.style1:not(:first-child) {
-        margin-top: 2rem !important;
-      }
-      h1.style1:not(:last-child),
-      h2.style1:not(:last-child),
-      h3.style1:not(:last-child),
-      p.style1:not(:last-child) {
-        margin-bottom: 2rem !important;
-      }
-      h1.style1,
-      h2.style1,
-      h3.style1,
-      p.style1 {
-        color: #000000;
-        font-family: "Inter", sans-serif;
-        font-size: 3em;
-        line-height: 1.5;
-        font-weight: 900;
-      }
-      h1.style1 a,
-      h2.style1 a,
-      h3.style1 a,
-      p.style1 a {
-        text-decoration: underline;
-      }
-      h1.style1 a:hover,
-      h2.style1 a:hover,
-      h3.style1 a:hover,
-      p.style1 a:hover {
-        text-decoration: none;
-      }
-      h1.style1 span.p:nth-child(n + 2),
-      h2.style1 span.p:nth-child(n + 2),
-      h3.style1 span.p:nth-child(n + 2),
-      p.style1 span.p:nth-child(n + 2) {
-        margin-top: 1rem;
-      }
-      h1.style3:not(:first-child),
-      h2.style3:not(:first-child),
-      h3.style3:not(:first-child),
-      p.style3:not(:first-child) {
-        margin-top: 2.5rem !important;
-      }
-      h1.style3:not(:last-child),
-      h2.style3:not(:last-child),
-      h3.style3:not(:last-child),
-      p.style3:not(:last-child) {
-        margin-bottom: 2.5rem !important;
-      }
-      h1.style3,
-      h2.style3,
-      h3.style3,
-      p.style3 {
-        color: #545454;
-        font-family: "Inter", sans-serif;
-        font-size: 1em;
-        line-height: 1.875;
-        font-weight: 400;
-      }
-      h1.style3 a,
-      h2.style3 a,
-      h3.style3 a,
-      p.style3 a {
-        color: #000000;
-        text-decoration: none;
-      }
-      h1.style3 a:hover,
-      h2.style3 a:hover,
-      h3.style3 a:hover,
-      p.style3 a:hover {
-        text-decoration: underline;
-      }
-      h1.style3 span.p:nth-child(n + 2),
-      h2.style3 span.p:nth-child(n + 2),
-      h3.style3 span.p:nth-child(n + 2),
-      p.style3 span.p:nth-child(n + 2) {
-        margin-top: 1rem;
-      }
-      h1.style5:not(:first-child),
-      h2.style5:not(:first-child),
-      h3.style5:not(:first-child),
-      p.style5:not(:first-child) {
-        margin-top: 1.25rem !important;
-      }
-      h1.style5:not(:last-child),
-      h2.style5:not(:last-child),
-      h3.style5:not(:last-child),
-      p.style5:not(:last-child) {
-        margin-bottom: 1.25rem !important;
-      }
-      h1.style5,
-      h2.style5,
-      h3.style5,
-      p.style5 {
-        color: #808080;
-        font-family: "Inter", sans-serif;
-        font-size: 0.625em;
-        line-height: 1.875;
-        font-weight: 400;
-      }
-      h1.style5 a,
-      h2.style5 a,
-      h3.style5 a,
-      p.style5 a {
-        color: #000000;
-        text-decoration: none;
-      }
-      h1.style5 a:hover,
-      h2.style5 a:hover,
-      h3.style5 a:hover,
-      p.style5 a:hover {
-        text-decoration: underline;
-      }
-      h1.style5 span.p:nth-child(n + 2),
-      h2.style5 span.p:nth-child(n + 2),
-      h3.style5 span.p:nth-child(n + 2),
-      p.style5 span.p:nth-child(n + 2) {
-        margin-top: 1rem;
-      }
-      .buttons {
-        cursor: default;
-        display: flex;
-        justify-content: var(--flex-alignment);
-        letter-spacing: 0;
-        padding: 0;
-      }
-      .buttons li {
-        max-width: 100%;
-      }
-      .buttons li a {
-        align-items: center;
-        justify-content: center;
-        max-width: 100%;
-        text-align: center;
-        text-decoration: none;
-        vertical-align: middle;
-        white-space: nowrap;
-      }
-      .buttons.style1 {
-        gap: 2rem;
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-      .buttons.style1 li a {
-        display: flex;
-        width: 100vw;
-        height: 4.125rem;
-        line-height: 4.125rem;
-        padding: 0 2.0625rem;
-        vertical-align: middle;
-        font-family: "Inter", sans-serif;
-        font-size: 1em;
-        font-weight: 700;
-        border-radius: 2.5rem;
-        direction: var(--site-language-direction);
-        transition: transform 0.25s ease, color 0.25s ease,
-          background-color 0.25s ease, border-color 0.25s ease;
-      }
-      .buttons.style1 .button {
-        background-color: #000000;
-        color: #ffffff;
-      }
-      .buttons.style1 li a:hover {
-        transform: scale(0.94);
-      }
       @media (max-width: 1920px) {
       }
       @media (max-width: 1680px) {
@@ -762,15 +755,75 @@
           font-size: 11pt;
         }
         #main > .inner {
-          --padding-horizontal: 3rem;
-          --padding-vertical: 3.5rem;
-          --spacing: 4rem;
+          --padding-horizontal: 2rem;
+          --padding-vertical: 2rem;
+          --spacing: 0rem;
+        }
+        h1.style3:not(:first-child),
+        h2.style3:not(:first-child),
+        h3.style3:not(:first-child),
+        p.style3:not(:first-child) {
+          margin-top: 1.75rem !important;
+        }
+        h1.style3:not(:last-child),
+        h2.style3:not(:last-child),
+        h3.style3:not(:last-child),
+        p.style3:not(:last-child) {
+          margin-bottom: 1.75rem !important;
+        }
+        h1.style3,
+        h2.style3,
+        h3.style3,
+        p.style3 {
+          letter-spacing: 0rem;
+          width: 100%;
+          font-size: 2.625em;
+          line-height: 1.5;
+        }
+        h1.style4,
+        h2.style4,
+        h3.style4,
+        p.style4 {
+          letter-spacing: 0rem;
+          width: 100%;
+          font-size: 1em;
+          line-height: 2;
+        }
+        h1.style7:not(:first-child),
+        h2.style7:not(:first-child),
+        h3.style7:not(:first-child),
+        p.style7:not(:first-child) {
+          margin-top: 1.875rem !important;
+        }
+        h1.style7:not(:last-child),
+        h2.style7:not(:last-child),
+        h3.style7:not(:last-child),
+        p.style7:not(:last-child) {
+          margin-bottom: 1.875rem !important;
+        }
+        h1.style7,
+        h2.style7,
+        h3.style7,
+        p.style7 {
+          letter-spacing: 0rem;
+          width: 100%;
+          font-size: 0.75em;
+          line-height: 2;
+        }
+        .buttons.style3:not(:first-child) {
+          margin-top: 2.625rem !important;
+        }
+        .buttons.style3:not(:last-child) {
+          margin-bottom: 2.625rem !important;
+        }
+        .buttons.style3 li a {
+          letter-spacing: 0rem;
+          font-size: 1em;
         }
         .container.style1 > .wrapper > .inner {
           --gutters: 2rem;
           --padding-horizontal: 0rem;
-          --padding-vertical: 0rem;
-          --spacing: 1.5rem;
+          --padding-vertical: 2rem;
         }
         .container.style1.columns > .wrapper > .inner {
           flex-direction: column !important;
@@ -887,123 +940,46 @@
           position: relative;
           width: auto;
         }
-        h1.style1:not(:first-child),
-        h2.style1:not(:first-child),
-        h3.style1:not(:first-child),
-        p.style1:not(:first-child) {
-          margin-top: 2rem !important;
-        }
-        h1.style1:not(:last-child),
-        h2.style1:not(:last-child),
-        h3.style1:not(:last-child),
-        p.style1:not(:last-child) {
-          margin-bottom: 2rem !important;
-        }
-        h1.style1,
-        h2.style1,
-        h3.style1,
-        p.style1 {
-          letter-spacing: 0rem;
-          width: 100%;
-          font-size: 2.375em;
-          line-height: 1.5;
-        }
-        h1.style3:not(:first-child),
-        h2.style3:not(:first-child),
-        h3.style3:not(:first-child),
-        p.style3:not(:first-child) {
-          margin-top: 1.875rem !important;
-        }
-        h1.style3:not(:last-child),
-        h2.style3:not(:last-child),
-        h3.style3:not(:last-child),
-        p.style3:not(:last-child) {
-          margin-bottom: 1.875rem !important;
-        }
-        h1.style3,
-        h2.style3,
-        h3.style3,
-        p.style3 {
-          letter-spacing: 0rem;
-          width: 100%;
-          font-size: 1em;
-          line-height: 1.875;
-        }
-        h1.style5:not(:first-child),
-        h2.style5:not(:first-child),
-        h3.style5:not(:first-child),
-        p.style5:not(:first-child) {
-          margin-top: 0.9375rem !important;
-        }
-        h1.style5:not(:last-child),
-        h2.style5:not(:last-child),
-        h3.style5:not(:last-child),
-        p.style5:not(:last-child) {
-          margin-bottom: 0.9375rem !important;
-        }
-        h1.style5,
-        h2.style5,
-        h3.style5,
-        p.style5 {
-          letter-spacing: 0rem;
-          width: 100%;
-          font-size: 0.625em;
-          line-height: 1.875;
-        }
-        .buttons.style1 li a {
-          letter-spacing: 0rem;
-          font-size: 1em;
-        }
       }
       @media (max-width: 480px) {
         #main > .inner {
-          --spacing: 3.0625rem;
+          --spacing: 0rem;
         }
-        .container.style1 > .wrapper > .inner {
-          --spacing: 1.3125rem;
-        }
-        .buttons.style1 {
-          flex-direction: column;
-          flex-wrap: nowrap;
-        }
-        .buttons.style1 li a {
-          display: inline-flex;
-          max-width: 100%;
-          width: 100%;
+        .buttons.style3 li a {
+          width: 30.125rem;
         }
       }
       @media (max-width: 360px) {
         #main > .inner {
-          --padding-horizontal: 2.25rem;
-          --padding-vertical: 2.625rem;
-          --spacing: 2.25rem;
-        }
-        .container.style1 > .wrapper > .inner {
-          --gutters: 1.5rem;
-          --padding-horizontal: 0rem;
-          --padding-vertical: 0rem;
-          --spacing: 1.125rem;
-        }
-        h1.style1,
-        h2.style1,
-        h3.style1,
-        p.style1 {
-          font-size: 2.375em;
+          --padding-horizontal: 1.5rem;
+          --padding-vertical: 1.5rem;
+          --spacing: 0rem;
         }
         h1.style3,
         h2.style3,
         h3.style3,
         p.style3 {
+          font-size: 2.625em;
+        }
+        h1.style4,
+        h2.style4,
+        h3.style4,
+        p.style4 {
           font-size: 1em;
         }
-        h1.style5,
-        h2.style5,
-        h3.style5,
-        p.style5 {
-          font-size: 0.625em;
+        h1.style7,
+        h2.style7,
+        h3.style7,
+        p.style7 {
+          font-size: 0.75em;
         }
-        .buttons.style1 {
+        .buttons.style3 {
           gap: 1.5rem;
+        }
+        .container.style1 > .wrapper > .inner {
+          --gutters: 1.5rem;
+          --padding-horizontal: 0rem;
+          --padding-vertical: 1.5rem;
         }
       }
     </style>
@@ -1012,15 +988,15 @@
     <div id="wrapper">
       <div id="main">
         <div class="inner">
-          <div id="container04" class="style1 container default">
+          <div id="error" class="style1 container default">
             <div class="wrapper">
               <div class="inner">
-                <h3 id="text13" class="style1">404: Страница не найдена</h3>
-                <p id="text16" class="style3">
+                <h1 id="text04" class="style3">404: Страница не найдена</h1>
+                <p id="text10" class="style4">
                   Если вы попали на эту страницу по ошибке, то перейдите,
                   пожалуйста, на главную страницу
                 </p>
-                <ul id="buttons03" class="style1 buttons">
+                <ul id="buttons01" class="style3 buttons">
                   <li>
                     <a href="/" class="button n01">Главная страница</a>
                   </li>
@@ -1028,10 +1004,10 @@
               </div>
             </div>
           </div>
-          <div id="container06" class="style1 container default">
+          <div id="footer" class="style1 container default">
             <div class="wrapper">
               <div class="inner">
-                <p id="text19" class="style5">
+                <p id="text07" class="style7">
                   ©
                   <script>
                     document.write(new Date().getFullYear());
@@ -1045,40 +1021,5 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript">
-      (function (m, e, t, r, i, k, a) {
-        m[i] =
-          m[i] ||
-          function () {
-            (m[i].a = m[i].a || []).push(arguments);
-          };
-        m[i].l = 1 * new Date();
-        (k = e.createElement(t)),
-          (a = e.getElementsByTagName(t)[0]),
-          (k.async = 1),
-          (k.src = r),
-          a.parentNode.insertBefore(k, a);
-      })(
-        window,
-        document,
-        "script",
-        "https://mc.yandex.ru/metrika/tag.js",
-        "ym"
-      );
-
-      ym(88869864, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-      });
-    </script>
-    <noscript
-      ><div>
-        <img
-          src="https://mc.yandex.ru/watch/88869864"
-          style="position: absolute; left: -9999px"
-          alt=""
-        /></div
-    ></noscript>
   </body>
 </html>

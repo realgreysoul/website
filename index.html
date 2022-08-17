@@ -320,8 +320,8 @@
       }
       #main > .inner {
         --padding-horizontal: 3rem;
-        --padding-vertical: 4rem;
-        --spacing: 4rem;
+        --padding-vertical: 2rem;
+        --spacing: 0rem;
         --width: 30rem;
         border-radius: var(--border-radius-tl) var(--border-radius-tr)
           var(--border-radius-br) var(--border-radius-bl);
@@ -406,6 +406,12 @@
         border-bottom-left-radius: inherit;
         border-bottom-right-radius: inherit;
       }
+      .image.style1:not(:first-child) {
+        margin-top: 1.25rem !important;
+      }
+      .image.style1:not(:last-child) {
+        margin-bottom: 1.25rem !important;
+      }
       .image.style1 .frame {
         width: 4.875rem;
         transition: none;
@@ -449,67 +455,55 @@
       p mark {
         -webkit-text-fill-color: currentcolor;
       }
-      h1.style1:not(:first-child),
-      h2.style1:not(:first-child),
-      h3.style1:not(:first-child),
-      p.style1:not(:first-child) {
-        margin-top: 2rem !important;
+      h1.style3:not(:first-child),
+      h2.style3:not(:first-child),
+      h3.style3:not(:first-child),
+      p.style3:not(:first-child) {
+        margin-top: 2.125rem !important;
       }
-      h1.style1:not(:last-child),
-      h2.style1:not(:last-child),
-      h3.style1:not(:last-child),
-      p.style1:not(:last-child) {
-        margin-bottom: 2rem !important;
+      h1.style3:not(:last-child),
+      h2.style3:not(:last-child),
+      h3.style3:not(:last-child),
+      p.style3:not(:last-child) {
+        margin-bottom: 2.125rem !important;
       }
-      h1.style1,
-      h2.style1,
-      h3.style1,
-      p.style1 {
+      h1.style3,
+      h2.style3,
+      h3.style3,
+      p.style3 {
         color: #000000;
         font-family: "Inter", sans-serif;
         font-size: 3.125em;
         line-height: 1.25;
         font-weight: 900;
       }
-      h1.style1 a,
-      h2.style1 a,
-      h3.style1 a,
-      p.style1 a {
+      h1.style3 a,
+      h2.style3 a,
+      h3.style3 a,
+      p.style3 a {
         text-decoration: underline;
       }
-      h1.style1 a:hover,
-      h2.style1 a:hover,
-      h3.style1 a:hover,
-      p.style1 a:hover {
+      h1.style3 a:hover,
+      h2.style3 a:hover,
+      h3.style3 a:hover,
+      p.style3 a:hover {
         text-decoration: none;
       }
-      h1.style1 span.p:nth-child(n + 2),
-      h2.style1 span.p:nth-child(n + 2),
-      h3.style1 span.p:nth-child(n + 2),
-      p.style1 span.p:nth-child(n + 2) {
+      h1.style3 span.p:nth-child(n + 2),
+      h2.style3 span.p:nth-child(n + 2),
+      h3.style3 span.p:nth-child(n + 2),
+      p.style3 span.p:nth-child(n + 2) {
         margin-top: 1rem;
-      }
-      h1.style4:not(:first-child),
-      h2.style4:not(:first-child),
-      h3.style4:not(:first-child),
-      p.style4:not(:first-child) {
-        margin-top: 4rem !important;
-      }
-      h1.style4:not(:last-child),
-      h2.style4:not(:last-child),
-      h3.style4:not(:last-child),
-      p.style4:not(:last-child) {
-        margin-bottom: 4rem !important;
       }
       h1.style4,
       h2.style4,
       h3.style4,
       p.style4 {
-        color: #000000;
+        color: #545454;
         font-family: "Inter", sans-serif;
-        font-size: 3.125em;
-        line-height: 1.5;
-        font-weight: 900;
+        font-size: 1em;
+        line-height: 2;
+        font-weight: 400;
       }
       h1.style4 a,
       h2.style4 a,
@@ -529,81 +523,39 @@
       p.style4 span.p:nth-child(n + 2) {
         margin-top: 1rem;
       }
-      h1.style3:not(:first-child),
-      h2.style3:not(:first-child),
-      h3.style3:not(:first-child),
-      p.style3:not(:first-child) {
-        margin-top: 2.5rem !important;
-      }
-      h1.style3:not(:last-child),
-      h2.style3:not(:last-child),
-      h3.style3:not(:last-child),
-      p.style3:not(:last-child) {
-        margin-bottom: 2.5rem !important;
-      }
-      h1.style3,
-      h2.style3,
-      h3.style3,
-      p.style3 {
-        color: #545454;
-        font-family: "Inter", sans-serif;
-        font-size: 1em;
-        line-height: 1.875;
-        font-weight: 400;
-      }
-      h1.style3 a,
-      h2.style3 a,
-      h3.style3 a,
-      p.style3 a {
-        color: #000000;
-        text-decoration: none;
-      }
-      h1.style3 a:hover,
-      h2.style3 a:hover,
-      h3.style3 a:hover,
-      p.style3 a:hover {
-        text-decoration: underline;
-      }
-      h1.style3 span.p:nth-child(n + 2),
-      h2.style3 span.p:nth-child(n + 2),
-      h3.style3 span.p:nth-child(n + 2),
-      p.style3 span.p:nth-child(n + 2) {
-        margin-top: 1rem;
-      }
       h1.style2:not(:first-child),
       h2.style2:not(:first-child),
       h3.style2:not(:first-child),
       p.style2:not(:first-child) {
-        margin-top: 1.25rem !important;
+        margin-top: 3.25rem !important;
       }
       h1.style2:not(:last-child),
       h2.style2:not(:last-child),
       h3.style2:not(:last-child),
       p.style2:not(:last-child) {
-        margin-bottom: 1.25rem !important;
+        margin-bottom: 3.25rem !important;
       }
       h1.style2,
       h2.style2,
       h3.style2,
       p.style2 {
-        color: #545454;
+        color: #000000;
         font-family: "Inter", sans-serif;
-        font-size: 1em;
-        line-height: 1.875;
-        font-weight: 400;
+        font-size: 3.125em;
+        line-height: 1.5;
+        font-weight: 900;
       }
       h1.style2 a,
       h2.style2 a,
       h3.style2 a,
       p.style2 a {
-        color: #000000;
-        text-decoration: none;
+        text-decoration: underline;
       }
       h1.style2 a:hover,
       h2.style2 a:hover,
       h3.style2 a:hover,
       p.style2 a:hover {
-        text-decoration: underline;
+        text-decoration: none;
       }
       h1.style2 span.p:nth-child(n + 2),
       h2.style2 span.p:nth-child(n + 2),
@@ -615,22 +567,22 @@
       h2.style5:not(:first-child),
       h3.style5:not(:first-child),
       p.style5:not(:first-child) {
-        margin-top: 1.25rem !important;
+        margin-top: 2.5rem !important;
       }
       h1.style5:not(:last-child),
       h2.style5:not(:last-child),
       h3.style5:not(:last-child),
       p.style5:not(:last-child) {
-        margin-bottom: 1.25rem !important;
+        margin-bottom: 2.5rem !important;
       }
       h1.style5,
       h2.style5,
       h3.style5,
       p.style5 {
-        color: #808080;
+        color: #545454;
         font-family: "Inter", sans-serif;
-        font-size: 0.625em;
-        line-height: 1.875;
+        font-size: 1em;
+        line-height: 2;
         font-weight: 400;
       }
       h1.style5 a,
@@ -644,7 +596,7 @@
       h2.style5 a:hover,
       h3.style5 a:hover,
       p.style5 a:hover {
-        text-decoration: underline;
+        color: #545454;
       }
       h1.style5 span.p:nth-child(n + 2),
       h2.style5 span.p:nth-child(n + 2),
@@ -652,167 +604,45 @@
       p.style5 span.p:nth-child(n + 2) {
         margin-top: 1rem;
       }
-      .gallery .inner {
-        display: inline-block;
-        max-width: 100%;
-        vertical-align: middle;
+      h1.style7:not(:first-child),
+      h2.style7:not(:first-child),
+      h3.style7:not(:first-child),
+      p.style7:not(:first-child) {
+        margin-top: 2.5rem !important;
       }
-      .gallery ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: var(--flex-alignment);
+      h1.style7:not(:last-child),
+      h2.style7:not(:last-child),
+      h3.style7:not(:last-child),
+      p.style7:not(:last-child) {
+        margin-bottom: 2.5rem !important;
       }
-      .gallery ul li {
-        position: relative;
-      }
-      .gallery ul li .thumbnail {
-        background-color: #000000;
-        border-radius: inherit;
-        position: relative;
-      }
-      .gallery ul li .frame {
-        -webkit-backface-visibility: hidden;
-        -webkit-transform: translate3d(0, 0, 0);
-        display: inline-block;
-        overflow: hidden;
-        vertical-align: top;
-      }
-      .gallery ul li img {
-        margin: 0;
-        max-width: 100%;
-        vertical-align: top;
-        width: auto;
-      }
-      .gallery ul li .caption {
-        width: 100%;
-      }
-      .gallery ul li .caption p {
-        width: 100%;
-      }
-      .gallery.style1 .inner {
-        max-width: 100%;
-      }
-      .gallery.style1 ul li {
-        border-radius: 3rem;
-        display: inline-block;
-      }
-      .gallery.style1 ul li .frame {
-        border-radius: 3rem;
-        border-color: #000000;
-        border-style: solid;
-        border-width: 5px;
-      }
-      .gallery.style1 ul li .caption {
-        opacity: 1;
-        align-items: flex-end;
-        border-radius: inherit;
-        display: flex;
-        height: 100%;
-        left: 0;
-        pointer-events: none;
-        position: absolute;
-        top: 0;
-        transition: opacity 0.25s ease, transform 0.25s ease, z-index 0.25s ease;
-      }
-      .gallery.style1 ul li .caption p {
-        border-bottom-left-radius: calc(3rem - 5px);
-        border-bottom-right-radius: calc(3rem - 5px);
-        padding-bottom: 0.625rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-top: 0.625rem;
-        margin: 5px;
-        color: #000000;
-        background-color: #ffffff;
+      h1.style7,
+      h2.style7,
+      h3.style7,
+      p.style7 {
+        color: #808080;
         font-family: "Inter", sans-serif;
-        font-size: 1em;
-        line-height: 1.5;
-        overflow-x: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        font-weight: 700;
+        font-size: 0.625em;
+        line-height: 2;
+        font-weight: 400;
       }
-      .gallery.style1 ul li .thumbnail:hover + .caption {
-        opacity: 0;
-        transform: scale(0.94);
-        z-index: 2;
+      h1.style7 a,
+      h2.style7 a,
+      h3.style7 a,
+      p.style7 a {
+        text-decoration: underline;
       }
-      .gallery.style1 ul {
-        gap: 0.5rem;
+      h1.style7 a:hover,
+      h2.style7 a:hover,
+      h3.style7 a:hover,
+      p.style7 a:hover {
+        text-decoration: none;
       }
-      .gallery.style1 ul li .thumbnail {
-        display: block;
-        transition: transform 0.25s ease, z-index 0.25s ease;
-      }
-      .gallery.style1 ul li img {
-        height: auto;
-        max-height: 30rem;
-      }
-      .gallery.style1 ul li .thumbnail:hover {
-        transform: scale(0.94);
-        z-index: 1;
-      }
-      .gallery.style2 .inner {
-        max-width: 100%;
-      }
-      .gallery.style2 ul li {
-        border-radius: 3rem;
-        display: inline-block;
-      }
-      .gallery.style2 ul li .frame {
-        border-radius: 3rem;
-        border-color: #000000;
-        border-style: solid;
-        border-width: 5px;
-      }
-      .gallery.style2 ul li .caption {
-        opacity: 1;
-        align-items: flex-end;
-        border-radius: inherit;
-        display: flex;
-        height: 100%;
-        left: 0;
-        pointer-events: none;
-        position: absolute;
-        top: 0;
-        transition: opacity 0.25s ease, transform 0.25s ease, z-index 0.25s ease;
-      }
-      .gallery.style2 ul li .caption p {
-        border-bottom-left-radius: inherit;
-        border-bottom-right-radius: inherit;
-        padding-bottom: 0.625rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-top: 0.625rem;
-        color: #ffffff;
-        background-color: #000000;
-        font-family: "Inter", sans-serif;
-        font-size: 1em;
-        line-height: 1.5;
-        overflow-x: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        font-weight: 700;
-      }
-      .gallery.style2 ul li .thumbnail:hover + .caption {
-        opacity: 0;
-        transform: scale(0.94);
-        z-index: 2;
-      }
-      .gallery.style2 ul {
-        gap: 0.5rem;
-      }
-      .gallery.style2 ul li .thumbnail {
-        display: block;
-        transition: transform 0.25s ease, z-index 0.25s ease;
-      }
-      .gallery.style2 ul li img {
-        height: auto;
-        max-height: 30rem;
-      }
-      .gallery.style2 ul li .thumbnail:hover {
-        transform: scale(0.94);
-        z-index: 1;
+      h1.style7 span.p:nth-child(n + 2),
+      h2.style7 span.p:nth-child(n + 2),
+      h3.style7 span.p:nth-child(n + 2),
+      p.style7 span.p:nth-child(n + 2) {
+        margin-top: 1rem;
       }
       .container {
         position: relative;
@@ -848,14 +678,13 @@
       }
       .container.style1 > .wrapper {
         display: inline-block;
-        width: 40rem;
+        width: 75rem;
         background-color: transparent;
       }
       .container.style1 > .wrapper > .inner {
         --gutters: 2rem;
         --padding-horizontal: 0rem;
-        --padding-vertical: 0rem;
-        --spacing: 1.5rem;
+        --padding-vertical: 2rem;
         padding: var(--padding-vertical) var(--padding-horizontal);
       }
       .container.style1.default > .wrapper > .inner > * {
@@ -978,70 +807,6 @@
         position: absolute;
         width: 100%;
       }
-      .icons {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: var(--flex-alignment);
-        letter-spacing: 0;
-        padding: 0;
-      }
-      .icons li {
-        position: relative;
-        z-index: 1;
-      }
-      .icons li a {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-      }
-      .icons li a svg {
-        display: block;
-        position: relative;
-      }
-      .icons li a + svg {
-        display: block;
-        height: 100%;
-        left: 0;
-        pointer-events: none;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: -1;
-      }
-      .icons li a .label {
-        display: none;
-      }
-      .icons.style1 {
-        font-size: 1.5em;
-        gap: 1.125rem;
-      }
-      .icons.style1 li a {
-        border-radius: 100%;
-        height: 2em;
-        width: 2em;
-        transition: transform 0.25s ease, color 0.25s ease,
-          background-color 0.25s ease, border-color 0.25s ease;
-      }
-      .icons.style1 li a svg {
-        height: 60%;
-        width: 60%;
-        transition: fill 0.25s ease;
-      }
-      .icons.style1 a {
-        background-color: #000000;
-      }
-      .icons.style1 a svg {
-        fill: #ffffff;
-      }
-      .icons.style1 li a + svg {
-        transition: transform 0.25s ease, fill 0.25s ease, stroke 0.25s ease;
-      }
-      .icons.style1 li a:hover {
-        transform: scale(0.8875);
-      }
-      .icons.style1 li a:hover + svg {
-        transform: scale(0.8875);
-      }
       .buttons {
         cursor: default;
         display: flex;
@@ -1063,57 +828,312 @@
       }
       .buttons.style1 {
         gap: 2rem;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        flex-wrap: nowrap;
       }
       .buttons.style1 li a {
-        display: flex;
+        display: inline-flex;
         width: 100vw;
-        height: 4.125rem;
-        line-height: 4.125rem;
-        padding: 0 2.0625rem;
+        height: 4rem;
+        line-height: 4rem;
+        padding: 0 2rem;
         vertical-align: middle;
         font-family: "Inter", sans-serif;
         font-size: 1em;
         font-weight: 700;
         border-radius: 2.5rem;
-        direction: var(--site-language-direction);
+        justify-content: flex-start;
         transition: transform 0.25s ease, color 0.25s ease,
           background-color 0.25s ease, border-color 0.25s ease;
+      }
+      .buttons.style1 li a svg {
+        display: block;
+        fill: #ffffff;
+        flex-grow: 0;
+        flex-shrink: 0;
+        height: 100%;
+        min-width: 16px;
+        width: 1.625em;
+        margin-left: -0.125em;
+        margin-right: calc(0.5em + 0rem);
+        transition: fill 0.25s ease;
+      }
+      .buttons.style1 li a .label {
+        direction: var(--site-language-direction);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        flex-grow: 1;
+        flex-shrink: 1;
+        text-align: right;
+        width: 100%;
       }
       .buttons.style1 .button {
         background-color: #000000;
         color: #ffffff;
       }
       .buttons.style1 li a:hover {
-        transform: scale(0.94);
+        transform: scale(0.9225);
       }
-      #buttons02 .n01 {
-        background: linear-gradient(-113deg, #f59c07, #f57507);
-      }
-      #buttons02 .n02 {
-        background-color: #f2a015;
-      }
-      #buttons02 .n03 {
-        background-color: #8f14fd;
-      }
-      #buttons02 .n04 {
-        background-color: #1e64b2;
-      }
-      #buttons03 .n01 {
-        background-color: #f49722;
-      }
-      #buttons04 .n01 {
-        background-color: #6875e9;
-      }
-      #buttons05 .n01 {
-        background-color: #19c28e;
-      }
-      #buttons06 .n01 {
-        background: linear-gradient(90deg, #009393, #6875e9);
+      #buttons01 .n01 svg {
+        fill: #ffffff;
       }
       #buttons01 .n01 {
+        background-color: #dd2a7b;
+        color: #ffffff;
+      }
+      #buttons01 .n02 svg {
+        fill: #ffffff;
+      }
+      #buttons01 .n02 {
+        background-color: #1da1f2;
+        color: #ffffff;
+      }
+      #buttons01 .n03 svg {
+        fill: #ffffff;
+      }
+      #buttons01 .n03 {
+        background-color: #2aabee;
+        color: #ffffff;
+      }
+      #buttons01 .n04 svg {
+        fill: #ffffff;
+      }
+      #buttons01 .n04 {
+        background-color: #9146ff;
+        color: #ffffff;
+      }
+      #buttons01 .n05 svg {
+        fill: #ffffff;
+      }
+      #buttons01 .n05 {
+        background-color: #171a21;
+        color: #ffffff;
+      }
+      .buttons.style3 {
+        gap: 2rem;
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+      .buttons.style3 li a {
+        display: inline-block;
+        width: 100vw;
+        height: 4rem;
+        line-height: 4rem;
+        padding: 0 2rem;
+        vertical-align: middle;
+        font-family: "Inter", sans-serif;
+        font-size: 1em;
+        font-weight: 700;
+        border-radius: 2.5rem;
+        direction: var(--site-language-direction);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: transform 0.25s ease, color 0.25s ease,
+          background-color 0.25s ease, border-color 0.25s ease;
+      }
+      .buttons.style3 .button {
+        background-color: #ffffff;
+        color: #000000;
+      }
+      .buttons.style3 li a:hover {
+        transform: scale(0.9225);
+      }
+      #buttons03 .n01 {
+        background-color: #f59c07;
+        color: #ffffff;
+      }
+      #buttons03 .n02 {
+        background-color: #f2a015;
+        color: #ffffff;
+      }
+      #buttons03 .n03 {
+        background-color: #8f14fd;
+        color: #ffffff;
+      }
+      #buttons03 .n04 {
+        background-color: #1e64b2;
+        color: #ffffff;
+      }
+      #buttons08 .n01 {
+        background-color: #f49722;
+        color: #ffffff;
+      }
+      #buttons09 .n01 {
+        background-color: #6875e9;
+        color: #ffffff;
+      }
+      #buttons10 .n01 {
+        background-color: #009393;
+        color: #ffffff;
+      }
+      #buttons11 .n01 {
+        background-color: #19c28e;
+        color: #ffffff;
+      }
+      #buttons12 .n01 {
         background-color: #8cc8f5;
+        color: #ffffff;
+      }
+      .gallery .inner {
+        display: inline-block;
+        max-width: 100%;
+        vertical-align: middle;
+      }
+      .gallery ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: var(--flex-alignment);
+      }
+      .gallery ul li {
+        position: relative;
+      }
+      .gallery ul li .thumbnail {
+        border-radius: inherit;
+        position: relative;
+      }
+      .gallery ul li .frame {
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: top;
+      }
+      .gallery ul li img {
+        margin: 0;
+        max-width: 100%;
+        vertical-align: top;
+        width: auto;
+      }
+      .gallery ul li .caption {
+        width: 100%;
+      }
+      .gallery ul li .caption p {
+        width: 100%;
+      }
+      .gallery.style1 .inner {
+        max-width: 100%;
+      }
+      .gallery.style1 ul li {
+        border-radius: 3rem;
+        display: inline-block;
+      }
+      .gallery.style1 ul li .frame {
+        border-radius: 3rem;
+        border-color: #000000;
+        border-style: solid;
+        border-width: 5px;
+      }
+      .gallery.style1 ul li .caption {
+        opacity: 1;
+        align-items: flex-end;
+        border-radius: inherit;
+        display: flex;
+        height: 100%;
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        transition: opacity 0.25s ease, transform 0.25s ease, z-index 0.25s ease;
+      }
+      .gallery.style1 ul li .caption p {
+        border-bottom-left-radius: calc(3rem - 5px);
+        border-bottom-right-radius: calc(3rem - 5px);
+        padding-bottom: 0.625rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.625rem;
+        margin: 5px;
+        color: #000000;
+        background-color: #ffffff;
+        font-family: "Inter", sans-serif;
+        font-size: 1em;
+        line-height: 1.5;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 700;
+      }
+      .gallery.style1 ul li .thumbnail:hover + .caption {
+        opacity: 0;
+        transform: scale(0.9225);
+        z-index: 2;
+      }
+      .gallery.style1 ul {
+        gap: 0.5rem;
+      }
+      .gallery.style1 ul li .thumbnail {
+        display: block;
+        transition: transform 0.25s ease, z-index 0.25s ease;
+      }
+      .gallery.style1 ul li img {
+        height: auto;
+        max-height: 30rem;
+      }
+      .gallery.style1 ul li .thumbnail:hover {
+        transform: scale(0.9225);
+        z-index: 1;
+      }
+      .gallery.style2 .inner {
+        max-width: 100%;
+      }
+      .gallery.style2 ul li {
+        border-radius: 3rem;
+        display: inline-block;
+      }
+      .gallery.style2 ul li .frame {
+        border-radius: 3rem;
+        border-color: #000000;
+        border-style: solid;
+        border-width: 5px;
+      }
+      .gallery.style2 ul li .caption {
+        opacity: 1;
+        align-items: flex-end;
+        border-radius: inherit;
+        display: flex;
+        height: 100%;
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        transition: opacity 0.25s ease, transform 0.25s ease, z-index 0.25s ease;
+      }
+      .gallery.style2 ul li .caption p {
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+        padding-bottom: 0.625rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.625rem;
+        color: #ffffff;
+        background-color: #000000;
+        font-family: "Inter", sans-serif;
+        font-size: 1em;
+        line-height: 1.5;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 700;
+      }
+      .gallery.style2 ul li .thumbnail:hover + .caption {
+        opacity: 0;
+        transform: scale(0.9225);
+        z-index: 2;
+      }
+      .gallery.style2 ul {
+        gap: 0.5rem;
+      }
+      .gallery.style2 ul li .thumbnail {
+        display: block;
+        transition: transform 0.25s ease, z-index 0.25s ease;
+      }
+      .gallery.style2 ul li img {
+        height: auto;
+        max-height: 30rem;
+      }
+      .gallery.style2 ul li .thumbnail:hover {
+        transform: scale(0.9225);
+        z-index: 1;
       }
       @media (max-width: 1920px) {
       }
@@ -1139,66 +1159,30 @@
           font-size: 11pt;
         }
         #main > .inner {
-          --padding-horizontal: 3rem;
-          --padding-vertical: 3.5rem;
-          --spacing: 4rem;
+          --padding-horizontal: 2rem;
+          --padding-vertical: 2rem;
+          --spacing: 0rem;
+        }
+        .image.style1:not(:first-child) {
+          margin-top: 0.9375rem !important;
+        }
+        .image.style1:not(:last-child) {
+          margin-bottom: 0.9375rem !important;
         }
         .image.style1 .frame {
           width: 4.875rem;
-        }
-        h1.style1:not(:first-child),
-        h2.style1:not(:first-child),
-        h3.style1:not(:first-child),
-        p.style1:not(:first-child) {
-          margin-top: 2.25rem !important;
-        }
-        h1.style1:not(:last-child),
-        h2.style1:not(:last-child),
-        h3.style1:not(:last-child),
-        p.style1:not(:last-child) {
-          margin-bottom: 2.25rem !important;
-        }
-        h1.style1,
-        h2.style1,
-        h3.style1,
-        p.style1 {
-          letter-spacing: 0rem;
-          width: 100%;
-          font-size: 3.125em;
-          line-height: 1.25;
-        }
-        h1.style4:not(:first-child),
-        h2.style4:not(:first-child),
-        h3.style4:not(:first-child),
-        p.style4:not(:first-child) {
-          margin-top: 2.625rem !important;
-        }
-        h1.style4:not(:last-child),
-        h2.style4:not(:last-child),
-        h3.style4:not(:last-child),
-        p.style4:not(:last-child) {
-          margin-bottom: 2.625rem !important;
-        }
-        h1.style4,
-        h2.style4,
-        h3.style4,
-        p.style4 {
-          letter-spacing: 0rem;
-          width: 100%;
-          font-size: 2.5em;
-          line-height: 1.5;
         }
         h1.style3:not(:first-child),
         h2.style3:not(:first-child),
         h3.style3:not(:first-child),
         p.style3:not(:first-child) {
-          margin-top: 2.25rem !important;
+          margin-top: 1.75rem !important;
         }
         h1.style3:not(:last-child),
         h2.style3:not(:last-child),
         h3.style3:not(:last-child),
         p.style3:not(:last-child) {
-          margin-bottom: 2.25rem !important;
+          margin-bottom: 1.75rem !important;
         }
         h1.style3,
         h2.style3,
@@ -1206,20 +1190,29 @@
         p.style3 {
           letter-spacing: 0rem;
           width: 100%;
+          font-size: 2.75em;
+          line-height: 1.25;
+        }
+        h1.style4,
+        h2.style4,
+        h3.style4,
+        p.style4 {
+          letter-spacing: 0rem;
+          width: 100%;
           font-size: 1em;
-          line-height: 1.875;
+          line-height: 2;
         }
         h1.style2:not(:first-child),
         h2.style2:not(:first-child),
         h3.style2:not(:first-child),
         p.style2:not(:first-child) {
-          margin-top: 0.9375rem !important;
+          margin-top: 3.125rem !important;
         }
         h1.style2:not(:last-child),
         h2.style2:not(:last-child),
         h3.style2:not(:last-child),
         p.style2:not(:last-child) {
-          margin-bottom: 0.9375rem !important;
+          margin-bottom: 3.125rem !important;
         }
         h1.style2,
         h2.style2,
@@ -1227,23 +1220,20 @@
         p.style2 {
           letter-spacing: 0rem;
           width: 100%;
-          font-size: 1em;
-          line-height: 1.875;
+          font-size: 2.75em;
+          line-height: 1.5;
         }
         h1.style5:not(:first-child),
         h2.style5:not(:first-child),
         h3.style5:not(:first-child),
         p.style5:not(:first-child) {
-          margin-top: 0.9375rem !important;
+          margin-top: 2.375rem !important;
         }
         h1.style5:not(:last-child),
         h2.style5:not(:last-child),
         h3.style5:not(:last-child),
         p.style5:not(:last-child) {
-          margin-bottom: 0.9375rem !important;
-        }
-        .container.style1:not(:first-child) {
-          margin-top: 3rem !important;
+          margin-bottom: 2.375rem !important;
         }
         h1.style5,
         h2.style5,
@@ -1251,28 +1241,34 @@
         p.style5 {
           letter-spacing: 0rem;
           width: 100%;
-          font-size: 0.625em;
-          line-height: 1.875;
-        }
-        .gallery.style1 ul li .caption p {
-          letter-spacing: 0rem;
           font-size: 1em;
+          line-height: 2;
         }
-        .gallery.style1 ul li img {
-          max-height: 22.5rem;
+        h1.style7:not(:first-child),
+        h2.style7:not(:first-child),
+        h3.style7:not(:first-child),
+        p.style7:not(:first-child) {
+          margin-top: 1.875rem !important;
         }
-        .gallery.style2 ul li .caption p {
+        h1.style7:not(:last-child),
+        h2.style7:not(:last-child),
+        h3.style7:not(:last-child),
+        p.style7:not(:last-child) {
+          margin-bottom: 1.875rem !important;
+        }
+        h1.style7,
+        h2.style7,
+        h3.style7,
+        p.style7 {
           letter-spacing: 0rem;
-          font-size: 1em;
-        }
-        .gallery.style2 ul li img {
-          max-height: 22.5rem;
+          width: 100%;
+          font-size: 0.75em;
+          line-height: 2;
         }
         .container.style1 > .wrapper > .inner {
           --gutters: 2rem;
           --padding-horizontal: 0rem;
-          --padding-vertical: 0rem;
-          --spacing: 1.5rem;
+          --padding-vertical: 2rem;
         }
         .container.style1.columns > .wrapper > .inner {
           flex-direction: column !important;
@@ -1389,67 +1385,89 @@
           position: relative;
           width: auto;
         }
-        .icons.style1 {
-          font-size: 1.25em;
-          gap: 1rem;
-        }
         .buttons.style1 li a {
           letter-spacing: 0rem;
           font-size: 1em;
         }
+        .buttons.style1 li a svg {
+          width: 1.625em;
+        }
+        .buttons.style3 li a {
+          letter-spacing: 0rem;
+          font-size: 1em;
+        }
+        .gallery.style1 ul li .caption p {
+          letter-spacing: 0rem;
+          font-size: 1em;
+        }
+        .gallery.style1 ul li img {
+          max-height: 22.5rem;
+        }
+        .gallery.style2 ul li .caption p {
+          letter-spacing: 0rem;
+          font-size: 1em;
+        }
+        .gallery.style2 ul li img {
+          max-height: 22.5rem;
+        }
       }
       @media (max-width: 480px) {
         #main > .inner {
-          --spacing: 3.0625rem;
-        }
-        .container.style1 > .wrapper > .inner {
-          --spacing: 1.3125rem;
-        }
-        .buttons.style1 {
-          flex-direction: column;
-          flex-wrap: nowrap;
+          --spacing: 0rem;
         }
         .buttons.style1 li a {
-          display: inline-flex;
-          max-width: 100%;
-          width: 100%;
+          width: 30.125rem;
+        }
+        .buttons.style3 li a {
+          width: 30.125rem;
         }
       }
       @media (max-width: 360px) {
         #main > .inner {
-          --padding-horizontal: 2.25rem;
-          --padding-vertical: 2.625rem;
-          --spacing: 2.25rem;
-        }
-        h1.style1,
-        h2.style1,
-        h3.style1,
-        p.style1 {
-          font-size: 3.125em;
-        }
-        h1.style4,
-        h2.style4,
-        h3.style4,
-        p.style4 {
-          font-size: 2.5em;
+          --padding-horizontal: 1.5rem;
+          --padding-vertical: 1.5rem;
+          --spacing: 0rem;
         }
         h1.style3,
         h2.style3,
         h3.style3,
         p.style3 {
+          font-size: 2.75em;
+        }
+        h1.style4,
+        h2.style4,
+        h3.style4,
+        p.style4 {
           font-size: 1em;
         }
         h1.style2,
         h2.style2,
         h3.style2,
         p.style2 {
-          font-size: 1em;
+          font-size: 2.75em;
         }
         h1.style5,
         h2.style5,
         h3.style5,
         p.style5 {
-          font-size: 0.625em;
+          font-size: 1em;
+        }
+        h1.style7,
+        h2.style7,
+        h3.style7,
+        p.style7 {
+          font-size: 0.75em;
+        }
+        .container.style1 > .wrapper > .inner {
+          --gutters: 1.5rem;
+          --padding-horizontal: 0rem;
+          --padding-vertical: 1.5rem;
+        }
+        .buttons.style1 {
+          gap: 1.5rem;
+        }
+        .buttons.style3 {
+          gap: 1.5rem;
         }
         .gallery.style1 ul li .caption p {
           font-size: 1em;
@@ -1462,18 +1480,6 @@
         }
         .gallery.style2 ul {
           gap: 0.375rem;
-        }
-        .container.style1 > .wrapper > .inner {
-          --gutters: 1.5rem;
-          --padding-horizontal: 0rem;
-          --padding-vertical: 0rem;
-          --spacing: 1.125rem;
-        }
-        .icons.style1 {
-          gap: 0.75rem;
-        }
-        .buttons.style1 {
-          gap: 1.5rem;
         }
       }
     </style>
@@ -1488,6 +1494,11 @@
       width="0"
       height="0"
     >
+      <symbol id="icon-90a" viewBox="0 0 40 40">
+        <path
+          d="M37.3,15.3v15.3c0,0.8-0.3,1.6-0.9,2.2c-0.6,0.6-1.4,0.9-2.2,0.9H5.8c-0.8,0-1.6-0.3-2.2-0.9s-0.9-1.4-0.9-2.2V15.3 c0.5,0.6,1.2,1.1,2,1.7c4.7,3.1,7.9,5.4,9.6,6.7c0.7,0.5,1.4,0.9,1.8,1.2c0.4,0.3,1,0.6,1.9,0.9c0.7,0.3,1.5,0.5,2.1,0.5l0,0 c0.6,0,1.4-0.2,2.1-0.5c0.7-0.3,1.4-0.6,1.9-0.9c0.4-0.3,1-0.7,1.8-1.2c2.2-1.6,5.4-3.8,9.6-6.7C36.1,16.5,36.7,15.9,37.3,15.3 L37.3,15.3z M37.3,9.6c0,1-0.3,2-0.9,2.9c-0.6,0.9-1.5,1.8-2.4,2.4c-4.9,3.3-7.9,5.4-9,6.2c-0.1,0.1-0.4,0.3-0.8,0.6 c-0.4,0.3-0.7,0.5-1,0.7c-0.3,0.2-0.6,0.4-1,0.6c-0.4,0.2-0.7,0.4-1.1,0.5c-0.4,0.1-0.6,0.2-0.9,0.2l0,0c-0.3,0-0.6-0.1-0.9-0.2 c-0.3-0.1-0.7-0.3-1.1-0.5c-0.4-0.2-0.7-0.4-1-0.6c-0.3-0.2-0.6-0.4-1-0.7c-0.4-0.3-0.7-0.5-0.8-0.6c-1.1-0.8-2.8-2-5.1-3.5 c-2.3-1.6-3.3-2.4-3.7-2.7c-0.8-0.5-1.6-1.2-2.3-2.2s-1-1.9-1-2.6c0-1,0.3-1.9,0.8-2.5c0.5-0.6,1.2-1,2.3-1h28.4 c0.8,0,1.6,0.3,2.2,0.9C37.1,8.1,37.3,8.8,37.3,9.6L37.3,9.6z"
+        />
+      </symbol>
       <symbol id="icon-910" viewBox="0 0 40 40">
         <path
           d="M20,7c4.2,0,4.7,0,6.3,0.1c1.5,0.1,2.3,0.3,3,0.5C30,8,30.5,8.3,31.1,8.9c0.5,0.5,0.9,1.1,1.2,1.8c0.2,0.5,0.5,1.4,0.5,3 C33,15.3,33,15.8,33,20s0,4.7-0.1,6.3c-0.1,1.5-0.3,2.3-0.5,3c-0.3,0.7-0.6,1.2-1.2,1.8c-0.5,0.5-1.1,0.9-1.8,1.2 c-0.5,0.2-1.4,0.5-3,0.5C24.7,33,24.2,33,20,33s-4.7,0-6.3-0.1c-1.5-0.1-2.3-0.3-3-0.5C10,32,9.5,31.7,8.9,31.1 C8.4,30.6,8,30,7.7,29.3c-0.2-0.5-0.5-1.4-0.5-3C7,24.7,7,24.2,7,20s0-4.7,0.1-6.3c0.1-1.5,0.3-2.3,0.5-3C8,10,8.3,9.5,8.9,8.9 C9.4,8.4,10,8,10.7,7.7c0.5-0.2,1.4-0.5,3-0.5C15.3,7.1,15.8,7,20,7z M20,4.3c-4.3,0-4.8,0-6.5,0.1c-1.6,0-2.8,0.3-3.8,0.7 C8.7,5.5,7.8,6,6.9,6.9C6,7.8,5.5,8.7,5.1,9.7c-0.4,1-0.6,2.1-0.7,3.8c-0.1,1.7-0.1,2.2-0.1,6.5s0,4.8,0.1,6.5 c0,1.6,0.3,2.8,0.7,3.8c0.4,1,0.9,1.9,1.8,2.8c0.9,0.9,1.7,1.4,2.8,1.8c1,0.4,2.1,0.6,3.8,0.7c1.6,0.1,2.2,0.1,6.5,0.1 s4.8,0,6.5-0.1c1.6-0.1,2.9-0.3,3.8-0.7c1-0.4,1.9-0.9,2.8-1.8c0.9-0.9,1.4-1.7,1.8-2.8c0.4-1,0.6-2.1,0.7-3.8 c0.1-1.6,0.1-2.2,0.1-6.5s0-4.8-0.1-6.5c-0.1-1.6-0.3-2.9-0.7-3.8c-0.4-1-0.9-1.9-1.8-2.8c-0.9-0.9-1.7-1.4-2.8-1.8 c-1-0.4-2.1-0.6-3.8-0.7C24.8,4.3,24.3,4.3,20,4.3L20,4.3L20,4.3z"
@@ -1527,8 +1538,8 @@
             <div class="wrapper">
               <div class="inner">
                 <div id="image01" class="style1 image">
-                  <span class="frame">
-                    <svg
+                  <span class="frame"
+                    ><svg
                       xmlns="http://www.w3.org/2000/svg"
                       version="1.1"
                       viewBox="102 100 297 301"
@@ -1575,32 +1586,13 @@
                           opacity="1.00"
                           d=" M 276.73 338.71 C 285.34 335.82 295.24 334.21 303.75 338.30 C 308.47 340.39 311.97 344.47 314.12 349.09 C 307.11 351.49 300.02 353.67 293.00 356.05 C 289.45 350.48 280.96 351.84 277.16 356.34 C 275.44 358.46 277.63 361.23 280.04 361.18 C 289.68 361.37 299.39 357.06 308.96 359.98 C 319.49 362.97 323.93 377.23 318.11 386.16 C 313.67 393.15 305.77 396.98 298.12 399.44 C 289.82 402.10 280.16 403.20 272.27 398.72 C 268.15 396.48 265.49 392.43 263.75 388.19 C 270.35 386.19 276.83 383.79 283.45 381.88 C 286.82 387.49 295.74 386.20 298.78 380.98 C 299.39 378.72 297.18 376.81 295.07 376.80 C 285.04 377.04 274.87 381.14 264.91 378.11 C 256.02 375.41 252.72 364.09 255.97 356.03 C 259.52 347.25 268.07 341.66 276.73 338.71 Z"
                         />
-                      </g>
-                    </svg>
-                  </span>
+                      </g></svg
+                  ></span>
                 </div>
-                <h2 id="text06" class="style1">Greysoul</h2>
-                <p id="text01" class="style2">
-                  Здравствуйте, добро пожаловать на мой личный сайт!
-                </p>
-                <p id="text02" class="style2">
-                  Здесь вы найдёте всю информацию о моих проектах, соц-сетях и
-                  способах доната.
-                </p>
-                <p id="text07" class="style2">
-                  В настоящее время я увлекаюсь созданием битов, а также
-                  сведением и мастерингом треков различных артистов. Раньше я
-                  являлся разработчиком инди-игр и был участником многих команд
-                  по их разработке.
-                </p>
-                <p id="text04" class="style2">
-                  Если вы хотите обратиться ко мне по поводу сотрудничества,
-                  пишите, пожалуйста, на почту
-                  <strong
-                    ><a href="mailto:realgreysoul@outlook.com"
-                      >realgreysoul@outlook.com</a
-                    ></strong
-                  >.
+                <h1 id="text04" class="style3">Greysoul</h1>
+                <p id="text10" class="style4">
+                  Битмейкер и звукорежиссёр, а также бывший разработчик инди-игр
+                  и бывший участник многих команд по их разработке
                 </p>
               </div>
             </div>
@@ -1608,50 +1600,57 @@
           <div id="socials" class="style1 container default">
             <div class="wrapper">
               <div class="inner">
-                <ul id="icons01" class="style1 icons">
+                <h2 id="text11" class="style2">Мои соц-сети и не только</h2>
+                <ul id="buttons01" class="style1 buttons">
                   <li>
                     <a
-                      class="n01"
-                      href="https://go.greysoul.ru/oJJx"
                       target="_blank"
+                      href="https://go.greysoul.ru/oJJx"
+                      class="button n01"
                       ><svg><use xlink:href="#icon-910"></use></svg
                       ><span class="label">Instagram</span></a
                     >
                   </li>
                   <li>
                     <a
-                      class="n02"
-                      href="https://go.greysoul.ru/GsgY"
                       target="_blank"
+                      href="https://go.greysoul.ru/GsgY"
+                      class="button n02"
                       ><svg><use xlink:href="#icon-905"></use></svg
                       ><span class="label">Twitter</span></a
                     >
                   </li>
                   <li>
                     <a
-                      class="n03"
-                      href="https://go.greysoul.ru/ovCb"
                       target="_blank"
+                      href="https://go.greysoul.ru/ovCb"
+                      class="button n03"
                       ><svg><use xlink:href="#icon-944"></use></svg
-                      ><span class="label">Telegram</span></a
+                      ><span class="label">Telegram-канал</span></a
                     >
                   </li>
                   <li>
                     <a
-                      class="n04"
-                      href="https://go.greysoul.ru/FrnP"
                       target="_blank"
+                      href="https://go.greysoul.ru/FrnP"
+                      class="button n04"
                       ><svg><use xlink:href="#icon-92f"></use></svg
                       ><span class="label">Twitch</span></a
                     >
                   </li>
                   <li>
                     <a
-                      class="n05"
-                      href="https://go.greysoul.ru/vdLJ"
                       target="_blank"
+                      href="https://go.greysoul.ru/FrnP"
+                      class="button n05"
                       ><svg><use xlink:href="#icon-923"></use></svg
                       ><span class="label">Steam</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="mailto:realgreysoul@outlook.com" class="button n06"
+                      ><svg><use xlink:href="#icon-90a"></use></svg
+                      ><span class="label">Почта</span></a
                     >
                   </li>
                 </ul>
@@ -1661,14 +1660,14 @@
           <div id="projects" class="style1 container default">
             <div class="wrapper">
               <div class="inner">
-                <h3 id="text03" class="style4">Мои проекты</h3>
-                <div id="gallery02" class="style1 gallery">
+                <h2 id="text12" class="style2">Мои проекты</h2>
+                <div id="gallery07" class="style1 gallery">
                   <div class="inner">
                     <ul>
                       <li>
                         <a
-                          href="https://beats.greysoul.ru/"
                           target="_blank"
+                          href="https://beats.greysoul.ru/"
                           class="thumbnail"
                           ><span class="frame"
                             ><img
@@ -1680,14 +1679,14 @@
                     </ul>
                   </div>
                 </div>
-                <p id="text08" class="style3">Биты на любой вкус и цвет</p>
-                <div id="gallery03" class="style2 gallery">
+                <p id="text13" class="style5">Биты на любой вкус и цвет</p>
+                <div id="gallery08" class="style2 gallery">
                   <div class="inner">
                     <ul>
                       <li>
                         <a
-                          href="https://mzlffclicker.greysoul.ru/"
                           target="_blank"
+                          href="https://mzlffclicker.greysoul.ru/"
                           class="thumbnail"
                           ><span class="frame"
                             ><img
@@ -1699,16 +1698,16 @@
                     </ul>
                   </div>
                 </div>
-                <p id="text09" class="style3">
+                <p id="text14" class="style5">
                   Кликер про человека с кодовым именем mrEblan
                 </p>
-                <div id="gallery04" class="style2 gallery">
+                <div id="gallery09" class="style2 gallery">
                   <div class="inner">
                     <ul>
                       <li>
                         <a
-                          href="https://go.greysoul.ru/uyRS"
                           target="_blank"
+                          href="https://go.greysoul.ru/uyRS"
                           class="thumbnail"
                           ><span class="frame"
                             ><img
@@ -1720,16 +1719,16 @@
                     </ul>
                   </div>
                 </div>
-                <p id="text10" class="style3">
+                <p id="text15" class="style5">
                   YouTube-канал, на котором я выкладываю всё подряд
                 </p>
-                <div id="gallery05" class="style2 gallery">
+                <div id="gallery10" class="style2 gallery">
                   <div class="inner">
                     <ul>
                       <li>
                         <a
-                          href="https://go.greysoul.ru/WsBR"
                           target="_blank"
+                          href="https://go.greysoul.ru/WsBR"
                           class="thumbnail"
                           ><span class="frame"
                             ><img
@@ -1743,18 +1742,18 @@
                     </ul>
                   </div>
                 </div>
-                <p id="text11" class="style3">
+                <p id="text16" class="style5">
                   Скрипт для Tampermonkey, который увеличивает прозрачность
                   белого фона, который появляется при просмотре прозрачных
                   изображений в браузере
                 </p>
-                <div id="gallery06" class="style2 gallery">
+                <div id="gallery11" class="style2 gallery">
                   <div class="inner">
                     <ul>
                       <li>
                         <a
-                          href="https://tap.link/pkm"
                           target="_blank"
+                          href="https://tap.link/pkm"
                           class="thumbnail"
                           ><span class="frame"
                             ><img
@@ -1766,16 +1765,16 @@
                     </ul>
                   </div>
                 </div>
-                <p id="text12" class="style3">
+                <p id="text06" class="style5">
                   Дистрибуция музыки и менеджмент артиста
                 </p>
-                <div id="gallery01" class="style1 gallery">
+                <div id="gallery12" class="style1 gallery">
                   <div class="inner">
                     <ul>
                       <li>
                         <a
-                          href="https://tap.link/sosexy"
                           target="_blank"
+                          href="https://tap.link/sosexy"
                           class="thumbnail"
                           ><span class="frame"
                             ><img
@@ -1787,43 +1786,43 @@
                     </ul>
                   </div>
                 </div>
-                <p id="text15" class="style3">Дистрибуция музыки</p>
+                <p id="text18" class="style5">Дистрибуция музыки</p>
               </div>
             </div>
           </div>
           <div id="donate" class="style1 container default">
             <div class="wrapper">
               <div class="inner">
-                <h3 id="text14" class="style4">Донат</h3>
-                <ul id="buttons02" class="style1 buttons">
+                <h2 id="text05" class="style2">Донат</h2>
+                <ul id="buttons03" class="style3 buttons">
                   <li>
                     <a
-                      href="https://go.greysoul.ru/HsfE"
                       target="_blank"
+                      href="https://go.greysoul.ru/HsfE"
                       class="button n01"
                       >DonationAlerts</a
                     >
                   </li>
                   <li>
                     <a
-                      href="https://go.greysoul.ru/MEtK"
                       target="_blank"
+                      href="https://go.greysoul.ru/MEtK"
                       class="button n02"
                       >QIWI Кошелёк</a
                     >
                   </li>
                   <li>
                     <a
-                      href="https://go.greysoul.ru/OmNG"
                       target="_blank"
+                      href="https://go.greysoul.ru/OmNG"
                       class="button n03"
                       >ЮMoney</a
                     >
                   </li>
                   <li>
                     <a
-                      href="https://go.greysoul.ru/pgwT"
                       target="_blank"
+                      href="https://go.greysoul.ru/pgwT"
                       class="button n04"
                       >WebMoney</a
                     >
@@ -1835,8 +1834,8 @@
           <div id="cryptocurrencies" class="style1 container default">
             <div class="wrapper">
               <div class="inner">
-                <h3 id="text13" class="style4">Донат через криптовалюту</h3>
-                <ul id="buttons03" class="style1 buttons">
+                <h2 id="text19" class="style2">Донат через криптовалюту</h2>
+                <ul id="buttons08" class="style3 buttons">
                   <li>
                     <a
                       href="bitcoin:1Nj1NNU3NcHeFZG8rBvuS5PW8aBSWxFbYL"
@@ -1845,10 +1844,10 @@
                     >
                   </li>
                 </ul>
-                <p id="text16" class="style3">
+                <p id="text20" class="style5">
                   1Nj1NNU3NcHeFZG8rBvuS5PW8aBSWxFbYL
                 </p>
-                <ul id="buttons04" class="style1 buttons">
+                <ul id="buttons09" class="style3 buttons">
                   <li>
                     <a
                       href="ethereum:0xcfedbc5fed4133b9021be9bafeed8ebe73b56643"
@@ -1857,10 +1856,10 @@
                     >
                   </li>
                 </ul>
-                <p id="text17" class="style3">
+                <p id="text21" class="style5">
                   0xcfedbc5fed4133b9021be9bafeed8ebe73b56643
                 </p>
-                <ul id="buttons06" class="style1 buttons">
+                <ul id="buttons10" class="style3 buttons">
                   <li>
                     <a
                       href="ethereum:0x7a9782708d3b7efae51474580f0b7d2d76154ec9"
@@ -1869,10 +1868,10 @@
                     >
                   </li>
                 </ul>
-                <p id="text17" class="style3">
+                <p id="text22" class="style5">
                   0x7a9782708d3b7efae51474580f0b7d2d76154ec9
                 </p>
-                <ul id="buttons05" class="style1 buttons">
+                <ul id="buttons11" class="style3 buttons">
                   <li>
                     <a
                       href="bitcoincash:1K2qpamdMRBKM9bYEY7HL5nwpubELE7N2z"
@@ -1881,10 +1880,10 @@
                     >
                   </li>
                 </ul>
-                <p id="text18" class="style3">
+                <p id="text23" class="style5">
                   1K2qpamdMRBKM9bYEY7HL5nwpubELE7N2z
                 </p>
-                <ul id="buttons01" class="style1 buttons">
+                <ul id="buttons12" class="style3 buttons">
                   <li>
                     <a
                       href="litecoin:ltc1qluggcksz6udftck9ts0xn4d4pqcagx2x4kdvh4"
@@ -1893,7 +1892,7 @@
                     >
                   </li>
                 </ul>
-                <p id="text05" class="style3">
+                <p id="text24" class="style5">
                   ltc1qluggcksz6udftck9ts0xn4d4pqcagx2x4kdvh4
                 </p>
               </div>
@@ -1902,7 +1901,7 @@
           <div id="footer" class="style1 container default">
             <div class="wrapper">
               <div class="inner">
-                <p id="text19" class="style5">
+                <p id="text07" class="style7">
                   ©
                   <script>
                     document.write(new Date().getFullYear());
@@ -1916,53 +1915,47 @@
         </div>
       </div>
     </div>
-    <script src="glowCookies.js"></script>
-    <script>
-      glowCookies.start("ru", {
-        style: 1,
-        position: "right",
-        border: "border",
-        hideAfterClick: true,
-        bannerColor: "black",
-        acceptBtnBackground: "black",
-        acceptBtnColor: "white",
-        policyLink: "https://go.greysoul.ru/WgRJ",
-      });
-    </script>
-    <script type="text/javascript">
-      (function (m, e, t, r, i, k, a) {
-        m[i] =
-          m[i] ||
-          function () {
-            (m[i].a = m[i].a || []).push(arguments);
-          };
-        m[i].l = 1 * new Date();
-        (k = e.createElement(t)),
-          (a = e.getElementsByTagName(t)[0]),
-          (k.async = 1),
-          (k.src = r),
-          a.parentNode.insertBefore(k, a);
-      })(
-        window,
-        document,
-        "script",
-        "https://mc.yandex.ru/metrika/tag.js",
-        "ym"
-      );
-
-      ym(88869864, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-      });
-    </script>
-    <noscript
-      ><div>
-        <img
-          src="https://mc.yandex.ru/watch/88869864"
-          style="position: absolute; left: -9999px"
-          alt=""
-        /></div
-    ></noscript>
   </body>
+  <script src="glowCookies.js"></script>
+  <script>
+    glowCookies.start("ru", {
+      style: 1,
+      position: "right",
+      border: "border",
+      hideAfterClick: true,
+      bannerColor: "black",
+      acceptBtnBackground: "black",
+      acceptBtnColor: "white",
+      policyLink: "https://go.greysoul.ru/WgRJ",
+    });
+  </script>
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] =
+        m[i] ||
+        function () {
+          (m[i].a = m[i].a || []).push(arguments);
+        };
+      m[i].l = 1 * new Date();
+      (k = e.createElement(t)),
+        (a = e.getElementsByTagName(t)[0]),
+        (k.async = 1),
+        (k.src = r),
+        a.parentNode.insertBefore(k, a);
+    })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(88869864, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+    });
+  </script>
+  <noscript
+    ><div>
+      <img
+        src="https://mc.yandex.ru/watch/88869864"
+        style="position: absolute; left: -9999px"
+        alt=""
+      /></div
+  ></noscript>
 </html>
