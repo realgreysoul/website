@@ -1,3 +1,3 @@
 # Greysoul
-<img src="https://images.ctfassets.net/1pxughrhgws1/47pfMaDeBeox2xDgOQamp8/d27a723de3bc78e33016d6f5c01bc5b0/seo.jpg?fit=scale&w=400">
+<img src="https://images.ctfassets.net/1pxughrhgws1/47pfMaDeBeox2xDgOQamp8/7d914d021fec158b43fb83dd83b5c5e3/seo.jpg?fit=scale&w=400">
 <p>Website with all information about me</p>
