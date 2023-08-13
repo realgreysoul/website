@@ -1057,6 +1057,66 @@
         transform: scale(0.9225);
         z-index: 1;
       }
+      .gallery.style2 .inner {
+        max-width: 100%;
+      }
+      .gallery.style2 ul li {
+        border-radius: 3rem;
+        display: inline-block;
+      }
+      .gallery.style2 ul li .frame {
+        border-radius: 3rem;
+        border-color: #000000;
+        border-style: solid;
+        border-width: 5px;
+      }
+      .gallery.style2 ul li .caption {
+        align-items: flex-end;
+        border-radius: inherit;
+        display: flex;
+        height: 100%;
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        transition: opacity 0.25s ease, transform 0.25s ease, z-index 0.25s ease;
+      }
+      .gallery.style2 ul li .caption p {
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+        padding-bottom: 0.625rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.625rem;
+        background-color: #000000;
+        color: #ffffff;
+        font-family: "Inter", sans-serif;
+        font-size: 1em;
+        line-height: 1.5;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 700;
+      }
+      .gallery.style2 ul li .thumbnail:hover + .caption {
+        transform: scale(0.9225);
+        z-index: 2;
+      }
+      .gallery.style2 ul {
+        gap: 0.5rem;
+      }
+      .gallery.style2 ul li .thumbnail {
+        display: block;
+        transition: transform 0.25s ease, z-index 0.25s ease;
+      }
+      .gallery.style2 ul li img {
+        height: auto;
+        max-height: 30rem;
+      }
+      .gallery.style2 ul li .thumbnail:hover {
+        transform: scale(0.9225);
+        z-index: 1;
+      }
       @media (max-width: 1920px) {
       }
       @media (max-width: 1680px) {
@@ -1326,6 +1386,13 @@
           max-height: 22.5rem;
         }
       }
+      .gallery.style2 ul li .caption p {
+        letter-spacing: 0rem;
+        font-size: 1em;
+      }
+      .gallery.style2 ul li img {
+        max-height: 22.5rem;
+      }
       @media (max-width: 480px) {
         #main > .inner {
           --spacing: 0rem;
@@ -1388,6 +1455,12 @@
           font-size: 1em;
         }
         .gallery.style1 ul {
+          gap: 0.375rem;
+        }
+        .gallery.style2 ul li .caption p {
+          font-size: 1em;
+        }
+        .gallery.style2 ul {
           gap: 0.375rem;
         }
       }
@@ -1631,7 +1704,7 @@
                   Скрипт для Tampermonkey, который увеличивает прозрачность
                   белого фона при просмотре прозрачных изображений в браузере
                 </p>
-                <div id="gallery11" class="style1 gallery">
+                <div id="gallery11" class="style2 gallery">
                   <div class="inner">
                     <ul>
                       <li>
@@ -1639,14 +1712,14 @@
                           target="_blank"
                           href="https://fanlink.to/plizkillme"
                           class="thumbnail"
-                          style="background-color: #1c1b2d"
-                          ><span class="frame" style="border-color: #1c1b2d"
+                          style="background-color: #1b1d2c"
+                          ><span class="frame" style="border-color: #1b1d2c"
                             ><img
                               src="https://images.ctfassets.net/1pxughrhgws1/4TW9gAWfaJVG1xONUj7xpN/1d6908d0bbccb5bec6320cff7ff40cf0/plizkillme.jpg?w=566&q=70&fm=webp"
                               alt="PLIZKILLME" /></span
                         ></a>
                         <div class="caption">
-                          <p style="background-color: #d6d6dc">PLIZKILLME</p>
+                          <p style="background-color: #1b1d2c">PLIZKILLME</p>
                         </div>
                       </li>
                     </ul>
