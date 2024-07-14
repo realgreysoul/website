@@ -9,14 +9,14 @@
     />
     <meta
       name="description"
-      content="Какой-то русский чел мужского пола в возрасте 19-ти лет, который чем-то занимается 🌚👍"
+      content="Какой-то чел, который чем-то занимается 🌚👍"
     />
     <meta property="og:site_name" content="Greysoul" />
     <meta property="og:title" content="404: Страница не найдена" />
     <meta property="og:type" content="website" />
     <meta
       property="og:description"
-      content="Какой-то русский чел мужского пола в возрасте 19-ти лет, который чем-то занимается 🌚👍"
+      content="Какой-то чел, который чем-то занимается 🌚👍"
     />
     <meta
       property="og:image"
@@ -587,6 +587,7 @@
         --gutters: 2rem;
         --padding-horizontal: 2rem;
         --padding-vertical: 1rem;
+        --spacing: 2.5rem;
         padding: var(--padding-vertical) var(--padding-horizontal);
       }
       .container.style1 > .wrapper {
@@ -778,6 +779,7 @@
           --gutters: 2rem;
           --padding-horizontal: 0rem;
           --padding-vertical: 0rem;
+          --spacing: 2.5rem;
         }
         .container.style1.columns > .wrapper > .inner {
           flex-direction: column !important;
@@ -907,6 +909,9 @@
           max-width: 32rem;
           width: 100%;
         }
+        .container.style1 > .wrapper > .inner {
+          --spacing: 2.1875rem;
+        }
       }
       @media (max-width: 360px) {
         #main > .inner {
@@ -933,6 +938,7 @@
           --gutters: 1.5rem;
           --padding-horizontal: 0rem;
           --padding-vertical: 0rem;
+          --spacing: 1.875rem;
         }
       }
     </style>
