@@ -35,21 +35,21 @@
     />
     <link
       rel="preload"
-      href="/fonts/inter-v12-cyrillic_latin-regular.woff2"
+      href="/fonts/inter-v18-cyrillic_latin-regular.woff2"
       as="font"
       type="font/woff2"
       crossorigin
     />
     <link
       rel="preload"
-      href="/fonts/inter-v12-cyrillic_latin-700.woff2"
+      href="/fonts/inter-v18-cyrillic_latin-700.woff2"
       as="font"
       type="font/woff2"
       crossorigin
     />
     <link
       rel="preload"
-      href="/fonts/inter-v12-cyrillic_latin-900.woff2"
+      href="/fonts/inter-v18-cyrillic_latin-900.woff2"
       as="font"
       type="font/woff2"
       crossorigin
@@ -229,22 +229,45 @@
         font-family: "Inter";
         font-style: normal;
         font-weight: 400;
-        src: url("/fonts/inter-v12-cyrillic_latin-regular.woff2")
+        src: url("/fonts/inter-v18-cyrillic_latin-regular.woff2")
           format("woff2");
+      }
+      @font-face {
+        font-display: swap;
+        font-family: "Inter";
+        font-style: italic;
+        font-weight: 400;
+        src: url("/fonts/inter-v18-cyrillic_latin-italic.woff2") format("woff2");
       }
       @font-face {
         font-display: swap;
         font-family: "Inter";
         font-style: normal;
         font-weight: 700;
-        src: url("/fonts/inter-v12-cyrillic_latin-700.woff2") format("woff2");
+        src: url("/fonts/inter-v18-cyrillic_latin-700.woff2") format("woff2");
+      }
+      @font-face {
+        font-display: swap;
+        font-family: "Inter";
+        font-style: italic;
+        font-weight: 700;
+        src: url("/fonts/inter-v18-cyrillic_latin-700italic.woff2")
+          format("woff2");
       }
       @font-face {
         font-display: swap;
         font-family: "Inter";
         font-style: normal;
         font-weight: 900;
-        src: url("/fonts/inter-v12-cyrillic_latin-900.woff2") format("woff2");
+        src: url("/fonts/inter-v18-cyrillic_latin-900.woff2") format("woff2");
+      }
+      @font-face {
+        font-display: swap;
+        font-family: "Inter";
+        font-style: italic;
+        font-weight: 900;
+        src: url("/fonts/inter-v18-cyrillic_latin-900italic.woff2")
+          format("woff2");
       }
       html {
         font-size: 18pt;
@@ -305,7 +328,7 @@
       a[onclick]:not([href]) {
         cursor: pointer;
       }
-      deferred-script {
+      unloaded-script {
         display: none;
       }
       #wrapper {
@@ -817,9 +840,15 @@
         );
       }
       #buttons01 .n04 {
+        background-color: #5865f2;
+      }
+      #buttons01 .n05 {
         background-color: #171a21;
       }
-      #buttons01 .n06 {
+      #buttons01 .n07 {
+        background-color: #0085ff;
+      }
+      #buttons01 .n08 {
         background-color: #001935;
       }
       .buttons.style3 {
@@ -1249,12 +1278,12 @@
     >
       <symbol id="telegram" viewBox="0 0 40 40">
         <path
-          d="M34,9.6l-4.9,22.9c-0.3,1.6-1.3,2-2.7,1.2L19,28.3l-3.6,3.5c-0.3,0.4-0.7,0.8-1.5,0.8l0.4-7.6l0,0l-0.1,0 l13.9-12.4c0.7-0.6-0.1-0.8-0.9-0.3L10.2,22.9l-7.4-2.3c-1.7-0.4-1.7-1.6,0.3-2.3l28.8-11C33.2,6.7,34.5,7.6,34,9.6z"
+          d="M2.3,18.6c9.1-4,15.2-6.6,18.2-7.9c8.7-3.6,10.5-4.2,11.7-4.3 c0.3,0,0.8,0.1,1.2,0.4c0.3,0.3,0.4,0.6,0.4,0.9C34,7.9,34,8.4,34,8.9c-0.5,5-2.5,17-3.5,22.5c-0.4,2.3-1.3,3.1-2.1,3.2 c-1.8,0.2-3.2-1.2-5-2.3c-2.8-1.8-4.3-2.9-7-4.7c-3.1-2-1.1-3.2,0.7-5c0.5-0.5,8.5-7.8,8.6-8.4c0-0.1,0-0.4-0.2-0.5 c-0.2-0.2-0.4-0.1-0.7-0.1c-0.3,0.1-4.7,3-13.2,8.7c-1.3,0.9-2.4,1.3-3.4,1.3c-1.1,0-3.3-0.6-4.9-1.1c-2-0.6-3.5-1-3.4-2.1 C0.1,19.7,0.9,19.2,2.3,18.6z"
         />
       </symbol>
       <symbol id="twitch" viewBox="0 0 40 40">
         <path
-          d="M20,13.9v8.4h-2.8v-8.4H20z M27.7,13.9v8.4h-2.8v-8.4H27.7z M27.7,28.5l4.9-4.9V8.3h-23v20.2h6.3v4.2l4.2-4.2 C20,28.5,27.7,28.5,27.7,28.5z M35.4,5.5v19.6l-8.4,8.4h-6.3l-4.2,4.2h-4.2v-4.2H4.6V11.1l2.1-5.6H35.4L35.4,5.5z"
+          d="M23.9,33.6h-5.2l-6.5,6.5v-6.5H4.5V10.4L11,3.9h24.5V22L23.9,33.6z M32.9,6.5H12.2 v19.4h5.2V31l5.2-5.2h5.2l5.2-5.2V6.5z M26.5,11.7H29v7.7h-2.6V11.7z M20,11.7h2.6v7.7H20V11.7z"
         />
       </symbol>
       <symbol id="instagram" viewBox="0 0 40 40">
@@ -1268,19 +1297,29 @@
           d="M30.6,11.6c0,1-0.8,1.9-1.9,1.9c-1,0-1.9-0.8-1.9-1.9s0.8-1.9,1.9-1.9C29.8,9.7,30.6,10.5,30.6,11.6z"
         />
       </symbol>
+      <symbol id="discord" viewBox="0 0 40 40">
+        <path
+          d="M33.2,8.3c-2.5-1.1-5.1-1.9-7.9-2.4c-0.3,0.6-0.7,1.4-1,2c-2.9-0.4-5.8-0.4-8.7,0c-0.3-0.6-0.7-1.4-1-2 c-2.8,0.5-5.4,1.3-7.9,2.4c-5,7.2-6.3,14.2-5.6,21.1c3.3,2.3,6.5,3.8,9.6,4.7c0.8-1,1.5-2.1,2.1-3.3c-1.1-0.4-2.2-0.9-3.2-1.5 c0.3-0.2,0.5-0.4,0.8-0.6c6.3,2.8,13,2.8,19.2,0c0.3,0.2,0.5,0.4,0.8,0.6c-1,0.6-2.1,1.1-3.2,1.5c0.6,1.1,1.3,2.2,2.1,3.3 c3.1-0.9,6.3-2.4,9.6-4.7C39.7,21.4,37.5,14.4,33.2,8.3z M13.7,25.1c-1.9,0-3.4-1.7-3.4-3.7s1.5-3.7,3.4-3.7c1.9,0,3.5,1.7,3.4,3.7 C17.1,23.4,15.6,25.1,13.7,25.1z M26.3,25.1c-1.9,0-3.4-1.7-3.4-3.7s1.5-3.7,3.4-3.7c1.9,0,3.5,1.7,3.4,3.7 C29.7,23.4,28.2,25.1,26.3,25.1z"
+        />
+      </symbol>
       <symbol id="steam" viewBox="0 0 40 40">
         <path
           d="M32.3,14.4c0,1.2-0.4,2.2-1.3,3.1s-1.9,1.3-3.1,1.3s-2.2-0.4-3.1-1.3c-0.9-0.9-1.3-1.9-1.3-3.1s0.4-2.2,1.3-3.1 c0.9-0.9,1.9-1.3,3.1-1.3s2.2,0.4,3.1,1.3S32.3,13.2,32.3,14.4z M18.5,27.6c0-1.2-0.4-2.3-1.3-3.2c-0.9-0.9-1.9-1.3-3.2-1.3 c-0.3,0-0.6,0-1,0.1l1.9,0.8c0.9,0.4,1.6,1,2,1.9c0.4,0.9,0.4,1.8,0,2.7c-0.4,0.9-1,1.6-1.9,1.9c-0.9,0.4-1.8,0.4-2.7,0 c-0.3-0.1-0.6-0.2-1.1-0.4c-0.5-0.2-0.9-0.3-1.1-0.4c0.4,0.7,0.9,1.3,1.6,1.7c0.7,0.4,1.5,0.7,2.3,0.7c1.2,0,2.3-0.4,3.2-1.3 C18.1,29.9,18.5,28.9,18.5,27.6L18.5,27.6z M33.3,14.4c0-1.5-0.5-2.8-1.6-3.8C30.7,9.5,29.4,9,27.9,9c-1.5,0-2.8,0.5-3.9,1.6 c-1.1,1.1-1.6,2.3-1.6,3.8c0,1.5,0.5,2.8,1.6,3.9c1.1,1.1,2.4,1.6,3.9,1.6c1.5,0,2.8-0.5,3.8-1.6C32.8,17.2,33.3,15.9,33.3,14.4z M36,14.4c0,2.2-0.8,4.2-2.4,5.7c-1.6,1.6-3.5,2.4-5.7,2.4l-7.8,5.7c-0.1,1.5-0.8,2.8-1.9,3.9s-2.5,1.6-4.1,1.6 c-1.4,0-2.7-0.5-3.8-1.4s-1.8-2-2.1-3.4L4,27.3v-7.7l6.9,2.8c0.9-0.6,2-0.9,3.1-0.9c0.2,0,0.4,0,0.6,0l5.1-7.3 c0-2.2,0.8-4.1,2.4-5.7s3.5-2.4,5.7-2.4c2.2,0,4.2,0.8,5.7,2.4C35.2,10.3,36,12.2,36,14.4z"
         />
       </symbol>
-      <symbol id="tumblr" viewBox="0 0 40 40">
-        <path
-          d="M26.8,29.7l1.6,4.6c-0.3,0.5-1,0.9-2.2,1.3s-2.3,0.6-3.4,0.6c-1.4,0-2.6-0.1-3.7-0.5s-2.1-0.8-2.8-1.4 c-0.7-0.6-1.3-1.3-1.9-2.1c-0.5-0.8-0.9-1.6-1.1-2.3c-0.2-0.8-0.3-1.5-0.3-2.3V16.9H9.7v-4.2c0.9-0.3,1.8-0.8,2.5-1.4 s1.3-1.1,1.8-1.8s0.8-1.3,1.1-2c0.3-0.7,0.5-1.4,0.7-1.9S16,4.6,16.1,4c0-0.1,0-0.1,0.1-0.2s0.1-0.1,0.1-0.1h4.8V12h6.5v4.9h-6.5V27 c0,0.4,0,0.8,0.1,1.1c0.1,0.3,0.2,0.7,0.4,1s0.5,0.6,1,0.8c0.4,0.2,1,0.3,1.6,0.3C25.2,30.2,26.1,30,26.8,29.7L26.8,29.7z"
-        />
-      </symbol>
       <symbol id="x-twitter" viewBox="0 0 40 40">
         <path
           d="M30.1,4h5.4L23.7,17.6L37.6,36H26.7l-8.5-11.2L8.5,36H3.1l12.6-14.5L2.4,4h11.1l7.7,10.2L30.1,4z M28.2,32.8h3L11.9,7.1H8.7 L28.2,32.8z"
+        />
+      </symbol>
+      <symbol id="bluesky" viewBox="0 0 40 40">
+        <path
+          d="M20,19.7c-1.6-3.1-5.9-8.8-9.9-11.6C6.2,5.4,4.8,5.9,3.8,6.3C2.7,6.8,2.5,8.5,2.5,9.5s0.6,8.2,0.9,9.4 c1.2,4,5.4,5.3,9.3,4.9c0.2,0,0.4-0.1,0.6-0.1c-0.2,0-0.4,0.1-0.6,0.1C7,24.7,1.9,26.8,8.6,34.2c7.3,7.6,10-1.6,11.4-6.3 c1.4,4.7,3,13.5,11.3,6.3c6.2-6.3,1.7-9.5-4-10.3c-0.2,0-0.4,0-0.6-0.1c0.2,0,0.4,0.1,0.6,0.1c3.9,0.4,8.1-0.9,9.3-4.9 c0.4-1.2,0.9-8.4,0.9-9.4s-0.2-2.7-1.3-3.2c-1-0.4-2.4-0.9-6.3,1.8C25.9,10.9,21.6,16.7,20,19.7z"
+        />
+      </symbol>
+      <symbol id="tumblr" viewBox="0 0 40 40">
+        <path
+          d="M26.8,29.7l1.6,4.6c-0.3,0.5-1,0.9-2.2,1.3s-2.3,0.6-3.4,0.6c-1.4,0-2.6-0.1-3.7-0.5s-2.1-0.8-2.8-1.4 c-0.7-0.6-1.3-1.3-1.9-2.1c-0.5-0.8-0.9-1.6-1.1-2.3c-0.2-0.8-0.3-1.5-0.3-2.3V16.9H9.7v-4.2c0.9-0.3,1.8-0.8,2.5-1.4 s1.3-1.1,1.8-1.8s0.8-1.3,1.1-2c0.3-0.7,0.5-1.4,0.7-1.9S16,4.6,16.1,4c0-0.1,0-0.1,0.1-0.2s0.1-0.1,0.1-0.1h4.8V12h6.5v4.9h-6.5V27 c0,0.4,0,0.8,0.1,1.1c0.1,0.3,0.2,0.7,0.4,1s0.5,0.6,1,0.8c0.4,0.2,1,0.3,1.6,0.3C25.2,30.2,26.1,30,26.8,29.7L26.8,29.7z"
         />
       </symbol>
       <symbol id="github" viewBox="0 0 40 40">
@@ -1321,8 +1360,7 @@
                       делает</strong
                     >
                     🌚👍</span
-                  >
-                  <span class="p"
+                  ><span class="p"
                     >Больше подробностей доступны на странице «<strong
                       ><a href="/about">Обо мне</a></strong
                     >»</span
@@ -1340,10 +1378,10 @@
                     <a
                       href="https://t.me/mislisolya"
                       target="_blank"
-                      class="button n01"
                       data-umami-event="telegram-channel"
-                      ><svg aria-labelledby="icon-title">
-                        <title id="icon-title">Telegram</title>
+                      class="button n01"
+                      ><svg aria-labelledby="buttons01-telegram">
+                        <title id="buttons01-telegram">Telegram</title>
                         <use xlink:href="#telegram"></use></svg
                       ><span class="label">Telegram-канал</span></a
                     >
@@ -1354,8 +1392,8 @@
                       target="_blank"
                       data-umami-event="twitch"
                       class="button n02"
-                      ><svg aria-labelledby="icon-title">
-                        <title id="icon-title">Twitch</title>
+                      ><svg aria-labelledby="buttons01-twitch">
+                        <title id="buttons01-twitch">Twitch</title>
                         <use xlink:href="#twitch"></use></svg
                       ><span class="label">Twitch</span></a
                     >
@@ -1366,10 +1404,22 @@
                       target="_blank"
                       data-umami-event="instagram"
                       class="button n03"
-                      ><svg aria-labelledby="icon-title">
-                        <title id="icon-title">Instagram</title>
+                      ><svg aria-labelledby="buttons01-instagram">
+                        <title id="buttons01-instagram">Instagram</title>
                         <use xlink:href="#instagram"></use></svg
                       ><span class="label">Instagram*</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://discord.com/users/720850474605215754"
+                      target="_blank"
+                      data-umami-event="discord"
+                      class="button n04"
+                      ><svg aria-labelledby="buttons01-discord">
+                        <title id="buttons01-discord">Discord</title>
+                        <use xlink:href="#discord"></use></svg
+                      ><span class="label">Discord</span></a
                     >
                   </li>
                   <li>
@@ -1377,9 +1427,9 @@
                       href="https://steamcommunity.com/id/realgreysoul/"
                       target="_blank"
                       data-umami-event="steam"
-                      class="button n04"
-                      ><svg aria-labelledby="icon-title">
-                        <title id="icon-title">Steam</title>
+                      class="button n05"
+                      ><svg aria-labelledby="buttons01-steam">
+                        <title id="buttons01-steam">Steam</title>
                         <use xlink:href="#steam"></use></svg
                       ><span class="label">Steam</span></a
                     >
@@ -1388,12 +1438,24 @@
                     <a
                       href="https://x.com/realgreysoul"
                       target="_blank"
-                      class="button n05"
+                      class="button n06"
                       data-umami-event="x-twitter"
-                      ><svg aria-labelledby="icon-title">
-                        <title id="icon-title">X</title>
+                      ><svg aria-labelledby="buttons01-x-twitter">
+                        <title id="buttons01-x-twitter">X (Twitter)</title>
                         <use xlink:href="#x-twitter"></use></svg
                       ><span class="label">X (Twitter)</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://bsky.app/profile/greysoul.ru"
+                      target="_blank"
+                      data-umami-event="bluesky"
+                      class="button n07"
+                      ><svg aria-labelledby="buttons01-bluesky">
+                        <title id="buttons01-bluesky">Bluesky</title>
+                        <use xlink:href="#bluesky"></use></svg
+                      ><span class="label">Bluesky</span></a
                     >
                   </li>
                   <li>
@@ -1401,9 +1463,9 @@
                       href="https://www.tumblr.com/realgreysoul"
                       target="_blank"
                       data-umami-event="tumblr"
-                      class="button n06"
-                      ><svg aria-labelledby="icon-title">
-                        <title id="icon-title">Tumblr</title>
+                      class="button n08"
+                      ><svg aria-labelledby="buttons01-tumblr">
+                        <title id="buttons01-tumblr">Tumblr</title>
                         <use xlink:href="#tumblr"></use></svg
                       ><span class="label">Tumblr</span></a
                     >
@@ -1412,19 +1474,21 @@
                     <a
                       href="https://github.com/realgreysoul"
                       target="_blank"
-                      class="button n07"
+                      class="button n09"
                       data-umami-event="github"
-                      ><svg aria-labelledby="icon-title">
-                        <title id="icon-title">GitHub</title>
+                      ><svg aria-labelledby="buttons01-github">
+                        <title id="buttons01-github">GitHub</title>
                         <use xlink:href="#github"></use></svg
                       ><span class="label">GitHub</span></a
                     >
                   </li>
                 </ul>
                 <p id="text09" class="style2">
-                  *Instagram принадлежит Meta Platforms Inc., признанной
-                  экстремистской организацией, деятельность которой запрещена на
-                  территории РФ
+                  *<em
+                    >Instagram принадлежит Meta Platforms Inc., признанной
+                    экстремистской организацией, деятельность которой запрещена
+                    на территории РФ</em
+                  >
                 </p>
                 <h1 id="text08" class="style2">
                   Почта -
@@ -1449,7 +1513,6 @@
                           href="https://mzlffclicker.greysoul.ru/"
                           target="_blank"
                           class="thumbnail n01"
-                          data-umami-event="mzlffclicker"
                           ><span class="frame"
                             ><img
                               src="https://images.ctfassets.net/1pxughrhgws1/7eIMpj1ts2kO9AJYf3CcaY/03e815ed61beff1807ffb48bfef37c5f/mzlffclicker.jpg?q=70&fm=webp"
@@ -1468,8 +1531,8 @@
                         <a
                           href="https://www.youtube.com/@realgreysoul"
                           target="_blank"
-                          class="thumbnail n02"
                           data-umami-event="youtube-channel"
+                          class="thumbnail n02"
                           ><span class="frame"
                             ><img
                               src="https://images.ctfassets.net/1pxughrhgws1/5afAnjAiOxRpc6P4YeyZUr/99a3de08da020f6c828ffcaea0ba7cfb/greysalt.jpg?q=70&fm=webp"
@@ -1488,8 +1551,8 @@
                         <a
                           href="https://greasyfork.org/ru/scripts/439466-readable-transparent-image?locale_override=1"
                           target="_blank"
-                          class="thumbnail n03"
                           data-umami-event="readable-transparent-image"
+                          class="thumbnail n03"
                           ><span class="frame"
                             ><img
                               src="https://images.ctfassets.net/1pxughrhgws1/5zJABY1nduf5UNs6ON1vyj/07c53024c2a3efa7e98b89a058e1f9a9/script.jpg?q=70&fm=webp"
@@ -1523,8 +1586,8 @@
                     <a
                       href="https://www.donationalerts.com/r/realgreysoul"
                       target="_blank"
-                      class="button n01"
                       data-umami-event="donationalerts"
+                      class="button n01"
                       >DonationAlerts</a
                     >
                   </li>
@@ -1532,8 +1595,8 @@
                     <a
                       href="https://yoomoney.ru/to/410018468894777"
                       target="_blank"
-                      class="button n02"
                       data-umami-event="yoomoney"
+                      class="button n02"
                       >ЮMoney</a
                     >
                   </li>
@@ -1541,8 +1604,8 @@
                     <a
                       href="https://nowpayments.io/donation/greysoul"
                       target="_blank"
-                      class="button n03"
                       data-umami-event="cryptocurrency"
+                      class="button n03"
                       >Криптовалюта</a
                     >
                   </li>
@@ -1555,7 +1618,7 @@
               <div class="inner">
                 <h1 id="text05" class="style3">
                   ©
-                  <script>
+                  <script type="text/javascript">
                     document.write(new Date().getFullYear());
                   </script>
                   Greysoul. Всё авторское содержимое данного сайта принадлежит
@@ -1567,11 +1630,6 @@
         </div>
       </div>
     </div>
-    <script
-      async
-      src="https://eu.umami.is/script.js"
-      data-website-id="2d99631b-23f6-4d56-ae3a-9fb531cb8147"
-    ></script>
     <script>
       (function () {
         var on = addEventListener,
@@ -1678,6 +1736,17 @@
             o.flags.lsdUnits = o.canUse("width", "100dvw");
             return o;
           })(),
+          ready = {
+            list: [],
+            add: function (f) {
+              this.list.push(f);
+            },
+            run: function () {
+              this.list.forEach((f) => {
+                f();
+              });
+            },
+          },
           trigger = function (t) {
             dispatchEvent(new Event(t));
           },
@@ -1827,15 +1896,21 @@
               default:
                 break;
             }
-            a = parent.querySelectorAll("deferred-script");
+            a = parent.querySelectorAll("unloaded-script");
             for (i = 0; i < a.length; i++) {
               x = document.createElement("script");
-              x.setAttribute("data-deferred", "");
+              x.setAttribute("data-loaded", "");
               if (a[i].getAttribute("src"))
                 x.setAttribute("src", a[i].getAttribute("src"));
               if (a[i].textContent) x.textContent = a[i].textContent;
               a[i].replaceWith(x);
             }
+            x = new Event("loadelements");
+            a = parent.querySelectorAll("[data-unloaded]");
+            a.forEach((element) => {
+              element.removeAttribute("data-unloaded");
+              element.dispatchEvent(x);
+            });
           },
           unloadElements = function (parent) {
             var a, e, x, i;
@@ -1960,6 +2035,7 @@
             })();
           $body.classList.add("is-touch");
         }
+        ready.run();
       })();
     </script>
   </body>
