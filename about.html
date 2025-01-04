@@ -760,7 +760,7 @@
         background-color: transparent;
       }
       .container.style2 > .wrapper > .inner {
-        --gutters: 4rem;
+        --gutters: 8rem;
         --padding-horizontal: 0rem;
         --padding-vertical: 0rem;
         padding: var(--padding-vertical) var(--padding-horizontal);
@@ -889,14 +889,11 @@
         position: absolute;
         width: 100%;
       }
-      #container05 > .wrapper > .inner > :nth-child(1) {
-        width: calc(33.33333% + (var(--gutters) / 3));
+      #container04 > .wrapper > .inner > :nth-child(1) {
+        width: calc(50% + (var(--gutters) / 2));
       }
-      #container05 > .wrapper > .inner > :nth-child(2) {
-        width: calc(33.33333% + (var(--gutters) / 3));
-      }
-      #container05 > .wrapper > .inner > :nth-child(3) {
-        width: calc(33.33333% + (var(--gutters) / 3));
+      #container04 > .wrapper > .inner > :nth-child(2) {
+        width: calc(50% + (var(--gutters) / 2));
       }
       .gallery .inner {
         display: inline-block;
@@ -953,6 +950,7 @@
         background-color: var(--color-background);
         display: grid;
         grid-template-areas: "previous image next" "caption caption caption";
+        grid-template-columns: min-content auto min-content;
         height: 100%;
         justify-content: space-between;
         left: 0;
@@ -1004,6 +1002,7 @@
         width: 100%;
         max-width: var(--natural-width, none);
         max-height: var(--natural-height, none);
+        margin: 0 auto;
       }
       .gallery-modal .caption {
         color: var(--color-caption-text);
@@ -1024,9 +1023,6 @@
       .gallery-modal .caption a,
       .gallery-modal .caption spoiler-text {
         pointer-events: auto;
-      }
-      .gallery-modal .caption a:hover {
-        text-decoration: none;
       }
       .gallery-modal .nav {
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -1155,59 +1151,38 @@
         background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4IiB2aWV3Qm94PSIwIDAgNjQgNjQiIHpvb21BbmRQYW49ImRpc2FibGUiPjxzdHlsZT5saW5lIHtzdHJva2U6ICMwMDAwMDA7c3Ryb2tlLXdpZHRoOiAxLjVweDt9PC9zdHlsZT48bGluZSB4MT0iMjQiIHkxPSI4IiB4Mj0iNDgiIHkyPSIzMiIgLz48bGluZSB4MT0iMjQiIHkxPSI1NiIgeDI9IjQ4IiB5Mj0iMzIiIC8+PC9zdmc+");
         opacity: 0.375;
       }
-      .gallery.style1 .inner {
+      .gallery.style2 .inner {
         max-width: 100%;
       }
-      .gallery.style1 ul li {
+      .gallery.style2 ul li {
         border-radius: 1rem;
         display: inline-block;
       }
-      .gallery.style1 ul li .frame {
+      .gallery.style2 ul li .frame {
         border-radius: 1rem;
       }
-      .gallery.style1 ul li .caption {
-        opacity: 0;
-        align-items: center;
-        border-radius: inherit;
-        display: flex;
-        height: 100%;
-        left: 0;
-        pointer-events: none;
-        position: absolute;
-        top: 0;
-        background-color: rgba(255, 255, 255, 0.322);
-        transition: opacity 0.25s ease, transform 0.25s ease, z-index 0.25s ease;
-      }
-      .gallery.style1 ul li .caption p {
-        border-radius: inherit;
+      .gallery.style2 ul li .caption p {
         padding-bottom: 0rem;
-        padding-left: 0rem;
-        padding-right: 0rem;
-        padding-top: 0rem;
+        padding-top: 2rem;
         text-align: center;
-        color: transparent;
+        color: #545454;
         font-family: "Inter", sans-serif;
         font-size: 1em;
         line-height: 2;
         font-weight: 400;
       }
-      .gallery.style1 ul li .thumbnail:hover + .caption {
-        opacity: 1;
-        transform: scale(0.9225);
-        z-index: 2;
+      .gallery.style2 ul {
+        gap: 4rem;
       }
-      .gallery.style1 ul {
-        gap: 2.375rem;
-      }
-      .gallery.style1 ul li .thumbnail {
+      .gallery.style2 ul li .thumbnail {
         display: block;
         transition: transform 0.25s ease, z-index 0.25s ease;
       }
-      .gallery.style1 ul li img {
+      .gallery.style2 ul li img {
         height: auto;
-        max-height: 19.875rem;
+        max-height: 16rem;
       }
-      .gallery.style1 ul li .thumbnail:hover {
+      .gallery.style2 ul li .thumbnail:hover {
         transform: scale(0.9225);
         z-index: 1;
       }
@@ -1557,31 +1532,44 @@
           position: relative;
           width: auto;
         }
-        #container05 > .wrapper > .inner > :nth-child(1) {
+        #container04 > .wrapper > .inner > :nth-child(1) {
           min-height: 100% !important;
           width: 100% !important;
         }
-        #container05 > .wrapper > .inner > :nth-child(2) {
-          min-height: 100% !important;
-          width: 100% !important;
-        }
-        #container05 > .wrapper > .inner > :nth-child(3) {
+        #container04 > .wrapper > .inner > :nth-child(2) {
           min-height: 100% !important;
           width: 100% !important;
         }
         .gallery-modal .close {
           background-position: top 0.5rem right 0.5rem;
         }
-        .gallery.style1 ul li .caption p {
+        .gallery.style2 ul li .caption p {
+          padding-bottom: 0rem;
           letter-spacing: 0rem;
           font-size: 1em;
           line-height: 2;
         }
-        .gallery.style1 ul li img {
-          max-height: 16rem;
+        .gallery.style2 ul li img {
+          max-height: none;
+          display: block;
+          height: auto;
+          width: 100% !important;
         }
-        .gallery.style1 ul {
+        .gallery.style2 ul {
           gap: 2rem;
+          flex-direction: column;
+        }
+        .gallery.style2 .inner {
+          width: 100%;
+        }
+        .gallery.style2 ul li {
+          width: 100%;
+        }
+        .gallery.style2 ul li .thumbnail {
+          display: block;
+        }
+        .gallery.style2 ul li .frame {
+          display: block;
         }
       }
       @media (max-width: 480px) {
@@ -1623,10 +1611,10 @@
           --padding-horizontal: 0rem;
           --padding-vertical: 0rem;
         }
-        .gallery.style1 ul li .caption p {
+        .gallery.style2 ul li .caption p {
           font-size: 1em;
         }
-        .gallery.style1 ul {
+        .gallery.style2 ul {
           gap: 1.5rem;
         }
       }
@@ -1667,15 +1655,15 @@
           <div id="me" class="style1 container default">
             <div class="wrapper">
               <div class="inner">
-                <h1 id="text03" class="style1">Обо мне</h1>
+                <h1 id="text10" class="style1">Обо мне</h1>
               </div>
             </div>
           </div>
-          <div id="container05" class="style2 container columns">
+          <div id="container04" class="style2 container columns">
             <div class="wrapper">
               <div class="inner">
                 <div>
-                  <p id="text08" class="style2">
+                  <p id="text04" class="style2">
                     <span class="p"
                       >Имя - <strong>Александр</strong>,
                       <strong>мужской пол</strong>, <strong>20 лет</strong>,
@@ -1689,7 +1677,8 @@
                       <em>(в основном хип-хоп и иногда поп)</em>, смотрю
                       интересующие меня фильмы, мультфильмы и так далее.</span
                     ><span class="p"
-                      >Также каждый день пишу всякую фигню в своём
+                      >Также каждый день <strong>пишу всякую фигню</strong> в
+                      своём
                       <strong
                         ><a
                           href="https://t.me/mislisolya"
@@ -1700,79 +1689,105 @@
                       >
                       <em
                         >(если вам интересны мемы, а также мои короткие и
-                        длинные мысли - то можете подписаться, я не против
-                        :3)</em
-                      ></span
-                    >
-                  </p>
-                </div>
-                <div>
-                  <p id="text09" class="style2">
-                    <span class="p"
-                      ><strong>В конце марта 2024 года</strong>
-                      <em>(который для меня был довольно прорывным)</em>
-                      <strong
-                        >я начал интересоваться фуррями и в конце-концов
-                        осознал, что мне это нравится</strong
-                      >. Да, неожиданно, но для меня самому это стало
-                      сюрпризом.</span
-                    ><span class="p"
-                      >Внизу изображён референс моего персонажа
-                      <em>(фурсоны)</em> - серого сибирского кота
-                      <em
-                        >(огромное спасибо художнице «<a
-                          href="https://vk.com/kuro_i_pescha"
-                          data-umami-event="reference-artist"
-                          target="_blank"
-                          ><strong>Чердак</strong></a
-                        >» за арт)</em
+                        длинные мысли - то можете подписаться, я не против)</em
                       >.</span
                     >
                   </p>
-                  <div id="gallery01" class="style1 gallery">
-                    <div class="inner">
-                      <ul>
-                        <li>
-                          <a
-                            href="https://images.ctfassets.net/1pxughrhgws1/38aotHesHPdwZRVdOhSO7y/6abe407bda0b8ae017aca4ce8a1ce67e/reference.png"
-                            class="thumbnail n01"
-                            ><span class="frame"
-                              ><img
-                                src="https://images.ctfassets.net/1pxughrhgws1/38aotHesHPdwZRVdOhSO7y/6abe407bda0b8ae017aca4ce8a1ce67e/reference.png?w=624&q=70&fm=webp"
-                                alt="Референс моей фурсоны"
-                                data-caption="Референс моей фурсоны - серого сибирского кота" /></span
-                          ></a>
-                          <div class="caption"></div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
                 </div>
                 <div>
-                  <p id="text02" class="style2">
+                  <p id="text07" class="style2">
                     <span class="p"
-                      ><strong
-                        >Но у меня есть ещё и далёкое прошлое...</strong
-                      ></span
+                      >Если вспоминать и моё далёкое прошлое, то
+                      <strong>ещё в 2015 году</strong> случайно так получилось,
+                      что под влиянием Five Nights at Freddy&#39;s и его фан-игр
+                      <strong>я стал разрабатывать игры</strong>. Правда, они
+                      были не очень хорошие, если говорить мягко.</span
                     ><span class="p"
-                      >Если вспоминать и его, то
-                      <strong>ещё в 2015-ом году</strong> случайно так
-                      получилось, что под влиянием Five Nights at Freddy&#39;s и
-                      его фан-игр <strong>я стал разрабатывать игры</strong>.
-                      Правда, они были не очень хорошие, если говорить
-                      мягко.</span
-                    ><span class="p"
-                      >Но таким образом тогда я всё равно смог присоединиться ко
-                      многим российским инди-командам по разработке игр, что
-                      дало мне друзей и общение по сей день. Потом в 2018-ом
-                      году я ушёл отовсюду и перестал этим заниматься
-                      окончательно.</span
+                      >Но таким образом тогда
+                      <strong>я всё равно смог присоединиться</strong> ко многим
+                      российским инди-командам по разработке игр, что дало мне
+                      друзей и общение по сей день. Потом в 2018 году
+                      <strong
+                        >я ушёл отовсюду и перестал этим заниматься
+                        окончательно</strong
+                      >.</span
                     ><span class="p"
                       >Спустя время, смотря на всё это, я, конечно, испытываю
-                      кринж, но всё равно вспоминаю это ламповое время с
-                      теплотой на душе.</span
+                      кринж, но всё равно
+                      <strong
+                        >вспоминаю это ламповое время с теплотой на душе</strong
+                      >.</span
                     >
                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="furry" class="style1 container default">
+            <div class="wrapper">
+              <div class="inner">
+                <h1 id="text11" class="style1">Моё новое хобби</h1>
+              </div>
+            </div>
+          </div>
+          <div id="container01" class="style2 container default">
+            <div class="wrapper">
+              <div class="inner">
+                <p id="text02" class="style2">
+                  <span class="p"
+                    >В конце марта 2024 года
+                    <em>(который для меня был довольно прорывным)</em>
+                    <strong>я начал интересоваться фуррями</strong> и в
+                    конце-концов неожиданно для себя осознал, что
+                    <strong>мне это нравится</strong>.</span
+                  ><span class="p"
+                    >С сентября 2024 года
+                    <strong>имею своего персонажа</strong> <em>(фурсону)</em> -
+                    <strong>серого кота сибирской породы</strong>, который, как
+                    я считаю,
+                    <strong
+                      >идеально совмещает в себе мою личность и суть моего
+                      никнейма</strong
+                    >.</span
+                  ><span class="p"
+                    >Также хочу сказать огромное спасибо художнице «<a
+                      href="https://vk.com/kuro_i_pescha"
+                      target="_blank"
+                      data-umami-event="artist-cherdak"
+                      ><strong>Чердак</strong></a
+                    >» за эти арты -
+                    <strong>мне очень нравится</strong> :3</span
+                  >
+                </p>
+                <div id="gallery01" class="style2 gallery">
+                  <div class="inner">
+                    <ul>
+                      <li>
+                        <a
+                          href="https://images.ctfassets.net/1pxughrhgws1/38aotHesHPdwZRVdOhSO7y/6abe407bda0b8ae017aca4ce8a1ce67e/reference.png"
+                          class="thumbnail n01"
+                          ><span class="frame"
+                            ><img
+                              src="https://images.ctfassets.net/1pxughrhgws1/38aotHesHPdwZRVdOhSO7y/6abe407bda0b8ae017aca4ce8a1ce67e/reference.png?h=497&q=70&fm=webp"
+                              alt="Референс моей фурсоны"
+                              data-caption="Референс моей фурсоны" /></span
+                        ></a>
+                        <div class="caption"><p>Референс моей фурсоны</p></div>
+                      </li>
+                      <li>
+                        <a
+                          href="https://images.ctfassets.net/1pxughrhgws1/6IeLS208srow8q8q1tGnSx/42f03d972cfc77033b93d6cea45aa637/head.png"
+                          class="thumbnail n02"
+                          ><span class="frame"
+                            ><img
+                              src="https://images.ctfassets.net/1pxughrhgws1/6IeLS208srow8q8q1tGnSx/42f03d972cfc77033b93d6cea45aa637/head.png?h=497&q=70&fm=webp"
+                              alt="Хэд моей фурсоны"
+                              data-caption="Хэд моей фурсоны" /></span
+                        ></a>
+                        <div class="caption"><p>Хэд моей фурсоны</p></div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
