@@ -1,3 +1,19 @@
-# Greysoul
-<img src="https://images.ctfassets.net/1pxughrhgws1/47pfMaDeBeox2xDgOQamp8/6e5f5e1b022489eba9095f20fe30eda5/seo.jpg?fit=scale&w=400">
-<p>Website with all information about me</p>
+# Personal Website migrated to Astro
+
+This project was migrated from a static HTML site. All original styles, fonts, and pages are preserved.
+
+## Structure
+- `src/pages/` — Astro pages (`index.astro`, `about.astro`, `404.astro`)
+- `src/styles/` — Global CSS (fonts and custom styles)
+- `public/fonts/` — Font files
+- `public/favicon.ico` — Favicon
+- `public/CNAME` — Custom domain (if needed)
+
+## Usage
+1. Install dependencies: `npm install`
+2. Start dev server: `npm run dev`
+3. Build: `npm run build`
+
+---
+
+All content and styles are preserved from the original HTML files.
