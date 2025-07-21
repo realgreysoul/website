@@ -1,5 +1,5 @@
 {
-  "name": "personal-website-astro",
+  "name": "gs-personal-website",
   "type": "module",
   "scripts": {
     "dev": "astro dev",
@@ -7,6 +7,6 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "astro": "^5.10.1"
+    "astro": "^5.12.1"
   }
 }
