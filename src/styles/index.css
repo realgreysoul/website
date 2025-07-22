@@ -865,6 +865,14 @@ p.style3 span.p:nth-child(n + 2) {
 #buttons01 .n08 {
   background-color: #001935;
 }
+#buttons01 .n09 {
+  background-image: linear-gradient(
+    180deg,
+    #e24329 0%,
+    #fc6d26 50%,
+    #fca326 100%
+  );
+}
 .buttons.style3 {
   gap: 2rem;
   flex-direction: row;
