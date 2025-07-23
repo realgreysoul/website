@@ -464,14 +464,14 @@ import { Image } from "astro:assets";
           $inner = $(".inner"),
           client = (function () {
             var o = {
-                browser: "other",
-                browserVersion: 0,
-                os: "other",
-                osVersion: 0,
-                mobile: false,
-                canUse: null,
-                flags: { lsdUnits: false },
-              },
+              browser: "other",
+              browserVersion: 0,
+              os: "other",
+              osVersion: 0,
+              mobile: false,
+              canUse: null,
+              flags: { lsdUnits: false },
+            },
               ua = navigator.userAgent,
               a,
               i;
@@ -535,9 +535,7 @@ import { Image } from "astro:assets";
             for (i = 0; i < a.length; i++) {
               if (ua.match(a[i][1])) {
                 o.os = a[i][0];
-                o.osVersion = parseFloat(
-                  a[i][2] ? a[i][2](RegExp.$1) : RegExp.$1
-                );
+                o.osVersion = parseFloat(a[i][2] ? a[i][2](RegExp.$1) : RegExp.$1);
                 break;
               }
             }
@@ -636,12 +634,10 @@ import { Image } from "astro:assets";
             if (!e) y = 0;
             else {
               offset =
-                (e.dataset.scrollOffset
-                  ? parseInt(e.dataset.scrollOffset)
-                  : 0) *
+                (e.dataset.scrollOffset ? parseInt(e.dataset.scrollOffset) : 0) *
                 parseFloat(getComputedStyle(document.documentElement).fontSize);
               switch (
-                e.dataset.scrollBehavior ? e.dataset.scrollBehavior : "default"
+              e.dataset.scrollBehavior ? e.dataset.scrollBehavior : "default"
               ) {
                 case "default":
                 default:
@@ -717,9 +713,7 @@ import { Image } from "astro:assets";
             x = e ? e.tagName : null;
             switch (x) {
               case "FORM":
-                e = e.querySelector(
-                  ".field input, .field select, .field textarea"
-                );
+                e = e.querySelector(".field input, .field select, .field textarea");
                 if (e) e.focus();
                 break;
               default:
