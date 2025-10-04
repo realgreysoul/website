@@ -1,0 +1,51 @@
+---
+import { Image } from "astro:assets";
+
+const images = [
+  {
+    url: "https://images.ctfassets.net/1pxughrhgws1/38aotHesHPdwZRVdOhSO7y/6abe407bda0b8ae017aca4ce8a1ce67e/reference.png",
+    caption: "Референс моей фурсоны",
+    alt: "Референс моей фурсоны",
+    thumbnailClass: "reference"
+  },
+  {
+    url: "https://images.ctfassets.net/1pxughrhgws1/6IeLS208srow8q8q1tGnSx/42f03d972cfc77033b93d6cea45aa637/head.png",
+    caption: "Хэд моей фурсоны",
+    alt: "Хэд моей фурсоны",
+    thumbnailClass: "head"
+  }
+];
+---
+
+<div id="gallery01" class="style2 gallery">
+  <div class="inner">
+    <ul>
+      {
+        images.map(({ url, caption, alt, thumbnailClass }) => (
+          <li>
+            <a
+              href={url}
+              class={`thumbnail ${thumbnailClass}`}
+            >
+              <span class="frame">
+                <Image
+                  src={`${url}?h=656`}
+                  alt={alt}
+                  width={400}
+                  height={656}
+                  format="avif"
+                  loading="lazy"
+                  data-caption={caption}
+                  quality={70}
+                />
+              </span>
+            </a>
+            <div class="caption">
+              <p>{caption}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,72 @@
+---
+import { Image } from "astro:assets";
+
+const projects = [
+  {
+    url: "https://mzlffclicker.greysoul.ru/",
+    image: "https://images.ctfassets.net/1pxughrhgws1/7eIMpj1ts2kO9AJYf3CcaY/03e815ed61beff1807ffb48bfef37c5f/mzlffclicker.jpg",
+    title: "MZLFF Clicker",
+    description: "кликер про человека с кодовым именем mrEblan",
+    alt: "MZLFF Clicker",
+    thumbnailClass: "mzlffclicker"
+  },
+  {
+    url: "https://www.youtube.com/@realgreysoul",
+    image: "https://images.ctfassets.net/1pxughrhgws1/5afAnjAiOxRpc6P4YeyZUr/99a3de08da020f6c828ffcaea0ba7cfb/greysalt.jpg",
+    title: "YouTube-канал",
+    description: "место, на котором мне похуй, что выкладывать",
+    alt: "YouTube-канал",
+    thumbnailClass: "youtube-channel",
+    umami: "youtube-channel"
+  },
+  {
+    url: "https://greasyfork.org/ru/scripts/439466-readable-transparent-image?locale_override=1",
+    image: "https://images.ctfassets.net/1pxughrhgws1/5zJABY1nduf5UNs6ON1vyj/07c53024c2a3efa7e98b89a058e1f9a9/script.jpg",
+    title: "Readable Transparent Image",
+    description: "cкрипт увеличения видимости фона прозрачных изображений в Chrome-браузерах",
+    alt: "Readable Transparent Image",
+    thumbnailClass: "readable-transparent-image",
+    umami: "readable-transparent-image"
+  }
+];
+---
+
+<div id="gallery01" class="style1 gallery">
+  <div class="inner">
+    <ul>
+      {
+        projects.map(({ url, image, title, description, alt, thumbnailClass, umami }) => (
+          <li>
+            <a
+              href={url}
+              target="_blank"
+              class={`thumbnail ${thumbnailClass}`}
+              {...umami && {'data-umami-event': umami}}
+            >
+              <span class="frame">
+                <Image
+                  src={image}
+                  alt={alt}
+                  width={400}
+                  height={225}
+                  format="avif"
+                  loading="lazy"
+                  quality={70}
+                />
+              </span>
+            </a>
+            <div class="caption">
+              <p>
+                <span style="color: #000000">
+                  <strong>{title}</strong>
+                </span>
+                {" - "}
+                {description}
+              </p>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>

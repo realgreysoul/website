@@ -2,6 +2,7 @@
 import "../styles/about.css";
 import { Image } from "astro:assets";
 import Age from "../components/age.astro";
+import FursonaGallery from "../components/fursonaGallery.astro";
 ---
 
 <html lang="ru">
@@ -150,52 +151,7 @@ import Age from "../components/age.astro";
                     >» за эти красивые арты - мне очень нравится :3</span
                   >
                 </p>
-                <div id="gallery01" class="style2 gallery">
-                  <div class="inner">
-                    <ul>
-                      <li>
-                        <a
-                          href="https://images.ctfassets.net/1pxughrhgws1/38aotHesHPdwZRVdOhSO7y/6abe407bda0b8ae017aca4ce8a1ce67e/reference.png"
-                          class="thumbnail n01"
-                        >
-                          <span class="frame">
-                            <Image
-                              src="https://images.ctfassets.net/1pxughrhgws1/38aotHesHPdwZRVdOhSO7y/6abe407bda0b8ae017aca4ce8a1ce67e/reference.png?h=656"
-                              alt="Референс моей фурсоны"
-                              width={400}
-                              height={656}
-                              format="avif"
-                              loading="lazy"
-                              data-caption="Референс моей фурсоны"
-                              quality={70}
-                            />
-                          </span>
-                        </a>
-                        <div class="caption"><p>Референс моей фурсоны</p></div>
-                      </li>
-                      <li>
-                        <a
-                          href="https://images.ctfassets.net/1pxughrhgws1/6IeLS208srow8q8q1tGnSx/42f03d972cfc77033b93d6cea45aa637/head.png"
-                          class="thumbnail n02"
-                        >
-                          <span class="frame">
-                            <Image
-                              src="https://images.ctfassets.net/1pxughrhgws1/6IeLS208srow8q8q1tGnSx/42f03d972cfc77033b93d6cea45aa637/head.png?h=656"
-                              alt="Хэд моей фурсоны"
-                              width={400}
-                              height={656}
-                              format="avif"
-                              loading="lazy"
-                              data-caption="Хэд моей фурсоны"
-                              quality={70}
-                            />
-                          </span>
-                        </a>
-                        <div class="caption"><p>Хэд моей фурсоны</p></div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                <FursonaGallery />
               </div>
             </div>
           </div>

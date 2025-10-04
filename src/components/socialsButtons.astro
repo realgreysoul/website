@@ -1,0 +1,82 @@
+---
+import SocialsIcons from './socialsIcons.astro';
+
+const buttons = [
+  {
+    url: "https://t.me/mislisolya",
+    icon: "telegram",
+    label: "Telegram-канал",
+    umami: "telegram-channel"
+  },
+  {
+    url: "https://www.twitch.tv/realgreysoul",
+    icon: "twitch",
+    label: "Twitch",
+    umami: "twitch"
+  },
+  {
+    url: "https://www.instagram.com/realgreysoul/",
+    icon: "instagram",
+    label: "Instagram*",
+    umami: "instagram"
+  },
+  {
+    url: "https://discord.com/users/720850474605215754",
+    icon: "discord",
+    label: "Discord",
+    umami: "discord"
+  },
+  {
+    url: "https://steamcommunity.com/id/realgreysoul/",
+    icon: "steam",
+    label: "Steam",
+    umami: "steam"
+  },
+  {
+    url: "https://x.com/realgreysoul",
+    icon: "x-twitter",
+    label: "X (Twitter)",
+    umami: "x-twitter"
+  },
+  {
+    url: "https://bsky.app/profile/greysoul.ru",
+    icon: "bluesky",
+    label: "Bluesky",
+    umami: "bluesky"
+  },
+  {
+    url: "https://www.tumblr.com/realgreysoul",
+    icon: "tumblr",
+    label: "Tumblr",
+    umami: "tumblr"
+  },
+  {
+    url: "https://gitlab.com/realgreysoul",
+    icon: "gitlab",
+    label: "GitLab",
+    umami: "gitlab"
+  }
+];
+---
+
+<SocialsIcons />
+<ul id="buttons01" class="style1 buttons">
+  {
+    buttons.map(({ url, icon, label, umami }) => (
+      <li>
+        <a
+          href={url}
+          target="_blank"
+          class={`button ${icon}`}
+          {...umami && {'data-umami-event': umami}}
+        >
+          <svg aria-labelledby={`buttons01-${icon}`}>
+            <title id={`buttons01-${icon}`}>{label}</title>
+            <use xlink:href={`#${icon}`} />
+          </svg>
+          <span class="label">{label}</span>
+        </a>
+      </li>
+    ))
+  }
+</ul>

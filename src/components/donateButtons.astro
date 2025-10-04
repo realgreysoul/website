@@ -1,0 +1,40 @@
+---
+const donateButtons = [
+  {
+    url: "https://new.donatepay.ru/@greysoul",
+    label: "DonatePay",
+    buttonClass: "donatepay",
+    umami: "donatepay"
+  },
+  {
+    url: "https://yoomoney.ru/to/410018468894777",
+    label: "ЮMoney",
+    buttonClass: "yoomoney",
+    umami: "yoomoney"
+  },
+  {
+    url: "https://pay.web.money/929641500116",
+    label: "WebMoney",
+    buttonClass: "webmoney",
+    umami: "webmoney"
+  }
+];
+---
+
+<ul id="buttons02" class="style3 buttons">
+  {
+    donateButtons.map(({ url, label, buttonClass, umami }) => (
+      <li>
+        <a
+          href={url}
+          target="_blank"
+          class={`button ${buttonClass}`}
+          data-umami-event={umami}
+          role="button"
+        >
+          {label}
+        </a>
+      </li>
+    ))
+  }
+</ul>

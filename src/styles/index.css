@@ -762,13 +762,13 @@ p.style3 span.p:nth-child(n + 2) {
   transform: scale(0.9225);
   z-index: 1;
 }
-#gallery01 ul li .n01 img {
+#gallery01 ul li .mzlffclicker img {
   object-position: center;
 }
-#gallery01 ul li .n02 img {
+#gallery01 ul li .youtube-channel img {
   object-position: center;
 }
-#gallery01 ul li .n03 img {
+#gallery01 ul li .readable-transparent-image img {
   object-position: center;
 }
 .buttons {
@@ -839,13 +839,13 @@ p.style3 span.p:nth-child(n + 2) {
 .buttons.style1 li a:hover {
   transform: scale(0.9225);
 }
-#buttons01 .n01 {
+#buttons01 .telegram {
   background-image: linear-gradient(#2aabee, #229ed9);
 }
-#buttons01 .n02 {
+#buttons01 .twitch {
   background-color: #9146ff;
 }
-#buttons01 .n03 {
+#buttons01 .instagram {
   background-image: linear-gradient(
     72.44deg,
     #ff7a00 11.92%,
@@ -853,19 +853,22 @@ p.style3 span.p:nth-child(n + 2) {
     #d300c5 85.69%
   );
 }
-#buttons01 .n04 {
+#buttons01 .discord {
   background-color: #5865f2;
 }
-#buttons01 .n05 {
+#buttons01 .steam {
   background-color: #171a21;
 }
-#buttons01 .n07 {
+#buttons01 .x-twitter {
+  background-color: #000000;
+}
+#buttons01 .bluesky {
   background-color: #0085ff;
 }
-#buttons01 .n08 {
+#buttons01 .tumblr {
   background-color: #001935;
 }
-#buttons01 .n09 {
+#buttons01 .gitlab {
   background-image: linear-gradient(
     180deg,
     #e24329 0%,
@@ -902,16 +905,16 @@ p.style3 span.p:nth-child(n + 2) {
 .buttons.style3 li a:hover {
   transform: scale(0.9225);
 }
-#buttons02 .n01 {
+#buttons02 .donationalerts {
   background-color: #f59c07;
 }
-#buttons02 .n02 {
+#buttons02 .donatepay {
   background-color: #44ab4f;
 }
-#buttons02 .n03 {
+#buttons02 .yoomoney {
   background-color: #8f14fd;
 }
-#buttons02 .n04 {
+#buttons02 .webmoney {
   background-color: #006cb4;
 }
 @media (max-width: 1920px) {
