@@ -6,55 +6,64 @@ const buttons = [
     url: "https://t.me/mislisolya",
     icon: "telegram",
     label: "Telegram-канал",
-    umami: "telegram-channel"
+    umami: "telegram-channel",
+    customColor: true
   },
   {
     url: "https://www.twitch.tv/realgreysoul",
     icon: "twitch",
     label: "Twitch",
-    umami: "twitch"
+    umami: "twitch",
+    customColor: true
   },
   {
     url: "https://www.instagram.com/realgreysoul/",
     icon: "instagram",
     label: "Instagram*",
-    umami: "instagram"
+    umami: "instagram",
+    customColor: true
   },
   {
     url: "https://discord.com/users/720850474605215754",
     icon: "discord",
     label: "Discord",
-    umami: "discord"
+    umami: "discord",
+    customColor: true
   },
   {
     url: "https://steamcommunity.com/id/realgreysoul/",
     icon: "steam",
     label: "Steam",
-    umami: "steam"
+    umami: "steam",
+    customColor: true
   },
   {
     url: "https://x.com/realgreysoul",
     icon: "x-twitter",
     label: "X (Twitter)",
-    umami: "x-twitter"
+    umami: "x-twitter",
+    customColor: false
   },
   {
     url: "https://bsky.app/profile/greysoul.ru",
     icon: "bluesky",
     label: "Bluesky",
-    umami: "bluesky"
+    umami: "bluesky",
+    customColor: true
   },
   {
     url: "https://www.tumblr.com/realgreysoul",
     icon: "tumblr",
     label: "Tumblr",
-    umami: "tumblr"
+    umami: "tumblr",
+    customColor: true
   },
   {
     url: "https://gitlab.com/realgreysoul",
     icon: "gitlab",
     label: "GitLab",
-    umami: "gitlab"
+    umami: "gitlab",
+    customColor: true
   }
 ];
 ---
@@ -62,12 +71,12 @@ const buttons = [
 <SocialsIcons />
 <ul id="buttons01" class="style1 buttons">
   {
-    buttons.map(({ url, icon, label, umami }) => (
+    buttons.map(({ url, icon, label, umami, customColor = true }) => (
       <li>
         <a
           href={url}
           target="_blank"
-          class={`button ${icon}`}
+          class={`button${customColor ? ` ${icon}` : ''}`}
           {...umami && {'data-umami-event': umami}}
         >
           <svg aria-labelledby={`buttons01-${icon}`}>
