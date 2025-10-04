@@ -1,0 +1,8 @@
+---
+import { getAge, formatAgeInRussian } from '../utils/age';
+
+const birthDate = new Date(2004, 8, 27);
+const age = getAge(birthDate);
+const formattedAge = formatAgeInRussian(age);
+---
+{formattedAge}
