@@ -4,5 +4,5 @@ export default defineConfig({
   site: 'https://greysoul.ru',
   outDir: './dist',
   publicDir: './public',
-  trailingSlash: 'always',
+  trailingSlash: 'never',
 });
