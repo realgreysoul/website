@@ -81,7 +81,7 @@ import DonateButtons from "../components/donateButtons.astro";
               <div class="inner">
                 <h2 id="text03" class="style1">Коротко обо мне</h2>
                 <p id="text07" class="style2">
-                    <span class="p"
+                  <span class="p"
                     >Имя - <strong>Александр</strong>,
                     <strong>мужской пол</strong>, <strong><Age /></strong>,
                     родился <strong>27 сентября 2004 года</strong>, живу в
@@ -156,8 +156,8 @@ import DonateButtons from "../components/donateButtons.astro";
       </div>
     </div>
     <script
-      async
-      src="https://eu.umami.is/script.js"
+      defer
+      src="https://cloud.umami.is/script.js"
       data-website-id="2d99631b-23f6-4d56-ae3a-9fb531cb8147">
     </script>
     <script>
@@ -174,14 +174,14 @@ import DonateButtons from "../components/donateButtons.astro";
           $inner = $(".inner"),
           client = (function () {
             var o = {
-              browser: "other",
-              browserVersion: 0,
-              os: "other",
-              osVersion: 0,
-              mobile: false,
-              canUse: null,
-              flags: { lsdUnits: false },
-            },
+                browser: "other",
+                browserVersion: 0,
+                os: "other",
+                osVersion: 0,
+                mobile: false,
+                canUse: null,
+                flags: { lsdUnits: false },
+              },
               ua = navigator.userAgent,
               a,
               i;
@@ -245,7 +245,9 @@ import DonateButtons from "../components/donateButtons.astro";
             for (i = 0; i < a.length; i++) {
               if (ua.match(a[i][1])) {
                 o.os = a[i][0];
-                o.osVersion = parseFloat(a[i][2] ? a[i][2](RegExp.$1) : RegExp.$1);
+                o.osVersion = parseFloat(
+                  a[i][2] ? a[i][2](RegExp.$1) : RegExp.$1
+                );
                 break;
               }
             }
@@ -344,10 +346,12 @@ import DonateButtons from "../components/donateButtons.astro";
             if (!e) y = 0;
             else {
               offset =
-                (e.dataset.scrollOffset ? parseInt(e.dataset.scrollOffset) : 0) *
+                (e.dataset.scrollOffset
+                  ? parseInt(e.dataset.scrollOffset)
+                  : 0) *
                 parseFloat(getComputedStyle(document.documentElement).fontSize);
               switch (
-              e.dataset.scrollBehavior ? e.dataset.scrollBehavior : "default"
+                e.dataset.scrollBehavior ? e.dataset.scrollBehavior : "default"
               ) {
                 case "default":
                 default:
@@ -423,7 +427,9 @@ import DonateButtons from "../components/donateButtons.astro";
             x = e ? e.tagName : null;
             switch (x) {
               case "FORM":
-                e = e.querySelector(".field input, .field select, .field textarea");
+                e = e.querySelector(
+                  ".field input, .field select, .field textarea"
+                );
                 if (e) e.focus();
                 break;
               default:
