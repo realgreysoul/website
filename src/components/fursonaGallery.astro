@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 
-const images = [
+const fursonaGallery = [
   {
     url: "https://images.ctfassets.net/1pxughrhgws1/38aotHesHPdwZRVdOhSO7y/6abe407bda0b8ae017aca4ce8a1ce67e/reference.png",
     caption: "Референс моей фурсоны",
@@ -21,7 +21,7 @@ const images = [
   <div class="inner">
     <ul>
       {
-        images.map(({ url, caption, alt, thumbnailClass }) => (
+        fursonaGallery.map(({ url, caption, alt, thumbnailClass }) => (
           <li>
             <a
               href={url}
