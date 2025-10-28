@@ -894,12 +894,6 @@ p.style3 span.p:nth-child(n + 2) {
 .buttons.style3 li a:hover {
   transform: scale(0.9225);
 }
-#buttons02 .donationalerts {
-  background-color: #f59c07;
-}
-#buttons02 .donatepay {
-  background-color: #44ab4f;
-}
 #buttons02 .yoomoney {
   background-color: #8f14fd;
 }
