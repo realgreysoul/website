@@ -1,0 +1,95 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  canonicalUrl?: string;
+  mainClass?: string;
+  mainWidth?: string;
+  spacing?: string;
+  paddingHorizontal?: string;
+  paddingVertical?: string;
+  showFooter?: boolean;
+}
+
+const {
+  title,
+  description,
+  ogImage = "https://images.ctfassets.net/1pxughrhgws1/47pfMaDeBeox2xDgOQamp8/6e5f5e1b022489eba9095f20fe30eda5/seo.jpg",
+  canonicalUrl = "https://greysoul.ru",
+  mainClass = "",
+  mainWidth = "53rem",
+  spacing = "2.5rem",
+  paddingHorizontal = "3rem",
+  paddingVertical = "3rem",
+  showFooter = true
+} = Astro.props;
+
+const currentYear = new Date().getFullYear();
+---
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>{title}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta property="og:site_name" content="Greysoul" />
+    <meta property="og:title" content={title} />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      href="https://images.ctfassets.net/1pxughrhgws1/5YGJWSf45oqEWHmx6YlCtW/f1b77066bf259e8cf85f775d3671683c/apple-touch-icon.png"
+    />
+    <link rel="preconnect" href="//images.ctfassets.net" />
+    <link rel="dns-prefetch" href="//images.ctfassets.net" />
+    
+    <style is:global define:vars={{ mainWidth, spacing, paddingHorizontal, paddingVertical }}>
+      #main > .inner {
+        --width: var(--mainWidth);
+        --spacing: var(--spacing);
+        --padding-horizontal: var(--paddingHorizontal);
+        --padding-vertical: var(--paddingVertical);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="main" class={mainClass}>
+        <div class="inner">
+          <slot />
+          
+          {showFooter && (
+            <div id="footer" class="style1 container default">
+              <div class="wrapper">
+                <div class="inner">
+                  <p id="text05" class="style3">
+                    © {currentYear} Greysoul. Всё авторское содержимое данного сайта принадлежит владельцу данного сайта.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+    
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="2d99631b-23f6-4d56-ae3a-9fb531cb8147"
+    ></script>
+  </body>
+</html>

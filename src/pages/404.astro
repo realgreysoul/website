@@ -1,67 +1,30 @@
 ---
+import Layout from "../layouts/Layout.astro";
 import "../styles/404.css";
 ---
 
-<html lang="ru">
-  <head>
-    <title>404: Страница не найдена — Greysoul</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,user-scalable=no"
-    />
-    <meta
-      name="description"
-      content="Какой-то рандомный чел в интернете, который что-то делает"
-    />
-    <meta property="og:site_name" content="Greysoul" />
-    <meta property="og:title" content="404: Страница не найдена" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:description"
-      content="Какой-то рандомный чел в интернете, который что-то делает"
-    />
-    <meta
-      property="og:image"
-      content="https://images.ctfassets.net/1pxughrhgws1/47pfMaDeBeox2xDgOQamp8/6e5f5e1b022489eba9095f20fe30eda5/seo.jpg"
-    />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content="1199" />
-    <meta property="og:image:height" content="626" />
-    <meta property="twitter:card" content="summary_large_image" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      href="https://images.ctfassets.net/1pxughrhgws1/5YGJWSf45oqEWHmx6YlCtW/f1b77066bf259e8cf85f775d3671683c/apple-touch-icon.png"
-    />
-  </head>
-  <body>
-    <div id="wrapper">
-      <div id="main">
-        <div class="inner">
-          <div id="error" class="style1 container default">
-            <div class="wrapper">
-              <div class="inner">
-                <h1 id="text04" class="style1">404: Страница не найдена</h1>
-                <p id="text09" class="style2">
-                  Если вы попали на эту страницу по ошибке, то перейдите,
-                  пожалуйста, на главную страницу
-                </p>
-                <ul id="buttons01" class="style3 buttons">
-                  <li>
-                    <a href="/" class="button n01">Главная страница</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+<Layout
+  title="404: Страница не найдена — Greysoul"
+  description="Какой-то рандомный чел в интернете, который что-то делает"
+  mainWidth="100vw"
+  spacing="3rem"
+  paddingVertical="3rem"
+  showFooter={false}
+>
+
+  <div id="error" class="style1 container default">
+    <div class="wrapper">
+      <div class="inner">
+        <h1 id="text04" class="style1">404: Страница не найдена</h1>
+        <p id="text09" class="style2">
+          Если вы попали на эту страницу по ошибке, то перейдите, пожалуйста, на главную страницу
+        </p>
+        <ul id="buttons01" class="style3 buttons">
+          <li>
+            <a href="/" class="button n01">Главная страница</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <script
-      defer
-      src="https://cloud.umami.is/script.js"
-      data-website-id="2d99631b-23f6-4d56-ae3a-9fb531cb8147">
-    </script>
-  </body>
-</html>
+  </div>
+</Layout>
