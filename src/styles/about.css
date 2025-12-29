@@ -1,4 +1,4 @@
-/* Специфический стиль изображения на странице "Обо мне" */
+/* Стиль изображения */
 .image.style1 .frame {
   width: 20rem;
   border-radius: 1rem;
@@ -10,7 +10,7 @@
   z-index: 1;
 }
 
-/* Стиль контейнера 2 - двухколоночный макет */
+/* 2-ая стиль контейнера в виде двухколоночного макета */
 .container.style2 {
   display: flex;
   width: 100%;
@@ -152,7 +152,7 @@
   width: 100%;
 }
 
-/* Контейнер04 с заданной шириной столбцов */
+/* Container04 с заданной шириной столбцов */
 #container04 > .wrapper > .inner > :nth-child(1) {
   width: calc(50% + (var(--gutters) / 2));
 }
@@ -161,7 +161,7 @@
   width: calc(50% + (var(--gutters) / 2));
 }
 
-/* Gallery Styles */
+/* Стили галереи изображений */
 .gallery .inner {
   display: inline-block;
   max-width: 100%;
@@ -211,7 +211,7 @@
   pointer-events: auto;
 }
 
-/* Модальная галерея - Lightbox */
+/* Полноэкранная галерея - Lightbox */
 @keyframes gallery-modal-spinner {
   0% {
     transform: rotate(0deg);
@@ -462,7 +462,7 @@
   opacity: 0.375;
 }
 
-/* Стиль галереи 2 - FursonaGallery */
+/* 2-ая стиль галереи - FursonaGallery */
 .gallery.style2 .inner {
   max-width: 100%;
 }

@@ -48,7 +48,7 @@
   pointer-events: auto;
 }
 
-/* Стиль галереи изображений 1 - ProjectsGallery */
+/* 1-ая стиль галереи изображений - ProjectsGallery */
 .gallery.style1 .inner {
   max-width: 100%;
   width: 100%;
@@ -113,7 +113,7 @@
   object-position: center;
 }
 
-/* Динамичность */
+/* Адаптивность */
 @media (max-width: 736px) {
   .gallery.style1 ul li .caption p {
     padding-bottom: 0rem;
