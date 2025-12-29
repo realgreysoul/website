@@ -113,7 +113,7 @@
   object-position: center;
 }
 
-/* Responsive */
+/* Динамичность */
 @media (max-width: 736px) {
   .gallery.style1 ul li .caption p {
     padding-bottom: 0rem;
