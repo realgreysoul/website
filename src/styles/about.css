@@ -1079,7 +1079,7 @@ p.style2 span.p:nth-child(n + 2) {
 .gallery-modal.light {
   --color-background: rgba(255, 255, 255, 0.9);
   --color-background-zooming: rgba(255, 255, 255, 1);
-  --color-caption-text: #000000;
+  --color-caption-text: #545454;
 }
 .gallery-modal.light:before {
   animation: gallery-modal-spinner 1s infinite linear;
