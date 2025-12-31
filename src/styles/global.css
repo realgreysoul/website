@@ -369,6 +369,17 @@ body.is-instant:after {
   transition: none;
 }
 
+.image.style1 a.frame {
+  border-radius: 1rem;
+  transition: transform 0.25s ease, z-index 0.25s ease;
+  position: relative;
+}
+
+.image.style1 a.frame:hover {
+  transform: scale(0.9225);
+  z-index: 1;
+}
+
 /* Стили заголовков и абзацев */
 h1, h2, h3, p {
   direction: var(--site-language-direction);

@@ -1,15 +1,3 @@
-/* Стиль изображения */
-.image.style1 .frame {
-  width: 20rem;
-  border-radius: 1rem;
-  transition: transform 0.25s ease, z-index 0.25s ease;
-}
-
-.image.style1 .frame:hover {
-  transform: scale(0.9225);
-  z-index: 1;
-}
-
 /* 2-ая стиль контейнера в виде двухколоночного макета */
 .container.style2 {
   display: flex;
