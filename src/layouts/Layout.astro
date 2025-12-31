@@ -24,8 +24,6 @@ const {
   paddingVertical = "3rem",
   showFooter = true
 } = Astro.props;
-
-const currentYear = new Date().getFullYear();
 ---
 
 <!DOCTYPE html>
@@ -80,7 +78,11 @@ const currentYear = new Date().getFullYear();
               <div class="wrapper">
                 <div class="inner">
                   <p id="text05" class="style3">
-                    © {currentYear} Greysoul. Всё авторское содержимое данного сайта принадлежит владельцу данного сайта.
+                    ©
+                    <script type="text/javascript">
+                      document.write(new Date().getFullYear());
+                    </script>
+                    Greysoul. Всё авторское содержимое данного сайта принадлежит владельцу данного сайта.
                   </p>
                 </div>
               </div>
