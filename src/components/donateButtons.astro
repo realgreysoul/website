@@ -1,5 +1,5 @@
 ---
-const donateButtons = [
+const donate = [
   {
     url: "https://yoomoney.ru/to/410018468894777",
     label: "ЮMoney",
@@ -19,7 +19,7 @@ const donateButtons = [
 
 <ul id="buttons02" class="style3 buttons">
   {
-    donateButtons.map(({ url, label, buttonClass, umami, customColor = true }) => (
+    donate.map(({ url, label, buttonClass, umami, customColor = true }) => (
       <li>
         <a
           href={url}

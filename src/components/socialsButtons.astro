@@ -1,5 +1,5 @@
 ---
-const socialsButtons = [
+const social = [
   {
     url: "https://t.me/mislisolya",
     icon: "telegram",
@@ -130,7 +130,7 @@ const socialsButtons = [
 
 <ul id="buttons01" class="style1 buttons">
   {
-    socialsButtons.map(({ url, icon, label, umami, customColor = true }) => (
+    social.map(({ url, icon, label, umami, customColor = true }) => (
       <li>
         <a
           href={url}

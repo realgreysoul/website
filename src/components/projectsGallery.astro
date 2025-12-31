@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 
-const projectsGallery = [
+const project = [
   {
     url: "https://mzlffclicker.greysoul.ru/",
     image: "https://images.ctfassets.net/1pxughrhgws1/7eIMpj1ts2kO9AJYf3CcaY/03e815ed61beff1807ffb48bfef37c5f/mzlffclicker.jpg",
@@ -35,7 +35,7 @@ const projectsGallery = [
   <div class="inner">
     <ul>
       {
-        projectsGallery.map(({ url, image, title, description, alt, thumbnailClass, umami }) => (
+        project.map(({ url, image, title, description, alt, thumbnailClass, umami }) => (
           <li>
             <a
               href={url}
