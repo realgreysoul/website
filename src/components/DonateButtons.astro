@@ -12,9 +12,8 @@ const donate = await getDonates();
           href={url}
           target="_blank"
           class="button"
-          style={`background: ${color}`}
-          data-umami-event={umami}
-          role="button"
+          style={color ? `background: ${color}` : ''}
+          {...umami && {'data-umami-event': umami}}
         >
           {label}
         </a>

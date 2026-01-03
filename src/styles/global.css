@@ -758,8 +758,6 @@ p.style3 span.p:nth-child(n + 2) {
   transform: scale(0.9225);
 }
 
-/* Цвета кнопок */
-
 /* Адаптивность */
 @media (max-width: 1680px) {
   html {
