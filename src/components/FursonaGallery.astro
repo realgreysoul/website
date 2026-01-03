@@ -1,42 +1,27 @@
 ---
 import { Image } from "astro:assets";
+import { getFursonaImages } from "../utils/contentful.js";
 
-const fursona = [
-  {
-    url: "https://images.ctfassets.net/1pxughrhgws1/38aotHesHPdwZRVdOhSO7y/6abe407bda0b8ae017aca4ce8a1ce67e/reference.png",
-    caption: "Референс моей фурсоны",
-    alt: "Референс моей фурсоны",
-    thumbnailClass: "reference"
-  },
-  {
-    url: "https://images.ctfassets.net/1pxughrhgws1/6IeLS208srow8q8q1tGnSx/42f03d972cfc77033b93d6cea45aa637/head.png",
-    caption: "Хэд моей фурсоны",
-    alt: "Хэд моей фурсоны",
-    thumbnailClass: "head"
-  }
-];
+const fursona = await getFursonaImages();
 ---
 
 <div id="gallery01" class="style2 gallery">
   <div class="inner">
     <ul>
       {
-        fursona.map(({ url, caption, alt, thumbnailClass }) => (
+        fursona.map(({ url, caption, alt }) => (
           <li>
             <a
               href={url}
-              class={`thumbnail ${thumbnailClass}`}
+              class="thumbnail"
             >
               <span class="frame">
                 <Image
-                  src={`${url}?h=656`}
+                  src={`${url}?h=656&q=70&fm=avif`}
                   alt={alt}
-                  width={400}
-                  height={656}
-                  format="avif"
+                  inferSize={true}
                   loading="lazy"
                   data-caption={caption}
-                  quality={70}
                 />
               </span>
             </a>

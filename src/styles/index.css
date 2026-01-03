@@ -100,19 +100,6 @@
   z-index: 1;
 }
 
-/* Конкретные настройки изображения */
-#gallery01 ul li .mzlffclicker img {
-  object-position: center;
-}
-
-#gallery01 ul li .youtube-channel img {
-  object-position: center;
-}
-
-#gallery01 ul li .readable-transparent-image img {
-  object-position: center;
-}
-
 /* Адаптивность */
 @media (max-width: 736px) {
   .gallery.style1 ul li .caption p {
