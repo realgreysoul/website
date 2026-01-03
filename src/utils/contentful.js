@@ -5,45 +5,42 @@ const client = createClient({
   accessToken: import.meta.env.CONTENTFUL_ACCESS_TOKEN,
 });
 
-export async function getProjectImages() {
+async function getImages(contentType) {
   try {
     const entries = await client.getEntries({
-      content_type: 'project', // Assuming content type is 'project'
+      content_type: contentType,
       order: 'fields.number',
     });
     return entries.items.map(item => {
-      const image = item.fields.image.fields.file.url.startsWith('//') ? 'https:' + item.fields.image.fields.file.url : item.fields.image.fields.file.url;
-      return {
-        url: item.fields.url,
-        image,
-        title: item.fields.title,
-        description: item.fields.description,
-        alt: item.fields.alt,
-        umami: item.fields.umami,
-      };
+      if (contentType === 'fursona') {
+        const url = item.fields.url.fields.file.url.startsWith('//') ? 'https:' + item.fields.url.fields.file.url : item.fields.url.fields.file.url;
+        return {
+          url,
+          caption: item.fields.caption,
+          alt: item.fields.alt,
+        };
+      } else if (contentType === 'project') {
+        const image = item.fields.image.fields.file.url.startsWith('//') ? 'https:' + item.fields.image.fields.file.url : item.fields.image.fields.file.url;
+        return {
+          url: item.fields.url,
+          image,
+          title: item.fields.title,
+          description: item.fields.description,
+          alt: item.fields.alt,
+          umami: item.fields.umami,
+        };
+      }
     });
   } catch (error) {
-    console.error('Error fetching project images:', error);
+    console.error(`Error fetching ${contentType} images:`, error);
     return [];
   }
 }
 
+export async function getProjectImages() {
+  return getImages('project');
+}
+
 export async function getFursonaImages() {
-  try {
-    const entries = await client.getEntries({
-      content_type: 'fursona', // Assuming content type is 'fursona'
-      order: 'fields.number',
-    });
-    return entries.items.map(item => {
-      const url = item.fields.url.fields.file.url.startsWith('//') ? 'https:' + item.fields.url.fields.file.url : item.fields.url.fields.file.url;
-      return {
-        url,
-        caption: item.fields.caption,
-        alt: item.fields.alt,
-      };
-    });
-  } catch (error) {
-    console.error('Error fetching fursona images:', error);
-    return [];
-  }
+  return getImages('fursona');
 }
