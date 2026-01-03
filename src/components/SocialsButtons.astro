@@ -1,69 +1,7 @@
 ---
-const social = [
-  {
-    url: "https://t.me/mislisolya",
-    icon: "telegram",
-    label: "Telegram-канал",
-    umami: "telegram-channel",
-    customColor: true
-  },
-  {
-    url: "https://www.twitch.tv/realgreysoul",
-    icon: "twitch",
-    label: "Twitch",
-    umami: "twitch",
-    customColor: true
-  },
-  {
-    url: "https://www.instagram.com/realgreysoul/",
-    icon: "instagram",
-    label: "Instagram*",
-    umami: "instagram",
-    customColor: true
-  },
-  {
-    url: "https://discord.com/users/720850474605215754",
-    icon: "discord",
-    label: "Discord",
-    umami: "discord",
-    customColor: true
-  },
-  {
-    url: "https://steamcommunity.com/id/realgreysoul/",
-    icon: "steam",
-    label: "Steam",
-    umami: "steam",
-    customColor: true
-  },
-  {
-    url: "https://x.com/realgreysoul",
-    icon: "x-twitter",
-    label: "X (Twitter)",
-    umami: "x-twitter",
-    customColor: false
-  },
-  {
-    url: "https://bsky.app/profile/greysoul.ru",
-    icon: "bluesky",
-    label: "Bluesky",
-    umami: "bluesky",
-    customColor: true
-  },
-  {
-    url: "https://www.tumblr.com/realgreysoul",
-    icon: "tumblr",
-    label: "Tumblr",
-    umami: "tumblr",
-    customColor: true
-  },
-  {
-    url: "https://github.com/realgreysoul",
-    icon: "github",
-    label: "GitHub",
-    umami: "github",
-    customColor: false
-  }
-];
+import { getSocials } from "../utils/contentful.js";
+
+const social = await getSocials();
 ---
 
 <svg
@@ -130,12 +68,13 @@ const social = [
 
 <ul id="buttons01" class="style1 buttons">
   {
-    social.map(({ url, icon, label, umami, customColor = true }) => (
+    social.map(({ url, color, icon, label, umami }) => (
       <li>
         <a
           href={url}
           target="_blank"
-          class={`button${customColor ? ` ${icon}` : ''}`}
+          class={`button ${icon}`}
+          style={`background: ${color}`}
           {...umami && {'data-umami-event': umami}}
         >
           <svg aria-labelledby={`buttons01-${icon}`}>

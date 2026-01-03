@@ -759,41 +759,6 @@ p.style3 span.p:nth-child(n + 2) {
 }
 
 /* Цвета кнопок */
-#buttons01 .telegram {
-  background-image: linear-gradient(#2aabee, #229ed9);
-}
-
-#buttons01 .twitch {
-  background-color: #9146ff;
-}
-
-#buttons01 .instagram {
-  background-image: linear-gradient(72.44deg, #ff7a00 11.92%, #ff0169 51.56%, #d300c5 85.69%);
-}
-
-#buttons01 .discord {
-  background-color: #5865f2;
-}
-
-#buttons01 .steam {
-  background-color: #171a21;
-}
-
-#buttons01 .bluesky {
-  background-color: #0085ff;
-}
-
-#buttons01 .tumblr {
-  background-color: #001935;
-}
-
-#buttons02 .yoomoney {
-  background-color: #8f14fd;
-}
-
-#buttons02 .webmoney {
-  background-color: #006cb4;
-}
 
 /* Адаптивность */
 @media (max-width: 1680px) {

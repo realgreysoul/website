@@ -5,7 +5,7 @@ const client = createClient({
   accessToken: import.meta.env.CONTENTFUL_ACCESS_TOKEN,
 });
 
-async function getImages(contentType) {
+async function getContent(contentType) {
   try {
     const entries = await client.getEntries({
       content_type: contentType,
@@ -29,18 +29,41 @@ async function getImages(contentType) {
           alt: item.fields.alt,
           umami: item.fields.umami,
         };
+      } else if (contentType === 'social') {
+        return {
+          url: item.fields.url,
+          color: item.fields.color,
+          icon: item.fields.icon,
+          label: item.fields.label,
+          umami: item.fields.umami,
+        };
+      } else if (contentType === 'donate') {
+        return {
+          url: item.fields.url,
+          color: item.fields.color,
+          label: item.fields.label,
+          umami: item.fields.umami,
+        };
       }
     });
   } catch (error) {
-    console.error(`Error fetching ${contentType} images:`, error);
+    console.error(`Error fetching ${contentType}:`, error);
     return [];
   }
 }
 
 export async function getProjectImages() {
-  return getImages('project');
+  return getContent('project');
 }
 
 export async function getFursonaImages() {
-  return getImages('fursona');
+  return getContent('fursona');
+}
+
+export async function getSocials() {
+  return getContent('social');
+}
+
+export async function getDonates() {
+  return getContent('donate');
 }

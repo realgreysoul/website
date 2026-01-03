@@ -1,30 +1,18 @@
 ---
-const donate = [
-  {
-    url: "https://yoomoney.ru/to/410018468894777",
-    label: "ЮMoney",
-    buttonClass: "yoomoney",
-    umami: "yoomoney",
-    customColor: true
-  },
-  {
-    url: "https://pay.web.money/929641500116",
-    label: "WebMoney",
-    buttonClass: "webmoney",
-    umami: "webmoney",
-    customColor: true
-  }
-];
+import { getDonates } from "../utils/contentful.js";
+
+const donate = await getDonates();
 ---
 
 <ul id="buttons02" class="style3 buttons">
   {
-    donate.map(({ url, label, buttonClass, umami, customColor = true }) => (
+    donate.map(({ url, color, label, umami }) => (
       <li>
         <a
           href={url}
           target="_blank"
-          class={`button${customColor ? ` ${buttonClass}` : ''}`}
+          class="button"
+          style={`background: ${color}`}
           data-umami-event={umami}
           role="button"
         >
