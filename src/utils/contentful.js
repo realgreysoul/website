@@ -5,7 +5,6 @@ const client = createClient({
   accessToken: import.meta.env.CONTENTFUL_ACCESS_TOKEN,
 });
 
-// Система кэширования
 const cache = {
   data: null,
   timestamp: null,
@@ -70,15 +69,14 @@ function processItem(item) {
 async function fetchAllContent() {
   const emptyState = { projects: [], fursonas: [], socials: [], donates: [] };
 
-  // Проверяем кэш
   if (isCacheValid()) {
-    console.log('📦 Contentful: данные загружены из кэша');
+    console.log('Contentful: loaded from cache');
     return cache.data;
   }
 
   try {
     const mode = isDev ? 'dev' : 'production';
-    console.log(`🌐 Contentful: загрузка данных через API (режим: ${mode})...`);
+    console.log(`Contentful: fetching data via API (${mode} mode)`);
     
     const response = await client.getEntries({
       content_type: 'content',
@@ -87,7 +85,7 @@ async function fetchAllContent() {
 
     const entry = response.items?.[0];
     if (!entry) {
-      console.error("Ошибка: Не найдена запись с типом 'content' в Contentful.");
+      console.error("Contentful: content entry not found");
       return emptyState;
     }
 
@@ -102,17 +100,17 @@ async function fetchAllContent() {
     if (CACHE_ENABLED) {
       cache.data = result;
       cache.timestamp = Date.now();
-      console.log(`✅ Contentful: данные закэшированы для dev-режима (TTL: ${CACHE_TTL / 1000}s)`);
+      console.log(`Contentful: cached for dev mode (TTL: ${CACHE_TTL / 1000}s)`);
     } else if (isDev) {
-      console.log('ℹ️ Contentful: кэширование отключено');
+      console.log('Contentful: caching disabled');
     }
 
     return result;
   } catch (error) {
-    console.error("Ошибка при запросе данных из Contentful:", error);
+    console.error("Contentful: fetch error", error);
     
     if (cache.data) {
-      console.warn('⚠️ Contentful: используются устаревшие данные из кэша');
+      console.warn('Contentful: using stale cache data');
       return cache.data;
     }
     
@@ -143,5 +141,5 @@ export async function getDonates() {
 export function clearCache() {
   cache.data = null;
   cache.timestamp = null;
-  console.log('🗑️ Contentful: кэш очищен');
+  console.log('Contentful: cache cleared');
 }
