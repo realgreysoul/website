@@ -5,6 +5,27 @@ const client = createClient({
   accessToken: import.meta.env.CONTENTFUL_ACCESS_TOKEN,
 });
 
+// Система кэширования
+const cache = {
+  data: null,
+  timestamp: null,
+};
+
+const isDev = import.meta.env.DEV;
+const CACHE_ENABLED = import.meta.env.CONTENTFUL_CACHE_ENABLED === 'true' && isDev;
+const CACHE_TTL = parseInt(import.meta.env.CONTENTFUL_CACHE_TTL || '600000', 10);
+
+function isCacheValid() {
+  if (!CACHE_ENABLED || !cache.data || !cache.timestamp) {
+    return false;
+  }
+  
+  const now = Date.now();
+  const cacheAge = now - cache.timestamp;
+  
+  return cacheAge < CACHE_TTL;
+}
+
 function processItem(item) {
   if (!item || !item.sys || !item.fields) return null;
 
@@ -49,7 +70,16 @@ function processItem(item) {
 async function fetchAllContent() {
   const emptyState = { projects: [], fursonas: [], socials: [], donates: [] };
 
+  // Проверяем кэш
+  if (isCacheValid()) {
+    console.log('📦 Contentful: данные загружены из кэша');
+    return cache.data;
+  }
+
   try {
+    const mode = isDev ? 'dev' : 'production';
+    console.log(`🌐 Contentful: загрузка данных через API (режим: ${mode})...`);
+    
     const response = await client.getEntries({
       content_type: 'content',
       include: 1,
@@ -67,9 +97,25 @@ async function fetchAllContent() {
     const donates = (fields.donates || []).map(processItem).filter(Boolean);
     const fursonas = (fields.fursonas || []).map(processItem).filter(Boolean);
 
-    return { projects, fursonas, socials, donates };
+    const result = { projects, fursonas, socials, donates };
+
+    if (CACHE_ENABLED) {
+      cache.data = result;
+      cache.timestamp = Date.now();
+      console.log(`✅ Contentful: данные закэшированы для dev-режима (TTL: ${CACHE_TTL / 1000}s)`);
+    } else if (isDev) {
+      console.log('ℹ️ Contentful: кэширование отключено');
+    }
+
+    return result;
   } catch (error) {
     console.error("Ошибка при запросе данных из Contentful:", error);
+    
+    if (cache.data) {
+      console.warn('⚠️ Contentful: используются устаревшие данные из кэша');
+      return cache.data;
+    }
+    
     return emptyState;
   }
 }
@@ -92,4 +138,10 @@ export async function getSocials() {
 export async function getDonates() {
   const allContent = await fetchAllContent();
   return allContent.donates;
+}
+
+export function clearCache() {
+  cache.data = null;
+  cache.timestamp = null;
+  console.log('🗑️ Contentful: кэш очищен');
 }
