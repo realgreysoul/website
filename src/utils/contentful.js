@@ -76,7 +76,8 @@ async function fetchAllContent() {
 
   try {
     const mode = isDev ? 'dev' : 'production';
-    console.log(`Contentful: fetching data via API (${mode} mode)`);
+    const prefix = isDev ? '' : '\n';
+    console.log(`${prefix}Contentful: fetching data via API (${mode} mode)`);
     
     const response = await client.getEntries({
       content_type: 'content',
@@ -85,7 +86,7 @@ async function fetchAllContent() {
 
     const entry = response.items?.[0];
     if (!entry) {
-      console.error("Contentful: content entry not found");
+      console.error(`${prefix}Contentful: content entry not found`);
       return emptyState;
     }
 
@@ -107,10 +108,11 @@ async function fetchAllContent() {
 
     return result;
   } catch (error) {
-    console.error("Contentful: fetch error", error);
+    const prefix = isDev ? '' : '\n';
+    console.error(`${prefix}Contentful: fetch error`, error);
     
     if (cache.data) {
-      console.warn('Contentful: using stale cache data');
+      console.warn(`${prefix}Contentful: using stale cache data`);
       return cache.data;
     }
     
