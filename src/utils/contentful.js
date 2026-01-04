@@ -170,8 +170,6 @@ async function fetchAllContent(requestedType = null) {
         cache.data = result;
         cache.timestamp = Date.now();
         console.log(`Contentful: cached for dev mode (TTL: ${CACHE_TTL / 1000}s)`);
-      } else if (isDev) {
-        console.log('Contentful: caching disabled');
       }
 
       cache.requestedTypes.clear();
