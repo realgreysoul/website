@@ -74,8 +74,8 @@ const social = await getSocials();
           href={url}
           target="_blank"
           class="button"
-          style={color ? `background: ${color}` : ''}
-          {...umami && {'data-umami-event': umami}}
+          style={color ? `background: ${color}` : ""}
+          {...(umami && { "data-umami-event": umami })}
         >
           <svg aria-labelledby={`buttons01-${icon}`}>
             <title id={`buttons01-${icon}`}>{label}</title>

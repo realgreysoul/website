@@ -108,16 +108,16 @@
     font-size: 1em;
     line-height: 2;
   }
-  
+
   .gallery.style1 ul li {
     flex-basis: calc(50% - var(--gap));
   }
-  
+
   .gallery.style1 ul li img {
     height: 13.5rem;
     width: 100%;
   }
-  
+
   .gallery.style1 ul {
     --gap: 2rem;
   }
@@ -127,7 +127,7 @@
   .gallery.style1 ul li .caption p {
     font-size: 1em;
   }
-  
+
   .gallery.style1 ul {
     --gap: 1.5rem;
   }

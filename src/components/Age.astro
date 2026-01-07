@@ -2,8 +2,13 @@
 const birthDate = new Date(2004, 8, 27);
 let age = new Date().getFullYear() - birthDate.getFullYear();
 const n = new Date();
-if (n.getMonth() < birthDate.getMonth() || (n.getMonth() === birthDate.getMonth() && n.getDate() < birthDate.getDate())) age--;
-const d10 = age % 10, d100 = age % 100;
+if (
+  n.getMonth() < birthDate.getMonth() ||
+  (n.getMonth() === birthDate.getMonth() && n.getDate() < birthDate.getDate())
+)
+  age--;
+const d10 = age % 10,
+  d100 = age % 100;
 let fallback = `${age} лет`;
 if (d100 < 11 || d100 > 19) {
   if (d10 === 1) fallback = `${age} год`;
@@ -12,17 +17,28 @@ if (d100 < 11 || d100 > 19) {
 ---
 
 <span id="age" data-birth="2004-09-27">{fallback}</span><script is:inline>
-(() => {
-  const e = document.getElementById("age");
-  if (!e) return;
-  const [y, m, d] = e.dataset.birth.split("-").map(Number);
-  const b = new Date(y, m - 1, d), n = new Date();
-  let a = n.getFullYear() - b.getFullYear();
-  if (n.getMonth() < b.getMonth() || (n.getMonth() === b.getMonth() && n.getDate() < b.getDate())) a--;
-  const d10 = a % 10, d100 = a % 100;
-  const f = (d100 >= 11 && d100 <= 19) ? `${a} лет`
-    : d10 === 1 ? `${a} год`
-    : d10 >= 2 && d10 <= 4 ? `${a} года`
-    : `${a} лет`;
-  if (e.textContent !== f) e.textContent = f;
-})();</script>
+  (() => {
+    const e = document.getElementById("age");
+    if (!e) return;
+    const [y, m, d] = e.dataset.birth.split("-").map(Number);
+    const b = new Date(y, m - 1, d),
+      n = new Date();
+    let a = n.getFullYear() - b.getFullYear();
+    if (
+      n.getMonth() < b.getMonth() ||
+      (n.getMonth() === b.getMonth() && n.getDate() < b.getDate())
+    )
+      a--;
+    const d10 = a % 10,
+      d100 = a % 100;
+    const f =
+      d100 >= 11 && d100 <= 19
+        ? `${a} лет`
+        : d10 === 1
+          ? `${a} год`
+          : d10 >= 2 && d10 <= 4
+            ? `${a} года`
+            : `${a} лет`;
+    if (e.textContent !== f) e.textContent = f;
+  })();
+</script>

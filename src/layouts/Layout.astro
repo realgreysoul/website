@@ -4,7 +4,6 @@ interface Props {
   description: string;
   ogImage?: string;
   canonicalUrl?: string;
-  mainClass?: string;
   mainWidth?: string;
   spacing?: string;
   paddingHorizontal?: string;
@@ -21,7 +20,6 @@ const {
   description,
   ogImage = "https://images.ctfassets.net/1pxughrhgws1/47pfMaDeBeox2xDgOQamp8/6e5f5e1b022489eba9095f20fe30eda5/seo.jpg",
   canonicalUrl = "https://greysoul.ru",
-  mainClass = "",
   mainWidth = "53rem",
   spacing = "2.5rem",
   paddingHorizontal = "3rem",
@@ -37,7 +35,7 @@ const pathname = Astro.url?.pathname ?? "/";
 const isHome = pathname === "/" || pathname === "/index.html";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <title>{title}</title>
@@ -62,30 +60,21 @@ const isHome = pathname === "/" || pathname === "/index.html";
     />
     <link rel="preconnect" href="//images.ctfassets.net" />
     <link rel="dns-prefetch" href="//images.ctfassets.net" />
-
-    <style
-      is:global
-      define:vars={{ mainWidth, spacing, paddingHorizontal, paddingVertical }}
-    >
-      #main > .inner {
-        --width: var(--mainWidth);
-        --spacing: var(--spacing);
-        --padding-horizontal: var(--paddingHorizontal);
-        --padding-vertical: var(--paddingVertical);
-      }
-    </style>
-
     <script
       defer
       src="https://cloud.umami.is/script.js"
-      data-website-id="2d99631b-23f6-4d56-ae3a-9fb531cb8147"
-    ></script>
+      data-website-id="2d99631b-23f6-4d56-ae3a-9fb531cb8147">
+    </script>
   </head>
 
   <body>
     <div id="wrapper">
-      <div id="main" class={mainClass}>
-        <div class="inner">
+      <div id="main">
+        <div
+          class="inner"
+          style={`--width: ${mainWidth}; --spacing: ${spacing}; --padding-horizontal:
+        ${paddingHorizontal}; --padding-vertical: ${paddingVertical};`}
+        >
           {
             showHeader && (
               <div id="header" class="style1 container default">
