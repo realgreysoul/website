@@ -63,18 +63,17 @@ const isHome = pathname === "/" || pathname === "/index.html";
     <script
       defer
       src="https://cloud.umami.is/script.js"
-      data-website-id="2d99631b-23f6-4d56-ae3a-9fb531cb8147">
-    </script>
+      data-website-id="2d99631b-23f6-4d56-ae3a-9fb531cb8147"
+    ></script>
   </head>
 
-  <body>
+  <body
+    style={`--width: ${mainWidth}; --spacing: ${spacing}; --padding-horizontal:
+        ${paddingHorizontal}; --padding-vertical: ${paddingVertical};`}
+  >
     <div id="wrapper">
       <div id="main">
-        <div
-          class="inner"
-          style={`--width: ${mainWidth}; --spacing: ${spacing}; --padding-horizontal:
-        ${paddingHorizontal}; --padding-vertical: ${paddingVertical};`}
-        >
+        <div class="inner">
           {
             showHeader && (
               <div id="header" class="style1 container default">
