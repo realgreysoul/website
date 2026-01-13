@@ -1,8 +1,17 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
 export default defineConfig({
-  site: 'https://greysoul.ru',
-  outDir: './dist',
-  publicDir: './public',
-  trailingSlash: 'always',
+  site: "https://greysoul.ru",
+  outDir: "./dist",
+  publicDir: "./public",
+  trailingSlash: "always",
+  vite: {
+    build: {
+      rollupOptions: {
+        output: {
+          assetFileNames: "_astro/style.[hash].css",
+        },
+      },
+    },
+  },
 });
