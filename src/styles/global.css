@@ -909,6 +909,56 @@ p.style3 span.p:nth-child(n + 2) {
   transform: scale(0.9225);
 }
 
+/* Базовые стили галереи */
+.gallery .inner {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.gallery ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: var(--flex-alignment);
+}
+
+.gallery ul li {
+  position: relative;
+}
+
+.gallery ul li .thumbnail {
+  border-radius: inherit;
+  position: relative;
+}
+
+.gallery ul li .frame {
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.gallery ul li img {
+  margin: 0;
+  max-width: 100%;
+  vertical-align: top;
+  width: auto;
+}
+
+.gallery ul li .caption {
+  width: 100%;
+}
+
+.gallery ul li .caption p {
+  width: 100%;
+}
+
+.gallery ul li .caption a,
+.gallery ul li .caption spoiler-text {
+  pointer-events: auto;
+}
+
 /* Адаптивность */
 @media (max-width: 1680px) {
   html {
