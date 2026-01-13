@@ -9,7 +9,12 @@ export default defineConfig({
     build: {
       rollupOptions: {
         output: {
-          assetFileNames: "_astro/style.[hash].css",
+          assetFileNames: (assetInfo) => {
+            if (assetInfo.name?.endsWith(".css")) {
+              return "_astro/style.[hash].css";
+            }
+            return "_astro/[name].[hash][extname]";
+          },
         },
       },
     },
