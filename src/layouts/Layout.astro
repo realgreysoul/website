@@ -144,6 +144,10 @@ const isHome = pathname === "/" || pathname === "/index.html";
                     <p id="text05" class="style3">
                       ©
                       <span id="currentYear" />
+                      <script is:inline>
+                        document.getElementById("currentYear").textContent = new
+                        Date().getFullYear();
+                      </script>
                       Greysoul. Всё авторское содержимое данного сайта
                       принадлежит владельцу данного сайта.
                     </p>
@@ -156,12 +160,4 @@ const isHome = pathname === "/" || pathname === "/index.html";
       </div>
     </div>
   </body>
-  {
-    showFooter && (
-      <script>
-        document.getElementById("currentYear").textContent = new
-        Date().getFullYear();
-      </script>
-    )
-  }
 </html>
