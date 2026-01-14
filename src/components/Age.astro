@@ -1,22 +1,4 @@
----
-const birthDate = new Date(2004, 8, 27);
-let age = new Date().getFullYear() - birthDate.getFullYear();
-const n = new Date();
-if (
-  n.getMonth() < birthDate.getMonth() ||
-  (n.getMonth() === birthDate.getMonth() && n.getDate() < birthDate.getDate())
-)
-  age--;
-const d10 = age % 10,
-  d100 = age % 100;
-let fallback = `${age} лет`;
-if (d100 < 11 || d100 > 19) {
-  if (d10 === 1) fallback = `${age} год`;
-  else if (d10 >= 2 && d10 <= 4) fallback = `${age} года`;
-}
----
-
-<span id="age" data-birth="2004-09-27">{fallback}</span><script is:inline>
+<span id="age" data-birth="2004-09-27"></span><script is:inline>
   (() => {
     const e = document.getElementById("age");
     if (!e) return;
