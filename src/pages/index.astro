@@ -10,12 +10,13 @@ import DonateButtons from "../components/DonateButtons.astro";
 <Layout
   title="Greysoul"
   description="Какой-то рандомный чел в интернете, который что-то делает"
+  showToastDialog={true}
 >
   <div id="about" class="style1 container default">
     <div class="wrapper">
       <div class="inner">
-        <h2 id="text03" class="style1">Коротко обо мне</h2>
-        <p id="text07" class="style2">
+        <h2 id="text01" class="style1">Коротко обо мне</h2>
+        <p id="text02" class="style2">
           <span class="p">
             Имя - <strong>Александр</strong>, <strong>мужской пол</strong>, <strong
               ><Age /></strong
@@ -36,9 +37,19 @@ import DonateButtons from "../components/DonateButtons.astro";
   <div id="socials" class="style1 container default">
     <div class="wrapper">
       <div class="inner">
-        <h2 id="text10" class="style1">Мои соц-сети и не только</h2>
+        <h2 id="text03" class="style1">Мои соц-сети и не только</h2>
         <SocialsButtons />
         <p id="text04" class="style2">
+          Имя пользователя в остальных соц-сетях - <strong
+            ><a
+              style="cursor: pointer;"
+              data-toast-trigger="realgreysoul"
+              aria-label="Копирование имени пользователя в буфер обмена"
+              >@realgreysoul</a
+            ></strong
+          >
+        </p>
+        <p id="text05" class="style2">
           Электронная почта - <strong
             ><a href="mailto:contact@greysoul.ru">contact@greysoul.ru</a
             ></strong
@@ -51,7 +62,7 @@ import DonateButtons from "../components/DonateButtons.astro";
   <div id="projects" class="style1 container default">
     <div class="wrapper">
       <div class="inner">
-        <h2 id="text01" class="style1">Мои проекты</h2>
+        <h2 id="text06" class="style1">Мои проекты</h2>
         <ProjectsGallery />
       </div>
     </div>
@@ -60,7 +71,7 @@ import DonateButtons from "../components/DonateButtons.astro";
   <div id="donate" class="style1 container default">
     <div class="wrapper">
       <div class="inner">
-        <h2 id="text11" class="style1">
+        <h2 id="text07" class="style1">
           Донат <em><span style="color: #545454">(если хотите)</span></em>
         </h2>
         <DonateButtons />

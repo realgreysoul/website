@@ -455,7 +455,9 @@ body.is-instant:after {
 
 .image.style1 a.frame {
   border-radius: 1rem;
-  transition: transform 0.25s ease, z-index 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    z-index 0.25s ease;
   position: relative;
 }
 
@@ -840,8 +842,11 @@ p.style3 span.p:nth-child(n + 2) {
   font-weight: 700;
   border-radius: 2.5rem;
   justify-content: flex-start;
-  transition: transform 0.25s ease, color 0.25s ease,
-    background-color 0.25s ease, border-color 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .buttons.style1 li a svg {
@@ -896,8 +901,11 @@ p.style3 span.p:nth-child(n + 2) {
   direction: var(--site-language-direction);
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: transform 0.25s ease, color 0.25s ease,
-    background-color 0.25s ease, border-color 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .buttons.style3 .button {
@@ -957,6 +965,35 @@ p.style3 span.p:nth-child(n + 2) {
 .gallery ul li .caption a,
 .gallery ul li .caption spoiler-text {
   pointer-events: auto;
+}
+
+/* Toast-диалог */
+.toast-dialog {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(calc(100% + 2rem));
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2.5rem;
+  white-space: nowrap;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+}
+
+.toast-dialog.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
 /* Адаптивность */
@@ -1189,6 +1226,19 @@ p.style3 span.p:nth-child(n + 2) {
     letter-spacing: 0rem;
     font-size: 1em;
   }
+
+  .toast-dialog {
+    left: 2rem;
+    right: 2rem;
+    width: auto;
+    white-space: normal;
+    text-align: center;
+    transform: translateY(calc(100% + 2rem));
+  }
+
+  .toast-dialog.visible {
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 480px) {
@@ -1214,6 +1264,10 @@ p.style3 span.p:nth-child(n + 2) {
   .buttons.style3 li a {
     max-width: 32rem;
     width: 100%;
+  }
+
+  .toast-dialog {
+    bottom: 1.5rem;
   }
 }
 
@@ -1257,5 +1311,11 @@ p.style3 span.p:nth-child(n + 2) {
 
   .buttons.style3 {
     gap: 1.5rem;
+  }
+
+  .toast-dialog {
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.25rem;
   }
 }

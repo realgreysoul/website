@@ -198,7 +198,10 @@
   position: fixed;
   top: 0;
   touch-action: pan-x pinch-zoom;
-  transition: opacity 0.5s ease, visibility 0.5s, z-index 0.5s,
+  transition:
+    opacity 0.5s ease,
+    visibility 0.5s,
+    z-index 0.5s,
     background-color 0.5s ease;
   user-select: none;
   visibility: hidden;
@@ -278,7 +281,9 @@
   cursor: pointer;
   height: 6rem;
   opacity: 0.375;
-  transition: opacity 0.25s ease, transform 0.5s ease;
+  transition:
+    opacity 0.25s ease,
+    transform 0.5s ease;
   width: 8rem;
 }
 
@@ -308,7 +313,9 @@
   position: absolute;
   right: 0;
   top: 0;
-  transition: opacity 0.25s ease, transform 0.5s ease;
+  transition:
+    opacity 0.25s ease,
+    transform 0.5s ease;
   width: 6rem;
 }
 
@@ -343,7 +350,9 @@
 }
 
 .gallery-modal.switching .inner {
-  transition: opacity 0.375s ease, transform 0.5s ease;
+  transition:
+    opacity 0.375s ease,
+    transform 0.5s ease;
 }
 
 .gallery-modal.switching.from-left .inner {
@@ -390,7 +399,9 @@
 
 .gallery.style2 ul li .thumbnail {
   display: block;
-  transition: transform 0.25s ease, z-index 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    z-index 0.25s ease;
 }
 
 .gallery.style2 ul li img {

@@ -13,6 +13,7 @@ interface Props {
   showHeader?: boolean;
   showHeaderDescription?: boolean;
   showFooter?: boolean;
+  showToastDialog?: boolean;
 }
 
 import "../styles/global.css";
@@ -31,6 +32,7 @@ const {
   headerDescriptionClass = "style2",
   showHeaderDescription = true,
   showFooter = true,
+  showToastDialog = false,
 } = Astro.props;
 
 const pathname = Astro.url?.pathname ?? "/";
@@ -141,7 +143,7 @@ const isHome = pathname === "/" || pathname === "/index.html";
               <div id="footer" class="style1 container default">
                 <div class="wrapper">
                   <div class="inner">
-                    <p id="text05" class="style3">
+                    <p id="text08" class="style3">
                       ©
                       <span id="currentYear" />
                       <script is:inline>
@@ -159,5 +161,49 @@ const isHome = pathname === "/" || pathname === "/index.html";
         </div>
       </div>
     </div>
+
+    {
+      showToastDialog && (
+        <div class="toast-dialog" aria-live="polite" aria-atomic="true">
+          Скопировано в буфер обмена
+        </div>
+        <script is:inline>
+          (function () {
+            var toast = document.querySelector(".toast-dialog");
+            if (!toast) return;
+            var hideTimer = null;
+            function showToast() {
+              if (hideTimer) { clearTimeout(hideTimer); hideTimer = null; }
+              toast.classList.add("visible");
+              hideTimer = setTimeout(function () {
+                toast.classList.remove("visible");
+                hideTimer = null;
+              }, 2500);
+            }
+            document.querySelectorAll("[data-toast-trigger]").forEach(function (trigger) {
+              trigger.addEventListener("click", function (e) {
+                e.preventDefault();
+                var value = trigger.dataset.toastTrigger;
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                  navigator.clipboard.writeText(value).then(showToast).catch(showToast);
+                } else {
+                  var ta = document.createElement("textarea");
+                  ta.value = value;
+                  ta.style.position = "fixed";
+                  ta.style.top = "-9999px";
+                  ta.style.left = "-9999px";
+                  document.body.appendChild(ta);
+                  ta.focus();
+                  ta.select();
+                  try { document.execCommand("copy"); } catch (_) {}
+                  document.body.removeChild(ta);
+                  showToast();
+                }
+              });
+            });
+          })();
+        </script>
+      )
+    }
   </body>
 </html>

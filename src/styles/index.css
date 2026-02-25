@@ -35,7 +35,9 @@
 
 .gallery.style1 ul li .thumbnail {
   display: block;
-  transition: transform 0.25s ease, z-index 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    z-index 0.25s ease;
 }
 
 .gallery.style1 ul li img {

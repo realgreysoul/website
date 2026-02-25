@@ -16,7 +16,7 @@ import FursonaGallery from "../components/FursonaGallery.astro";
   <div id="me" class="style1 container default">
     <div class="wrapper">
       <div class="inner">
-        <h1 id="text10" class="style1">Обо мне</h1>
+        <h1 id="text01" class="style1">Обо мне</h1>
       </div>
     </div>
   </div>
@@ -25,7 +25,7 @@ import FursonaGallery from "../components/FursonaGallery.astro";
     <div class="wrapper">
       <div class="inner">
         <div>
-          <p id="text04" class="style2">
+          <p id="text02" class="style2">
             <span class="p">
               Имя - <strong>Александр</strong>, <strong>мужской пол</strong>,
               <strong><Age /></strong>, родился <strong
@@ -48,7 +48,7 @@ import FursonaGallery from "../components/FursonaGallery.astro";
           </p>
         </div>
         <div>
-          <p id="text07" class="style2">
+          <p id="text03" class="style2">
             <span class="p">
               Если вспоминать моё далёкое прошлое, то ещё в 2015 году случайно
               получилось так, что под влиянием Five Nights at Freddy's и его
@@ -74,7 +74,7 @@ import FursonaGallery from "../components/FursonaGallery.astro";
   <div id="furry" class="style1 container default">
     <div class="wrapper">
       <div class="inner">
-        <h1 id="text11" class="style1">Моё новое хобби</h1>
+        <h1 id="text04" class="style1">Моё новое хобби</h1>
       </div>
     </div>
   </div>
@@ -82,7 +82,7 @@ import FursonaGallery from "../components/FursonaGallery.astro";
   <div id="container01" class="style2 container default">
     <div class="wrapper">
       <div class="inner">
-        <p id="text02" class="style2">
+        <p id="text05" class="style2">
           <span class="p">
             В конце марта 2024 года <em
               >(который для меня был довольно прорывным)</em
@@ -128,7 +128,7 @@ import FursonaGallery from "../components/FursonaGallery.astro";
 
       lightboxGallery.prototype.init = function (config) {
         const $links = document.querySelectorAll(
-          "#" + config.id + " .thumbnail"
+          "#" + config.id + " .thumbnail",
         );
         let navigation = config.navigation;
 
@@ -176,11 +176,11 @@ import FursonaGallery from "../components/FursonaGallery.astro";
         $modalImage.addEventListener("load", () => {
           $modalImage.style.setProperty(
             "--natural-width",
-            $modalImage.naturalWidth + "px"
+            $modalImage.naturalWidth + "px",
           );
           $modalImage.style.setProperty(
             "--natural-height",
-            $modalImage.naturalHeight + "px"
+            $modalImage.naturalHeight + "px",
           );
           $modal.classList.add("done");
 
@@ -193,11 +193,11 @@ import FursonaGallery from "../components/FursonaGallery.astro";
                   "switching",
                   "from-left",
                   "from-right",
-                  "done"
+                  "done",
                 );
               }, this.delay);
             },
-            $modal.classList.contains("switching") ? 0 : this.delay
+            $modal.classList.contains("switching") ? 0 : this.delay,
           );
         });
 
@@ -205,12 +205,12 @@ import FursonaGallery from "../components/FursonaGallery.astro";
           $modalImage.addEventListener(
             "contextmenu",
             (e) => e.preventDefault(),
-            true
+            true,
           );
           $modalImage.addEventListener(
             "dragstart",
             (e) => e.preventDefault(),
-            true
+            true,
           );
         }
 
@@ -288,7 +288,7 @@ import FursonaGallery from "../components/FursonaGallery.astro";
             "switching",
             "from-left",
             "from-right",
-            "done"
+            "done",
           );
           setTimeout(() => {
             $modalImage.src = "";
