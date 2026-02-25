@@ -1264,10 +1264,6 @@ p.style3 span.p:nth-child(n + 2) {
     max-width: 32rem;
     width: 100%;
   }
-
-  .toast-dialog {
-    bottom: 1.5rem;
-  }
 }
 
 @media (max-width: 360px) {
@@ -1315,6 +1311,5 @@ p.style3 span.p:nth-child(n + 2) {
   .toast-dialog {
     left: 1.5rem;
     right: 1.5rem;
-    bottom: 1.25rem;
   }
 }
