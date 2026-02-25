@@ -988,7 +988,6 @@ p.style3 span.p:nth-child(n + 2) {
   transition:
     opacity 0.25s ease,
     transform 0.25s ease;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
 }
 
 .toast-dialog.visible {
