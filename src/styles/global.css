@@ -984,15 +984,18 @@ p.style3 span.p:nth-child(n + 2) {
   white-space: nowrap;
   z-index: 9999;
   pointer-events: none;
-  opacity: 0;
+  visibility: hidden;
   transition:
-    opacity 0.25s ease,
-    transform 0.25s ease;
+    transform 0.25s ease,
+    visibility 0s ease 0.25s;
 }
 
 .toast-dialog.visible {
-  opacity: 1;
   transform: translateX(-50%) translateY(0);
+  visibility: visible;
+  transition:
+    transform 0.25s ease,
+    visibility 0s ease 0s;
 }
 
 /* Адаптивность */
