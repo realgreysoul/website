@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets";
 import { getProjectImages } from "../utils/contentful.js";
 
 const project = await getProjectImages();
@@ -15,15 +14,10 @@ const project = await getProjectImages();
               href={url}
               target="_blank"
               class="thumbnail"
-              {...umami && {'data-umami-event': umami}}
+              {...(umami && { "data-umami-event": umami })}
             >
               <span class="frame">
-                <Image
-                  src={`${image}?q=70&fm=avif`}
-                  alt={alt}
-                  inferSize={true}
-                  loading="lazy"
-                />
+                <img src={`${image}?q=70&fm=avif`} alt={alt} />
               </span>
             </a>
             <div class="caption">

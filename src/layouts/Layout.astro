@@ -16,6 +16,7 @@ interface Props {
   showToastDialog?: boolean;
 }
 
+import { Font } from 'astro:assets';
 import "../styles/global.css";
 
 const {
@@ -42,8 +43,9 @@ const isHome = pathname === "/" || pathname === "/index.html";
 <!doctype html>
 <html lang="ru">
   <head>
-    <title>{title}</title>
     <meta charset="utf-8" />
+    <Font cssVariable="--font-inter" />
+    <title>{title}</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content={description} />
     <meta property="og:site_name" content="Greysoul" />

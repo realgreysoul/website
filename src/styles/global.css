@@ -182,55 +182,6 @@ body {
   --viewport-height: 100vh;
 }
 
-/* Шрифты */
-@font-face {
-  font-display: swap;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/inter-v20-cyrillic_latin-regular.woff2") format("woff2");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Inter";
-  font-style: italic;
-  font-weight: 400;
-  src: url("/fonts/inter-v20-cyrillic_latin-italic.woff2") format("woff2");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/fonts/inter-v20-cyrillic_latin-700.woff2") format("woff2");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Inter";
-  font-style: italic;
-  font-weight: 700;
-  src: url("/fonts/inter-v20-cyrillic_latin-700italic.woff2") format("woff2");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 900;
-  src: url("/fonts/inter-v20-cyrillic_latin-900.woff2") format("woff2");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Inter";
-  font-style: italic;
-  font-weight: 900;
-  src: url("/fonts/inter-v20-cyrillic_latin-900italic.woff2") format("woff2");
-}
-
 html {
   font-size: 18pt;
 }
@@ -516,7 +467,7 @@ h2.style1,
 h3.style1,
 p.style1 {
   color: #000000;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter), sans-serif;
   font-size: 3.125em;
   line-height: 1.5;
   font-weight: 900;
@@ -548,7 +499,7 @@ h2.style2,
 h3.style2,
 p.style2 {
   color: #545454;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter), sans-serif;
   font-size: 1em;
   line-height: 2;
   font-weight: 400;
@@ -588,7 +539,7 @@ h2.style3,
 h3.style3,
 p.style3 {
   color: #808080;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter), sans-serif;
   font-size: 0.625em;
   line-height: 2;
   font-weight: 400;
@@ -837,7 +788,7 @@ p.style3 span.p:nth-child(n + 2) {
   line-height: 4rem;
   padding: 0 2rem;
   vertical-align: middle;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter), sans-serif;
   font-size: 1em;
   font-weight: 700;
   border-radius: 2.5rem;
@@ -894,7 +845,7 @@ p.style3 span.p:nth-child(n + 2) {
   line-height: 4rem;
   padding: 0 2rem;
   vertical-align: middle;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter), sans-serif;
   font-size: 1em;
   font-weight: 700;
   border-radius: 2.5rem;
@@ -975,7 +926,7 @@ p.style3 span.p:nth-child(n + 2) {
   transform: translateX(-50%) translateY(calc(100% + 2rem));
   background-color: #000000;
   color: #ffffff;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter), sans-serif;
   font-size: 1em;
   font-weight: 400;
   line-height: 1.5;
