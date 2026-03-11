@@ -9,45 +9,10 @@ export default defineConfig({
     {
       name: "Inter",
       cssVariable: "--font-inter",
-      provider: fontProviders.local(),
-      options: {
-        variants: [
-          {
-            weight: 400,
-            style: "normal",
-            src: ["./src/assets/fonts/inter-v20-cyrillic_latin-regular.woff2"],
-          },
-          {
-            weight: 400,
-            style: "italic",
-            src: ["./src/assets/fonts/inter-v20-cyrillic_latin-italic.woff2"],
-          },
-          {
-            weight: 700,
-            style: "normal",
-            src: ["./src/assets/fonts/inter-v20-cyrillic_latin-700.woff2"],
-          },
-          {
-            weight: 700,
-            style: "italic",
-            src: [
-              "./src/assets/fonts/inter-v20-cyrillic_latin-700italic.woff2",
-            ],
-          },
-          {
-            weight: 900,
-            style: "normal",
-            src: ["./src/assets/fonts/inter-v20-cyrillic_latin-900.woff2"],
-          },
-          {
-            weight: 900,
-            style: "italic",
-            src: [
-              "./src/assets/fonts/inter-v20-cyrillic_latin-900italic.woff2",
-            ],
-          },
-        ],
-      },
+      provider: fontProviders.bunny(),
+      weights: [400, 700, 900],
+      styles: ["normal", "italic"],
+      subsets: ["cyrillic", "latin"],
     },
   ],
   vite: {
