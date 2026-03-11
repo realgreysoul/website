@@ -18,7 +18,7 @@ const CACHE_ENABLED =
   import.meta.env.CONTENTFUL_CACHE_ENABLED === "true" && isDev;
 const CACHE_TTL = parseInt(
   import.meta.env.CONTENTFUL_CACHE_TTL || "600000",
-  10
+  10,
 );
 
 function isCacheValid() {
@@ -174,7 +174,7 @@ async function fetchAllContent(requestedType = null) {
         cache.data = result;
         cache.timestamp = Date.now();
         console.log(
-          `Contentful: cached for dev mode (TTL: ${CACHE_TTL / 1000}s)`
+          `Contentful: cached for dev mode (TTL: ${CACHE_TTL / 1000}s)`,
         );
       }
 
