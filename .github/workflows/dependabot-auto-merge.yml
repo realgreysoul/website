@@ -29,7 +29,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Auto-merge Dependabot patch updates
-        if: steps.metadata.outputs.update-type == 'version-update:semver-patch' || steps.metadata.outputs.update-type == 'version-update:semver-minor'
+        if: steps.metadata.outputs.update-type == 'version-update:semver-patch' || steps.metadata.outputs.dependency-type == 'indirect'
         run: gh pr merge --merge --auto "$PR_URL"
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
