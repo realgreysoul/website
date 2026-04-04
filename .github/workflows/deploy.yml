@@ -3,12 +3,6 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
-    paths-ignore:
-      - '.github/**'
-  workflow_run:
-    workflows: ["Dependabot Auto-Merge"]
-    types:
-      - completed
   workflow_dispatch:
 
 permissions:
