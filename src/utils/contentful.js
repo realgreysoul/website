@@ -21,19 +21,21 @@ const CACHE_TTL = parseInt(
   10,
 );
 
+const TYPE_ORDER = ["socials", "projects", "donates", "fursonas"];
+
 function isCacheValid() {
-  if (!CACHE_ENABLED || !cache.data || !cache.timestamp) {
-    return false;
-  }
+  if (!CACHE_ENABLED || !cache.data || !cache.timestamp) return false;
+  return Date.now() - cache.timestamp < CACHE_TTL;
+}
 
-  const now = Date.now();
-  const cacheAge = now - cache.timestamp;
-
-  return cacheAge < CACHE_TTL;
+function buildLogParts(types, data) {
+  return TYPE_ORDER.filter((t) => types.includes(t) && data[t].length > 0).map(
+    (t) => `${data[t].length} ${t}`,
+  );
 }
 
 function processItem(item) {
-  if (!item || !item.sys || !item.fields) return null;
+  if (!item?.sys || !item?.fields) return null;
 
   const { id } = item.sys.contentType.sys;
   const { fields } = item;
@@ -76,95 +78,57 @@ function processItem(item) {
 async function fetchAllContent(requestedType = null) {
   const emptyState = { projects: [], fursonas: [], socials: [], donates: [] };
 
-  if (requestedType) {
-    cache.requestedTypes.add(requestedType);
-  }
+  if (requestedType) cache.requestedTypes.add(requestedType);
 
   if (isCacheValid()) {
-    const newTypes = [];
-    cache.requestedTypes.forEach((type) => {
-      if (!cache.loggedTypes.has(type)) {
-        newTypes.push(type);
-        cache.loggedTypes.add(type);
-      }
-    });
+    const newTypes = Array.from(cache.requestedTypes).filter(
+      (t) => !cache.loggedTypes.has(t),
+    );
+    newTypes.forEach((t) => cache.loggedTypes.add(t));
+    cache.requestedTypes.clear();
 
-    if (newTypes.length > 0 && cache.data) {
-      const logParts = [];
-      const { projects, fursonas, socials, donates } = cache.data;
-
-      if (newTypes.includes("socials") && socials.length > 0) {
-        logParts.push(`${socials.length} socials`);
-      }
-      if (newTypes.includes("projects") && projects.length > 0) {
-        logParts.push(`${projects.length} projects`);
-      }
-      if (newTypes.includes("donates") && donates.length > 0) {
-        logParts.push(`${donates.length} donates`);
-      }
-      if (newTypes.includes("fursonas") && fursonas.length > 0) {
-        logParts.push(`${fursonas.length} fursonas`);
-      }
-
-      if (logParts.length > 0) {
-        console.log(`Contentful: loaded ${logParts.join(", ")} (from cache)`);
-      }
+    const logParts = buildLogParts(newTypes, cache.data);
+    if (logParts.length > 0) {
+      console.log(`Contentful: loaded ${logParts.join(", ")} (from cache)`);
     }
 
-    cache.requestedTypes.clear();
     return cache.data;
   }
 
-  if (cache.promise) {
-    return cache.promise;
-  }
+  if (cache.promise) return cache.promise;
 
   cache.loggedTypes.clear();
 
   const fetchPromise = (async () => {
     try {
-      const mode = isDev ? "dev" : "production";
       const prefix = isDev ? "" : "\n";
-      console.log(`${prefix}Contentful: fetching data via API (${mode} mode)`);
+      console.log(
+        `${prefix}Contentful: fetching data via API (${isDev ? "dev" : "production"} mode)`,
+      );
 
       const response = await client.getEntries({
         content_type: "content",
         include: 1,
       });
-
       const entry = response.items?.[0];
+
       if (!entry) {
         console.error("Contentful: content entry not found");
         return emptyState;
       }
 
       const { fields } = entry;
-      const socials = (fields.socials || []).map(processItem).filter(Boolean);
-      const projects = (fields.projects || []).map(processItem).filter(Boolean);
-      const donates = (fields.donates || []).map(processItem).filter(Boolean);
-      const fursonas = (fields.fursonas || []).map(processItem).filter(Boolean);
-
-      const result = { projects, fursonas, socials, donates };
+      const result = {
+        socials: (fields.socials || []).map(processItem).filter(Boolean),
+        projects: (fields.projects || []).map(processItem).filter(Boolean),
+        donates: (fields.donates || []).map(processItem).filter(Boolean),
+        fursonas: (fields.fursonas || []).map(processItem).filter(Boolean),
+      };
 
       const requested = Array.from(cache.requestedTypes);
-      const logParts = [];
-
-      if (requested.includes("socials") && socials.length > 0) {
-        logParts.push(`${socials.length} socials`);
-        cache.loggedTypes.add("socials");
-      }
-      if (requested.includes("projects") && projects.length > 0) {
-        logParts.push(`${projects.length} projects`);
-        cache.loggedTypes.add("projects");
-      }
-      if (requested.includes("donates") && donates.length > 0) {
-        logParts.push(`${donates.length} donates`);
-        cache.loggedTypes.add("donates");
-      }
-      if (requested.includes("fursonas") && fursonas.length > 0) {
-        logParts.push(`${fursonas.length} fursonas`);
-        cache.loggedTypes.add("fursonas");
-      }
+      const logParts = buildLogParts(requested, result);
+      requested.forEach((t) => cache.loggedTypes.add(t));
+      cache.requestedTypes.clear();
 
       if (logParts.length > 0) {
         console.log(`Contentful: loaded ${logParts.join(", ")}`);
@@ -177,8 +141,6 @@ async function fetchAllContent(requestedType = null) {
           `Contentful: cached for dev mode (TTL: ${CACHE_TTL / 1000}s)`,
         );
       }
-
-      cache.requestedTypes.clear();
 
       return result;
     } catch (error) {
@@ -200,23 +162,19 @@ async function fetchAllContent(requestedType = null) {
 }
 
 export async function getProjectImages() {
-  const allContent = await fetchAllContent("projects");
-  return allContent.projects;
+  return (await fetchAllContent("projects")).projects;
 }
 
 export async function getFursonaImages() {
-  const allContent = await fetchAllContent("fursonas");
-  return allContent.fursonas;
+  return (await fetchAllContent("fursonas")).fursonas;
 }
 
 export async function getSocials() {
-  const allContent = await fetchAllContent("socials");
-  return allContent.socials;
+  return (await fetchAllContent("socials")).socials;
 }
 
 export async function getDonates() {
-  const allContent = await fetchAllContent("donates");
-  return allContent.donates;
+  return (await fetchAllContent("donates")).donates;
 }
 
 export function clearCache() {
