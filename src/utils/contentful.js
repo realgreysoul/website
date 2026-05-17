@@ -14,18 +14,20 @@ const cache = {
 };
 
 const isDev = import.meta.env.DEV;
-const CACHE_ENABLED =
-  import.meta.env.CONTENTFUL_CACHE_ENABLED === "true" && isDev;
-const CACHE_TTL = parseInt(
-  import.meta.env.CONTENTFUL_CACHE_TTL || "600000",
-  10,
-);
 
 const TYPE_ORDER = ["socials", "projects", "donates", "fursonas"];
 
+function getCacheEnabled() {
+  return import.meta.env.CONTENTFUL_CACHE_ENABLED === "true" && isDev;
+}
+
+function getCacheTTL() {
+  return parseInt(import.meta.env.CONTENTFUL_CACHE_TTL || "600000", 10);
+}
+
 function isCacheValid() {
-  if (!CACHE_ENABLED || !cache.data || !cache.timestamp) return false;
-  return Date.now() - cache.timestamp < CACHE_TTL;
+  if (!getCacheEnabled() || !cache.data || !cache.timestamp) return false;
+  return Date.now() - cache.timestamp < getCacheTTL();
 }
 
 function buildLogParts(types, data) {
@@ -134,11 +136,11 @@ async function fetchAllContent(requestedType = null) {
         console.log(`Contentful: loaded ${logParts.join(", ")}`);
       }
 
-      if (CACHE_ENABLED) {
+      if (getCacheEnabled()) {
         cache.data = result;
         cache.timestamp = Date.now();
         console.log(
-          `Contentful: cached for dev mode (TTL: ${CACHE_TTL / 1000}s)`,
+          `Contentful: cached for dev mode (TTL: ${getCacheTTL() / 1000}s)`,
         );
       }
 
