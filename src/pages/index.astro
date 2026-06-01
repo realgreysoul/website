@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import "../styles/index.css";
 import Age from "../components/Age.astro";
 import SocialsButtons from "../components/SocialsButtons.astro";
+import ToastDialog from "../components/ToastDialog.astro";
 import ProjectsGallery from "../components/ProjectsGallery.astro";
 import DonateButtons from "../components/DonateButtons.astro";
 ---
@@ -10,7 +11,6 @@ import DonateButtons from "../components/DonateButtons.astro";
 <Layout
   title="Greysoul"
   description="Какой-то рандомный чел в интернете, который что-то делает"
-  showToastDialog={true}
 >
   <div id="about" class="style1 container default">
     <div class="wrapper">
@@ -79,3 +79,5 @@ import DonateButtons from "../components/DonateButtons.astro";
     </div>
   </div>
 </Layout>
+
+<ToastDialog />
