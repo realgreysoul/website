@@ -5,12 +5,6 @@ export default defineConfig({
   outDir: "./dist",
   publicDir: "./public",
   trailingSlash: "always",
-  experimental: {
-    rustCompiler: true,
-    queuedRendering: {
-      enabled: true,
-    },
-  },
   fonts: [
     {
       name: "Inter",

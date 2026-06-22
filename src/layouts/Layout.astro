@@ -144,16 +144,14 @@ const isHome = pathname === "/" || pathname === "/index.html";
                 <div class="wrapper">
                   <div class="inner">
                     <p id="text08" class="style3">
-                      ©
-                      <span id="currentYear" />
-                      Greysoul. Всё авторское содержимое данного сайта
-                      принадлежит владельцу данного сайта.
+                      <script is:inline>
+                        document.getElementById("text08").textContent = `© 
+                        ${new Date().getFullYear()} Greysoul. Всё авторское
+                        содержимое данного сайта принадлежит владельцу данного
+                        сайта.`;
+                      </script>
                     </p>
                   </div>
-                  <script is:inline>
-                    document.getElementById("currentYear").textContent = new
-                    Date().getFullYear();
-                  </script>
                 </div>
               </div>
             )
