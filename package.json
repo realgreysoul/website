@@ -7,7 +7,7 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "astro": "^7.0.0",
+    "astro": "^7.0.6",
     "contentful": "^11.10.1"
   }
 }
