@@ -8,6 +8,6 @@
   },
   "dependencies": {
     "astro": "^7.0.6",
-    "contentful": "^11.10.1"
+    "contentful": "^11.12.6"
   }
 }
