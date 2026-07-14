@@ -1,7 +1,7 @@
 {
   "name": "gs-personal-website",
   "type": "module",
-  "packageManager": "pnpm@11.12.0",
+  "packageManager": "bun@1.3.14",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
