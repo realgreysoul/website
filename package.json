@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "postbuild": "node src/utils/403.mjs"
+    "preview": "astro preview"
   },
   "dependencies": {
     "astro": "^7.2.2",
