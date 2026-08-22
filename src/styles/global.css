@@ -518,6 +518,7 @@ h3.style2 a,
 p.style2 a {
   color: #000000;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 h1.style2 a:hover,
