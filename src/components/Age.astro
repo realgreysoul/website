@@ -1,26 +1,34 @@
-<span id="age" data-birth="2004-09-27"></span><script is:inline>
+<span id="age" data-birth="2004-09-27"></span>
+
+<script is:inline>
   (() => {
-    const e = document.getElementById("age");
-    if (!e) return;
-    const [y, m, d] = e.dataset.birth.split("-").map(Number);
-    const b = new Date(y, m - 1, d),
-      n = new Date();
-    let a = n.getFullYear() - b.getFullYear();
+    const age = document.getElementById("age");
+    if (!age) return;
+
+    const [year, month, day] = age.dataset.birth.split("-").map(Number);
+    const birthDate = new Date(year, month - 1, day);
+    const now = new Date();
+    let years = now.getFullYear() - birthDate.getFullYear();
+
     if (
-      n.getMonth() < b.getMonth() ||
-      (n.getMonth() === b.getMonth() && n.getDate() < b.getDate())
-    )
-      a--;
-    const d10 = a % 10,
-      d100 = a % 100;
-    const f =
-      d100 >= 11 && d100 <= 19
-        ? `${a} лет`
-        : d10 === 1
-          ? `${a} год`
-          : d10 >= 2 && d10 <= 4
-            ? `${a} года`
-            : `${a} лет`;
-    if (e.textContent !== f) e.textContent = f;
+      now.getMonth() < birthDate.getMonth() ||
+      (now.getMonth() === birthDate.getMonth() &&
+        now.getDate() < birthDate.getDate())
+    ) {
+      years--;
+    }
+
+    const lastDigit = years % 10;
+    const lastTwoDigits = years % 100;
+    const suffix =
+      lastTwoDigits >= 11 && lastTwoDigits <= 19
+        ? "лет"
+        : lastDigit === 1
+          ? "год"
+          : lastDigit >= 2 && lastDigit <= 4
+            ? "года"
+            : "лет";
+
+    age.textContent = `${years} ${suffix}`;
   })();
 </script>
