@@ -17,6 +17,7 @@ interface Props {
 
 import { Font } from "astro:assets";
 import "../styles/global.css";
+import FooterText from "../components/FooterText.astro";
 
 const {
   title,
@@ -128,12 +129,7 @@ const Logo = isHome ? "span" : "a";
                 <div class="wrapper">
                   <div class="inner">
                     <p id="text08" class="style3">
-                      <script is:inline>
-                        document.getElementById("text08").textContent = `©
-                        ${new Date().getFullYear()} Greysoul. Всё авторское
-                        содержимое данного сайта принадлежит владельцу данного
-                        сайта.`;
-                      </script>
+                      <FooterText />
                     </p>
                   </div>
                 </div>
