@@ -35,6 +35,7 @@ const {
   showFooter = true,
 } = Astro.props;
 
+const bodyStyle = `--width: ${mainWidth}; --spacing: ${spacing}; --padding-horizontal: ${paddingHorizontal}; --padding-vertical: ${paddingVertical};`;
 const pathname = Astro.url?.pathname ?? "/";
 const isHome = pathname === "/" || pathname === "/index.html";
 const Logo = isHome ? "span" : "a";
@@ -73,10 +74,7 @@ const Logo = isHome ? "span" : "a";
     <Font cssVariable="--font-inter" />
   </head>
 
-  <body
-    style={`--width: ${mainWidth}; --spacing: ${spacing}; --padding-horizontal:
-        ${paddingHorizontal}; --padding-vertical: ${paddingVertical};`}
-  >
+  <body style={bodyStyle}>
     <div id="wrapper">
       <div id="main">
         <div class="inner">
