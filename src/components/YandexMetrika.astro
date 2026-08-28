@@ -1,0 +1,46 @@
+---
+interface Props {
+  counterId: number;
+}
+
+const { counterId } = Astro.props;
+const scriptUrl = `https://mc.yandex.ru/metrika/tag.js?id=${counterId}`;
+const watchUrl = `https://mc.yandex.ru/watch/${counterId}`;
+const initOptions = {
+  ssr: true,
+  clickmap: true,
+  referrer: "document.referrer",
+  url: "location.href",
+  accurateTrackBounce: true,
+  trackLinks: true,
+};
+
+const readableScript = `(function(m,e,t,r,i,k,a){
+  m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments);};
+  m[i].l=1*new Date();
+  for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r)return;}
+  k=e.createElement(t);a=e.getElementsByTagName(t)[0];k.async=1;k.src=r;a.parentNode.insertBefore(k,a);
+})(window,document,"script","${scriptUrl}","ym");
+ym(${counterId},"init",{
+  ssr:${initOptions.ssr},
+  clickmap:${initOptions.clickmap},
+  referrer:${initOptions.referrer},
+  url:${initOptions.url},
+  accurateTrackBounce:${initOptions.accurateTrackBounce},
+  trackLinks:${initOptions.trackLinks}
+});`;
+
+const compactScript = readableScript
+  .replace(/\s+/g, " ")
+  .replace(/\s*([{}();,:=])\s*/g, "$1")
+  .trim();
+
+const script = import.meta.env.DEV ? readableScript : compactScript;
+---
+
+<script type="text/javascript" set:html={script} />
+<noscript>
+  <div>
+    <img src={watchUrl} style="position:absolute; left:-9999px;" alt="" />
+  </div>
+</noscript>
