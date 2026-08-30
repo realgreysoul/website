@@ -31,7 +31,6 @@ type ProjectImage = {
   title: string;
   description: string;
   alt: string;
-  umami: string;
 };
 
 type LinkButton = {
@@ -39,7 +38,6 @@ type LinkButton = {
   color: string;
   icon: string;
   label: string;
-  umami: string;
 };
 
 type ContentState = {
@@ -119,7 +117,6 @@ function processProject(item: ContentfulItem): ProjectImage | null {
     title: getString(fields, "title"),
     description: getString(fields, "description"),
     alt: getString(fields, "alt"),
-    umami: getString(fields, "umami"),
   };
 }
 
@@ -132,7 +129,6 @@ function processLinkButton(item: ContentfulItem): LinkButton | null {
     color: getString(fields, "color"),
     icon: getString(fields, "icon"),
     label: getString(fields, "label"),
-    umami: getString(fields, "umami"),
   };
 }
 

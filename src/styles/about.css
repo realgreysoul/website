@@ -161,12 +161,12 @@
   width: 100%;
 }
 
-/* Container04 с заданной шириной столбцов */
-#container04 > .wrapper > .inner > :nth-child(1) {
+/* aboutContent с заданной шириной столбцов */
+#aboutContent > .wrapper > .inner > :nth-child(1) {
   width: calc(50% + (var(--gutters) / 2));
 }
 
-#container04 > .wrapper > .inner > :nth-child(2) {
+#aboutContent > .wrapper > .inner > :nth-child(2) {
   width: calc(50% + (var(--gutters) / 2));
 }
 
@@ -592,12 +592,12 @@
     width: auto;
   }
 
-  #container04 > .wrapper > .inner > :nth-child(1) {
+  #aboutContent > .wrapper > .inner > :nth-child(1) {
     min-height: 100% !important;
     width: 100% !important;
   }
 
-  #container04 > .wrapper > .inner > :nth-child(2) {
+  #aboutContent > .wrapper > .inner > :nth-child(2) {
     min-height: 100% !important;
     width: 100% !important;
   }

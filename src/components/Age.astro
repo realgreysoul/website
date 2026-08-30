@@ -1,8 +1,8 @@
-<span id="age" data-birth="2004-09-27"></span>
+<span id="aboutAge" data-birth="2004-09-27"></span>
 
 <script is:inline>
   (() => {
-    const age = document.getElementById("age");
+    const age = document.getElementById("aboutAge");
     if (!age) return;
 
     const [year, month, day] = age.dataset.birth.split("-").map(Number);

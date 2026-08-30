@@ -6,14 +6,13 @@ const donate = await getDonates();
 
 <ul id="buttons02" class="style3 buttons">
   {
-    donate.map(({ url, color, label, umami }) => (
+    donate.map(({ url, color, label }) => (
       <li>
         <a
           href={url}
           target="_blank"
           class="button"
           {...(color && { style: `background: ${color}` })}
-          {...(umami && { "data-umami-event": umami })}
         >
           {label}
         </a>

@@ -920,7 +920,7 @@ p.style3 span.p:nth-child(n + 2) {
 }
 
 /* Toast-диалог */
-.toast-dialog {
+.toastDialog {
   position: fixed;
   bottom: 2rem;
   left: 50%;
@@ -942,7 +942,7 @@ p.style3 span.p:nth-child(n + 2) {
     visibility 0s ease 0.25s;
 }
 
-.toast-dialog.visible {
+.toastDialog.visible {
   transform: translateX(-50%) translateY(0);
   visibility: visible;
   transition:
@@ -1181,7 +1181,7 @@ p.style3 span.p:nth-child(n + 2) {
     font-size: 1em;
   }
 
-  .toast-dialog {
+  .toastDialog {
     left: 2rem;
     right: 2rem;
     width: auto;
@@ -1190,7 +1190,7 @@ p.style3 span.p:nth-child(n + 2) {
     transform: translateY(calc(100% + 2rem));
   }
 
-  .toast-dialog.visible {
+  .toastDialog.visible {
     transform: translateY(0);
   }
 }
@@ -1263,7 +1263,7 @@ p.style3 span.p:nth-child(n + 2) {
     gap: 1.5rem;
   }
 
-  .toast-dialog {
+  .toastDialog {
     left: 1.5rem;
     right: 1.5rem;
   }

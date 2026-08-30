@@ -16,23 +16,22 @@ import FursonaGallery from "../components/FursonaGallery.astro";
   <div id="me" class="style1 container default">
     <div class="wrapper">
       <div class="inner">
-        <h1 id="text01" class="style1">Обо мне</h1>
+        <h1 id="aboutHeading" class="style1">Обо мне</h1>
       </div>
     </div>
   </div>
 
-  <div id="container04" class="style2 container columns">
+  <div id="aboutContent" class="style2 container columns">
     <div class="wrapper">
       <div class="inner">
         <div>
-          <p id="text02" class="style2">
+          <p id="aboutText1" class="style2">
             <span class="p">
-              Имя - <strong>Александр</strong>, <strong>мужской пол</strong>,
-              <strong><Age /></strong>, родился <strong
-                >27 сентября 2004 года</strong
-              >, живу в <strong>России</strong>, а конкретно в <strong
-                >Сибири</strong
-              >.
+              Имя - <strong>Александр</strong>, <strong>мужской пол</strong>, <strong
+                ><Age /></strong
+              >, родился <strong>27 сентября 2004 года</strong>, живу в <strong
+                >России</strong
+              >, а конкретно в <strong>Сибири</strong>.
             </span>
             <span class="p">
               Живу свою жизнь, закончив техникум, после чего поступил в ВУЗ. В
@@ -48,7 +47,7 @@ import FursonaGallery from "../components/FursonaGallery.astro";
           </p>
         </div>
         <div>
-          <p id="text03" class="style2">
+          <p id="aboutText2" class="style2">
             <span class="p">
               Если вспоминать моё далёкое прошлое, то ещё в 2015 году случайно
               получилось так, что под влиянием Five Nights at Freddy's и его
@@ -74,15 +73,15 @@ import FursonaGallery from "../components/FursonaGallery.astro";
   <div id="furry" class="style1 container default">
     <div class="wrapper">
       <div class="inner">
-        <h1 id="text04" class="style1">Моё новое хобби</h1>
+        <h1 id="furryHeading" class="style1">Моё новое хобби</h1>
       </div>
     </div>
   </div>
 
-  <div id="container01" class="style2 container default">
+  <div id="furryContent" class="style2 container default">
     <div class="wrapper">
       <div class="inner">
-        <p id="text05" class="style2">
+        <p id="furryText" class="style2">
           <span class="p">
             В конце марта 2024 года <em
               >(который для меня был довольно прорывным)</em
@@ -383,10 +382,10 @@ import FursonaGallery from "../components/FursonaGallery.astro";
         this.$modal.show(index);
       };
 
-      if (document.getElementById("gallery01")) {
+      if (document.getElementById("fursonaGallery")) {
         const gallery = new lightboxGallery();
         gallery.init({
-          id: "gallery01",
+          id: "fursonaGallery",
           navigation: true,
           captions: true,
           protect: false,

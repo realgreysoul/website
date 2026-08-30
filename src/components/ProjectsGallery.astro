@@ -4,18 +4,13 @@ import { getProjectImages } from "../utils/contentful";
 const project = await getProjectImages();
 ---
 
-<div id="gallery01" class="style1 gallery">
+<div id="projectsGallery" class="style1 gallery">
   <div class="inner">
     <ul>
       {
-        project.map(({ url, image, title, description, alt, umami }) => (
+        project.map(({ url, image, title, description, alt }) => (
           <li>
-            <a
-              href={url}
-              target="_blank"
-              class="thumbnail"
-              {...(umami && { "data-umami-event": umami })}
-            >
+            <a href={url} target="_blank" class="thumbnail">
               <span class="frame">
                 <img src={`${image}?q=70&fm=avif`} alt={alt} />
               </span>

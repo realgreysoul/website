@@ -55,19 +55,18 @@ const social = await getSocials();
   </symbol>
 </svg>
 
-<ul id="buttons01" class="style1 buttons">
+<ul id="socialsButtons" class="style1 buttons">
   {
-    social.map(({ url, color, icon, label, umami }) => (
+    social.map(({ url, color, icon, label }) => (
       <li>
         <a
           href={url}
           target="_blank"
           class="button"
           {...(color && { style: `background: ${color}` })}
-          {...(umami && { "data-umami-event": umami })}
         >
-          <svg aria-labelledby={`buttons01-${icon}`}>
-            <title id={`buttons01-${icon}`}>{label}</title>
+          <svg aria-labelledby={`socialsButtons-${icon}`}>
+            <title id={`socialsButtons-${icon}`}>{label}</title>
             <use href={`#${icon}`} />
           </svg>
           <span class="label">{label}</span>
