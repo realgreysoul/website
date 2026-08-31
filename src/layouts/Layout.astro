@@ -64,50 +64,8 @@ const Logo = isHome ? "span" : "a";
     />
     <link rel="preconnect" href="//images.ctfassets.net" />
     <link rel="dns-prefetch" href="//images.ctfassets.net" />
-    <script is:inline>
-      (function (m, e, t, r, i, k, a) {
-        m[i] =
-          m[i] ||
-          function () {
-            (m[i].a = m[i].a || []).push(arguments);
-          };
-        m[i].l = 1 * new Date();
-        for (var j = 0; j < document.scripts.length; j++) {
-          if (document.scripts[j].src === r) {
-            return;
-          }
-        }
-        ((k = e.createElement(t)),
-          (a = e.getElementsByTagName(t)[0]),
-          (k.async = 1),
-          (k.src = r),
-          a.parentNode.insertBefore(k, a));
-      })(
-        window,
-        document,
-        "script",
-        "https://mc.yandex.ru/metrika/tag.js?id=112035895",
-        "ym",
-      );
-
-      ym(112035895, "init", {
-        ssr: true,
-        clickmap: true,
-        referrer: document.referrer,
-        url: location.href,
-        accurateTrackBounce: true,
-        trackLinks: true,
-      });
-    </script>
-    <noscript
-      ><div>
-        <img
-          src="https://mc.yandex.ru/watch/112035895"
-          style="position:absolute; left:-9999px;"
-          alt=""
-        />
-      </div></noscript
-    >
+    <script is:inline>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments);};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}((k=e.createElement(t)),(a=e.getElementsByTagName(t)[0]),(k.async=1),(k.src=r),a.parentNode.insertBefore(k,a));})(window,document,"script","https://mc.yandex.ru/metrika/tag.js?id=112035895","ym",);ym(112035895,"init",{ssr:true,clickmap:true,referrer:document.referrer,url:location.href,accurateTrackBounce:true,trackLinks:true,});</script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/112035895" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <Font cssVariable="--font-inter" />
   </head>
 
@@ -166,12 +124,7 @@ const Logo = isHome ? "span" : "a";
                 <div class="wrapper">
                   <div class="inner">
                     <p id="footerText" class="style3">
-                      <script is:inline>
-                        document.getElementById("footerText").textContent = `© 
-                        ${new Date().getFullYear()} Greysoul. Всё авторское
-                        содержимое данного сайта принадлежит владельцу данного
-                        сайта.`;
-                      </script>
+                      <script is:inline>document.getElementById("footerText").textContent=`© ${new Date().getFullYear()} Greysoul. Всё авторское содержимое данного сайта принадлежит владельцу данного сайта.`;</script>
                     </p>
                   </div>
                 </div>

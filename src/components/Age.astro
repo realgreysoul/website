@@ -1,34 +1,3 @@
-<span id="aboutAge" data-birth="2004-09-27"></span>
+<span id="aboutAge" data-birth="2004-09-27" aria-label="Возраст"></span>
 
-<script is:inline>
-  (() => {
-    const age = document.getElementById("aboutAge");
-    if (!age) return;
-
-    const [year, month, day] = age.dataset.birth.split("-").map(Number);
-    const birthDate = new Date(year, month - 1, day);
-    const now = new Date();
-    let years = now.getFullYear() - birthDate.getFullYear();
-
-    if (
-      now.getMonth() < birthDate.getMonth() ||
-      (now.getMonth() === birthDate.getMonth() &&
-        now.getDate() < birthDate.getDate())
-    ) {
-      years--;
-    }
-
-    const lastDigit = years % 10;
-    const lastTwoDigits = years % 100;
-    const suffix =
-      lastTwoDigits >= 11 && lastTwoDigits <= 19
-        ? "лет"
-        : lastDigit === 1
-          ? "год"
-          : lastDigit >= 2 && lastDigit <= 4
-            ? "года"
-            : "лет";
-
-    age.textContent = `${years} ${suffix}`;
-  })();
-</script>
+<script is:inline>(()=>{const age=document.getElementById("aboutAge");if(!age)return;const[year,month,day]=age.dataset.birth.split("-").map(Number);const birthDate=new Date(year,month-1,day);const now=new Date();let years=now.getFullYear()-birthDate.getFullYear();if(now.getMonth()<birthDate.getMonth()||(now.getMonth()===birthDate.getMonth()&&now.getDate()<birthDate.getDate())){years--;}const lastDigit=years%10;const lastTwoDigits=years%100;const suffix=lastTwoDigits>=11&&lastTwoDigits<=19?"лет":lastDigit===1?"год":lastDigit>=2&&lastDigit<=4?"года":"лет";age.textContent=`${years} ${suffix}`;})();</script>
