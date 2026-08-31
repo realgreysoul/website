@@ -2,53 +2,39 @@
   Скопировано в буфер обмена
 </div>
 
-<script is:inline>
+<script>
   (function () {
-    const toast = document.querySelector(".toastDialog");
+    const toast = document.querySelector<HTMLElement>(".toastDialog");
     if (!toast) return;
 
-    let hideTimer;
+    let hideTimer: ReturnType<typeof setTimeout>;
 
     function showToast() {
       clearTimeout(hideTimer);
-      toast.classList.add("visible");
-      hideTimer = setTimeout(function () {
-        toast.classList.remove("visible");
+      toast!.classList.add("visible");
+      hideTimer = setTimeout(() => {
+        toast!.classList.remove("visible");
       }, 2500);
     }
 
-    function copyWithTextarea(value) {
-      const textarea = document.createElement("textarea");
-      textarea.value = value;
-      textarea.style.position = "fixed";
-      textarea.style.top = "-9999px";
-      textarea.style.left = "-9999px";
-      document.body.appendChild(textarea);
-      textarea.focus();
-      textarea.select();
+    async function copyText(value: string) {
       try {
-        document.execCommand("copy");
-      } catch (_) {}
-      textarea.remove();
-    }
-
-    function copyText(value) {
-      if (navigator.clipboard?.writeText) {
-        return navigator.clipboard.writeText(value).catch(function () {
-          copyWithTextarea(value);
-        });
+        await navigator.clipboard.writeText(value);
+        showToast();
+      } catch (error) {
+        console.error("Ошибка копирования в буфер обмена:", error);
       }
-
-      copyWithTextarea(value);
-      return Promise.resolve();
     }
 
-    document.addEventListener("click", function (event) {
-      const trigger = event.target.closest("[data-toast-trigger]");
+    document.addEventListener("click", async (event) => {
+      const trigger = (event.target as HTMLElement).closest<HTMLElement>(
+        "[data-toast-trigger]",
+      );
       if (!trigger) return;
 
       event.preventDefault();
-      copyText(trigger.dataset.toastTrigger || "").finally(showToast);
+      const textToCopy = trigger.dataset.toastTrigger || "";
+      await copyText(textToCopy);
     });
   })();
 </script>
