@@ -15,18 +15,4 @@ export default defineConfig({
       subsets: ["cyrillic", "latin"],
     },
   ],
-  vite: {
-    build: {
-      rollupOptions: {
-        output: {
-          assetFileNames: (assetInfo) => {
-            if (assetInfo.names?.some((name) => name.endsWith(".css"))) {
-              return "_astro/style.[hash].css";
-            }
-            return "_astro/[name].[hash][extname]";
-          },
-        },
-      },
-    },
-  },
 });
