@@ -919,37 +919,6 @@ p.style3 span.p:nth-child(n + 2) {
   pointer-events: auto;
 }
 
-/* Toast-диалог */
-.toastDialog {
-  position: fixed;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%) translateY(calc(100% + 2rem));
-  background-color: #000000;
-  color: #ffffff;
-  font-family: var(--font-inter), sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-  line-height: 1.5;
-  padding: 0.75rem 1.5rem;
-  border-radius: 2.5rem;
-  white-space: nowrap;
-  z-index: 9999;
-  pointer-events: none;
-  visibility: hidden;
-  transition:
-    transform 0.25s ease,
-    visibility 0s ease 0.25s;
-}
-
-.toastDialog.visible {
-  transform: translateX(-50%) translateY(0);
-  visibility: visible;
-  transition:
-    transform 0.25s ease,
-    visibility 0s ease 0s;
-}
-
 /* Адаптивность */
 @media (max-width: 1680px) {
   html {
@@ -1180,19 +1149,6 @@ p.style3 span.p:nth-child(n + 2) {
     letter-spacing: 0rem;
     font-size: 1em;
   }
-
-  .toastDialog {
-    left: 2rem;
-    right: 2rem;
-    width: auto;
-    white-space: normal;
-    text-align: center;
-    transform: translateY(calc(100% + 2rem));
-  }
-
-  .toastDialog.visible {
-    transform: translateY(0);
-  }
 }
 
 @media (max-width: 480px) {
@@ -1261,10 +1217,5 @@ p.style3 span.p:nth-child(n + 2) {
 
   .buttons.style3 {
     gap: 1.5rem;
-  }
-
-  .toastDialog {
-    left: 1.5rem;
-    right: 1.5rem;
   }
 }
