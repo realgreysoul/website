@@ -364,8 +364,12 @@
 }
 
 .gallery-modal.switching.done .inner {
-  transition: opacity 0.375s ease;
-  transform: translateY(0) translateX(0);
+  transition: all 0.5s ease;
+  transform: translateY(0.75em) translateX(0);
+}
+
+.gallery-modal.switching.done.loaded .inner {
+  transform: translateY(0);
 }
 
 /* 2-ая стиль галереи - FursonaGallery */
