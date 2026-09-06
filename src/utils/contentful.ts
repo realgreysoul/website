@@ -143,10 +143,10 @@ function processProject(item: ContentfulItem): ProjectImage | null {
   return {
     url: getString(fields, "url"),
     image: getImageUrl(fields.image),
+    crop: getBoolean(fields, "crop"),
     title: getString(fields, "title"),
     description: getString(fields, "description"),
     alt: getString(fields, "alt"),
-    crop: getBoolean(fields, "crop"),
   };
 }
 
