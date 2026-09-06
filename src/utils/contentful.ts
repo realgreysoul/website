@@ -31,6 +31,7 @@ type ProjectImage = {
   title: string;
   description: string;
   alt: string;
+  crop: boolean;
 };
 
 type LinkButton = {
@@ -64,7 +65,12 @@ const cache = {
 
 const isDev = import.meta.env.DEV;
 
-const TYPE_ORDER: ContentType[] = ["socials", "projects", "donates", "fursonas"];
+const TYPE_ORDER: ContentType[] = [
+  "socials",
+  "projects",
+  "donates",
+  "fursonas",
+];
 
 function getCacheEnabled() {
   return import.meta.env.CONTENTFUL_CACHE_ENABLED === "true" && isDev;
@@ -90,10 +96,33 @@ function getString(fields: Record<string, unknown>, key: string) {
   return typeof value === "string" ? value : "";
 }
 
+function getBoolean(fields: Record<string, unknown>, key: string) {
+  return fields[key] === true;
+}
+
 function getImageUrl(imageField: unknown) {
   const url = (imageField as ContentfulAsset | undefined)?.fields?.file?.url;
   if (!url) return "";
   return url.startsWith("//") ? `https:${url}` : url;
+}
+
+export function getImageUrlWithOptions(
+  image: string,
+  options: { crop?: boolean } = {},
+) {
+  if (!image) return "";
+
+  const params = new URLSearchParams();
+
+  if (options.crop) {
+    params.set("w", "690");
+    params.set("h", "627");
+    params.set("fit", "crop");
+  }
+  params.set("q", "70");
+  params.set("fm", "avif");
+
+  return `${image}?${params.toString()}`;
 }
 
 function processFursona(item: ContentfulItem): FursonaImage | null {
@@ -117,6 +146,7 @@ function processProject(item: ContentfulItem): ProjectImage | null {
     title: getString(fields, "title"),
     description: getString(fields, "description"),
     alt: getString(fields, "alt"),
+    crop: getBoolean(fields, "crop"),
   };
 }
 
@@ -136,7 +166,9 @@ function exists<T>(value: T | null): value is T {
   return value !== null;
 }
 
-async function fetchAllContent(requestedType: ContentType | null = null): Promise<ContentState> {
+async function fetchAllContent(
+  requestedType: ContentType | null = null,
+): Promise<ContentState> {
   const emptyState = { projects: [], fursonas: [], socials: [], donates: [] };
 
   if (requestedType) cache.requestedTypes.add(requestedType);
@@ -145,7 +177,6 @@ async function fetchAllContent(requestedType: ContentType | null = null): Promis
   const cacheTimestamp = cache.timestamp;
 
   if (getCacheEnabled() && cachedData && isCacheFresh(cacheTimestamp)) {
-
     const newTypes = Array.from(cache.requestedTypes).filter(
       (t) => !cache.loggedTypes.has(t),
     );
